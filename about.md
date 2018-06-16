@@ -1,3 +1,8 @@
+---
+layout: page
+title: About Me
+---
+## About Me
 Hi All! You must be a bit weird like me, I click on About Me pages, too.
 
 Professionally, I build, manage, and troubleshoot networks. I've worked on all sorts of networks over the past twenty years, and right now I work on the [Sohonet Media Network](https://www.sohonet.com "Sohonet's Website") that interconnects most of the top film and media companies in the world. We light a lot of fiber and I do a lot of BGP and MPLS to make everything do the thing.
