@@ -1,3 +1,37 @@
 theme: jekyll-theme-modernist
 title: John MacDonald
 description: Awesome Network Engineer
+permalink: /:categories/:title
+jekyll_compose:
+  auto_open: true
+collections:
+  - projects
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+plugins:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-include-cache
