@@ -13,4 +13,6 @@ Personally, I have a million-and-one hobbies. I try to keep it just to a few at 
 
 Cisco Certified, International Award Winning Photographer
 
+Find me on [LinkedIn](http://www.linkedin.com/in/jmacego)
+
 PS: My wife is an amazing person and teacher and supports me in everything I do.

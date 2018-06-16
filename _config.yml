@@ -1,7 +1,19 @@
 theme: jekyll-theme-modernist
 title: John MacDonald
 description: Awesome Network Engineer
-permalink: /:categories/:title
+permalink: /:collections/:title
+twitter:
+  username: jmacego
+  card: summary
+logo: /assets/jmac-profile.jpg
+social:
+  name: John MacDonald
+  links:
+    - https://www.linkedin.com/in/jmacego
+    - https://github.com/jmacego
+    - https://keybase.io/jmacego
+jekyll-sitemap:
+jekyll-feed:
 jekyll_compose:
   auto_open: true
 collections:
