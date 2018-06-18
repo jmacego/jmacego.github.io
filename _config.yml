@@ -15,9 +15,10 @@ social:
 jekyll-sitemap:
 jekyll-feed:
 jekyll_compose:
-  auto_open: true
 collections:
-  - projects
+  projects:
+    output: true
+    permalink: /projects/:title
 defaults:
   - scope:
       path: ""
@@ -28,7 +29,7 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
+      layout: "post"
 plugins:
   - jekyll-coffeescript
   - jekyll-gist

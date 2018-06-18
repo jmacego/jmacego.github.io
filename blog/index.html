@@ -2,10 +2,14 @@
 layout: default
 title: John MacDonald's Posts
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
-	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
-	</ul>
+  <h1>{{ page.title }}</h1>
+    {% for post in site.posts %}
+      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+      {% if post.categories != "" and post.categories != nil and post.categories != blank %}
+        {% for category in post.categories %}
+          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+        {% endfor %}
+      {% endif %}
+     <p>{{- post.excerpt -}}</p>
+     <h4>Continue reading <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+   {% endfor %}
