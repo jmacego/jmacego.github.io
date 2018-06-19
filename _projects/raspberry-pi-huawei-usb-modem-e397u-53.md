@@ -94,5 +94,36 @@ Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 You can also check `dmesg | tail -n 30` which will show you the different GSM Modem devices and a USB WDM device in addition to the storage now.
 
+Now you can connect to the modem with your preferred serial program. For instance screen, minicom, pycom, etc. The modem will register 3 different serial ports, the first is for 2-way communication, the second is for errors, and the third is for GPS output. I haven't yet gotten anything but 2-way communication going. If you have no other serial ports, this will most likely be `/dev/ttyUSB0` however in the future we will set up the Raspberry Pi to detect the modem and give it a unique port.
 
-More coming soon! Had to work.
+Connect to the modem:
+```screen /dev/ttyUSB0```
+You'll just get a blank screen, you can test connectivity by sending `AT<enter>` and the modem will respond `OK`
+```
+AT
+OK
+```
+
+Send the following to connect, and then check the connection.
+```
+ATZ
+AT^NDISDUP=1,1,"fp.com.attz"
+AT^DHCP?
+```
+
+The modem should respond with `OK` to each of the first commands, and then a hex string such as this:
+```^DHCP:0100000a,fcffffff,0200000a,0200000a,8080808,4040808,100000000,50000000```
+
+This is the IP address that your modem has received for you... encoded as hex... backwards.
+
+The first block is the IP address, the net block is the subnet mask, and the third block is the gateway. You can probably just look at the 5th and 6th and see Google's DNS in my example, which is literally what I received. (8.8.8.8 and 8.8.4.4 respectively).
+
+For now you can use the below Python script, save it as huawei-dhcp-decode.py or similar.
+
+{% gist 342c13f9275c9124c34208b9486d8eea %}
+
+Usage: `python huawei-dhcp-decode.py ^DHCP:0100000a,fcffffff,0200000a,0200000a,8080808,4040808,100000000,50000000` with your DHCP string of course and it will give you a list of the IP addresses contained.
+
+You can statically assign these to your interface using your preferred tool, I recommend `ip` as you'll need to set address as well as gateway and it can do both. The script gives you the output that you can use. You will need sudo.
+
+This article will end with my Python code to do all of the things, find the modem, connect, monitor, etc, but still working out some bugs. Also... work, lots of work.
