@@ -126,4 +126,6 @@ Usage: `python huawei-dhcp-decode.py ^DHCP:0100000a,fcffffff,0200000a,0200000a,8
 
 You can statically assign these to your interface using your preferred tool, I recommend `ip` as you'll need to set address as well as gateway and it can do both. The script gives you the output that you can use. You will need sudo.
 
+After that you can print out the route with `route -n` and you should see a default gateway listed in the top IPv4 section, and if you `traceroute 8.8.8.8` you should see a different route than you get over ethernet or wifi, possibly including the gateway as the first hop (although mine did not respond to ping so just had `***` there.)
+
 This article will end with my Python code to do all of the things, find the modem, connect, monitor, etc, but still working out some bugs. Also... work, lots of work.
