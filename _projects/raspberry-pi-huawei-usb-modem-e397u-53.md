@@ -3,9 +3,8 @@ layout: post
 title: 'Raspberry Pi: Huawei USB Modem e397u-53'
 description: "Getting a Raspberry Pi online with a USB Modem Dongle"
 categories: [raspberry pi, cellular, python]
+date: 2018-06-16 11:02 -0700
 ---
-Jump to: [FreedomPOP section](#freedompop) \| [Huawei Modem Section](#huawei-e397u-57-usb-modem)
-
 You're here for one of two reasons:
 1. You have an e97u-53 modem beacuse you got it cheap.
 1. You have (or are considering getting) FreedomPop SIM cards.
@@ -16,7 +15,7 @@ I picked up the modem on Amazon for $22: [Unlocked e397u-53 Cricket Wireless](ht
 
 FreedomPOP I have mixed feelings about. I am certainly under no circumstance going to recommend them. Their web interface is designed to trick you, repeatedly, into giving them more money. However, so far, after getting through all of the hoops the service seems fine, and really does have 200MB free with additional at $0.025 per MB which is significantly less than I have found anywhere else.
 
-<!-- more -->
+<!--more-->
 ## FreedomPOP
 Jump to: [Top of Page](#top-of-page) \| [Huawei Modem Section](#huawei-e397u-57-usb-modem)
 
@@ -128,4 +127,6 @@ You can statically assign these to your interface using your preferred tool, I r
 
 After that you can print out the route with `route -n` and you should see a default gateway listed in the top IPv4 section, and if you `traceroute 8.8.8.8` you should see a different route than you get over ethernet or wifi, possibly including the gateway as the first hop (although mine did not respond to ping so just had `***` there.)
 
-This article will end with my Python code to do all of the things, find the modem, connect, monitor, etc, but still working out some bugs. Also... work, lots of work.
+I'm working on a script or set of scripts that you can call for instance with `ifup` and `ifdown` with a `crontab` script to poll the connection from time to time. These could be integrated in `/etc/network/interfaces` or called by some type of measurement script before sending an MQTT message or similar.
+
+Watch this space.

@@ -15,9 +15,11 @@ social:
 jekyll-sitemap:
 jekyll-feed:
 jekyll_compose:
+excerpt_separator: "<!--more-->"
 collections:
   projects:
     output: true
+    show_excerpts: true
     permalink: /projects/:title
 defaults:
   - scope:

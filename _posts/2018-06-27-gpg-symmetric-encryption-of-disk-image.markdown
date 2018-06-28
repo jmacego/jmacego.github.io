@@ -1,7 +1,7 @@
 ---
 title: GPG Symmetric Encryption of Disk Image
 layout: post
-date: 2018-06-29 19:19 -0700
+date: 2018-06-29 19:20 -0700
 permalink: /blog/:title
 author: jmacego
 ---
@@ -13,7 +13,7 @@ Just thought I'd take a moment to share with you the bit I was working on tonigh
 
 First up: Create the disk image, I chose ExFAT as the filesystem as it is reasonably portable and standardized on as the filesystem for SDCards means out of the box support on most systems (including Raspberry Pi). I'm using `.dmg` as the file extension because Mac requires it on creation. Feel free to use whatever suits you.
 
-<!-- more -->
+<!--more-->
 
 ## Creating the disk image
 

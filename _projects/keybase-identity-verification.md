@@ -5,8 +5,6 @@ description: "Easy to use, relatively secure, open-source encryption"
 categories: [instant messaging, crypto, security, fileshare]
 date: 2018-06-27 19:13 -700
 ---
-Jump to: [Basic Usage](#basic-usage) \| [Advanced Usage](#advanced-usage)
-
 How do you know that that person you need to message on Slack, Facebook, LinkedIn, Twitter, etc. is who they say they are? How do you know who is sending you that file and if you should trust them? How do you guarantee that the message you send is not being intercepted in transit?
 
 By meeting in a dark alley, exchanging information that only you and the other person know, then tatooing their public key on your arm and manually typing it in to a computer that has never touched the internet, and then passing the messages onto this computer, signing (and potentially encrypting) them, and then passing them back to the internet using the IPoAC protocol.
@@ -15,7 +13,7 @@ Er, yeah, no. Well, if you have something that is that important, you know you d
 
 For everyone else, there's [Keybase.io - Crypto for everyone!](https://keybase.io).
 
-<!-- more -->
+<!--more-->
 ## Basic Usage
 Jump to: [Top of Page](#top-of-page) \| [Advanced Usage](#advanced-usage)
 

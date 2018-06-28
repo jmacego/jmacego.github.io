@@ -5,15 +5,13 @@ description: "Connect to all of your Linux, Mac, Windows, Android, and iOS devic
 categories: [sdwan, crypto, raspberry pi]
 date: 2018-06-20 11:02 -1000
 ---
-Jump to: [Basic Configuration](#basic-configuration) \| [Advanced Configuration](#advanced-configuration)
-
 I have devices scattered about, mostly Raspberry Pis as well as my laptop, phone, GCE and AWS instances, and instances with various VM providers.
 
 I needed a way to connect to all of these with a minimum of effort, and [another engineer at work](http://menari.eu) suggested I try Zerotier.
 
 You can get started with minimal effort, but you can also create amazing and wonderful complexity to meet a variety of needs.
 
-<!-- more -->
+<!--more-->
 ## Basic Configuration
 Jump to: [Top of Page](#top-of-page) \| [Advanced Configuration](#advanced-configuration)
 
