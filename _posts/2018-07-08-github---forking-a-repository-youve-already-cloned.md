@@ -22,6 +22,8 @@ git remote add <forked github url>
 
 #optional git stash # store anything you've been working on that's unrelated, redo the work, then git stash apply to get back to where you were.
 
+git pull # Make sure you are up to date.
+
 git checkout -b <new branch name>
 
 git add <changed files you want to pull request for)
