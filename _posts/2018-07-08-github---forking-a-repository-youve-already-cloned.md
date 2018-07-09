@@ -2,7 +2,6 @@
 title: GitHub - Forking a repository you've already cloned
 layout: post
 date: 2018-07-08 18:26 -0700
-permalink: /blog/:title
 author: jmacego
 ---
 

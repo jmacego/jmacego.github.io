@@ -1,0 +1,34 @@
+---
+layout: page
+title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitement, and more!
+---
+<h1>Welcome to the new site</h1>
+<p>Not sure what will go here yet. Maybe something. I've mostly just missed having something at this domain.
+</p>
+
+<p>I do have a couple of posts up as well as a couple of partly completed projects. Links are in the header.
+</p>
+<h2>Most Recent Post:</h2>
+	  {% assign post = site.posts.first %}
+      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      {% if post.categories != "" and post.categories != nil and post.categories != blank %}
+        {% for category in post.categories %}
+          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+        {% endfor %}
+      {% endif %}
+     <p>{{- post.excerpt -}}</p>
+     <h4>Continue reading <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+
+<h2>MostMost Recent Project:</h2>
+  {% assign sorted = site.projects | sort: 'date' | reverse %}
+  {% assign project = sorted.first %}
+    <h2><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
+      {% if project.categories != "" and project.categories != nil and project.categories != blank %}
+      <p>Categories:
+        {% for category in project.categories %}
+        <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+        {% endfor %}
+      </p>
+      {% endif %}
+      <p>{{- project.excerpt -}}</p>
+    <h4>Continue reading about <a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h4>
