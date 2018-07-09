@@ -2,7 +2,6 @@
 layout: post
 title: 'First Post!'
 date: 2018-06-16 11:02 -0700
-permalink: /blog/:title
 author: jmacego
 ---
 This is definitely a first post.
