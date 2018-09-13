@@ -13,6 +13,6 @@ Personally, I have a million-and-one hobbies. I try to keep it just to a few at 
 
 Cisco Certified, International Award Winning Photographer
 
-Find me on: [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| [Keybase](https://keybase.io/jmacego "Secure Communications Platform")
+Find me on: [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")
 
 PS: My wife is an amazing person and teacher and supports me in everything I do.
