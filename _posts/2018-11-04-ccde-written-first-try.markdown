@@ -28,6 +28,7 @@ Unlike a lot of blogs I read, I didn't find there to be trick questions. In the 
 
 Yesterday I finished every book in the playlist, self-scored myself on the Learning Matrix and found that I was at least a 2 in almost every category, discussed with my wife, my parents, etc. and then scheduled the exam for today. I skimmed chapters on the areas that I was weakest and re-watched the live learning by Russ and Alvaro at 2x speed (greatly annoying my wife).
 
+### Test day and reflections
 Today I drank a monster energy before leaving, caught a Lyft, drank another at the testing center, and took the test. Then I wrote this blog post.
 
 I definitely think the test is worthwhile, and I think that experience counts for a lot in the test but certainly not for everything. I went into it expecting to fail (expecting to fail closer to 500, honestly) so that I could use it both to prepare myself for the exam format and also to get an objective view of my current weak areas.
