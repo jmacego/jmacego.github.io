@@ -13,11 +13,11 @@ Playa Vista, Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 Cisco certified with fifteen years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to build and maintain user-friendly networks of any size. Strong background in a variety of programming languages and technologies. Seeking the opportunity to be an asset to a company and fellow coworkers. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required.
 
 ## Core Qualifications
-* Knowledgeable of routing and switching, the OSI model, TCP/IP, and Cisco networks
+* Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
 * Experience with a variety of Routing & Switching protocols including OSPF, EIGRP, RIP, BGP, VPNs, MPLS, VLANs, etherchannel LAGs, and VTP
 * Capable of training other employees in use of networks and software
 * In-depth understanding of multiple operating systems (Linux, Windows, OSX)
-* Experience working in: Perl, Python, Ruby, C, JavaScript, and Java
+* Experience working in: Perl, Python, Ruby, C, JavaScript
 * Excellent public speaking and presentation skills
 
 ## Experience
@@ -26,6 +26,7 @@ Cisco certified with fifteen years’ experience and an exceptional ability to b
 * Just getting started here!
 * Certified Meraki Network Operator (Don't laugh, we've got a bunch of remote sites, Meraki isn't a terrible choice).
 * Getting started moving into Azure, deploying Data Boxes, ExpressRoutes, etc.
+* Interact with a large number of vendors and internal divisions
 
 ### Network Engineer, Sohonet, inc; Los Angeles, CA — 2017-2019
 * Spearheaded testing interoperability of Juniper and Brocade devices for core and aggregation use
