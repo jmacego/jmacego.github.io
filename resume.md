@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 ---
-# John MacDonald  -- Network ENGINEER
+# John MacDonald  -- Network Engineer
 
 [PDF Version](/assets/files/john-macdonald-resume.pdf)
 
@@ -10,7 +10,7 @@ title: Resume
 Playa Vista, Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ## Professional Summary
-Cisco certified with fifteen years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to build and maintain user-friendly networks of any size. Strong background in a variety of programming languages and technologies. Seeking the opportunity to be an asset to a company and fellow coworkers. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on short notice if required.
+Cisco certified with fifteen years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to build and maintain user-friendly networks of any size. Strong background in a variety of programming languages and technologies. Seeking the opportunity to be an asset to a company and fellow coworkers. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required.
 
 ## Core Qualifications
 * Knowledgeable of routing and switching, the OSI model, TCP/IP, and Cisco networks
@@ -19,11 +19,15 @@ Cisco certified with fifteen years’ experience and an exceptional ability to b
 * In-depth understanding of multiple operating systems (Linux, Windows, OSX)
 * Experience working in: Perl, Python, Ruby, C, JavaScript, and Java
 * Excellent public speaking and presentation skills
- 
 
 ## Experience
 
-### Network Support Engineer, Sohonet inc; Los Angeles, CA — 2017-Present
+### Senior Network Engineer, Walt Disney Motion Picture Productions; Burbank, CA — 2019-Present
+* Just getting started here!
+* Certified Meraki Network Operator (Don't laugh, we've got a bunch of remote sites, Meraki isn't a terrible choice).
+* Getting started moving into Azure, deploying Data Boxes, ExpressRoutes, etc.
+
+### Network Engineer, Sohonet, inc; Los Angeles, CA — 2017-2019
 * Spearheaded testing interoperability of Juniper and Brocade devices for core and aggregation use
 * Handled US BGP peering requests at Internet Exchanges as well as peerings with Apple, Google, Amazon, and others — designed and implemented customer BGP solutions in multi-site and multi-circuit scenarios
 * Assembled customer MPLS solutions for L3VPN, VLL/EoMPLS/VPWS/pseudowire, and VPLS/l2vpns
