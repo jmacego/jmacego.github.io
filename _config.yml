@@ -32,6 +32,7 @@ defaults:
       type: "projects"
     values:
       layout: "post"
+github: [metadata]
 plugins:
   - jekyll-coffeescript
   - jekyll-gist
