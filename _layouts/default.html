@@ -8,7 +8,7 @@
 
     {% feed_meta %}
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/images/apple-touch-icon.png"  | absolute_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/images/favicon-32x32.png"  | absolute_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/images/favicon-16x16.png"  | absolute_url }}">
@@ -16,21 +16,23 @@
     <link rel="mask-icon" href="{{ "/assets/images/safari-pinned-tab.svg"  | absolute_url }}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body><a id="top-of-page"></a>
-    <div class="wrapper">
-      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
-        <h1><a href=" {{ "/" | absolute_url }}" {% if page.url == "/" %}class="active"{% endif %} >{{ site.title | default: site.github.repository_name }}</a></h1>
+    <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class='navbar-brand{% if page.url == "/" or page.url == "/index.html" %} active{% endif %}' href='{{ "/" | absolute_url }}'>{{ site.title | default: site.github.repository_name }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button><!--
         {% if site.description or site.github.project_tagline %}
           <p>{{ site.description | default: site.github.project_tagline }}</p>
         {% endif %}
-       <!-- <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
         <ul>
         {% if site.show_downloads %}
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
@@ -38,24 +40,28 @@
         {% endif %}
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul> -->
-        <p class="view">
-          <a href="{{ "/blog"  | absolute_url }}"><strong>Posts</strong></a> | 
-          <a href="{{ "/projects"  | absolute_url }}"><strong>Projects</strong></a> | 
-          <a href="{{ "/about"  | absolute_url }}"><strong>About Me</strong></a> | 
-          <a href="{{ "/pubkey"  | absolute_url }}"><strong>Public Key</strong></a>
-          <ul>
-            <li><a href="{{ "/blog"  | absolute_url }}"><strong>Posts</strong></a></li>
-            <li><a href="{{ "/projects"  | absolute_url }}"><strong>Projects</strong></a></li>
-            <li><a href="{{ "/about"  | absolute_url }}"><strong>About Me</strong></a></li>
-            <li><a href="{{ "/resume"  | absolute_url }}"><strong>Resume</strong></a></li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class='nav-item{% if page.url == "/blog/" or page.url == "/blog/index.html" %} active{% endif %}'>
+              <a class="nav-link" href='{{ "/blog"  | absolute_url }}'>Posts</a>
+            </li>
+            <li class='nav-item{% if page.url == "/projects/" or page.url == "/projects/index.html" %} active{% endif %}'>
+              <a class="nav-link" href='{{ "/projects"  | absolute_url }}'>Projects</a>
+            </li>
+            <li class='nav-item{% if page.url == "/about" or page.url == "/about/index.html" %} active{% endif %}'>
+              <a class="nav-link" href='{{ "/about"  | absolute_url }}'>About Me</a>
+            </li>
+            <li class='nav-item{% if page.url == "/pubkey" or page.url == "/pubkey/index.html" %} active{% endif %}'>
+              <a class="nav-link" href='{{ "/pubkey"  | absolute_url }}'>Public Key</a>
+            </li>
           </ul>
         </p>
-      </header>
-      <section>
+      </nav>
+    </header>
+    <div class="container-fluid">
 
-      {{ content }}
+    {{ content }}
 
-      </section>
     </div>
     <footer>
     {% if site.github.is_project_page %}
@@ -74,5 +80,8 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
