@@ -178,7 +178,7 @@
       <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between bg-light">
           <a class='p-2 text-muted{% if page.url == "/blog/" or page.url == "/blog/index.html" %} active{% endif %}' href='{{ "/blog"  | absolute_url }}'>Posts</a>
-          <a class='p-2 text-muted{% if page.url == "/projects/" or page.url == "/projects/index.html" %} active{% endif %}' ref='{{ "/projects"  | absolute_url }}'>Projects</a>
+          <a class='p-2 text-muted{% if page.url == "/projects/" or page.url == "/projects/index.html" %} active{% endif %}' href='{{ "/projects"  | absolute_url }}'>Projects</a>
           <a class='p-2 text-muted{% if page.url == "/about" or page.url == "/about/index.html" %} active{% endif %}' href='{{ "/about"  | absolute_url }}'>About Me</a>
           <a class='p-2 text-muted{% if page.url == "/pubkey" or page.url == "/pubkey/index.html" %} active{% endif %}' href='{{ "/pubkey"  | absolute_url }}'>Public Key</a>
         </nav>

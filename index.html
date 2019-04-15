@@ -13,17 +13,17 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">Posts</strong>
+          <strong><a class="d-inline-block mb-2 text-primary" href='{{ "/blog"  | absolute_url }}'>Posts</a></strong>
           {% assign post = site.posts.first %}
           <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-          <div class="mb-1 text-muted">Nov 11</div>
+          <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
           {% if post.categories != "" and post.categories != nil and post.categories != blank %}
             {% for category in post.categories %}
               <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
             {% endfor %}
           {% endif %}
          <p class="mb-auto">{{- post.excerpt -}}</p>
-         <a class="stretched-link" href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
+         <a href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -33,11 +33,11 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Projects</strong>
+          <strong><a class="d-inline-block mb-2 text-success" href='{{ "/projects"  | absolute_url }}'>Projects</a></strong>
           {% assign sorted = site.projects | sort: 'date' | reverse %}
           {% assign project = sorted.first %}
           <h3><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h3>
-          <div class="mb-1 text-muted">Nov 11</div>
+          {% if project.date != "" and project.date != nil and project.date != blank %}<div class="mb-1 text-muted">{{ project.date | date_to_string }}</div>{% endif %}
           {% if project.categories != "" and project.categories != nil and project.categories != blank %}
             Categories:
             {% for category in project.categories %}
@@ -45,7 +45,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
             {% endfor %}
           {% endif %}
          <p class="mb-auto">{{- project.excerpt -}}</p>
-         <a class="stretched-link" href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
+         <a href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
