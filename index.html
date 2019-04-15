@@ -15,7 +15,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
         <div class="col p-4 d-flex flex-column position-static">
           <strong><a class="d-inline-block mb-2 text-primary" href='{{ "/blog"  | absolute_url }}'>Posts</a></strong>
           {% assign post = site.posts.first %}
-          <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+          <h3 class="mb-0">{{ post.title }}</h3>
           <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
           {% if post.categories != "" and post.categories != nil and post.categories != blank %}
             {% for category in post.categories %}
@@ -23,7 +23,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
             {% endfor %}
           {% endif %}
          <p class="mb-auto">{{- post.excerpt -}}</p>
-         <a href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
+         <a class="stretched-link" href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -36,7 +36,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
           <strong><a class="d-inline-block mb-2 text-success" href='{{ "/projects"  | absolute_url }}'>Projects</a></strong>
           {% assign sorted = site.projects | sort: 'date' | reverse %}
           {% assign project = sorted.first %}
-          <h3><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h3>
+          <h3 class="mb-0">{{ project.title }}</h3>
           {% if project.date != "" and project.date != nil and project.date != blank %}<div class="mb-1 text-muted">{{ project.date | date_to_string }}</div>{% endif %}
           {% if project.categories != "" and project.categories != nil and project.categories != blank %}
             Categories:
@@ -45,7 +45,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
             {% endfor %}
           {% endif %}
          <p class="mb-auto">{{- project.excerpt -}}</p>
-         <a href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
+         <a class="stretched-link" href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
         </div>
         <div class="col-auto d-none d-lg-block">
           <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
