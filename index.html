@@ -10,7 +10,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
 </p>
 <h2>Most Recent Post:</h2>
 	  {% assign post = site.posts.first %}
-      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
       {% if post.categories != "" and post.categories != nil and post.categories != blank %}
         {% for category in post.categories %}
           <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
@@ -22,7 +22,7 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
 <h2>Most Recent Project:</h2>
   {% assign sorted = site.projects | sort: 'date' | reverse %}
   {% assign project = sorted.first %}
-    <h2><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
+    <h3><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h3>
       {% if project.categories != "" and project.categories != nil and project.categories != blank %}
       <p>Categories:
         {% for category in project.categories %}
