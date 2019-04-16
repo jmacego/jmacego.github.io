@@ -3,17 +3,20 @@ layout: default
 title: John MacDonald's Projects
 permalink: /projects/index.html
 ---
-<h1>{{ page.title }}</h1>
+<div class="row">
   {% assign sorted = site.projects | sort: 'date' | reverse %}
   {% for project in sorted %}
-    <h2><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h2>
-      {% if project.categories != "" and project.categories != nil and project.categories != blank %}
-      <p>Categories:
-        {% for category in project.categories %}
-        <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
-        {% endfor %}
-      </p>
-      {% endif %}
-      <p>{{- project.excerpt -}}</p>
-    <h4>Continue reading about <a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h4>
+    <div class="blog-post">
+      <h2 class="blog-post-title">{{ project.title }}</h2>
+        {% if project.categories != "" and project.categories != nil and project.categories != blank %}
+        <p class="blog-post-meta">Categories:
+          {% for category in project.categories %}
+          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+          {% endfor %}
+        </p>
+        {% endif %}
+        <p>{{- project.excerpt -}}</p>
+      <p class="lead">Continue reading about <a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></p>
+    </div>
   {% endfor %}
+</div>

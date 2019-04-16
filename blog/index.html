@@ -2,14 +2,19 @@
 layout: default
 title: John MacDonald's Posts
 ---
-  <h1>{{ page.title }}</h1>
+  <div class="row">
     {% for post in site.posts %}
-      <h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-      {% if post.categories != "" and post.categories != nil and post.categories != blank %}
-        {% for category in post.categories %}
-          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
-        {% endfor %}
-      {% endif %}
-     <p>{{- post.excerpt -}}</p>
-     <h4>Continue reading <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
+      <div class="blog-post">
+        <h2 class="blog-post-title">{{ post.title }}</h2>
+        {% if post.categories != "" and post.categories != nil and post.categories != blank %}
+          <p class="blog-post-meta">Categories:
+            {% for category in post.categories %}
+              <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+            {% endfor %}
+          </p>
+        {% endif %}
+       <p>{{- post.excerpt -}}</p>
+       <p class="lead">Continue reading <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
+     </div>
    {% endfor %}
+  </div>
