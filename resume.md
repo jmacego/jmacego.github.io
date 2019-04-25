@@ -48,7 +48,7 @@ Cisco certified with fifteen years’ experience and an exceptional ability to b
 * Improved data redundancy of all files with a Ceph cluster
 
 
-### Photographer, Hyak Photography; Kennewick, wa — 2010–2016
+### Photographer, Hyak Photography; Kennewick, WA — 2010–2016
 * Awarded Silver Award of Excellence from Wedding and Portrait Photographers International – Awarded to approximately 1,000 photographers worldwide in previous 25 years
 * Managed AWS infrastructure and full-stack development to deliver terabytes of photos to clients and editors.
 
