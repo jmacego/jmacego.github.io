@@ -4,6 +4,11 @@ title: 'Keybase - Identity Verification and Encrypted Communications for the Mas
 description: "Easy to use, relatively secure, open-source encryption"
 categories: [instant messaging, crypto, security, fileshare]
 date: 2018-06-27 19:13 -700
+image:
+  path: /assets/images/posts/1920px-Keybase_logo_official.svg.png
+  alt: Bootstrap4 Logo
+  credit_text: Keybase
+  credit_link: "https://github.com/keybase/client/blob/master/media/logos/keybase_logo_official.ai"
 ---
 How do you know that that person you need to message on Slack, Facebook, LinkedIn, Twitter, etc. is who they say they are? How do you know who is sending you that file and if you should trust them? How do you guarantee that the message you send is not being intercepted in transit?
 
