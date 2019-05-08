@@ -4,6 +4,9 @@ title: 'Zerotier - Quick set up secure SDWAN solution'
 description: "Connect to all of your Linux, Mac, Windows, Android, and iOS devices wherever they are"
 categories: [sdwan, crypto, raspberry pi]
 date: 2018-06-20 11:02 -1000
+image:
+image_credit_text:
+image_credit_link:
 ---
 I have devices scattered about, mostly Raspberry Pis as well as my laptop, phone, GCE and AWS instances, and instances with various VM providers.
 

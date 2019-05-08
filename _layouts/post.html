@@ -1,12 +1,22 @@
 ---
 layout: default
 ---
-	<h1>{{ page.title }}</h1>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col">
+      	<h1>{{ page.title }}</h1>
+        <img src="{{ page.image['path'] }}" style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 400px">
 
-	{{ content }}
-
-	    <div class="highlighter-rouge"><div class="highlight" style="border-radius:8px; background-color:#3A3C42;padding:20px">
-          <img src="{{ "/assets/images/jmac-profile.jpg" | absolute_url }}" style="float:left; margin-right:20px; border-radius:50%; border: 4px solid #ddd; box-shadow:0 0 2px 1px #ddd; width:100px; height:100px">
-          <strong style="color: #d0d0d0">About John</strong><br>
-          This is my website, so you'll see this on most posts. This is also a really awkward photo of me I took a couple of years ago when I thought I needed a more professional profile photo. If you'd like to know more I have an <a href="{{ "/about"  | absolute_url }}" style="color: #d0d0d0;text-decoration:underline">About Me</a> section. I think it's funny.
-        </div></div>
+      	{{ content }}
+      </div>
+    </div>
+    <div class="row justify-content-md-center text-white rounded bg-dark row d-flex flex-wrap align-items-center">
+      <div class="col-md-auto">
+        <img src="{{ '/assets/images/jmac-profile.jpg' | absolute_url }}" style="border-radius:50%; border: 4px solid #ddd; box-shadow:0 0 2px 1px #ddd; width:100px; height:100px">
+      </div>
+      <div class="col">
+        <p class="lead">About John</p>
+        <p>This is my website, so you'll see this on most posts. This is also a really awkward photo of me I took a couple of years ago when I thought I needed a more professional profile photo. If you'd like to know more I have an <a href="{{ '/about'  | absolute_url }}">About Me</a> section. I think it's funny.</p>
+      </div>
+    </div>
+  </div>

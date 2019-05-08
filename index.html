@@ -2,33 +2,50 @@
 layout: page
 title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitement, and more!
 ---
-<h1>Welcome to the new site</h1>
-<p>Not sure what will go here yet. Maybe something. I've mostly just missed having something at this domain.
-</p>
-
-<p>I do have a couple of posts up as well as a couple of partly completed projects. Links are in the header.
-</p>
-<h2>Most Recent Post:</h2>
-	  {% assign post = site.posts.first %}
-      <h3><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-      {% if post.categories != "" and post.categories != nil and post.categories != blank %}
-        {% for category in post.categories %}
-          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
-        {% endfor %}
-      {% endif %}
-     <p>{{- post.excerpt -}}</p>
-     <h4>Continue reading <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-
-<h2>Most Recent Project:</h2>
-  {% assign sorted = site.projects | sort: 'date' | reverse %}
-  {% assign project = sorted.first %}
-    <h3><a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h3>
-      {% if project.categories != "" and project.categories != nil and project.categories != blank %}
-      <p>Categories:
-        {% for category in project.categories %}
-        <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
-        {% endfor %}
-      </p>
-      {% endif %}
-      <p>{{- project.excerpt -}}</p>
-    <h4>Continue reading about <a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></h4>
+<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+  <div class="row">
+    <div class="col-md-6 px-0">
+      {% assign post = site.posts[0] %}
+      <h1 class="display-4 font-italic">{{ post.title }}</h1>
+      <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
+      <p class="lead my-3">{{- post.excerpt -}}</p>
+      <p class="lead mb-0"><a href="{{ post.url }}" title="{{ post.title }}" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+    <div class="col-md-6 px-0" style="height: 100%; width: 100%">
+      <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}">
+    </div>
+  </div>
+</div>
+<div class="row mb-2">
+  <div class="col-md-6 px-0">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong><a class="d-inline-block mb-2 text-primary" href='{{ "/blog"  | absolute_url }}'>Posts</a></strong>
+        {% assign post = site.posts[1] %}
+        <h3 style="font-size:1.5rem" class="mb-0">{{ post.title }}</h3>
+        <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
+        <p class="mb-auto">{{- post.excerpt -}}</p>
+        <a class="stretched-link" href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
+      </div>
+      <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
+        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 px-0">
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong><a class="d-inline-block mb-2 text-success" href='{{ "/projects"  | absolute_url }}'>Projects</a></strong>
+        {% assign sorted = site.projects | sort: 'date' | reverse %}
+        {% assign project = sorted.first %}
+        <h3 style="font-size:1.5rem" class="mb-0">{{ project.title }}</h3>
+        {% if project.date != "" and project.date != nil and project.date != blank %}<div class="mb-1 text-muted">{{ project.date | date_to_string }}</div>{% endif %}
+       <p class="mb-auto">{{- project.excerpt -}}</p>
+       <a class="stretched-link" href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
+      </div>
+      <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
+        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ project.image['path'] }}">
+      </div>
+    </div>
+  </div>
+</div>
