@@ -2,7 +2,7 @@
 title: CCDE Written - First Try
 layout: post
 image:
-  path: http://localhost:4000/assets/images/posts/nick-morrison-325805-unsplash.jpg
+  path: /assets/images/posts/nick-morrison-325805-unsplash.jpg
   file: nick-morrison-325805-unsplash.jpg
   alt: Notebook and Pencil
   credit_text: Nick Morrison
