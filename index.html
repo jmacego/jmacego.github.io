@@ -26,10 +26,10 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
         <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
         <p class="mb-auto">{{- post.excerpt -}}</p>
         <a class="stretched-link" href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
-      </div>
+      </div>{% if post.image %}
       <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
         <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}">
-      </div>
+      </div>{% endif %}
     </div>
   </div>
   <div class="col-md-6 px-0">
@@ -42,10 +42,10 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
         {% if project.date != "" and project.date != nil and project.date != blank %}<div class="mb-1 text-muted">{{ project.date | date_to_string }}</div>{% endif %}
        <p class="mb-auto">{{- project.excerpt -}}</p>
        <a class="stretched-link" href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
-      </div>
+      </div>{% if project.image %}
       <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
         <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ project.image['path'] }}">
-      </div>
+      </div>{% endif %}
     </div>
   </div>
 </div>
