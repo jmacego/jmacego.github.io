@@ -4,7 +4,7 @@ title: post
 layout: post
 categories: [$2]
 image:
-  file: $3
+  path: $3
   alt: $4
   credit_text: $5
   credit_link: $6
