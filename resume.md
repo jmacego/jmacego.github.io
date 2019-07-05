@@ -87,6 +87,7 @@ Cisco certified with over twenty years’ experience and an exceptional ability 
 ## Certification
 Cisco Certified Network Associate (CCNA) — Routing & Switching   
 Cisco Certified Design Associate (CCDA)
+Certified Meraki Network Operator (CMNO)
 
 ## EDUCATION
 Columbia Basin College; Pasco, WA   
