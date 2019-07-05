@@ -4,13 +4,13 @@ title: Resume
 ---
 # John MacDonald  -- Network Engineer
 
-[PDF Version](/assets/files/john-macdonald-resume.pdf)
+[PDF Version](/assets/files/john-macdonald-resume.pdf) (Out of date, not currently seeking offers)
 
 [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
-Playa Vista, Los Angeles, CA  \|  509-205-1673  \|  john at this domain
+North Hollywood, CA  \|  509-205-1673  \|  john at this domain
 
 ## Professional Summary
-Cisco certified with fifteen years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to build and maintain user-friendly networks of any size. Strong background in a variety of programming languages and technologies. Seeking the opportunity to be an asset to a company and fellow coworkers. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required.
+Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required. Working on Cisco Certified Design Expert (CCDE) certification with a vague end date in mind.
 
 ## Core Qualifications
 * Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
@@ -23,9 +23,11 @@ Cisco certified with fifteen years’ experience and an exceptional ability to b
 ## Experience
 
 ### Senior Network Engineer, Walt Disney MPP; Burbank, CA — 2019-Present
-* Just getting started here!
+* Deploy Palo Alto HA clusters, Arista MLAG/VRRP, and Juniper Access switches
+* Ansible Network Automation for configuration and verification
+* Over 45,000 lines of Python Automation code written
 * Certified Meraki Network Operator (Don't laugh, we've got a bunch of remote sites, Meraki isn't a terrible choice).
-* Getting started moving into Azure, deploying Data Boxes, ExpressRoutes, etc.
+* Azure cloud networking, deploying Data Boxes, ExpressRoutes, etc.
 * Interact with a large number of vendors and internal divisions
 
 ### Network Engineer, Sohonet, inc; Los Angeles, CA — 2017-2019
@@ -83,8 +85,9 @@ Cisco certified with fifteen years’ experience and an exceptional ability to b
 
 
 ## Certification
-Cisco Certified Network Associate (CCNA) Routing & Switching
+Cisco Certified Network Associate (CCNA) — Routing & Switching   
+Cisco Certified Design Associate (CCDA)
 
 ## EDUCATION
-Columbia Basin College; Pasco, WA
+Columbia Basin College; Pasco, WA   
 Associates of Arts and Sciences — 2006
