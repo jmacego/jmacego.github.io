@@ -2,6 +2,11 @@
 layout: post
 title: 'First Post!'
 date: 2018-06-16 11:02 -0700
+image:
+  path: /assets/images/jmac-at-jefferson-airport.jpg
+  alt: John and a plane
+  credit_text: John MacDonald
+  credit_link: "https://www.jmaclabs.com"
 author: jmacego
 ---
 This is definitely a first post.

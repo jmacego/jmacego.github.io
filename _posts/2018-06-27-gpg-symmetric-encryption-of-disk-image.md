@@ -2,6 +2,11 @@
 title: GPG Symmetric Encryption of Disk Image
 layout: post
 date: 2018-06-29 19:20 -0700
+image:
+  path: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg
+  alt: Laptop, Book, Phone in Chains
+  credit_text: Pixabay
+  credit_link: "https://www.pexels.com/@pixabay"
 author: jmacego
 ---
 I like to tinker with encryption, not because I have any real use-case for it, but because I find the entire subject enjoyable.
