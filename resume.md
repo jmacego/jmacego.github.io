@@ -85,8 +85,9 @@ Cisco certified with over twenty years’ experience and an exceptional ability 
 
 
 ## Certification
+Juniper Networks Certified Design Associate (JNCDA)
+Cisco Certified Specialist: Enterprise Design (formerly known as CCDP)
 Cisco Certified Network Associate (CCNA) — Routing & Switching   
-Cisco Certified Design Associate (CCDA)   
 Certified Meraki Network Operator (CMNO)   
 
 ## EDUCATION
