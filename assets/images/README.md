@@ -19,5 +19,6 @@ port install imagemagick
 
 ## Running Resizer.sh
 ```
-./resizer.sh
+cd ~/git/jmacego.github.io/assets/images/posts/learning_series/
+../../resizer.sh
 ```
