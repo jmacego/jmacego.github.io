@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 ---
-# John MacDonald  -- Network Engineer
+# John MacDonald -- Network Engineer
 
 [PDF Version](/assets/files/john-macdonald-resume.pdf) (Out of date, not currently seeking offers)
 
