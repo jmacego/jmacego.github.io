@@ -4,8 +4,8 @@ title: JMaclabs.com - Projects, Python, Ruby, BGP, MPLS, Vacuum Tubes, Excitemen
 ---
 <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
   <div class="row">
-    <div class="col{% if post.image %}-md-6{% endif %} px-0">
-      {% assign post = site.posts[0] %}
+    {% assign post = site.posts[0] %}
+   <div class="col{% if post.image %}-md-6{% endif %} px-0">
       <h1 class="display-4 font-italic">{{ post.title }}</h1>
       <div class="mb-1 text-muted">{{ post.date | date_to_string }}</div>
       <p class="lead my-3">{{- post.excerpt -}}</p>
