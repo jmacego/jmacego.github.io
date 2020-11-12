@@ -10,19 +10,25 @@ title: Resume
 North Hollywood, CA  \|  509-205-1673  \|  john at this domain
 
 ## Professional Summary
-Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required. Working on Cisco Certified Design Expert (CCDE) certification with a vague end date in mind.
+Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Passed Cisco Certified Internetwork Expert (CCIE) or Service Provider written on a bet.
 
 ## Core Qualifications
 * Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
 * Experience with a variety of Routing & Switching protocols including OSPF, EIGRP, RIP, BGP, VPNs, MPLS, VLANs, etherchannel LAGs, and VTP
-* Capable of training other employees in use of networks and software
-* In-depth understanding of multiple operating systems (Linux, Windows, OSX)
+* Multi-vendor experience, Juniper, Arista, Cisco, Brocade, Palo Alto, Fortinet, MRV, and more
 * Experience working in: Perl, Python, Ruby, C, JavaScript
 * Excellent public speaking and presentation skills
 
 ## Experience
+### Staff Network Engineer, Walt Disney Studios; Burbank, CA — 2019-Present
+* Patent pending on machine learning techniques for network modeling
+* Design and implement network solutions for movie productions
+* Design and extend EVPN/VXLAN Datacenter fabric
+* MPLS network design with Juniper MX/PTX core
+* Participate as Studio Network team envoy to Motion Picture Production (MPP) Technology VP/Management Stand-Up meetings
+* Designed regional failover for new Internet Edge infrastructure
 
-### Senior Network Engineer, Walt Disney MPP; Burbank, CA — 2019-Present
+### Senior Network Engineer, Walt Disney MPP; Burbank, CA — 2019
 * Deploy Palo Alto HA clusters, Arista MLAG/VRRP, and Juniper Access switches
 * Ansible Network Automation for configuration and verification
 * Over 45,000 lines of Python Automation code written
