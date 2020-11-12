@@ -2,9 +2,9 @@
 layout: page
 title: Resume
 ---
-# John MacDonald -- Network Engineer
+# John MacDonald -- Network Architect
 
-[PDF Version](/assets/files/john-macdonald-resume.pdf) (Out of date, not currently seeking offers)
+[PDF Version] (Very Out of date, not currently seeking offers)
 
 [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
 North Hollywood, CA  \|  509-205-1673  \|  john at this domain
