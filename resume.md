@@ -10,7 +10,7 @@ title: Resume
 North Hollywood, CA  \|  509-205-1673  \|  john at this domain
 
 ## Professional Summary
-Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Passed Cisco Certified Internetwork Expert (CCIE) or Service Provider written on a bet.
+Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Passed Cisco Certified Internetwork Expert (CCIE) Service Provider written on a bet in early 2020.
 
 ## Core Qualifications
 * Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
