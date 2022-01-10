@@ -65,10 +65,11 @@ Cross-Functional Collaboration | Relationship Building | Team Management & Mento
 EVPN/VxLAN | Global BGP & MPLS Architecture | Data Center | Infrastructure Automation | Python | Switches: Cisco (Nexus, Catalyst, ASR , Juniper (MX & QFX), & Arista DCS
 
 ## Certification
-Juniper Networks Certified Design Associate (JNCDA)
-Cisco Certified Specialist: Enterprise Design (formerly known as CCDP)
-Cisco Certified Network Associate (CCNA) — Routing & Switching   
-Certified Meraki Network Operator (CMNO)   
+* Cisco Certified Specialist – Enterprise Design (CCDP) | Cisco — Received 2020
+* Cisco Certified Internetwork Expert CCIE) Service Provider - Written | Cisco — Received 2020 [pending practical... passed on a lunch bet in March 2020 just in time for all of the testing centers to close]
+* Cisco Certified Network Associate (CCNA) Routing & Switching | Cisco — Received 2018
+* Juniper Networks Certified Design Associate (JNCDA) | Juniper — Received 2020
+* Certified Meraki Network Operator (CMNO) | Cisco — Received 2019 
 
 ## EDUCATION
 Columbia Basin College; Pasco, WA   
