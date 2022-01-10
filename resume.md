@@ -2,88 +2,72 @@
 layout: page
 title: Resume
 ---
-# John MacDonald  -- Network Engineer
+# John MacDonald — Network Architect
 
 [PDF Version](/assets/files/john-macdonald-resume.pdf)
 
 [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
-Playa Vista, Los Angeles, CA  \|  509-205-1673  \|  john at this domain
+Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
-## Professional Summary
-Cisco certified with fifteen years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to build and maintain user-friendly networks of any size. Strong background in a variety of programming languages and technologies. Seeking the opportunity to be an asset to a company and fellow coworkers. Able to achieve Cisco Certified Internetwork Expert (CCIE) Routing and Switching or Service Provider certifications on relatively short notice if required.
+### NETWORK DESIGN & DEPLOYMENT — TECHNOLOGY INFRASTRUCTURE — LEADERSHIP & COMMUNICATION
+## Summary of Qualifications
+*Award-winning & innovative network architect* with 25 years of experience in dynamic team management, engineering, software improvement, and development experience who designs creative solutions to deep problems. *Curious & motivated self-starter* who maintains a pulse on industry trends, seeks to optimize internal processes, and drives both the development and enhancement of technologies to enable business unit capability needs. *Proactive & collaborative* thought partner able to effectively lead cross-functional teams to achieve goals, present data and recommendations to executives, and foster trusting relationships between all stakeholders.
 
-## Core Qualifications
-* Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
-* Experience with a variety of Routing & Switching protocols including OSPF, EIGRP, RIP, BGP, VPNs, MPLS, VLANs, etherchannel LAGs, and VTP
-* Capable of training other employees in use of networks and software
-* In-depth understanding of multiple operating systems (Linux, Windows, OSX)
-* Experience working in: Perl, Python, Ruby, C, JavaScript
-* Excellent public speaking and presentation skills
+### Key Career Achievement
+Earned *Disney Inventor Award* from Walt Disney Studios in October 2021 for developing algorithms and writing front-end code for applying machine learning to experimental datasets to improve file transfer times
 
-## Experience
+## Professional Experience
 
-### Senior Network Engineer, Walt Disney MPP; Burbank, CA — 2019-Present
-* Just getting started here!
-* Certified Meraki Network Operator (Don't laugh, we've got a bunch of remote sites, Meraki isn't a terrible choice).
-* Getting started moving into Azure, deploying Data Boxes, ExpressRoutes, etc.
-* Interact with a large number of vendors and internal divisions
+### Walt Disney Studios | Burbank, CA
+#### STAFF NETWORK ENGINEER	— October 2019 - Present
+Championed escalation support by participating in on-call rotation with Network Reliability and Implementation team. Integrated automation tools from previous position into current team’s Ansible Tower infrastructure.
+* Architected the Motion Pictures Production Avid Editorial in the Cloud project in collaboration with Avid and Microsoft – ExpressRoutes, VNET Peerings, and IPSec mesh, techniques for network throughput and performance modeling of the design solutions (patent pending)
+* Slashed 30 engineer hours per show by developing Ansible Tower automation for three multi-tenant sites, allowing team to meet challenging deadlines and support 7x increase in content production for 2021
+* Resolved continual outages caused by G.ARP issue Dell EMC Isilon network stack, which previously created interoperability issues with Juniper EVPN RPD that cost three months of deliveries
 
-### Network Engineer, Sohonet, inc; Los Angeles, CA — 2017-2019
+#### SENIOR NETWORK ENGINEER — January 2019 – October 2019
+Delivered 15+ reliable and secure networks for film production sites on time. Evaluated new software and hardware technologies for network automation as well as logging and monitoring platforms.
+* Deployed ~30 IPSec tunnels between Azure, AWS, Palo Alto, and Meraki devices with BGP routing
+* Developed network and subnet design web-based automation software in Python capable of using flexible starting parameters to produce deliverables, such as subnets, VLAN numbers, and device IP assignments to engineering via IPAM API integration and executives via Excel reporting
+* Built Mac and Windows GUI software with Python 2.7 and 3.x compatibility to automate production workflows for VFX and camera shot ingest, saving hundreds of labor hours 
+* Mentored and trained two engineers on networking, automation, and coding best practices
+
+### Sohonet | Marina Del Ray, CA
+#### NETWORK ENGINEER — March 2017 – January 2019
+Managed domestic networking requests to design and implement customer both MPLS and BGP solutions at Internet Exchanges; partnered with large-scale companies, including Apple, Google, and Amazon.
+* Assembled MPLS solutions for L3VPN, VLL/EoMPLS/VPWS/pseudowire, and VPLS/l2vpns to match global and Metro Ethernet service provider needs
+* Executed and maintained CWDM/DWDM, wavelength physical infrastructure, and logical circuits across four continents and dozens of POPs
+* Deployed firewalls and SSLVPNs between Palo Alto, Juniper SRX, Netscreen SSG, and Fortinet FortiGate
 * Spearheaded testing interoperability of Juniper and Brocade devices for core and aggregation use
-* Handled US BGP peering requests at Internet Exchanges as well as peerings with Apple, Google, Amazon, and others — designed and implemented customer BGP solutions in multi-site and multi-circuit scenarios
-* Assembled customer MPLS solutions for L3VPN, VLL/EoMPLS/VPWS/pseudowire, and VPLS/l2vpns
-* Worked on and set costs for large OSPF-based network with thousands of routes
-* Responsible for implementing and maintaining CWDM/DWDM and wavelength physical infrastructure and logical circuits across 4 continents and dozens of POPs
-* Provided level 2 and level 3 customer support to international media companies
-* Deployed and managed dozens of firewalls and SSLVPNs between Palo Alto, Juniper SRX, Netscreen SSG, Fortinet Fortigate
-* Mentored other engineers on BGP, MPLS, and optical network design and solutions
 
-### Network Engineer, Website Management Systems; Las Vegas, NV — 2016–2017
-* Decreased telephone costs by nearly 50% by switching from traditional PRI-based phone system to VoIP
-* Delivered excellent voice call quality through QoS with LLQ with DSCP tagging from Cisco compatible phones and Cisco Catalyst switches
-* Increased network reliability to 99.99% by architecting a Cisco network with redundant VLAN trunks using EtherChannel LAGs: switch-switch and switch-server
-* Optimized network routing by deploying OSPF to reduce man-hours previously involved in static routing
-* Reduced costs further by negotiating contracts with internet service providers
-* Maximized server availability to nearly 100% by deploying in-house OpenStack Cloud
-* Improved data redundancy of all files with a Ceph cluster
+### Website Management Systems | Las Vegas, NV
+#### NETWORK ANALYST	April 2016 – March 2017
+Optimized network routing by deploying OSPF to reduce labor hours previously involved in static routing. Negotiated contracts with internet service providers, resulting in lower costs.
+* Decreased telephone costs by 50% by switching from traditional PRI-based phone system to VoIP
+* Boosted network reliability to 99.99% in utilizing fully redundant Cisco architecture; improved voice-call quality through QoS with LLQ with DSCP tagging from Cisco-compatible phones and catalyst switches
 
+### Photographer | Hyak Photography | Kennewick, WA — 2010 – 2016
+Directed independent contractors, including photographers, image editors, hair/makeup/wardrobe stylists, and assistants. Managed AWS infrastructure and full-stack development to deliver terabytes of pictures to clients and editors. Earned 2014 Silver Award of Excellence from Wedding & Portrait Photographers International.
 
-### Photographer, Hyak Photography; Kennewick, WA — 2010–2016
-* Awarded Silver Award of Excellence from Wedding and Portrait Photographers International – Awarded to approximately 1,000 photographers worldwide in previous 25 years
-* Managed AWS infrastructure and full-stack development to deliver terabytes of photos to clients and editors.
+### Manager | Sheep's Clothing | Kennewick, WA — 2010 –  2016
+Oversaw vendor management and procurement by building relationships with sales representatives and manufacturers. Supervised 10-person team of retail employees during operations. Achieved tenfold increase in revenue over six years.
 
+### TECHNICAL MANAGER | Hyakdev.com LLC | Snoqualmie Pass, WA — 2006 – 2010
+Led 6-person team of network, systems, and support engineers while working in a mostly remote environment. Increased volunteer support for NGOs by deploying Wi-Fi between campuses and dorms in Tanzania, East Africa. Maximized employee capabilities and reduced costs by deploying VoIP phone system to allow call center employees to work from home.
 
-
-### Consultant, HyakDev.com, LLC; Snoqualmie Pass, WA — 2006–2010
-* Optimized networks and IT infrastructure for dozens of companies on time and under budget
-* Delivered WIFI access to medium sized condominiums
-* Increased volunteer support for NGOs by deploying WIFI networking between campuses and dorms in Tanzania, East Africa.
-* Maximized employee capabilities and reduced costs by deploying VoIP phone system to allow call center employees to work from home
-* Consistently delivered solutions for customers that other consulting firms were unable to provide
-
-### System Admin, White Dog Media; Henderson, NV — 2003–2005
-* Deployed scalable networks, managed servers
-* Full stack development for both internal use and client sites. HTML, CSS, Perl, and Python.
-
-
-### Network Engineer, Metrotime; Ft Worth, TX — 2002–2003
-* Generated additional revenue for the company by increasing product offerings
-* Worked with a small team deploying local and large-scale wireless networks
-
-
-### System Administrator, 5GuysTech LLC; Poulsbo, WA — 1998-2002
-* Designed and installed network in renovated building
-* Administered RedHat and Debian Linux servers
-* Responsible for administration, set up, and automation of all IT infrastructure
-
-
-### Co-Founder, PowerSurge Tech; Cedar Rapids, IA — 1995-1997
-* Software developer and system administrator. Developed one of the first free transparent pixel web analytics packages. Initially brought on board for automation of BIND DNS set up.
-* Delivered decreased costs and increased offerings by introducing Red Hat Linux in addition to Windows NT servers
-
+## Areas of Expertise
+### KEY SKILLS
+Network Architecture | Technology Engineering & Deployment | Development Experience | Cloud Network Solutions | Project Management | Process Improvements | Troubleshooting | Customer Service
+### LEADERSHIP
+Cross-Functional Collaboration | Relationship Building | Team Management & Mentorship | Presentations
+### TECHNICAL
+EVPN/VxLAN | Global BGP & MPLS Architecture | Data Center | Infrastructure Automation | Python | Switches: Cisco (Nexus, Catalyst, ASR , Juniper (MX & QFX), & Arista DCS
 
 ## Certification
-Cisco Certified Network Associate (CCNA) Routing & Switching
+Cisco Certified Specialist – Enterprise Design (CCDP) | Cisco — Received 2020\
+CCIE Service Provider - Written | Cisco — Received 2020\
+CCNA Routing & Switching | Cisco — Received 2018\
+JNCDA | Juniper — Received 2020
 
 ## EDUCATION
 Columbia Basin College; Pasco, WA
