@@ -2,45 +2,12 @@
 layout: page
 title: Resume
 ---
-<<<<<<< HEAD
-# John MacDonald -- Network Architect
-=======
-# John MacDonald — Network Architect
->>>>>>> resume_update
 
-[PDF Version] (Very Out of date, not currently seeking offers)
+# John MacDonald — Network Architect
+
+[PDF Version](/assets/files/john-macdonald-resume.pdf)
 
 [LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
-<<<<<<< HEAD
-North Hollywood, CA  \|  509-205-1673  \|  john at this domain
-
-## Professional Summary
-Cisco certified with over twenty years’ experience and an exceptional ability to bring creative solutions to deep problems. Ability to design, build and maintain enterprise and service provider networks. Strong background in a variety of programming languages and technologies. Passed Cisco Certified Internetwork Expert (CCIE) Service Provider written on a bet in early 2020.
-
-## Core Qualifications
-* Knowledgeable of routing and switching, the OSI model (but remember TCP/IP is based on the 4-layer DoD model), TCP/IP, and Cisco networks
-* Experience with a variety of Routing & Switching protocols including OSPF, EIGRP, RIP, BGP, VPNs, MPLS, VLANs, etherchannel LAGs, and VTP
-* Multi-vendor experience, Juniper, Arista, Cisco, Brocade, Palo Alto, Fortinet, MRV, and more
-* Experience working in: Perl, Python, Ruby, C, JavaScript
-* Excellent public speaking and presentation skills
-
-## Experience
-### Staff Network Engineer, Walt Disney Studios; Burbank, CA — 2019-Present
-* Patent pending on machine learning techniques for network modeling
-* Design and implement network solutions for movie productions
-* Design and extend EVPN/VXLAN Datacenter fabric
-* MPLS network design with Juniper MX/PTX core
-* Participate as Studio Network team envoy to Motion Picture Production (MPP) Technology VP/Management Stand-Up meetings
-* Designed regional failover for new Internet Edge infrastructure
-
-### Senior Network Engineer, Walt Disney MPP; Burbank, CA — 2019
-* Deploy Palo Alto HA clusters, Arista MLAG/VRRP, and Juniper Access switches
-* Ansible Network Automation for configuration and verification
-* Over 45,000 lines of Python Automation code written
-* Certified Meraki Network Operator (Don't laugh, we've got a bunch of remote sites, Meraki isn't a terrible choice).
-* Azure cloud networking, deploying Data Boxes, ExpressRoutes, etc.
-* Interact with a large number of vendors and internal divisions
-=======
 Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ### NETWORK DESIGN & DEPLOYMENT — TECHNOLOGY INFRASTRUCTURE — LEADERSHIP & COMMUNICATION
@@ -58,7 +25,6 @@ Championed escalation support by participating in on-call rotation with Network 
 * Architected the Motion Pictures Production Avid Editorial in the Cloud project in collaboration with Avid and Microsoft – ExpressRoutes, VNET Peerings, and IPSec mesh, techniques for network throughput and performance modeling of the design solutions (patent pending)
 * Slashed 30 engineer hours per show by developing Ansible Tower automation for three multi-tenant sites, allowing team to meet challenging deadlines and support 7x increase in content production for 2021
 * Resolved continual outages caused by G.ARP issue Dell EMC Isilon network stack, which previously created interoperability issues with Juniper EVPN RPD that cost three months of deliveries
->>>>>>> resume_update
 
 #### SENIOR NETWORK ENGINEER — January 2019 – October 2019
 Delivered 15+ reliable and secure networks for film production sites on time. Evaluated new software and hardware technologies for network automation as well as logging and monitoring platforms.
