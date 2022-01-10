@@ -7,8 +7,8 @@ title: Resume
 
 [PDF Version](/assets/files/john-macdonald-resume.pdf)
 
-[LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \\| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
-Los Angeles, CA  \\|  509-205-1673  \\|  john at this domain
+[LinkedIn](http://www.linkedin.com/in/jmacego "Connecting Professionals") \| Verify Me or Encrypt Stuff: [Public Key](/pubkey "GPG Public Key") OR [Keybase](https://keybase.io/jmacego "Secure Communications Platform")  
+Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ### NETWORK DESIGN & DEPLOYMENT — TECHNOLOGY INFRASTRUCTURE — LEADERSHIP & COMMUNICATION
 ## Summary of Qualifications
