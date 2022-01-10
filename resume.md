@@ -12,7 +12,7 @@ Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ### NETWORK DESIGN & DEPLOYMENT — TECHNOLOGY INFRASTRUCTURE — LEADERSHIP & COMMUNICATION
 ## Summary of Qualifications
-*Award-winning & innovative network architect* with 25 years of experience in dynamic team management, engineering, software improvement, and development experience who designs creative solutions to deep problems. *Curious & motivated self-starter* who maintains a pulse on industry trends, seeks to optimize internal processes, and drives both the development and enhancement of technologies to enable business unit capability needs. *Proactive & collaborative* thought partner able to effectively lead cross-functional teams to achieve goals, present data and recommendations to executives, and foster trusting relationships between all stakeholders.
+**Award-winning & innovative network architect** with 25 years of experience in dynamic team management, engineering, software improvement, and development experience who designs creative solutions to deep problems. **Curious & motivated self-starter** who maintains a pulse on industry trends, seeks to optimize internal processes, and drives both the development and enhancement of technologies to enable business unit capability needs. **Proactive & collaborative** thought partner able to effectively lead cross-functional teams to achieve goals, present data and recommendations to executives, and foster trusting relationships between all stakeholders.
 
 ### Key Career Achievement
 Earned *Disney Inventor Award* from Walt Disney Studios in October 2021 for developing algorithms and writing front-end code for applying machine learning to experimental datasets to improve file transfer times
