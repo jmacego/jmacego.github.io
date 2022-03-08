@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-require 'em/pure_ruby'
+#require 'em/pure_ruby'
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-include-cache'
 gem 'jekyll-compose', group: [:jekyll_plugins]
