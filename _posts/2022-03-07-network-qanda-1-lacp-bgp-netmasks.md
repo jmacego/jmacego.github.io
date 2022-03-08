@@ -6,7 +6,7 @@ author: John MacDonald
 summary: 
 image:
   path: /assets/images/posts/youtube/first-network-qanda.png
-  alt: Heathkit Condenser Checker
+  alt: YouTube Video Clip
   credit_text: John MacDonald
   credit_link: "https://www.jmaclabs.com/"
 categories: [YouTube, JMacLabs, Networking, BGP, LACP, Netmask, CIDR]
