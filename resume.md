@@ -12,9 +12,9 @@ Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ### STRATEGIC LEADERSHIP
 <p align=center>
-VP, Engineering \| Senior Director, Operations \| Director, Cloud Infrastructure<br/>
-Cost Reduction \| Team Transformation \| Technology Advancement \| Uptime Improvement<br/>
-AI/ML Award Winning \| Technology Communications \| Change Agent
+VP, Engineering | Senior Director, Operations | Director, Cloud Infrastructure<br/>
+Cost Reduction | Team Transformation | Technology Advancement | Uptime Improvement<br/>
+AI/ML Award Winning | Technology Communications | Change Agent
 </p>
 
 ## Professional Experience
