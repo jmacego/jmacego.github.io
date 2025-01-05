@@ -11,9 +11,11 @@ title: Resume
 Los Angeles, CA  \|  509-205-1673  \|  john at this domain
 
 ### STRATEGIC LEADERSHIP
-VP, Engineering \| Senior Director, Operations \| Director, Cloud Infrastructure
-Cost Reduction \| Team Transformation \| Technology Advancement \| Uptime Improvement
+<p align=center>
+VP, Engineering \| Senior Director, Operations \| Director, Cloud Infrastructure<br/>
+Cost Reduction \| Team Transformation \| Technology Advancement \| Uptime Improvement<br/>
 AI/ML Award Winning \| Technology Communications \| Change Agent
+</p>
 
 ## Professional Experience
 ### Walt Disney Studios \| Burbank, CA (6+ years, 3 promotions)
