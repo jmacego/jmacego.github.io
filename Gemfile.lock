@@ -19,6 +19,9 @@ GEM
     base64 (0.3.0)
     benchmark (0.4.1)
     bigdecimal (3.2.3)
+    bundler-audit (0.9.2)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -294,6 +297,7 @@ GEM
     simpleidn (0.2.3)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    thor (1.4.0)
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
     tzinfo (2.0.6)
@@ -319,6 +323,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  bundler-audit
   faraday-retry
   github-pages
   jekyll-compose
