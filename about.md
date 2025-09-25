@@ -27,8 +27,7 @@ I’ve also been a **Cisco-certified engineer** and an **international award-win
 
 ### Find Me
 
-- [LinkedIn](https://www.linkedin.com/in/jmacego)  
-- Verify or encrypt: [Public Key](/pubkey) or [Keybase](https://keybase.io/jmacego)  
+- [LinkedIn](https://www.linkedin.com/in/jmacego)
 
 ---
 

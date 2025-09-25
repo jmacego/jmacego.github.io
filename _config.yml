@@ -1,6 +1,6 @@
 theme: jekyll-theme-modernist
 title: John MacDonald
-description: Awesome Network Engineer
+description: Networking, infrastructure, and automation leadership — EVPN/VXLAN, BGP/MPLS, reliability, and ops.
 permalink: /blog/:title
 twitter:
   username: jmacego
