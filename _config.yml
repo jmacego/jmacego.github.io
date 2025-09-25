@@ -53,3 +53,5 @@ plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-include-cache
+
+exclude: ["copilot.md", "markdown.md", "README.md"]
