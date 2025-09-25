@@ -11,6 +11,7 @@ image:
   credit_link: "https://www.jmaclabs.com/"
 categories: [YouTube, JMacLabs, Electronics, Soldering]
 tags: []
+published: false
 ---
 Coronavirus! Yeah, that's a thing right now. It's day 21 since I was asked to self-isolate and about 10 days since I was told I probably have it. So I've started a YouTube channel.
 

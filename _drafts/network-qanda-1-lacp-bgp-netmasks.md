@@ -11,7 +11,6 @@ image:
   credit_link: "https://www.jmaclabs.com/"
 categories: [YouTube, JMacLabs, Networking, BGP, LACP, Netmask, CIDR]
 tags: []
-published: false
 ---
 I've started a networking Q&A series! Check out the first video:
 

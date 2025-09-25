@@ -54,4 +54,15 @@ plugins:
   - jekyll-mentions
   - jekyll-include-cache
 
-exclude: ["copilot.md", "markdown.md", "README.md"]
+exclude: [
+  "copilot.md",
+  "markdown.md",
+  "README.md",
+  "vendor",
+  "vendor/**",
+  "vendor/bundle/**",
+  "node_modules",
+  "node_modules/**",
+  "tmp",
+  "log"
+]

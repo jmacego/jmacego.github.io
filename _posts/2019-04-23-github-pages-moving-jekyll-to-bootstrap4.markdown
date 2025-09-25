@@ -7,6 +7,7 @@ image:
   credit_text: Bootstrap Project
   credit_link: "http://www.getbootstrap.com"
 categories: []
+published: false
 ---
 Looking for more flexiblity in my layout for this website, which runs on GitHub Pages I started looking into adding Bootstrap for theming. I'd already changed most things pretty drastically, so there really wasn't a lot to do.
 <!--more-->
