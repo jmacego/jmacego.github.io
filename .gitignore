@@ -5,3 +5,5 @@ _site/
 .DS_Store
 ~*
 Thumbs.db
+vendor/
+.bundle/
