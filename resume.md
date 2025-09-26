@@ -6,7 +6,7 @@ permalink: /resume/
 
 # John MacDonald
 
-📧 john@jmaclabs.com | 🌐 [linkedin.com/in/jmacego](https://www.linkedin.com/in/jmacego) | 📍 Los Angeles, CA | 📞 509-205-1673
+🌐 [linkedin.com/in/jmacego](https://www.linkedin.com/in/jmacego) | 📍 Los Angeles, CA 
 
 ---
 
@@ -66,7 +66,7 @@ permalink: /resume/
 
 ### Sohonet Ltd. | Marina Del Rey, CA  
 **Network Engineer**  
-*Mar 2017 – Jan 2019*  
+*2017 – 2019*  
 
 - Designed MPLS and BGP solutions for global media customers.  
 - Partnered with Apple, Google, Amazon, and others on IX connectivity.  
@@ -78,7 +78,7 @@ permalink: /resume/
 
 ### Website Management Systems | Las Vegas, NV  
 **Software Developer / Network Analyst**  
-*Apr 2016 – Mar 2017*  
+*2016 – 2017*  
 
 - Rebooted tech career with focus on DevOps and Agile.  
 - Developed software and networking solutions reigniting engineering passion.  
@@ -87,18 +87,25 @@ permalink: /resume/
 
 ### Sheep’s Clothing | Kennewick, WA  
 **Owner**  
-*Jun 2010 – Jul 2015*  
+*2010 – 2015*  
 
 - Increased revenue **10×** and successfully sold business.  
+
+---
+### President | Avitus Aviation Corp | Gig Harbor, WA
+***President***
+ *2001–2010*
+
+- Pilot & Aviation leasing operations, building skills in risk management, safety culture, and operational resilience.
 
 ---
 
 ### Earlier Roles  
 
-- **Owner | Hyakdev.com LLC | Snoqualmie Pass, WA** (2005–2010)  
-- **Partner | White Dog Media, LLC | Las Vegas, NV** (2001–2003)  
-- **Senior Partner | 5GuysTech.com, LLC | Seattle, WA** (1997–2001)  
-- **Co-Founder | PowerSurge Technologies, Inc. / FastServers.net | Cedar Rapids, IA** (1995–1996)  
+- Owner | Hyakdev.com LLC | Snoqualmie Pass, WA (2005–2010)  
+- Partner | White Dog Media, LLC | Las Vegas, NV (2001–2003)  
+- Senior Partner | 5GuysTech.com, LLC | Seattle, WA (1997–2001)  
+- Co-Founder | PowerSurge Technologies, Inc. / FastServers.net | Cedar Rapids, IA (1995–1996)  
 
 ---
 ## Summary of Qualifications
@@ -108,6 +115,7 @@ permalink: /resume/
 - Visionary strategist leveraging **AI/ML, automation, and Infrastructure as Code** to optimize cost, reliability, and scalability.  
 - Skilled leader in building high-performing, inclusive teams and aligning technology with business objectives.  
 - Proven record of delivering **uptime improvement, cost reduction, and measurable reliability gains** across global enterprises.  
+
 ---
 
 ## Awards & Certifications
