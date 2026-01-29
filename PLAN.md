@@ -8,20 +8,16 @@
 5. ~~Add HTML validation tooling (html-proofer in Gemfile).~~
 6. ~~Add CI workflow (.github/workflows/validate.yml).~~
 7. ~~Remove legacy copilot.md file.~~
+8. ~~Add validation commands and pre-commit hook instructions to AGENTS.md.~~
+9. ~~Fix uri gem CVE-2025-61594 vulnerability.~~
+10. ~~Fix missing alt attributes (post layout, homepage, project).~~
+11. ~~Fix anchor tag validation error in default layout.~~
 
 ## Completed Content Updates
-1. ~~Update resume.md with entrepreneurial focus:~~
-   - New headline: "Technology Leader & Serial Entrepreneur"
-   - Added Equivalent Smart Graphics role (Fractional CTO, Feb 2026)
-   - Disney end date: January 2026
-   - Expanded "Founded & Operated Companies" section
-   - Added consulting/advisory availability messaging
-2. ~~Update about.md with entrepreneurial positioning:~~
-   - Reframed as semi-retired entrepreneur running multiple ventures
-   - Added "Work With Me" section for consulting
-   - Highlighted entrepreneurial journey (5+ companies)
-3. ~~Update _config.yml site description for new positioning.~~
-4. ~~Update _config.yml exclude list.~~
+1. ~~Update resume.md with entrepreneurial focus.~~
+2. ~~Update about.md with entrepreneurial positioning.~~
+3. ~~Update _config.yml site description and add url.~~
+4. ~~Fix Keybase project alt text (was "Bootstrap4 Logo").~~
 
 ## Pending
 - Commit content changes (resume.md, about.md, _config.yml)
@@ -33,18 +29,36 @@ Missing image files referenced in posts:
 - `assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg` (referenced in gpg-symmetric-encryption post)
 - `assets/images/posts/git-name-interfaces-gist.png` (referenced in useful-networking-scripts post)
 
-Missing favicon/manifest files:
-- `/apple-touch-icon.png`
-- `/favicon-16x16.png`
-- `/favicon-32x32.png`
-- `/safari-pinned-tab.svg`
-- `/site.webmanifest`
+Missing favicon/manifest files (referenced in default layout at /assets/images/):
+- `apple-touch-icon.png`
+- `favicon-16x16.png`
+- `favicon-32x32.png`
+- `safari-pinned-tab.svg`
+- `site.webmanifest`
 
 Broken internal links (tag/category pages that don't exist):
-- `/blog/Anycast/`, `/blog/DNS/`, `/blog/arp/`, etc.
+- `/blog/Anycast/`, `/blog/DNS/`, `/blog/arp/`, `/blog/Learning%20Series/`, etc.
+
+HTTP links that could be HTTPS:
+- `http://keybase.pub`
+- `http://menari.eu`
+- `http://fpop.co/lxp5`
 
 Broken external link:
-- `safaribooksonline.com` (site defunct)
+- `safaribooksonline.com` (site defunct, in ccde-written-first-try post)
+
+## Validation Commands (Quick Reference)
+```bash
+# Full validation (run before committing)
+bundle exec jekyll build && bundle exec jekyll doctor && bundle exec htmlproofer ./_site --disable-external --allow-hash-href && bundle exec bundler-audit check
+
+# Individual commands
+bundle install                    # Install dependencies
+bundle exec jekyll serve          # Local dev server
+bundle exec jekyll build          # Build once
+bundle exec jekyll doctor         # Diagnostics
+bundle exec bundler-audit check   # Security audit
+```
 
 ## Key Facts
 - Disney last day: 1/30/2026
