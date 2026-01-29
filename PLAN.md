@@ -6,13 +6,13 @@
 - Remove outdated instruction files.
 
 ## Tasks
-1. Create AGENTS.md with project overview, conventions, and local build steps.
-2. Create .github/copilot-instructions.md referencing AGENTS.md.
-3. Remove legacy instruction files that duplicate guidance.
-4. Validate the repo has a clear, consistent instruction path.
-5. Update README with local build and validation steps.
-6. Update assets/images/README.md with safe resizer usage.
-7. Fix destructive image resizer script behavior.
+1. ~~Create AGENTS.md with project overview, conventions, and local build steps.~~
+2. ~~Create .github/copilot-instructions.md referencing AGENTS.md.~~
+3. ~~Remove legacy instruction files that duplicate guidance.~~
+4. ~~Validate the repo has a clear, consistent instruction path.~~
+5. ~~Update README with local build and validation steps.~~
+6. ~~Update assets/images/README.md with safe resizer usage.~~
+7. ~~Fix destructive image resizer script behavior.~~
 
 ## Status
 - AGENTS.md created.
