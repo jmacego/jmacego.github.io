@@ -30,6 +30,9 @@ Run these from the repo root:
 - Diagnostics: `bundle exec jekyll doctor`
 - Security check: `bundle exec bundler-audit check --update`
 
+## Validation & Linting
+- HTML checks: `bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href --assume-extension`
+
 ## Images (Required)
 - Store images under `assets/images/` and organize by topic.
 - Optimize images before commit using `assets/images/resizer.sh`.

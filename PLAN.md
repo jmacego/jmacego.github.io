@@ -24,3 +24,8 @@
 
 ## Notes
 - resizer.sh previously called an undefined variable and allowed running from assets/images. Now it validates ImageMagick, prevents running from the root assets/images folder, and uses the correct resmushit-cli path.
+
+## Addendum (Validation)
+1. ~~Add HTML validation tooling (html-proofer).~~
+2. ~~Add CI workflow for build, HTML checks, and bundler-audit.~~
+3. ~~Document validation commands in README and AGENTS.~~
