@@ -28,6 +28,24 @@
 - Verify Jekyll build works locally
 - Consider adding dedicated Services page (optional)
 
+## Content Issues to Address Later
+Missing image files referenced in posts:
+- `assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg` (referenced in gpg-symmetric-encryption post)
+- `assets/images/posts/git-name-interfaces-gist.png` (referenced in useful-networking-scripts post)
+
+Missing favicon/manifest files:
+- `/apple-touch-icon.png`
+- `/favicon-16x16.png`
+- `/favicon-32x32.png`
+- `/safari-pinned-tab.svg`
+- `/site.webmanifest`
+
+Broken internal links (tag/category pages that don't exist):
+- `/blog/Anycast/`, `/blog/DNS/`, `/blog/arp/`, etc.
+
+Broken external link:
+- `safaribooksonline.com` (site defunct)
+
 ## Key Facts
 - Disney last day: 1/30/2026
 - New role: Fractional CTO at Equivalent Smart Graphics (https://equivalentsvg.io)

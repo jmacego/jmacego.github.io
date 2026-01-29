@@ -6,7 +6,7 @@ categories: [instant messaging, crypto, security, fileshare]
 date: 2018-06-27 19:13 -700
 image:
   path: /assets/images/posts/1920px-Keybase_logo_official.svg.png
-  alt: Bootstrap4 Logo
+  alt: Keybase Logo
   credit_text: Keybase
   credit_link: "https://github.com/keybase/client/blob/master/media/logos/keybase_logo_official.ai"
 ---

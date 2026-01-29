@@ -14,7 +14,7 @@ title: John MacDonald — Networking, Infrastructure, and Automation
     {% if post.image %}
     <div class="col-md-6 px-0" style="height: 100%; width: 100%">
       <a href="{{ post.url }}"><img
-        style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}"></a>
+        style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}" alt="{{ post.image['alt'] | default: post.title }}"></a>
     </div>
     {% endif %}
   </div>
@@ -31,7 +31,7 @@ title: John MacDonald — Networking, Infrastructure, and Automation
         <a class="stretched-link" href="{{ post.url }}" title="{{ post.title }}">Continue reading {{ post.title }}</a>
       </div>{% if post.image %}
       <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
-        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}">
+        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ post.image['path'] }}" alt="{{ post.image['alt'] | default: post.title }}">
       </div>{% endif %}
     </div>
   </div>
@@ -47,7 +47,7 @@ title: John MacDonald — Networking, Infrastructure, and Automation
        <a class="stretched-link" href="{{ project.url }}" title="{{ project.title }}">Continue reading {{ project.title }}</a>
       </div>{% if project.image %}
       <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
-        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ project.image['path'] }}">
+        <img style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%" src="{{ project.image['path'] }}" alt="{{ project.image['alt'] | default: project.title }}">
       </div>{% endif %}
     </div>
   </div>
