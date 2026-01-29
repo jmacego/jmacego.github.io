@@ -53,7 +53,7 @@ This is actually fairly important. If you stop using a device, or if a social me
 Best practice is to manually go in and revoke the proof. It's simple and quick, and ***absolutely vital***.
 
 ### KBFS
-KBFS is an entire encrypted filesystem hosted on AWS. It's alpha, and free, so don't trust it for anything you can't afford to lose. I imagine the cloud-based services are where keybase will charge and make money in the future. Also note that this is broken into Private (just available to you), Team (just available to people in teams you select), and Public (exactly what it says, Keybase even publishes it online at [keybase.pub](http://keybase.pub)).
+KBFS is an entire encrypted filesystem hosted on AWS. It's alpha, and free, so don't trust it for anything you can't afford to lose. I imagine the cloud-based services are where keybase will charge and make money in the future. Also note that this is broken into Private (just available to you), Team (just available to people in teams you select), and Public (exactly what it says, Keybase even publishes it online at [keybase.pub](https://keybase.pub)).
 
 ### Git Storage
 Encrypted Git storage - Yup. Exactly what it says on the tin. Again, this is alpha and I expect them to charge at some point, but since Git is decentralized there is less risk of loss. This also is a heck of a lot better than git over KBFS or dropbox or any other automatically synced filesystems as it won'd do weird things if, say, you commit at the same time as someone else. ~~~shudder~~~

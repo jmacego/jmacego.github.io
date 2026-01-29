@@ -24,7 +24,7 @@ If you've ordered your SIM card with the claimed "free" service and are somewher
 ### Buying your SIM
 You want to buy the card directly from FreedomPOP, even if you can find it elsewhere. Activation is included when purchasing on their site, but not if you get it at Target, or Amazon, or elsewhere.
 
-Start at [FreedomPOP's shop website](http://fpop.co/lxp5 "Yes, this is an affiliate link, feel free to not use it if you prefer"). They didn't have any USB modems for sale when I bought my SIM cards, but do as of this writing, but the guide below only covers Huawei and may or may not be applicable. To get to the SIM cards click `Get Free Internet` which will take you to where the nightmares can begin.
+Start at [FreedomPOP's shop website](https://fpop.co/lxp5 "Yes, this is an affiliate link, feel free to not use it if you prefer"). They didn't have any USB modems for sale when I bought my SIM cards, but do as of this writing, but the guide below only covers Huawei and may or may not be applicable. To get to the SIM cards click `Get Free Internet` which will take you to where the nightmares can begin.
 
 To even get to pricing you have to enter contact details. I couldn't find any way around this. After entering details you are taken to a page to select your product, for the modem you want `3-in-1 SIM card` which will then let you pick your trial plan. Regardless of whether you pick the voice + text + data plan or the data only plan... you get a data only plan. If you were to think "Wow, this is so cool, I really want to use this on my phone!" ... don't. Calling or texting with FreedomPOP uses their proprietary VoIP app.
 

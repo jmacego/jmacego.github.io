@@ -7,7 +7,7 @@ date: 2018-06-20 11:02 -1000
 ---
 I have devices scattered about, mostly Raspberry Pis as well as my laptop, phone, GCE and AWS instances, and instances with various VM providers.
 
-I needed a way to connect to all of these with a minimum of effort, and [another engineer at work](http://menari.eu) suggested I try Zerotier.
+I needed a way to connect to all of these with a minimum of effort, and [another engineer at work](https://menari.eu) suggested I try Zerotier.
 
 You can get started with minimal effort, but you can also create amazing and wonderful complexity to meet a variety of needs.
 

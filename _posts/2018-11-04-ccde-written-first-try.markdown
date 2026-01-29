@@ -25,7 +25,7 @@ Unlike a lot of blogs I read, I didn't find there to be trick questions. In the 
 ### What I did to study
 3 weeks ago, on a whim (some of you know what the whim was) I watched a 9 hour bootcamp on INE for the last day of my 2 year subscription.
 
-2 weeks ago I pulled up the [INE blog post](https://blog.ine.com/2010/09/26/ccde-practical-exam-recommended-reading) that was referenced in the video series, got a [Safari Books Online](safaribooksonline.com) subscription renewal, and then added all of the books to a Playlist labeled "CCDE" and started reading them, cover to cover, in order.
+2 weeks ago I pulled up the [INE blog post](https://blog.ine.com/2010/09/26/ccde-practical-exam-recommended-reading) that was referenced in the video series, got a [Safari Books Online](https://www.oreilly.com/) subscription renewal, and then added all of the books to a Playlist labeled "CCDE" and started reading them, cover to cover, in order.
 
 1.5 weeks ago I remembered the INE Instructor's comment that the CCDE was basically "What would Russ [White] do?" and found a live lesson by Russ White and Alvaro Retana on routing and watched that.
 

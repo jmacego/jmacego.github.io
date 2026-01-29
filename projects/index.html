@@ -11,7 +11,7 @@ permalink: /projects/index.html
         {% if project.categories != "" and project.categories != nil and project.categories != blank %}
         <p class="blog-post-meta">Categories:
           {% for category in project.categories %}
-          <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+          {{ category }}{% unless forloop.last %}, {% endunless %}
           {% endfor %}
         </p>
         {% endif %}

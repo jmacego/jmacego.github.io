@@ -9,7 +9,7 @@ title: John MacDonald's Posts
         {% if post.categories != "" and post.categories != nil and post.categories != blank %}
           <p class="blog-post-meta">Categories:
             {% for category in post.categories %}
-              <a href="/blog/{{ category | slugize }}/"> {{ category }}</a>
+              {{ category }}{% unless forloop.last %}, {% endunless %}
             {% endfor %}
           </p>
         {% endif %}
