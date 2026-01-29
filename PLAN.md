@@ -1,31 +1,40 @@
-# Plan (Today)
+# Session Plan - January 29, 2026
 
-## Goals
-- Establish a single source of truth for agent/Copilot instructions.
-- Ensure local build and validation steps are documented.
-- Remove outdated instruction files.
+## Completed Infrastructure Tasks
+1. ~~Create AGENTS.md as single source of truth for agent instructions.~~
+2. ~~Add .github/copilot-instructions.md pointing to AGENTS.md.~~
+3. ~~Update README.md with build/validation commands.~~
+4. ~~Fix assets/images/resizer.sh (destructive bug and validation).~~
+5. ~~Add HTML validation tooling (html-proofer in Gemfile).~~
+6. ~~Add CI workflow (.github/workflows/validate.yml).~~
+7. ~~Remove legacy copilot.md file.~~
 
-## Tasks
-1. ~~Create AGENTS.md with project overview, conventions, and local build steps.~~
-2. ~~Create .github/copilot-instructions.md referencing AGENTS.md.~~
-3. ~~Remove legacy instruction files that duplicate guidance.~~
-4. ~~Validate the repo has a clear, consistent instruction path.~~
-5. ~~Update README with local build and validation steps.~~
-6. ~~Update assets/images/README.md with safe resizer usage.~~
-7. ~~Fix destructive image resizer script behavior.~~
+## Completed Content Updates
+1. ~~Update resume.md with entrepreneurial focus:~~
+   - New headline: "Technology Leader & Serial Entrepreneur"
+   - Added Equivalent Smart Graphics role (Fractional CTO, Feb 2026)
+   - Disney end date: January 2026
+   - Expanded "Founded & Operated Companies" section
+   - Added consulting/advisory availability messaging
+2. ~~Update about.md with entrepreneurial positioning:~~
+   - Reframed as semi-retired entrepreneur running multiple ventures
+   - Added "Work With Me" section for consulting
+   - Highlighted entrepreneurial journey (5+ companies)
+3. ~~Update _config.yml site description for new positioning.~~
+4. ~~Update _config.yml exclude list.~~
 
-## Status
-- AGENTS.md created.
-- Copilot instructions created.
-- Legacy instructions removed.
-- README updated with build/validation guidance.
-- Image resizer instructions corrected.
-- Image resizer script hardened and bug fixed.
+## Pending
+- Commit content changes (resume.md, about.md, _config.yml)
+- Verify Jekyll build works locally
+- Consider adding dedicated Services page (optional)
 
-## Notes
-- resizer.sh previously called an undefined variable and allowed running from assets/images. Now it validates ImageMagick, prevents running from the root assets/images folder, and uses the correct resmushit-cli path.
+## Key Facts
+- Disney last day: 1/30/2026
+- New role: Fractional CTO at Equivalent Smart Graphics (https://equivalentsvg.io)
+- Positioning: Semi-retired, running 4-5 companies, selective consulting
+- Focus areas: Leadership, AI/ML, Network Architecture
+- Companies to highlight: Sheep's Clothing, Avitus Aviation, Hyak Photography, 5GuysTech, PowerSurge/FastServers
 
-## Addendum (Validation)
-1. ~~Add HTML validation tooling (html-proofer).~~
-2. ~~Add CI workflow for build, HTML checks, and bundler-audit.~~
-3. ~~Document validation commands in README and AGENTS.~~
+## Do Not Commit
+- MacDonald_John_Resume_2025.10.02.docx
+- Updated LinkedIn Content_10.02.2025.docx

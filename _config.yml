@@ -1,6 +1,6 @@
 theme: jekyll-theme-modernist
 title: John MacDonald
-description: Networking, infrastructure, and automation leadership — EVPN/VXLAN, BGP/MPLS, reliability, and ops.
+description: Serial entrepreneur and technology leader. Fractional CTO, consulting, and advisory services in AI/ML, network architecture, and operational transformation.
 permalink: /blog/:title
 twitter:
   username: jmacego
@@ -55,7 +55,9 @@ plugins:
   - jekyll-include-cache
 
 exclude: [
-  "copilot.md",
+  "AGENTS.md",
+  "PLAN.md",
+  ".github",
   "markdown.md",
   "README.md",
   "vendor",

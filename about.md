@@ -5,42 +5,53 @@ title: About Me
 
 ## About Me
 
-I’ve always clicked on *About Me* pages, too — so thanks for stopping by.
+I've always clicked on *About Me* pages, too — so thanks for stopping by.
 
 ### Today
 
-I’m currently **Senior Manager, Network Engineering Operations at The Walt Disney Studios**, where I lead global-scale infrastructure, network engineering, and operational transformation. My work has delivered major reductions in downtime, multi-million-dollar cost savings, and the rollout of next-generation datacenter architecture.  
+I'm a **serial entrepreneur and technology leader** now semi-retired and running multiple ventures. After six years leading network operations at The Walt Disney Studios, I've returned to what I love most: building and operating my own companies while selectively advising others.
 
-Along the way I’ve also moved into the world of **AI and automation**. I’m an **inventor on U.S. Patent No. 12,360,789**, applying machine learning to optimize cloud networking file transfers, and recipient of the **Disney Inventor Award** for AI-driven network automation. These experiences gave me the skills and experience that I bring to consulting and advising organizations that need to modernize infrastructure, improve resilience, and turn around underperforming systems and teams.
+Currently I'm **Fractional CTO at Equivalent Smart Graphics**, an AI-powered accessible SVG solutions company. I'm also exploring new ventures and taking on select consulting engagements in **leadership, AI/ML, and network architecture**.
 
-### Recently
+I'm an **inventor on U.S. Patent No. 12,360,789**, applying machine learning to optimize cloud networking file transfers, and recipient of the **Disney Inventor Award** for AI-driven network automation.
 
-Professionally, I’ve spent 25+ years building, managing, and troubleshooting networks at scale. My career has spanned startups, international consulting, and global media networks. At Sohonet, I helped interconnect top film and media companies worldwide with BGP/MPLS solutions; at Disney, I’ve unified operations teams, integrated automation pipelines, and introduced AI/ML into production environments.  
+### The Entrepreneurial Journey
 
-I still enjoy getting hands-on with design and tools (yes, I’m one of those who actually enjoys working in Visio). You’ll find some helper scripts and snippets on my [GitHub gists](https://gist.github.com/jmacego/).
+I've founded and operated **5+ companies** across technology, aviation, photography, and retail:
 
-### Earlier
+- **Sheep's Clothing** (2010–2015): Built a specialty retail business from scratch to successful exit, growing revenue 10x.
+- **Avitus Aviation Corp** (2001–2010): Founded and ran an aviation leasing company, managing aircraft, pilots, and operations.
+- **Hyak Photography / Hyakdev.com** (2005–2010): Commercial photography and web development serving Pacific Northwest clients.
+- **5GuysTech.com** (1997–2001): Managed services and web hosting during the dot-com boom.
+- **PowerSurge Technologies / FastServers.net** (1995–1996): Co-founded one of the early dedicated server hosting companies.
 
-I'm a decade returned to technology after finding out that retiring in my 30s didn't work for me. When I came back, I pursued what some might call a “normal” engineering career — but my roots are anything but typical.  
+These ventures taught me that technology is only part of the equation. Success comes from understanding customers, managing risk, building teams, and executing relentlessly.
 
-I started in **1995 as co-founder of PowerSurge Technologies / FastServers.net**, a dotcom-era hosting and infrastructure startup. From there I went on to **build and run global consulting companies**, serving small and medium businesses, NGOs, and organizations that needed reliable systems but didn’t have Fortune 500 budgets.
+### Corporate Leadership
 
-Along the way, I also served as **President of Avitus Aviation Corp (2001–2010)**, where I gained firsthand experience in risk management, operations, and the culture of safety. Aviation underscored for me how process and procedures aren’t bureaucracy — they’re what save lives, and that lesson continues to shape my approach to system reliability and consulting today.
+Between entrepreneurial ventures, I spent 25+ years in corporate technology roles. At **Disney**, I unified fragmented operations teams, cut outages by 97%, and introduced AI/ML into production environments. At **Sohonet**, I interconnected top film and media companies worldwide with BGP/MPLS solutions spanning four continents.
 
-Those experiences gave me not just technical depth but also a **broad consulting toolkit**: listening to clients, tailoring solutions to scale, and turning technology into results. It’s a foundation I still draw on today when helping teams modernize or recover from setbacks.
+I still enjoy getting hands-on with design and tools. You'll find some helper scripts and snippets on my [GitHub gists](https://gist.github.com/jmacego/).
+
+### Aviation & Systems Thinking
+
+I served as **President of Avitus Aviation Corp** and remain a **licensed pilot**. Aviation underscored how process and procedures aren't bureaucracy — they're what save lives. Checklists, crew resource management, and a no-fault culture of safety translate remarkably well into technology leadership and consulting.
 
 ### Personally
 
-Outside of work, I cycle, tinker with embedded electronics, and build the occasional hobby project. I’m drawn to both the digital and analog worlds — from micropython on ESP32 chips to vacuum tube experiments.  
+Outside of work, I cycle, tinker with embedded electronics, and build hobby projects. I'm drawn to both digital and analog worlds — from micropython on ESP32 chips to vacuum tube experiments.
 
-I’m also a **licensed pilot** with real-world aviation experience. Aviation has shaped my approach to systems thinking: checklists, crew resource management, and a no-fault culture of safety translate remarkably well into technology and consulting.  
+I've also been a **Cisco-certified engineer** and an **international award-winning photographer**, reflecting the breadth of my interests.
 
-And yes, I’ve also been a **Cisco-certified engineer** and an **international award-winning photographer**, which reflects the breadth of my interests.
+### Work With Me
 
-### Find Me
+I'm selectively available for:
+- **Fractional CTO/leadership** roles for growing companies
+- **Consulting** on network architecture, AI/ML, and operational transformation
+- **Advisory** for technology startups
 
-- [LinkedIn](https://www.linkedin.com/in/jmacego)
+If you have something interesting, [reach out on LinkedIn](https://www.linkedin.com/in/jmacego).
 
 ---
 
-*PS: I’m grateful every day for my wife, a teacher and an amazing person, who supports me in everything I do.*
+*PS: I'm grateful every day for my wife, a teacher and an amazing person, who supports me in everything I do.*
