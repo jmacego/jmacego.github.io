@@ -12,6 +12,12 @@
 9. ~~Fix uri gem CVE-2025-61594 vulnerability.~~
 10. ~~Fix missing alt attributes (post layout, homepage, project).~~
 11. ~~Fix anchor tag validation error in default layout.~~
+12. ~~Delete obsolete assets/images/html_code.html (source of false favicon errors).~~
+13. ~~Fix cookie notice buttons missing href in default layout.~~
+14. ~~Fix broken category/tag links (removed link rendering, categories now text-only).~~
+15. ~~Fix HTTP links (keybase.pub, menari.eu, fpop.co -> HTTPS).~~
+16. ~~Fix broken safaribooksonline.com link (updated to oreilly.com).~~
+17. ~~Fix broken internal links to anycast article.~~
 
 ## Completed Content Updates
 1. ~~Update resume.md with entrepreneurial focus.~~
@@ -19,33 +25,16 @@
 3. ~~Update _config.yml site description and add url.~~
 4. ~~Fix Keybase project alt text (was "Bootstrap4 Logo").~~
 
-## Pending
-- Commit content changes (resume.md, about.md, _config.yml)
-- Verify Jekyll build works locally
-- Consider adding dedicated Services page (optional)
+## Current Validation Status
+- Jekyll build: PASS
+- Jekyll doctor: PASS
+- Bundler audit: PASS
+- HTML proofer: 2 failures (missing images - deferred)
 
-## Content Issues to Address Later
-Missing image files referenced in posts:
-- `assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg` (referenced in gpg-symmetric-encryption post)
-- `assets/images/posts/git-name-interfaces-gist.png` (referenced in useful-networking-scripts post)
-
-Missing favicon/manifest files (referenced in default layout at /assets/images/):
-- `apple-touch-icon.png`
-- `favicon-16x16.png`
-- `favicon-32x32.png`
-- `safari-pinned-tab.svg`
-- `site.webmanifest`
-
-Broken internal links (tag/category pages that don't exist):
-- `/blog/Anycast/`, `/blog/DNS/`, `/blog/arp/`, `/blog/Learning%20Series/`, etc.
-
-HTTP links that could be HTTPS:
-- `http://keybase.pub`
-- `http://menari.eu`
-- `http://fpop.co/lxp5`
-
-Broken external link:
-- `safaribooksonline.com` (site defunct, in ccde-written-first-try post)
+## Deferred - Missing Image Files
+These images are referenced in posts but don't exist. Need to find originals or remove references:
+- `assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg` (in gpg-symmetric-encryption post)
+- `assets/images/posts/git-name-interfaces-gist.png` (in useful-networking-scripts post)
 
 ## Validation Commands (Quick Reference)
 ```bash
