@@ -31,7 +31,25 @@ Run these from the repo root:
 - Security check: `bundle exec bundler-audit check --update`
 
 ## Validation & Linting
-- HTML checks: `bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href --assume-extension`
+- HTML checks: `bundle exec htmlproofer ./_site --disable-external --allow-hash-href`
+
+## Quick Validation (One Command)
+Run all checks before committing:
+```bash
+bundle exec jekyll build && bundle exec jekyll doctor && bundle exec htmlproofer ./_site --disable-external --allow-hash-href && bundle exec bundler-audit check
+```
+
+## Pre-Commit Hook (Optional)
+To auto-validate before each commit, create `.git/hooks/pre-commit`:
+```bash
+#!/bin/bash
+set -e
+bundle exec jekyll build
+bundle exec jekyll doctor
+bundle exec bundler-audit check
+echo "All checks passed"
+```
+Make it executable: `chmod +x .git/hooks/pre-commit`
 
 ## Images (Required)
 - Store images under `assets/images/` and organize by topic.

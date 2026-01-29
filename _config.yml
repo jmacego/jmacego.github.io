@@ -1,5 +1,6 @@
 theme: jekyll-theme-modernist
 title: John MacDonald
+url: https://jmaclabs.com
 description: Serial entrepreneur and technology leader. Fractional CTO, consulting, and advisory services in AI/ML, network architecture, and operational transformation.
 permalink: /blog/:title
 twitter:
