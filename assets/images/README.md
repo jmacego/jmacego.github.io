@@ -9,16 +9,18 @@ This is a bug and should be fixed.
 
 ### On Mac
 ```
-port install imagemagick
+brew install imagemagick
 ```
 
 ### On Debian/Ubuntu
 ```
-port install imagemagick
+sudo apt-get install imagemagick
 ```
 
 ## Running Resizer.sh
 ```
-cd ~/git/jmacego.github.io/assets/images/posts/learning_series/
+cd assets/images/posts/learning_series/
 ../../resizer.sh
 ```
+
+Do not run the script without ImageMagick installed. Do not run it from `assets/images/` itself.
