@@ -12,6 +12,7 @@
 4. Validate the repo has a clear, consistent instruction path.
 5. Update README with local build and validation steps.
 6. Update assets/images/README.md with safe resizer usage.
+7. Fix destructive image resizer script behavior.
 
 ## Status
 - AGENTS.md created.
@@ -19,3 +20,7 @@
 - Legacy instructions removed.
 - README updated with build/validation guidance.
 - Image resizer instructions corrected.
+- Image resizer script hardened and bug fixed.
+
+## Notes
+- resizer.sh previously called an undefined variable and allowed running from assets/images. Now it validates ImageMagick, prevents running from the root assets/images folder, and uses the correct resmushit-cli path.
