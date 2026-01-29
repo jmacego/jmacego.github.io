@@ -19,7 +19,7 @@ First off, this is not a discussion on what we should or should not do with any 
 ## What GeoDNS is
 
 <img src="/assets/images/posts/learning_series/cdn-regional-dns-working.png" alt="CDN Illustration, Servers at either side and DNS queries leading toward them" title="CDN DNS Illustration" width="75%" style="align:center;width:75%;height:auto;display:block">
-When you attempt to reach a website, your computer initially sends a query to map the human-readable domain name to the machine-readable IP address. When using a regular internet service this goes to a DNS server that is nearby to you ([see my article on Anycast for how this works](/blog/2019-07-07-how-anycast-works)), either to your ISP or to a public provider like Google (8.8.8.8/8.8.4.4), Cloudflare (1.1.1.1), or CenturyLink(4.2.2.2). This server will then make a recursive query, reaching the authoritative server that is configured to reply for the domain name, and it will return that IP address to your computer.
+When you attempt to reach a website, your computer initially sends a query to map the human-readable domain name to the machine-readable IP address. When using a regular internet service this goes to a DNS server that is nearby to you ([see my article on Anycast for how this works](/blog/how-anycast-works)), either to your ISP or to a public provider like Google (8.8.8.8/8.8.4.4), Cloudflare (1.1.1.1), or CenturyLink(4.2.2.2). This server will then make a recursive query, reaching the authoritative server that is configured to reply for the domain name, and it will return that IP address to your computer.
 
 Even at the speed of light, it takes an appreciable fraction of a second to reach a server on the other side of the world, so today most websites are served by Content Delivery Networks, CDNs. CDNs have copies of the website cached around the world so they can serve it from a location that is closer to the user. GeoDNS is one of these solutions.
 
@@ -131,7 +131,7 @@ Geographical DNS is with us for the foreseeable future. It's an inexpensive solu
 
 On a longer-term we are seeing websites themselves with Anycast delivery, letting the routing protocols bring the content closer to the user rather than shoehorn functionality into something never designed to support it. Anycast is even directly in the IPv6 Specifications.
 
-Want to know more about Anycast? [Read my article on Anycast.](/blog/2019-07-07-how-anycast-works)
+Want to know more about Anycast? [Read my article on Anycast.](/blog/how-anycast-works)
 
 Want to discuss it? Head over to [LinkedIn ](https://www.linkedin.com/in/jmacego)
 

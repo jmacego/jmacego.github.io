@@ -109,7 +109,7 @@ There is a failure mode where the server or router is up, but the service that i
 
 To get around this some time of heartbeat tracker needs to be in a place where if the service becomes unavailable the route to it is withdrawn and the network diverts traffic to the next nearest/lowest cost anycast provider. The actual failover time is the worst of the timers between the heartbeat and the actual routing convergence.
 
-Want to know more about Anycast? [Read my article on Anycast.](/blog/2019-07-07-how-anycast-works)
+Want to know more about Anycast? [Read my article on Anycast.](/blog/how-anycast-works)
 
 Want to discuss it? Head over to [LinkedIn ](https://www.linkedin.com/in/jmacego)
 
