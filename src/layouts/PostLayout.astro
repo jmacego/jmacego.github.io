@@ -1,57 +1,43 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { formatDate, normalizeImagePath } from "../utils/content";
+import { normalizeImagePath } from "../utils/content";
 
-const { title, description, date, image, categories, ogImage, ogType } = Astro.props;
+const { title, description, image, ogImage, ogType } = Astro.props;
 const imagePath = normalizeImagePath(image?.path);
 ---
 
 <BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType}>
-  <article class="post">
-    <header class="post-header">
-      <h1>{title}</h1>
-      {date && <p class="post-meta">{formatDate(date)}</p>}
-      {categories?.length ? (
-        <p class="post-categories">Categories: {categories.join(", ")}</p>
-      ) : null}
-    </header>
-
-    {imagePath && (
-      <figure class="post-hero">
-        <img src={imagePath} alt={image?.alt ?? title} loading="lazy" />
-        {(image?.credit_text || image?.credit_link) && (
-          <figcaption>
-            {image?.credit_text}
-            {image?.credit_link && (
-              <>
-                {" "}
-                <a href={image.credit_link}>Source</a>
-              </>
-            )}
-          </figcaption>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col">
+        <h1>{title}</h1>
+        {imagePath && (
+          <img
+            src={imagePath}
+            alt={image?.alt ?? title}
+            style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 400px"
+          />
         )}
-      </figure>
-    )}
-
-    <section class="post-body">
-      <slot />
-    </section>
-
-    <section class="about-author">
-      <div class="about-avatar">
+        <slot />
+      </div>
+    </div>
+    <div class="row justify-content-md-center text-white rounded bg-dark row d-flex flex-wrap align-items-center">
+      <div class="col-md-auto">
         <img
           src="/assets/images/jmac-profile.jpg"
           alt="John MacDonald profile photo"
-          loading="lazy"
+          style="border-radius:50%; border: 4px solid #ddd; box-shadow:0 0 2px 1px #ddd; width:100px; height:100px"
         />
       </div>
-      <div>
-        <p class="about-title">About John</p>
+      <div class="col">
+        <p class="lead">About John</p>
         <p>
-          This is my website, so you'll see this on most posts. If you'd like to know
-          more I have an <a href="/about/">About Me</a> section. I think it's funny.
+          This is my website, so you'll see this on most posts. This is also a really awkward photo
+          of me I took a couple of years ago when I thought I needed a more professional profile
+          photo. If you'd like to know more I have an <a href="/about">About Me</a> section. I think
+          it's funny.
         </p>
       </div>
-    </section>
-  </article>
+    </div>
+  </div>
 </BaseLayout>

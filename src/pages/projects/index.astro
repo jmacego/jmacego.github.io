@@ -1,10 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
-  formatDate,
   getExcerpt,
   isPublished,
-  normalizeImagePath,
   sortByDateDesc,
   stripDatePrefix,
 } from "../../utils/content";
@@ -13,29 +11,24 @@ import { getCollection } from "astro:content";
 const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
 ---
 
-<BaseLayout title="Projects" description="Hands-on work across infrastructure, networking, and automation.">
-  <h1 class="section-title">Projects</h1>
-  <div class="post-list">
+<BaseLayout title="John MacDonald's Projects" description="John MacDonald's Projects">
+  <div class="row">
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
-      const imagePath = normalizeImagePath(project.data.image?.path);
       return (
-        <article class="post-list-item">
-          {imagePath && (
-            <div class="card-media">
-              <img src={imagePath} alt={project.data.image?.alt ?? project.data.title} loading="lazy" />
-            </div>
-          )}
-          <h2>
-            <a href={`/projects/${slug}/`}>{project.data.title}</a>
-          </h2>
-          {project.data.date && <p class="post-meta">{formatDate(project.data.date)}</p>}
-          {excerpt && <div class="post-excerpt" set:html={excerpt} />}
-          <a class="text-link" href={`/projects/${slug}/`}>
-            Explore project
-          </a>
-        </article>
+        <div class="blog-post">
+          <h2 class="blog-post-title">{project.data.title}</h2>
+          {project.data.categories?.length ? (
+            <p class="blog-post-meta">
+              Categories: {project.data.categories.join(", ")}
+            </p>
+          ) : null}
+          <p set:html={excerpt} />
+          <p class="lead">
+            Continue reading about <a href={`/projects/${slug}/`}>{project.data.title}</a>
+          </p>
+        </div>
       );
     })}
   </div>
