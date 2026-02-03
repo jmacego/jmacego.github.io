@@ -11,8 +11,8 @@ From the repo root:
 
 ## Validation Hooks
 Set up local git hooks (once per clone): `./scripts/setup-githooks.sh`
-- Pre-commit: `pnpm build`
-- Pre-push: `pnpm install --frozen-lockfile && pnpm build`
+- Pre-commit: `./scripts/validate.sh --quick`
+- Pre-push: `./scripts/validate.sh`
 
 ## Content
 - Posts: `src/content/posts/`

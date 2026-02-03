@@ -45,11 +45,12 @@ Run these from the repo root:
 - Dev server: `pnpm dev`
 - Build once: `pnpm build`
 - Preview build: `pnpm preview`
+- Validation: `./scripts/validate.sh`
 
 ## Local Validation Hooks
 Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
-- Pre-commit: `pnpm build`
-- Pre-push: `pnpm install --frozen-lockfile && pnpm build`
+- Pre-commit: `./scripts/validate.sh --quick`
+- Pre-push: `./scripts/validate.sh`
 
 ## Images (Required)
 - Store images under `public/assets/images/` and organize by topic.

@@ -4,6 +4,5 @@ set -euo pipefail
 REPO_ROOT=$(git rev-parse --show-toplevel)
 cd "$REPO_ROOT"
 
-echo "Running full validation (pnpm install --frozen-lockfile && pnpm build)..."
-pnpm install --frozen-lockfile
-pnpm build
+echo "Running full validation (./scripts/validate.sh)..."
+./scripts/validate.sh

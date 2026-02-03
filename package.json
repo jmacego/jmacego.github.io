@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "preview:build": "pnpm build && pnpm preview",
     "preview:watch": "pnpm dev",
-    "astro": "astro"
+    "astro": "astro",
+    "validate": "./scripts/validate.sh"
   },
   "packageManager": "pnpm@10.27.0",
   "dependencies": {
