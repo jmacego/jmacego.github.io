@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Zerotier - Quick set up secure SDWAN solution'
 description: "Connect to all of your Linux, Mac, Windows, Android, and iOS devices wherever they are"
 categories: [sdwan, crypto, raspberry pi]

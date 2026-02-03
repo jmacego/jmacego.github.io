@@ -1,5 +1,4 @@
 ---
-layout: post
 title: YouTube - Network Q&A 1
 date: 2022-03-07 21:26
 author: John MacDonald

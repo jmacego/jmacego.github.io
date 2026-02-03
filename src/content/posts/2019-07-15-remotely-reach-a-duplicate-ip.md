@@ -1,6 +1,5 @@
 ---
 title: Help! I have a duplicate IP at a remote site!
-layout: post
 image:
   path: /assets/images/posts/learning_series/man-person-people-emotions-2048x1192.jpg
   alt: Man with to faces

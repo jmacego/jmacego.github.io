@@ -1,6 +1,5 @@
 ---
 title: What is Anycast?
-layout: post
 image:
   path: /assets/images/posts/learning_series/cloudflare-cdn-network.png
   alt: Cloudflare CDN Graphic

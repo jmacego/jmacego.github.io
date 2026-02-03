@@ -1,5 +1,4 @@
 ---
-layout: post
 title: New YouTube Channel
 date: 2020-04-01 13:23
 author: John MacDonald

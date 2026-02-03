@@ -1,6 +1,5 @@
 ---
 title: Some useful network scripts
-layout: post
 date: 2018-09-12 22:30 -0700
 image:
   path: assets/images/posts/git-name-interfaces-gist.png

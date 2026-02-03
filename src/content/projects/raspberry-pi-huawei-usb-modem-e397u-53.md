@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Raspberry Pi: Huawei USB Modem e397u-53'
 description: "Getting a Raspberry Pi online with a USB Modem Dongle"
 categories: [raspberry pi, cellular, python]

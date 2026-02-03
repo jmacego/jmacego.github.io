@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'PlotThing - Story Management and Writing Tool'
 description: "One-stop shop for managing characters, places, scenes, and books with direct export to Kindle, Word, and more"
 categories: [writing, saas, tools]

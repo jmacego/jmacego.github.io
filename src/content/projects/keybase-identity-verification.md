@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Keybase - Identity Verification and Encrypted Communications for the Masses'
 description: "Easy to use, relatively secure, open-source encryption"
 categories: [instant messaging, crypto, security, fileshare]

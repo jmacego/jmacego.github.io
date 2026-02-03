@@ -1,6 +1,5 @@
 ---
 title: Github Pages - Moving Jekyll to Bootstrap4
-layout: post
 image:
   path: /assets/images/posts/bootstrap-logo.png
   alt: Bootstrap4 Logo

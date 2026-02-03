@@ -1,6 +1,5 @@
 ---
 title: CCDE Written - First Try
-layout: post
 image:
   path: /assets/images/posts/nick-morrison-325805-unsplash.jpg
   file: nick-morrison-325805-unsplash.jpg

@@ -1,6 +1,5 @@
 ---
 title: GPG Symmetric Encryption of Disk Image
-layout: post
 date: 2018-06-29 19:20 -0700
 image:
   path: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg

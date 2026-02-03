@@ -1,6 +1,5 @@
 ---
 title: JMac's Learning Series
-layout: post
 image:
   path: /assets/images/posts/learning_series/learn-scrabble.jpg
   alt: LEARN in Scrabble Letters
