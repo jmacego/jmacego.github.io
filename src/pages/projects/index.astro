@@ -1,14 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
-  getEntryDate,
   getExcerpt,
   isPublished,
   sortByDateDesc,
   stripDatePrefix,
-  formatDate,
 } from "../../utils/content";
 import { getCollection } from "astro:content";
+import { normalizeImagePath } from "../../utils/content";
 
 const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
 ---
@@ -18,20 +17,34 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
-      const date = getEntryDate(project);
+      const imagePath = normalizeImagePath(project.data.image?.path);
       return (
         <div class="blog-post">
-          <h2 class="blog-post-title">{project.data.title}</h2>
-          {project.data.categories?.length ? (
-            <p class="blog-post-meta">
-              Categories: {project.data.categories.join(", ")}
-            </p>
-          ) : null}
-          {date && <p class="blog-post-meta">{formatDate(date)}</p>}
-          <p set:html={excerpt} />
-          <p class="lead">
-            Continue reading about <a href={`/projects/${slug}/`}>{project.data.title}</a>
-          </p>
+          <div class="row">
+            <div class:list={["col", imagePath ? "col-md-8" : "col-12"]}>
+              <h2 class="blog-post-title">{project.data.title}</h2>
+              {project.data.categories?.length ? (
+                <p class="blog-post-meta">
+                  Categories: {project.data.categories.join(", ")}
+                </p>
+              ) : null}
+              <p set:html={excerpt} />
+              <p class="lead">
+                Continue reading about <a href={`/projects/${slug}/`}>{project.data.title}</a>
+              </p>
+            </div>
+            {imagePath && (
+              <div class="col-md-4">
+                <a href={`/projects/${slug}/`}>
+                  <img
+                    class="img-fluid rounded"
+                    src={imagePath}
+                    alt={project.data.image?.alt ?? project.data.title}
+                  />
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       );
     })}
