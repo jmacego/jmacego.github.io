@@ -29,6 +29,12 @@ const isActive = (href) => {
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -51,7 +57,6 @@ const isActive = (href) => {
       }
 
       .blog-header-logo {
-        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         font-size: 2.25rem;
       }
 
@@ -184,7 +189,7 @@ const isActive = (href) => {
     </div>
 
     {site.gaId && (
-      <div id="cookie-notice" class="cookie-notice" aria-live="polite">
+      <div id="cookie-notice">
         <span>We would like to use Google Analytics to monitor website utilization.</span>
         <a href="#" id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
         <a href="#" id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>

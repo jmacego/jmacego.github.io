@@ -38,9 +38,25 @@ export function stripDatePrefix(slug: string) {
   return slug.replace(/^\d{4}-\d{2}-\d{2}-/, "");
 }
 
-export function sortByDateDesc<T extends { data: { date?: Date } }>(a: T, b: T) {
-  const aTime = a.data.date ? new Date(a.data.date).getTime() : 0;
-  const bTime = b.data.date ? new Date(b.data.date).getTime() : 0;
+export function getEntryDate<T extends { data: { date?: Date }, slug?: string }>(entry: T) {
+  if (entry.data.date) {
+    return new Date(entry.data.date);
+  }
+  if (entry.slug) {
+    const match = entry.slug.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (match) {
+      const [_, year, month, day] = match;
+      return new Date(Number(year), Number(month) - 1, Number(day));
+    }
+  }
+  return undefined;
+}
+
+export function sortByDateDesc<T extends { data: { date?: Date }, slug?: string }>(a: T, b: T) {
+  const aDate = getEntryDate(a);
+  const bDate = getEntryDate(b);
+  const aTime = aDate ? aDate.getTime() : 0;
+  const bTime = bDate ? bDate.getTime() : 0;
   return bTime - aTime;
 }
 

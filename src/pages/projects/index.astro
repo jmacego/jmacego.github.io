@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
+  getEntryDate,
   getExcerpt,
   isPublished,
   sortByDateDesc,
   stripDatePrefix,
+  formatDate,
 } from "../../utils/content";
 import { getCollection } from "astro:content";
 
@@ -16,6 +18,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
+      const date = getEntryDate(project);
       return (
         <div class="blog-post">
           <h2 class="blog-post-title">{project.data.title}</h2>
@@ -24,6 +27,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
               Categories: {project.data.categories.join(", ")}
             </p>
           ) : null}
+          {date && <p class="blog-post-meta">{formatDate(date)}</p>}
           <p set:html={excerpt} />
           <p class="lead">
             Continue reading about <a href={`/projects/${slug}/`}>{project.data.title}</a>

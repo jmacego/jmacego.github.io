@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {
   formatDate,
+  getEntryDate,
   getExcerpt,
   getExcerptText,
   isPublished,
@@ -29,6 +30,10 @@ const projectExcerpt = featuredProject ? getExcerpt(featuredProject.body) : "";
 const pageDescription = heroPost
   ? getExcerptText(heroPost.body)
   : "John MacDonald — Networking, Infrastructure, and Automation";
+
+const heroDate = heroPost ? getEntryDate(heroPost) : undefined;
+const secondaryDate = secondaryPost ? getEntryDate(secondaryPost) : undefined;
+const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
 ---
 
 <BaseLayout title="John MacDonald — Networking, Infrastructure, and Automation" description={pageDescription}>
@@ -41,9 +46,7 @@ const pageDescription = heroPost
               {heroPost.data.title}
             </a>
           </h1>
-          {heroPost.data.date && (
-            <div class="mb-1 text-muted">{formatDate(heroPost.data.date)}</div>
-          )}
+          {heroDate && <div class="mb-1 text-muted">{formatDate(heroDate)}</div>}
           <p class="lead my-3" set:html={heroExcerpt} />
           <p class="lead mb-0">
             <a
@@ -80,9 +83,7 @@ const pageDescription = heroPost
           {secondaryPost && (
             <>
               <h3 style="font-size:1.5rem" class="mb-0">{secondaryPost.data.title}</h3>
-              {secondaryPost.data.date && (
-                <div class="mb-1 text-muted">{formatDate(secondaryPost.data.date)}</div>
-              )}
+              {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
               <p class="mb-auto" set:html={secondaryExcerpt} />
               <a
                 class="stretched-link"
@@ -114,9 +115,7 @@ const pageDescription = heroPost
           {featuredProject && (
             <>
               <h3 style="font-size:1.5rem" class="mb-0">{featuredProject.data.title}</h3>
-              {featuredProject.data.date && (
-                <div class="mb-1 text-muted">{formatDate(featuredProject.data.date)}</div>
-              )}
+              {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
               <p class="mb-auto" set:html={projectExcerpt} />
               <a
                 class="stretched-link"
