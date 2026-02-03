@@ -81,13 +81,15 @@ a:hover {
 .nav-scroller .nav {
   background: var(--card);
   border-radius: 999px;
-  padding: 0.35rem 1.1rem;
+  padding: 0.5rem 1.4rem;
   box-shadow: 0 20px 40px -32px var(--shadow);
   border: 1px solid var(--border);
 }
 
 .nav .p-2 {
   color: var(--ink);
+  font-size: 1rem;
+  padding: 0.5rem 0.9rem !important;
 }
 
 .nav .text-muted {
@@ -111,6 +113,20 @@ a:hover {
 
 .blog-post {
   width: 100%;
+}
+
+.about-author {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-scroller .nav {
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .blog-post-title {
