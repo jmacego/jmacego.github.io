@@ -2,6 +2,13 @@
 title: GitHub - Forking a repository you've already cloned
 date: 2018-07-08 18:26 -0700
 author: jmacego
+image:
+	path: /assets/images/posts/github-forking-illustration.png
+	alt: |
+		Minimalist editorial illustration of a developer forking a repository on
+		GitHub, with a clear upstream-to-fork branching diagram on a large screen
+		in a calm modern workspace. Neutral tones with a single blue accent, clean
+		shapes, and no text.
 ---
 
 I find that most of the time, when I am forking a respository to do a pull request, I've already cloned the respository. I don't do it often enough that I have it memorized, so I go looking for guides... and find that they all are for cloning a new repository, making changes, then doing the pull request. Then I go look up the actual commands that I want and proceed.
