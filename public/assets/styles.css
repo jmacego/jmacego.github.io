@@ -80,16 +80,17 @@ a:hover {
 
 .nav-scroller .nav {
   background: var(--card);
-  border-radius: 999px;
-  padding: 0.5rem 1.4rem;
-  box-shadow: 0 20px 40px -32px var(--shadow);
+  border-radius: 16px;
+  padding: 0.25rem 0.6rem;
+  box-shadow: 0 12px 28px -26px var(--shadow);
   border: 1px solid var(--border);
 }
 
 .nav .p-2 {
   color: var(--ink);
-  font-size: 1rem;
-  padding: 0.5rem 0.9rem !important;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  padding: 0.35rem 0.7rem !important;
 }
 
 .nav .text-muted {
