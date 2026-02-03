@@ -1,0 +1,35 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro";
+import {
+  getExcerptText,
+  isPublished,
+  normalizeImagePath,
+  stripDatePrefix,
+} from "../../utils/content";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const projects = await getCollection("projects", isPublished);
+  return projects.map((project) => ({
+    params: { slug: stripDatePrefix(project.slug) },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await project.render();
+const description = project.data.description ?? project.data.summary ?? getExcerptText(project.body);
+const imagePath = normalizeImagePath(project.data.image?.path);
+---
+
+<PostLayout
+  title={project.data.title}
+  description={description}
+  date={project.data.date}
+  image={project.data.image}
+  categories={project.data.categories}
+  ogImage={imagePath}
+  ogType="article"
+>
+  <Content />
+</PostLayout>

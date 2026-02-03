@@ -1,9 +1,11 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+node_modules/
+dist/
+.astro/
+.cache/
 .DS_Store
 ~*
 Thumbs.db
-vendor/
-.bundle/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*

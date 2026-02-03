@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  formatDate,
+  getExcerpt,
+  isPublished,
+  sortByDateDesc,
+  stripDatePrefix,
+  PAGE_SIZE,
+} from "../../utils/content";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths({ paginate }) {
+  const posts = (await getCollection("posts", isPublished)).sort(sortByDateDesc);
+  return paginate(posts, { pageSize: PAGE_SIZE });
+}
+
+const { page } = Astro.props;
+---
+
+<BaseLayout title="Blog" description="Articles on networking, infrastructure, automation, and leadership.">
+  <h1 class="section-title">Blog</h1>
+  <div class="post-list">
+    {page.data.map((post) => {
+      const slug = stripDatePrefix(post.slug);
+      const excerpt = getExcerpt(post.body);
+      return (
+        <article class="post-list-item">
+          <h2>
+            <a href={`/blog/${slug}/`}>{post.data.title}</a>
+          </h2>
+          {post.data.date && <p class="post-meta">{formatDate(post.data.date)}</p>}
+          {excerpt && <div class="post-excerpt" set:html={excerpt} />}
+          <a class="text-link" href={`/blog/${slug}/`}>
+            Continue reading
+          </a>
+        </article>
+      );
+    })}
+  </div>
+
+  <nav class="pagination" aria-label="Blog pagination">
+    {page.url.prev && <a href={page.url.prev}>Newer</a>}
+    {page.url.next && <a href={page.url.next}>Older</a>}
+  </nav>
+</BaseLayout>

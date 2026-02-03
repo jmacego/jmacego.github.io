@@ -1,0 +1,115 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../siteData";
+import {
+  formatDate,
+  getExcerpt,
+  getExcerptText,
+  isPublished,
+  normalizeImagePath,
+  sortByDateDesc,
+  stripDatePrefix,
+} from "../utils/content";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts", isPublished)).sort(sortByDateDesc);
+const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
+
+const latestPosts = posts.slice(0, 3);
+const featuredProjects = projects.slice(0, 2);
+const heroPost = latestPosts[0];
+const heroImage = normalizeImagePath(heroPost?.data.image?.path);
+const heroExcerpt = heroPost ? getExcerptText(heroPost.body) : site.description;
+---
+
+<BaseLayout title="Home" description={heroExcerpt}>
+  <section class="hero">
+    <div class="hero-card">
+      <p class="hero-meta">Fractional CTO · AI/ML Strategy · Network Architecture</p>
+      <h1>Calm, durable systems with a human-centered edge.</h1>
+      <p class="hero-summary">
+        I help teams simplify architecture, scale infrastructure, and ship thoughtful products. This
+        is my personal lab for writing, projects, and field notes from twenty years of operations.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="/projects/">View Projects</a>
+        <a class="button ghost" href="/blog/">Read the Blog</a>
+      </div>
+    </div>
+    <div class="hero-card hero-image">
+      {heroImage ? (
+        <img src={heroImage} alt={heroPost?.data.image?.alt ?? "Featured post"} loading="lazy" />
+      ) : (
+        <img src="/assets/images/jmac-profile.jpg" alt="John MacDonald profile" loading="lazy" />
+      )}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Latest Writing</h2>
+    <div class="post-list">
+      {latestPosts.map((post) => {
+        const slug = stripDatePrefix(post.slug);
+        const excerpt = getExcerpt(post.body);
+        return (
+          <article class="post-list-item">
+            <h3>
+              <a href={`/blog/${slug}/`}>{post.data.title}</a>
+            </h3>
+            {post.data.date && <p class="post-meta">{formatDate(post.data.date)}</p>}
+            {excerpt && <div class="post-excerpt" set:html={excerpt} />}
+            <a class="text-link" href={`/blog/${slug}/`}>
+              Continue reading
+            </a>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Selected Projects</h2>
+    <div class="card-grid">
+      {featuredProjects.map((project) => {
+        const slug = stripDatePrefix(project.slug);
+        const imagePath = normalizeImagePath(project.data.image?.path);
+        return (
+          <article class="card">
+            {imagePath && (
+              <div class="card-media">
+                <img src={imagePath} alt={project.data.image?.alt ?? project.data.title} loading="lazy" />
+              </div>
+            )}
+            <h3>
+              <a href={`/projects/${slug}/`}>{project.data.title}</a>
+            </h3>
+            {project.data.description && <p>{project.data.description}</p>}
+            <a class="text-link" href={`/projects/${slug}/`}>
+              Explore project
+            </a>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Work With Me</h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Advisory + Fractional CTO</h3>
+        <p>
+          Architecture reviews, AI/ML strategy, infrastructure modernization, and leadership support
+          for small to mid-size teams.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Operational Turnarounds</h3>
+        <p>
+          Stabilize brittle systems, reduce toil, and build reliable delivery pipelines with
+          pragmatic milestones.
+        </p>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

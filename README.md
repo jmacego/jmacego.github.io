@@ -1,22 +1,28 @@
-# jmacego.github.io
+# jmaclabs
 
-Jekyll static site for jmaclabs.com, hosted on GitHub Pages.
+Astro static site for jmaclabs.com, hosted on GitHub Pages.
 
-## Local Build & Validation
+## Local Development
 From the repo root:
-- Install dependencies: `bundle install`
-- Serve locally: `bundle exec jekyll serve`
-- Build once: `bundle exec jekyll build`
-- Diagnostics: `bundle exec jekyll doctor`
-- Security check: `bundle exec bundler-audit check --update`
-- HTML checks: `bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href --assume-extension`
+- Install dependencies: `npm install`
+- Run dev server: `npm run dev`
+- Build once: `npm run build`
+- Preview build: `npm run preview`
 
-## CI Validation
-- GitHub Actions runs build, HTML checks, and bundler-audit on push and PRs.
+## Content
+- Posts: `src/content/posts/`
+- Projects: `src/content/projects/`
+- Use the excerpt separator `<!--more-->` in posts and projects.
 
-## Instructions
-- Agent and Copilot guidance: see AGENTS.md
+## Features
+- Permalinks: `/blog/:title` and `/projects/:title`
+- RSS feed: `/rss.xml`
+- Sitemap: `/sitemap-index.xml`
+- Google Analytics + cookie consent banner
 
 ## Assets
-- Images live under `assets/images/` and must be optimized before commit.
-- Use `assets/images/resizer.sh` after installing ImageMagick.
+- Static files live in `public/`
+- Images live under `public/assets/images/` and must be optimized before commit.
+
+## Agent Instructions
+- See `AGENTS.md` for repo-specific rules.

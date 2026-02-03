@@ -1,0 +1,57 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import { formatDate, normalizeImagePath } from "../utils/content";
+
+const { title, description, date, image, categories, ogImage, ogType } = Astro.props;
+const imagePath = normalizeImagePath(image?.path);
+---
+
+<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType}>
+  <article class="post">
+    <header class="post-header">
+      <h1>{title}</h1>
+      {date && <p class="post-meta">{formatDate(date)}</p>}
+      {categories?.length ? (
+        <p class="post-categories">Categories: {categories.join(", ")}</p>
+      ) : null}
+    </header>
+
+    {imagePath && (
+      <figure class="post-hero">
+        <img src={imagePath} alt={image?.alt ?? title} loading="lazy" />
+        {(image?.credit_text || image?.credit_link) && (
+          <figcaption>
+            {image?.credit_text}
+            {image?.credit_link && (
+              <>
+                {" "}
+                <a href={image.credit_link}>Source</a>
+              </>
+            )}
+          </figcaption>
+        )}
+      </figure>
+    )}
+
+    <section class="post-body">
+      <slot />
+    </section>
+
+    <section class="about-author">
+      <div class="about-avatar">
+        <img
+          src="/assets/images/jmac-profile.jpg"
+          alt="John MacDonald profile photo"
+          loading="lazy"
+        />
+      </div>
+      <div>
+        <p class="about-title">About John</p>
+        <p>
+          This is my website, so you'll see this on most posts. If you'd like to know
+          more I have an <a href="/about/">About Me</a> section. I think it's funny.
+        </p>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
