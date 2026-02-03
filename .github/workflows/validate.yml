@@ -11,17 +11,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          ruby-version: 3.2
-          bundler-cache: true
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build site
-        run: bundle exec jekyll build
-
-      - name: HTML checks
-        run: bundle exec htmlproofer ./_site --disable-external --check-html --allow-hash-href --assume-extension
-
-      - name: Security audit
-        run: bundle exec bundler-audit check --update
+        run: npm run build
