@@ -4,10 +4,10 @@ Astro static site for jmaclabs.com, hosted on GitHub Pages.
 
 ## Local Development
 From the repo root:
-- Install dependencies: `npm install`
-- Run dev server: `npm run dev`
-- Build once: `npm run build`
-- Preview build: `npm run preview`
+- Install dependencies: `pnpm install`
+- Run dev server: `pnpm dev`
+- Build once: `pnpm build`
+- Preview build: `pnpm preview`
 
 ## Content
 - Posts: `src/content/posts/`

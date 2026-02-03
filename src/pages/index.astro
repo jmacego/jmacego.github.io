@@ -82,7 +82,11 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
           </strong>
           {secondaryPost && (
             <>
-              <h3 style="font-size:1.5rem" class="mb-0">{secondaryPost.data.title}</h3>
+              <h3 style="font-size:1.5rem" class="mb-0">
+                <a href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}>
+                  {secondaryPost.data.title}
+                </a>
+              </h3>
               {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
               <p class="mb-auto" set:html={secondaryExcerpt} />
               <a
@@ -114,7 +118,11 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
           </strong>
           {featuredProject && (
             <>
-              <h3 style="font-size:1.5rem" class="mb-0">{featuredProject.data.title}</h3>
+              <h3 style="font-size:1.5rem" class="mb-0">
+                <a href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}>
+                  {featuredProject.data.title}
+                </a>
+              </h3>
               {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
               <p class="mb-auto" set:html={projectExcerpt} />
               <a

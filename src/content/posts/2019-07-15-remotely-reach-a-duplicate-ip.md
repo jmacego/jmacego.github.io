@@ -144,7 +144,7 @@ Most vendors have the ability to turn on the above logging. I'm only including i
 
 If mac move notification is not on, you can do it this way:
 
-``` Cisco
+```
 launchcomplex39# show mac address-table  notification mac-move 
 MAC Move Notify Triggers: 1
     Number of MAC Addresses added: 612336 
@@ -154,7 +154,7 @@ MAC Move Notify Triggers: 1
 
 Watch for the moved counter increasing, potentially very rapidly.
 
-``` Cisco
+```
 launchcomplex39# show mac address-table address 0000.5e11.1111
 Legend:
         * - primary entry, G - Gateway MAC, (R) - Routed MAC, O - Overlay MAC
@@ -168,7 +168,7 @@ Run the show command multiple times, looking for a change to the Ports column. I
 
 Other vendors may include a Moves and Last Move column (or similar). If Moves is high and incrementing and Last Move is very recent, then, congratulations you have a layer 2 mac swapping issue and need to troubleshoot it. I haven't written that article yet (Sorry!)
 
-``` Arista
+```
 
 SWC01-00801-UKM#show mac address-table address 00:0c:29:81:54:57
           Mac Address Table
@@ -206,19 +206,19 @@ To solve the problem once and for all, though, you will need to set the static A
 
 Setting (and removing) a static ARP entry tends to follow one of these forms:
 
-``` Juniper
+```
 user@switch# set arp <ip-address> mac <mac-address>
 user@switch# delete arp <ip-address> mac <mac-address>
 
 ```
 
-```Mac/PC
+```
 > arp -s <ip-address> <mac-address>
 > arp -d <ip-address>
 
 ```
 
-``` Cisco
+```
 # arp <ip-address> <mac-address> arpa
 # no arp <ip-address>
 ```

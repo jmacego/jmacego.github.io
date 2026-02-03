@@ -22,7 +22,9 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
         <div class="blog-post">
           <div class="row">
             <div class:list={["col", imagePath ? "col-md-8" : "col-12"]}>
-              <h2 class="blog-post-title">{project.data.title}</h2>
+              <h2 class="blog-post-title">
+                <a href={`/projects/${slug}/`}>{project.data.title}</a>
+              </h2>
               {project.data.categories?.length ? (
                 <p class="blog-post-meta">
                   Categories: {project.data.categories.join(", ")}

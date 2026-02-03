@@ -28,7 +28,9 @@ const { page } = Astro.props;
         <div class="blog-post">
           <div class="row">
             <div class:list={["col", imagePath ? "col-md-8" : "col-12"]}>
-              <h2 class="blog-post-title">{post.data.title}</h2>
+              <h2 class="blog-post-title">
+                <a href={`/blog/${slug}/`}>{post.data.title}</a>
+              </h2>
               {post.data.categories?.length ? (
                 <p class="blog-post-meta">
                   Categories: {post.data.categories.join(", ")}

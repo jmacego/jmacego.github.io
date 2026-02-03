@@ -1,31 +1,31 @@
 :root {
   color-scheme: light dark;
-  --bg: #eef2f7;
-  --bg-alt: #e3e9f3;
-  --card: #f7f9fc;
-  --ink: #161b22;
-  --ink-muted: #5e6675;
+  --bg: #f5f6f8;
+  --bg-alt: #eef1f5;
+  --card: #ffffff;
+  --ink: #151a21;
+  --ink-muted: #5f6775;
   --accent: #5b4bff;
   --accent-2: #1f9d7a;
   --accent-3: #2b6cb0;
   --border: rgba(20, 30, 40, 0.12);
-  --shadow: rgba(20, 30, 40, 0.16);
-  --glow: rgba(91, 75, 255, 0.22);
+  --shadow: rgba(20, 30, 40, 0.14);
+  --glow: rgba(91, 75, 255, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0d0f17;
-    --bg-alt: #141824;
-    --card: #1a2030;
-    --ink: #eef2f7;
-    --ink-muted: #b6c0d1;
+    --bg: #0f1116;
+    --bg-alt: #171a22;
+    --card: #1d212b;
+    --ink: #edf1f7;
+    --ink-muted: #b4bccb;
     --accent: #8b7bff;
     --accent-2: #3fcaa0;
     --accent-3: #6aa8ff;
-    --border: rgba(236, 242, 247, 0.16);
-    --shadow: rgba(0, 0, 0, 0.5);
-    --glow: rgba(139, 123, 255, 0.16);
+    --border: rgba(236, 242, 247, 0.14);
+    --shadow: rgba(0, 0, 0, 0.45);
+    --glow: rgba(139, 123, 255, 0.08);
   }
 }
 
@@ -37,27 +37,9 @@ body {
   min-height: 100vh;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    radial-gradient(circle at 12% 20%, var(--glow), transparent 55%),
-    radial-gradient(circle at 86% 12%, rgba(31, 157, 122, 0.18), transparent 55%),
-    radial-gradient(circle at 40% 85%, rgba(43, 108, 176, 0.18), transparent 60%),
-    repeating-linear-gradient(120deg, rgba(16, 24, 32, 0.04) 0, rgba(16, 24, 32, 0.04) 1px, transparent 1px, transparent 26px);
-  z-index: -2;
-}
-
+body::before,
 body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.25'/%3E%3C/svg%3E");
-  opacity: 0.05;
-  z-index: -1;
+  content: none;
 }
 
 a {
@@ -68,9 +50,24 @@ a:hover {
   color: var(--accent-2);
 }
 
+.blog-header {
+  border-bottom: 1px solid rgba(91, 75, 255, 0.15);
+}
+
+.blog-post-title a,
+.jumbotron a {
+  color: inherit;
+}
+
+.blog-post-title a:hover,
+.jumbotron a:hover {
+  color: var(--accent);
+}
+
 .blog-header-logo {
-  font-family: "Fraunces", "Playfair Display", Georgia, serif;
-  letter-spacing: 0.02em;
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .nav-scroller {
@@ -82,8 +79,13 @@ a:hover {
   background: var(--card);
   border-radius: 16px;
   padding: 0.25rem 0.6rem;
-  box-shadow: 0 12px 28px -26px var(--shadow);
+  box-shadow:
+    0 12px 28px -26px var(--shadow),
+    0 10px 24px -30px rgba(91, 75, 255, 0.25),
+    0 18px 38px -36px rgba(31, 157, 122, 0.22),
+    inset 0 -2px 0 rgba(31, 157, 122, 0.35);
   border: 1px solid var(--border);
+  border-top: 2px solid rgba(91, 75, 255, 0.25);
 }
 
 .nav .p-2 {
@@ -98,14 +100,17 @@ a:hover {
 }
 
 .jumbotron {
-  background: linear-gradient(135deg, rgba(20, 24, 36, 0.96), rgba(15, 20, 34, 0.92));
-  box-shadow: 0 30px 60px -40px var(--shadow);
+  background: linear-gradient(135deg, #2a2f39 0%, #252a34 60%, #232733 100%);
+  box-shadow:
+    0 26px 52px -38px var(--shadow),
+    0 30px 60px -44px rgba(91, 75, 255, 0.35),
+    0 34px 70px -48px rgba(31, 157, 122, 0.28);
 }
 
 .jumbotron .display-4 {
   font-family: "Fraunces", "Playfair Display", Georgia, serif;
   font-style: italic;
-  color: #d7dcff;
+  color: #e6e9ff;
 }
 
 .jumbotron .text-muted {
@@ -117,9 +122,15 @@ a:hover {
 }
 
 .about-author {
-  margin-top: 2rem;
+  margin: 0;
   padding: 1.5rem;
   gap: 1rem;
+  background: #2f353f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.blog-footer .about-author {
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
@@ -145,7 +156,17 @@ a:hover {
 }
 
 .shadow-sm {
-  box-shadow: 0 18px 40px -32px var(--shadow) !important;
+  box-shadow:
+    0 18px 40px -32px var(--shadow),
+    0 22px 46px -38px rgba(91, 75, 255, 0.25),
+    0 26px 54px -42px rgba(31, 157, 122, 0.22) !important;
+}
+
+.blog-footer {
+  background: transparent;
+  border-top: 0;
+  padding: 0;
+  margin-top: 2rem;
 }
 
 .img-fluid {
