@@ -9,6 +9,11 @@ From the repo root:
 - Build once: `pnpm build`
 - Preview build: `pnpm preview`
 
+## Validation Hooks
+Set up local git hooks (once per clone): `./scripts/setup-githooks.sh`
+- Pre-commit: `pnpm build`
+- Pre-push: `pnpm install --frozen-lockfile && pnpm build`
+
 ## Content
 - Posts: `src/content/posts/`
 - Projects: `src/content/projects/`

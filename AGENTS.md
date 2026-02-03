@@ -46,10 +46,15 @@ Run these from the repo root:
 - Build once: `pnpm build`
 - Preview build: `pnpm preview`
 
+## Local Validation Hooks
+Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
+- Pre-commit: `pnpm build`
+- Pre-push: `pnpm install --frozen-lockfile && pnpm build`
+
 ## Images (Required)
 - Store images under `public/assets/images/` and organize by topic.
 - Optimize images before commit using `public/assets/images/resizer.sh`.
-- Ensure ImageMagick is installed before running the script.
+- Ensure ImageMagick or macOS `sips` is available before running the script.
 - Always reference the optimized filename in content.
 - Provide descriptive alt text for every image and aria labels for controls; avoid generic placeholders.
 
