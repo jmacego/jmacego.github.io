@@ -14,9 +14,9 @@
   },
   "packageManager": "pnpm@10.27.0",
   "dependencies": {
-    "@astrojs/rss": "^4.0.7",
-    "@astrojs/sitemap": "3.2.1",
-    "astro": "^4.15.5",
-    "marked": "^12.0.2"
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "3.7.0",
+    "astro": "^5.17.1",
+    "marked": "^17.0.1"
   }
 }
