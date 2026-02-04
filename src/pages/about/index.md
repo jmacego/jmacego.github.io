@@ -21,7 +21,7 @@ I've founded and operated **5+ companies** across technology, aviation, photogra
 
 - **Sheep's Clothing** (2010–2015): Built a specialty retail business from scratch to successful exit, growing revenue 10x.
 - **Avitus Aviation Corp** (2001–2010): Founded and ran an aviation leasing company, managing aircraft, pilots, and operations.
-- **Hyak Photography / Hyakdev.com** (2005–2010): Commercial photography and web development serving Pacific Northwest clients.
+- **Hyak Photography / Hyakdev.com** (2005–2010): Commercial photography plus business consulting and sales focused on network/WiFi for condominiums and hotels across the Pacific Northwest.
 - **5GuysTech.com** (1997–2001): Managed services and web hosting during the dot-com boom.
 - **PowerSurge Technologies / FastServers.net** (1995–1996): Co-founded one of the early dedicated server hosting companies.
 
@@ -29,13 +29,13 @@ These ventures taught me that technology is only part of the equation. Success c
 
 ### Corporate Leadership
 
-Between entrepreneurial ventures, I spent 25+ years in corporate technology roles. At **Disney**, I unified fragmented operations teams, cut outages by 97%, and introduced AI/ML into production environments. At **Sohonet**, I interconnected top film and media companies worldwide with BGP/MPLS solutions spanning four continents.
+Between entrepreneurial ventures, I spent 25+ years in corporate technology roles. At **Disney**, I unified fragmented operations teams, cut outages by 97%, and introduced AI/ML into production environments.
 
 I still enjoy getting hands-on with design and tools. You'll find some helper scripts and snippets on my [GitHub gists](https://gist.github.com/jmacego/).
 
 ### Aviation & Systems Thinking
 
-I served as **President of Avitus Aviation Corp** and remain a **licensed pilot**. Aviation underscored how process and procedures aren't bureaucracy — they're what save lives. Checklists, crew resource management, and a no-fault culture of safety translate remarkably well into technology leadership and consulting.
+I served as **President of Avitus Aviation Corp** and remain a **licensed pilot**. Aviation underscored how process and procedures aren't bureaucracy — they're what save lives. Checklists, crew resource management, and a no-fault culture of safety translate remarkably well into technology leadership and consulting. My family is in medicine, and I studied medical systems thinking in school and through deep exposure at medical conferences, so I see strong parallels between aviation and medical systems thinking — and yes, that biology degree has been unexpectedly useful in tech leadership (wink).
 
 ### Personally
 
