@@ -1,8 +1,7 @@
 ---
-layout: post
 title: "The Leader as Decision Maker: Listen, Decide, and Own the Outcome"
 date: 2025-09-26 09:00:00 -0700
-categories: leadership consulting
+categories: [Leadership, Consulting]
 tags: [leadership, decision-making, consulting, executives, startups]
 author: "John MacDonald"
 image:
