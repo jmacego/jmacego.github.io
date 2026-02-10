@@ -4,6 +4,12 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 
+if [[ -f "$ROOT_DIR/../scripts/sanitize-runtime-env.sh" ]]; then
+  # shellcheck source=/dev/null
+  source "$ROOT_DIR/../scripts/sanitize-runtime-env.sh"
+  sanitize_runtime_env
+fi
+
 log() {
   printf "\n[%s] %s\n" "$(date +"%H:%M:%S")" "$1"
 }
@@ -22,6 +28,9 @@ if [[ "$QUICK" -eq 0 ]]; then
   log "Install dependencies."
   pnpm install --frozen-lockfile
 fi
+
+# Generated cache only; resetting keeps content indexing deterministic.
+rm -rf "$ROOT_DIR/.astro"
 
 log "Build site."
 pnpm run build

@@ -133,5 +133,5 @@ It's not always easy. There will be times you must choose a path amid disagreeme
 - Amazon Leadership Principles, "Have Backbone; Disagree and Commit"
 - Gallup Workplace Research on leadership and employee engagement
 - Research on diversity and decision-making performance (Cloverpop/Forbes, 2017)
-- Peter Drucker, various works on management and leadership
+- Peter Drucker, various works on management and leadership (Drucker is my leadership north star, and I _highly_ recommend his work.)
 - Gordon Tredgold, "Leadership Accountability: The Buck Stops with the Leader" (2024)
