@@ -38,5 +38,4 @@ PlotThing runs as a web application with:
 
 ## Get Started
 
-Visit [plotthing.com](https://plotthing.com) and click "Continue as guest" to try it immediately. No signup required.
-
+Go to [beta.plotthing.com](https://beta.plotthing.com) and sign up for beta access.
