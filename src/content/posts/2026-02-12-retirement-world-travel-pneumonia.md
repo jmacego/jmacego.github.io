@@ -16,13 +16,13 @@ This is my second retirement. I'm 43. The first time, about a decade ago, I sold
 
 I know myself well enough to know I need to be doing *something*. But I also know what it feels like when most of what you considered broken has been fixed, the numbers are good, the projects have either concluded or are finally underway, and a re-org opens a clean seam to step through. December 2025 was that seam.
 
+<!--more-->
+
 I decided, 100%, on December 24th. Not tentatively, not "let's see how Q1 goes." The kind of decided where you feel the weight lift off your chest and the future rearranges itself into something you actually want to walk into. M.E. and I had talked about this for a long time. We'd both traveled extensively before. We both love the feeling of just *being* somewhere else, where the rhythm of daily life is a little different. Not rushing through highlights, but staying long enough to find routines — a month per country, maybe longer if we loved it. A year, at least.
 
 December 24th was the day it stopped being a conversation and became a decision.
 
 I got sick on December 26th.
-
-<!--more-->
 
 ## It Started as a Cold
 
