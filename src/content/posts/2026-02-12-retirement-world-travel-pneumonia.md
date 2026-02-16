@@ -44,8 +44,10 @@ What came back was, to use a clinical understatement, concerning. Immediate CT s
 
 The CT ruled out the worst of what the X-ray had suggested — previous scarring and a granuloma from COVID in 2020, not the alternatives they were screening for. Nothing quite like pneumonia in three lobes being the *good news* diagnosis.
 
-![Walking with an IV pole between hospital imaging areas during pneumonia treatment.](/assets/images/posts/pneumonia-iv-walk.jpg)
-*Walking between hospital areas for imaging, IV in tow.*
+<figure class="inline-photo inline-photo-right">
+  <img src="/assets/images/posts/pneumonia-iv-walk.jpg" alt="Walking with an IV pole between hospital imaging areas during pneumonia treatment." />
+  <figcaption>Walking between hospital areas for imaging, IV in tow.</figcaption>
+</figure>
 
 Two oral antibiotics. An IV antibiotic. Three separate blood draws. IV fluids.
 
@@ -55,8 +57,10 @@ Two more antibiotics. That made eight or nine total, depending on how you count.
 
 This time, it worked. Four or five days into the new regimen, I started to feel meaningfully better.
 
-![Hospital admission wristband worn during treatment, showing patient and visit identifiers.](/assets/images/posts/pneumonia-admission-bracelet.jpg)
-*Admission bracelet from the week things were at their worst.*
+<figure class="inline-photo inline-photo-left">
+  <img src="/assets/images/posts/pneumonia-admission-bracelet.jpg" alt="Hospital admission wristband worn during treatment, showing patient and visit identifiers." />
+  <figcaption>Admission bracelet from the week things were at their worst.</figcaption>
+</figure>
 
 ## What It Took
 
