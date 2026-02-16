@@ -30,6 +30,8 @@ At first it was just a very bad cold, the kind you push fluids and wait out. The
 
 By that afternoon, my left eye was infected — painful, red, worsening fast. A video appointment got me antibiotic drops, but by evening the eye had swollen shut. That was a bad few hours. But topical antibiotics are genuinely remarkable; it cleared in just over 24 hours and stayed clear.
 
+Coming from a medical family—my grandfather, [Chauncey D. Leake](https://en.wikipedia.org/wiki/Chauncey_D._Leake), both of my parents in medicine, and my own major in human anatomy, I've always found the history of penicillin fascinating, but watching an eye infection clear that quickly brought back a real sense of awe for antibiotics that everyday familiarity can make easy to forget.
+
 The prednisone masked a lot of what was building underneath. A cough started and deepened. By Tuesday, January 6th, the ear pain had intensified, the right side was now affected, and a new symptom had arrived: chest pain. Not subtle. Getting-up-there-on-par-with-a-broken-bone chest pain.
 
 But what scared me most wasn't the chest. It was the hearing. I had almost none on the left side and the right wasn't great. I was weeks away from boarding a plane to the other side of the world, and I was going deaf.
@@ -74,7 +76,7 @@ The second was the slow-building frustration of falling further and further behi
 
 ## The Planning That Didn't Happen
 
-I am spreadsheet-first. Checklists, timelines, structured plans, conditional logic. It is how I manage anxiety and how I make complex logistics feel possible. I don't wing things. I build systems, and then I execute them.
+I am spreadsheet-first. Checklists, timelines, structured plans, conditional logic. It is how I manage anxiety and how I make complex logistics feel possible. I don't wing things. I build systems, and then I execute them (and an apology to every engineer who's worked with me over the last 20–30 years and had to hear me connect aviation and medicine to systems deployment at least once — there is real overlap, and while I can't find the late 1990s/early 2000s study I tend to cite: [Systems Thinking in Aviation and Healthcare](https://pmc.ncbi.nlm.nih.gov/articles/PMC4710114/)).
 
 During those five weeks, I could do none of it.
 
@@ -94,7 +96,9 @@ M.E. bore most of the weight of this. While I was in bed unable to contribute sp
 
 I did not abandon anything. But the design changed.
 
-We were supposed to leave the country on February 14th. Instead, we'll stay with family on the Olympic Peninsula first — where I mostly grew up, and the place I've always used as a jumping-off point. Even when I hadn't lived there for years, it was where I'd go back to before starting the next thing. Stay for a bit — sometimes days, sometimes weeks — get grounded, and then leave again. It feels right for this transition too.
+The February 14th move to the Olympic Peninsula stayed exactly the same. What changed was everything after that: we hadn't booked a flight, an Airbnb, or even locked where the next destination would be, because we needed more runway in the U.S. to coordinate contractors, finalize sales, and close out logistics cleanly.
+
+The Peninsula is still where I mostly grew up, and still the place I've always used as a jumping-off point. Even when I hadn't lived there for years, it was where I'd go back to before starting the next thing. Stay for a bit — sometimes days, sometimes weeks — get grounded, and then leave again. It still feels right for this transition.
 
 Just last week, I booked a flight to Cebu City and an Airbnb. It's warm, it's in the direction we're headed, there's an expat community, high English proficiency, and it looks beautiful. It seemed like a good way to ease back into travel after everything.
 
@@ -118,4 +122,4 @@ The plan changed. The direction didn't. And if I've learned anything from two re
 
 ---
 
-*This is the first in what will probably be a series — some posts here, some on M.E.'s travel site — as we figure out what a year of slow travel actually looks like in practice. More to come from Cebu, and wherever we end up after that.*
+*This is the first in what will probably be a series — some posts here, some on [M.E.'s travel site](https://thelongwaymac.com) — as we figure out what a year of slow travel actually looks like in practice. More to come from Cebu, and wherever we end up after that.*
