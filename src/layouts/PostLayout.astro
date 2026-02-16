@@ -18,8 +18,17 @@ const imagePath = normalizeImagePath(image?.path);
             style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 400px"
           />
         )}
-        <slot />
+        <div class="post-content">
+          <slot />
+        </div>
       </div>
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .post-content :global(img) {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
