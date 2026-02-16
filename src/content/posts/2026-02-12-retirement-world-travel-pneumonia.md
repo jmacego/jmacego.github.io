@@ -12,7 +12,7 @@ published: true
 
 For years, retirement lived in my head as a clean transition. Finish strong, downshift, start traveling with a clear plan and an open calendar. What I did not plan for was pneumonia taking five weeks of the timeline I did not have to spare.
 
-This is my second retirement. I'm 43. The first time, about a decade ago, I sold a yarn shop, closed a photo studio, moved to Las Vegas, and rode a bicycle almost every day for six months until I got bored and wanted play money. This time the plan was different — less pause, more pivot. Keep a fractional CTO position. Work on a few part-time projects. But commit, fully, to at least a year of world travel with M.E.
+This is my second retirement. The first time, about a decade ago, I sold a yarn shop, closed a photo studio, moved to Las Vegas, and rode a bicycle almost every day for six months until I got bored and wanted play money. This time the plan was different — less pause, more pivot. Keep a fractional CTO position. Work on a few part-time projects. But commit, fully, to at least a year of world travel with M.E.
 
 I know myself well enough to know I need to be doing *something*. But I also know what it feels like when most of what you considered broken has been fixed, the numbers are good, the projects have either concluded or are finally underway, and a re-org opens a clean seam to step through. December 2025 was that seam.
 
