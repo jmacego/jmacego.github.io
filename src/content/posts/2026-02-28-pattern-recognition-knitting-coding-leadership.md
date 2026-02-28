@@ -1,7 +1,7 @@
 ---
-title: "Pattern Recognition: How Knitting Prepared Me for Coding and Leadership"
+title: "Pattern Recognition: How Knitting Prepared Me for Engineering and Leadership"
 date: 2026-02-28
-description: "As a published knitting pattern author, I discovered surprising parallels between knitting and software development and engineering — precision, debugging, pattern libraries, the cost of a single dropped stitch, and when to call in a specialist."
+description: "As a crocher, knitter, and former yarn store owner, I discovered surprising parallels between knitting and software development and engineering — precision, debugging, pattern libraries, the cost of a single dropped stitch, and when to call in a specialist."
 categories: [Leadership, Arts]
 tags: [knitting, coding, patterns, debugging, attention to detail, creativity, hobbies, leadership]
 published: true
@@ -15,6 +15,8 @@ image:
 ---
 
 I used to own a knitting shop. This is perhaps the most unexpected sentence I could write in a piece about technology leadership, so let me explain why it belongs here.
+
+<!--more-->
 
 <figure class="inline-photo inline-photo-right">
   <img src="/assets/images/posts/knitting-legend-newspaper.jpeg" alt="The author featured in a newspaper cover story on knitting and photography." />
