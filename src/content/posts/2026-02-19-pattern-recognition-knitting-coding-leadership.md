@@ -1,10 +1,10 @@
 ---
 title: "Pattern Recognition: How Knitting Prepared Me for Coding and Leadership"
-date: 2026-02-19
+date: 2026-02-28
 description: "As a published knitting pattern author, I discovered surprising parallels between knitting and software development and engineering — precision, debugging, pattern libraries, the cost of a single dropped stitch, and when to call in a specialist."
 categories: [Leadership, Arts]
 tags: [knitting, coding, patterns, debugging, attention to detail, creativity, hobbies, leadership]
-published: false
+published: true
 image:
   path: /assets/images/posts/knitting-pattern-recognition.png
   alt: |
@@ -14,14 +14,14 @@ image:
     problem-solving rendered in warm, textured tones.
 ---
 
-I am a published knitting pattern author. This is perhaps the most unexpected sentence I could write in a piece about technology leadership, so let me explain why it belongs here.
+I used to own a knitting shop. This is perhaps the most unexpected sentence I could write in a piece about technology leadership, so let me explain why it belongs here.
 
 <figure class="inline-photo inline-photo-right">
   <img src="/assets/images/posts/knitting-legend-newspaper.jpeg" alt="The author featured in a newspaper cover story on knitting and photography." />
   <figcaption>From a newspaper cover story on my knitting and photography — the image that circulated afterward.</figcaption>
 </figure>
 
-(I'm in more company than you might think. The overlap between serious knitters and engineers — software, electrical, mechanical, civil, (quite a lot of nuclear where I was), and otherwise — is striking enough to be a running joke in both communities. The precision orientation, the tolerance for complex systems, the satisfaction of building something methodically from first principles, the ability to hold a multi-step process in working memory: these attract similar minds. Mention knitting at an engineering conference and someone nearby will nod knowingly.)
+(I'm in more company than you might think. The overlap between serious knitters and engineers — software, electrical, mechanical, civil, and otherwise — is striking enough to be a running joke in both communities. The precision orientation, the tolerance for complex systems, the satisfaction of building something methodically from first principles, the ability to hold a multi-step process in working memory: these attract similar minds. Mention knitting at an engineering conference and someone nearby will nod knowingly.)
 
 Over the years, I've come to believe that knitting and software development and engineering share more structural similarities than most people would guess — and that the skills I developed as a knitter transferred to coding and leadership in ways that weren't metaphorical. They were concrete. The pattern thinking, the debugging approach, the attention to detail, and the relationship between following instructions precisely and knowing when to deviate from them: all of it applies.
 
@@ -29,16 +29,16 @@ Over the years, I've come to believe that knitting and software development and 
 
 ## Patterns as Programs
 
-A knitting pattern is, in important ways, a program. It's a set of instructions that, if followed correctly and completely, produces a deterministic output. "K2tog" (knit two together) is a function call with a predictable result. A pattern for a cable sweater specifies the exact sequence of operations, repeated across rows and columns, that produces a specific fabric structure.
+A knitting pattern is, in important ways, a program. It's a set of instructions that, if followed correctly and completely, produces a deterministic output. "k2tog" (knit two together) is a function call with a predictable result. A pattern for a cable sweater specifies the exact sequence of operations, repeated across rows and columns, that produces a specific fabric structure.
 
 But treating k2tog as a stand-in for any function call undersells the analogy. Mastery in knitting, like mastery in engineering, reveals that there is rarely only one way to accomplish a given goal — and that the choice between approaches carries real consequences. Consider the simple operation of decreasing stitch count to shape a garment. A beginner has one tool: k2tog. An experienced knitter has a whole toolkit:
 
-- **K2tog** (knit two together): simple, prevalent, leans right. The default decrease, the one every pattern assumes you know.
-- **SSK** (slip, slip, knit): leans left. Visually mirrors k2tog, but achieved through a different mechanical sequence — you slip two stitches individually before knitting them together, which changes how the resulting loop sits on the needle and how the decrease twists.
-- **SKP** (slip 1, knit 1, pass slipped stitch over): also leans left, but produces a subtly different texture than SSK. The raised ridge sits slightly differently on the fabric surface — not wrong, not right, but distinct, and noticeable to the eye that knows what to look for.
-- **SK2P** (slip 1, knit 2 together, pass slipped stitch over): a double decrease that centers the remaining stitch. Essential at the apex of a V-shaped shawl where both sides of the decrease must be perfectly symmetrical, and neither a left lean nor a right lean is acceptable.
+- **k2tog** (knit two together): simple, prevalent, leans right. The default decrease, the one every pattern assumes you know.
+- **ssk** (slip, slip, knit): leans left. Visually mirrors k2tog, but achieved through a different mechanical sequence — you slip two stitches individually before knitting them together, which changes how the resulting loop sits on the needle and how the decrease twists.
+- **skp** (slip 1, knit 1, pass slipped stitch over): also leans left, but produces a subtly different texture than ssk. The raised ridge sits slightly differently on the fabric surface — not wrong, not right, but distinct, and noticeable to the eye that knows what to look for.
+- **sk2p** (slip 1, knit 2 together, pass slipped stitch over): a double decrease that centers the remaining stitch. Essential at the apex of a V-shaped shawl where both sides of the decrease must be perfectly symmetrical, and neither a left lean nor a right lean is acceptable.
 
-This is TMTOWTDI — "There's More Than One Way To Do It" — in fiber form. Each technique accomplishes the same underlying goal (fewer stitches) but with different visual results, different structural characteristics, and different appropriate contexts. A raglan sweater with mismatched decrease directions won't fail structurally — the stitch counts will add up, the seams will close — but it will look wrong to anyone who knows what they're looking at. A lace shawl where SKP has been substituted for SSK throughout is correctly executed and subtly off. The right choice isn't arbitrary; it's contextual, and understanding the context requires knowing not just what each technique does, but why it does it differently.
+This is TMTOWTDI — "There's More Than One Way To Do It" — in fiber form. Each technique accomplishes the same underlying goal (fewer stitches) but with different visual results, different structural characteristics, and different appropriate contexts. A raglan sweater with mismatched decrease directions won't fail structurally — the stitch counts will add up, the seams will close — but it will look wrong to anyone who knows what they're looking at. A lace shawl where skp has been substituted for ssk throughout is correctly executed and subtly off. The right choice isn't arbitrary; it's contextual, and understanding the context requires knowing not just what each technique does, but why it does it differently.
 
 Software developers and engineers encounter this constantly. Sorting algorithms, each optimal against different data distributions and size constraints. Join strategies in SQL with meaningfully different performance profiles at scale. Caching architectures that trade consistency for availability in ways that matter differently depending on your use case. Synchronization primitives that solve the same concurrency problem with different throughput and safety characteristics. The engineer who knows only one approach will reach for it reflexively and sometimes inappropriately. The engineer who understands why the alternatives differ — what conditions make each preferable, what the real cost of the wrong choice is — can decide deliberately rather than by habit.
 
@@ -54,7 +54,7 @@ This is an almost perfect analogy for technical debt and software bugs. A flawed
 
 Both knitting and software development and engineering have taught me to notice problems early and address them immediately rather than hoping they'll resolve themselves or become less important. They don't. They compound.
 
-But the dropped stitch also teaches a more nuanced lesson — one that took me longer to learn. Not every discovered error requires ripping back to the source. There is a third option, one that beginners rarely know exists and experienced knitters prize: you can intentionally unravel just the affected stitch, dropping it further down to the row where the error actually occurred, then use a crochet hook to work it back up through each subsequent row in the correct orientation. You rebuild only the stitch ladder that failed, leaving the surrounding fabric entirely intact.
+But the dropped stitch also teaches a more nuanced lesson — one that took me longer to learn. Not every discovered error requires ripping back to the source. There is a third option, one that beginners rarely know exists and that experienced knitters prize: you can intentionally unravel just the affected stitch, dropping it further down to the row where the error actually occurred, then use a crochet hook to work it back up through each subsequent row in the correct orientation. You rebuild only the stitch ladder that failed, leaving the surrounding fabric entirely intact.
 
 I am particularly good at this type of repair. It requires an intimate understanding of stitch structure: which direction the loops sit, how the yarn feeds through each successive row, the distinction between a knit loop and a purl loop when viewed from below rather than above. Done well, the repair is invisible — indistinguishable from the original knitting. Done wrong, the intervention creates a worse problem than the one it was meant to fix.
 
