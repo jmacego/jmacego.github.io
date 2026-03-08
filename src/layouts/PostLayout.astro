@@ -2,11 +2,17 @@
 import BaseLayout from "./BaseLayout.astro";
 import { normalizeImagePath } from "../utils/content";
 
-const { title, description, image, ogImage, ogType } = Astro.props;
+const { title, description, image, socialImage, socialImageAlt, ogImage, ogImageAlt, ogType } = Astro.props;
 const imagePath = normalizeImagePath(image?.path);
 ---
 
-<BaseLayout title={title} description={description} ogImage={ogImage} ogType={ogType}>
+<BaseLayout
+  title={title}
+  description={description}
+  socialImage={socialImage ?? ogImage}
+  socialImageAlt={socialImageAlt ?? ogImageAlt ?? image?.alt ?? title}
+  ogType={ogType}
+>
   <div class="col-md-12">
     <div class="row">
       <div class="col">

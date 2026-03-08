@@ -1,12 +1,28 @@
 ---
 import { site } from "../siteData";
+import { buildSeo } from "../utils/seo";
 
-const { title, description, ogImage, ogType } = Astro.props;
+const {
+  title,
+  description,
+  currentPath,
+  socialImage,
+  socialImageAlt,
+  ogImage,
+  ogImageAlt,
+  ogType,
+} = Astro.props;
 const pathname = Astro.url.pathname;
 const pageTitle = title ? `${title} | ${site.title}` : site.title;
 const pageDescription = description ?? site.description;
-const ogImageUrl = ogImage ? new URL(ogImage, site.url).toString() : undefined;
-const ogContentType = ogType ?? "website";
+const seo = buildSeo({
+  currentPath: currentPath ?? pathname,
+  siteUrl: site.url,
+  siteName: site.title,
+  socialImage: socialImage ?? ogImage,
+  socialImageAlt: socialImageAlt ?? ogImageAlt,
+  ogType,
+});
 
 const isActive = (href) => {
   if (href === "/") return pathname === "/";
@@ -22,11 +38,19 @@ const isActive = (href) => {
     <title>{pageTitle}</title>
     <meta name="description" content={pageDescription} />
     <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href={seo.canonicalUrl} />
+    <meta property="og:site_name" content={seo.siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={pageDescription} />
-    <meta property="og:type" content={ogContentType} />
-    <meta property="og:url" content={site.url + pathname} />
-    {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
+    <meta property="og:type" content={seo.ogType} />
+    <meta property="og:url" content={seo.canonicalUrl} />
+    {seo.socialImageUrl && <meta property="og:image" content={seo.socialImageUrl} />}
+    {seo.socialImageAlt && <meta property="og:image:alt" content={seo.socialImageAlt} />}
+    <meta name="twitter:card" content={seo.twitterCard} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    {seo.socialImageUrl && <meta name="twitter:image" content={seo.socialImageUrl} />}
+    {seo.socialImageAlt && <meta name="twitter:image:alt" content={seo.socialImageAlt} />}
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

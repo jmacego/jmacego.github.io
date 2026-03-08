@@ -36,7 +36,12 @@ const secondaryDate = secondaryPost ? getEntryDate(secondaryPost) : undefined;
 const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
 ---
 
-<BaseLayout title="John MacDonald — Networking, Infrastructure, and Automation" description={pageDescription}>
+<BaseLayout
+  title="John MacDonald — Networking, Infrastructure, and Automation"
+  description={pageDescription}
+  socialImage={heroImage}
+  socialImageAlt={heroPost?.data.image?.alt ?? heroPost?.data.title}
+>
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="row">
       {heroPost && (

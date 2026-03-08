@@ -28,7 +28,8 @@ const imagePath = normalizeImagePath(post.data.image?.path);
   date={post.data.date}
   image={post.data.image}
   categories={post.data.categories}
-  ogImage={imagePath}
+  socialImage={imagePath}
+  socialImageAlt={post.data.image?.alt ?? post.data.title}
   ogType="article"
 >
   <Content />
