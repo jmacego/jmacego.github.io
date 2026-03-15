@@ -31,6 +31,8 @@ const imagePath = normalizeImagePath(post.data.image?.path);
   socialImage={imagePath}
   socialImageAlt={post.data.image?.alt ?? post.data.title}
   ogType="article"
+  publishedTime={post.data.date?.toISOString()}
+  author={post.data.author}
 >
   <Content />
 </PostLayout>
