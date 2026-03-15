@@ -7,6 +7,7 @@ image:
   credit_link: "https://www.pexels.com/@gratisography"
 categories: [Learning Series, quick-fix, duplicate ip, troubleshooting, arp]
 tags: []
+published: true
 ---
 Duplicate IPs on the same network are one of those things that are never supposed to happen but they never seem to go away. Usually, they are pretty much a non-event, someone can go shout at the user who assigned a static IP to their workstation on a DHCP subnet, the snapshot VM that was just spun up can be shut down, etc.
 

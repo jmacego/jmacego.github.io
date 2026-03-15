@@ -7,6 +7,7 @@ image:
   credit_link: "https://www.pexels.com/@pixabay"
 categories: [Learning Series,]
 tags: []
+published: true
 ---
 
 I get asked to explain networking concepts on a fairly regular basis. In-person, on slack, by e-mail, on LinkedIn, etc. I'm (almost) always happy to answer them, usually by drawing on any available surface.

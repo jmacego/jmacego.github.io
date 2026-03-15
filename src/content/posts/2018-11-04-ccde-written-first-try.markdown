@@ -6,6 +6,7 @@ image:
   alt: Notebook and Pencil
   credit_text: Nick Morrison
   credit_link: "https://unsplash.com/@nickmorrison"
+published: false
 ---
 Lots of people seem to do these blog posts, I think mostly to decompress after an exam. I definitely feel that need right now. In this post I'll give the some of the thought process going in, as well as what prep I did (or did not as you might see) before taking the test.
 

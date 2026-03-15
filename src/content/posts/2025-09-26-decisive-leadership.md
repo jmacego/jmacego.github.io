@@ -7,6 +7,7 @@ author: "John MacDonald"
 image:
   path: /assets/images/posts/decisive-leadership.png
   alt: Minimalist illustration of a diverse group of professionals seated around a conference table, collaborating in discussion, while one person stands and gestures forward confidently. The scene uses deep blues, warm oranges, and gold accents, conveying teamwork and decisive leadership in an optimistic, modern setting.
+published: true
 ---
 
 ## The Importance of Decisiveness in Leadership

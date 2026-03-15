@@ -7,6 +7,7 @@ image:
   credit_link: "https://www.cloudflare.com/"
 categories: [Learning Series, DNS, Anycast, Redundancy]
 tags: []
+published: true
 ---
 Do you have multiple servers with the same content or purpose? Do you want every client to always take the best path to the closest one?
 

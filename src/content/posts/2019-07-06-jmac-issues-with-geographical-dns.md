@@ -7,6 +7,7 @@ image:
   credit_link: "https://www.slon.pics/"
 categories: [Learning Series, DNS, firewalls]
 tags: []
+published: true
 ---
 DNS, the Domain Name System, has become something of a Swiss Army Knife of networking and systems engineering. One of the tools in this set determines a user's location, and then send an IP address of a nearby server that can service the request.
 

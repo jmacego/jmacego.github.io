@@ -7,6 +7,7 @@ image:
   credit_text: John MacDonald
   credit_link: "https://www.jmaclabs.com"
 author: jmacego
+published: true
 ---
 
 Yeah, just realized I couldn't find scripts on my computer and I didn't
