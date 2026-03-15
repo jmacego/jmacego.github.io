@@ -7,13 +7,13 @@ tags: [mentorship, coaching, leadership development, people management, career g
 published: false
 ---
 
-I've mentored engineers who became CTOs. I've also mentored engineers who would have been better served by a different approach from me — where I gave advice when they needed space to figure things out, or gave autonomy when they needed more guidance.
+I've mentored engineers who became Executivess. I've also mentored engineers who would have been better served by a different approach from me — where I gave advice when they needed space to figure things out, or gave autonomy when they needed more guidance.
+
+<!--more-->
 
 Mentorship is not a single skill that you either have or don't have. It's a practice that gets better with reflection and deliberate effort, and it's one that I've had to update my mental model of repeatedly over the course of my career.
 
 Here's what I think I understand now that I didn't when I started.
-
-<!--more-->
 
 ## What Mentorship Is Not
 
