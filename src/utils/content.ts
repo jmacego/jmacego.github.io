@@ -7,8 +7,22 @@ marked.setOptions({
 
 export const PAGE_SIZE = 5;
 
-export function isPublished<T extends { data: { published?: boolean } }>(entry: T) {
-  return entry.data.published !== false;
+type EntryWithVisibility = {
+  data: {
+    published?: boolean;
+    date?: Date;
+    publishAt?: Date;
+  };
+  slug?: string;
+};
+
+export function isPublished<T extends EntryWithVisibility>(entry: T) {
+  if (entry.data.published === false) {
+    return false;
+  }
+
+  const publishDate = getPublishDate(entry);
+  return !publishDate || publishDate.getTime() <= Date.now();
 }
 
 export function normalizeImagePath(path?: string) {
@@ -50,6 +64,14 @@ export function getEntryDate<T extends { data: { date?: Date }, slug?: string }>
     }
   }
   return undefined;
+}
+
+export function getPublishDate<T extends EntryWithVisibility>(entry: T) {
+  if (entry.data.publishAt) {
+    return new Date(entry.data.publishAt);
+  }
+
+  return getEntryDate(entry);
 }
 
 export function sortByDateDesc<T extends { data: { date?: Date }, slug?: string }>(a: T, b: T) {
