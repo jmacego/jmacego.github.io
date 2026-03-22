@@ -58,10 +58,10 @@ find . -maxdepth 1 -type f -print0 | while IFS= read -r -d '' i; do
     echo "$FILENAME"
     mv "$i" "$FILENAME"
     if [[ "$HAS_IMAGEMAGICK" -eq 1 ]]; then
-        convert "$FILENAME" -resize 2048x2048\> "$i"
+        convert "$FILENAME" -resize 1536x1536\> "$i"
     else
         cp "$FILENAME" "$i"
-        sips -Z 2048 "$i" >/dev/null
+        sips -Z 1536 "$i" >/dev/null
     fi
     if [[ -f "$RESMUSHIT" ]]; then # Only smush if the submodule exists
         "$RESMUSHIT" --preserve-filename --quiet --preserve-exif "$i"

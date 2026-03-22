@@ -53,11 +53,61 @@ Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
 - Pre-push: `./scripts/validate.sh`
 
 ## Images (Required)
-- Store images under `public/assets/images/` and organize by topic.
+- Store images under `public/assets/images/` and organize by topic (e.g., `posts/`, `projects/`).
 - Optimize images before commit using `public/assets/images/resizer.sh`.
-- Ensure ImageMagick or macOS `sips` is available before running the script.
-- Always reference the optimized filename in content.
+  - Run it from the target subdirectory, not the repo root: `cd public/assets/images/posts && ../resizer.sh`
+  - Requires ImageMagick (`identify`/`convert`) or macOS `sips`.
+  - The script renames the original file to include its dimensions (e.g., `photo.jpg` → `photo-1536x1024.jpg` as the preserved original), then creates a web copy at the original name resized to max **1536×1536** px.
+  - Files already containing dimensions in their name are skipped (they are preserved originals).
+- Always reference the **undimensioned filename** in content (e.g., `mentorship-post-hero.png`) — that is the web copy the script creates.
 - Provide descriptive alt text for every image and aria labels for controls; avoid generic placeholders.
+
+### Hero Images (Front Matter)
+Hero images are set via the `image` object in YAML front matter. They render after the `<h1>` and before post content, styled with `object-fit: cover`, max-height 400 px, full width. They also populate `og:image` and `twitter:image` meta tags for social sharing.
+
+Format:
+```yaml
+image:
+  path: /assets/images/posts/my-image.png
+  alt: |
+    Descriptive alt text for accessibility and social cards.
+    May span multiple lines using YAML literal block syntax.
+  credit_text: Photographer Name   # optional attribution
+  credit_link: "https://example.com/photographer"  # optional link
+```
+- `path` (required): absolute site path starting with `/assets/images/...`.
+- `alt` (optional but strongly recommended): falls back to the post title if omitted.
+- `credit_text` / `credit_link` (optional): attribution for third-party images.
+
+### Inline Images (Body Content)
+Three patterns are used inside Markdown body content, in order of preference:
+
+1. **Standard Markdown** — simple cases:
+   ```markdown
+   ![Alt text](/assets/images/posts/example.png "Optional title")
+   ```
+
+2. **HTML `<img>`** — when width or layout control is needed:
+   ```html
+   <img src="/assets/images/posts/example.png"
+        alt="Descriptive alt text"
+        title="Optional title"
+        width="75%"
+        style="width:75%;height:auto;display:block">
+   ```
+
+3. **`<figure>` with float classes** — for editorially placed inline images with captions:
+   ```html
+   <figure class="inline-photo inline-photo-right">
+     <img src="/assets/images/posts/example.jpeg"
+          alt="Descriptive alt text." />
+     <figcaption>Caption text goes here.</figcaption>
+   </figure>
+   ```
+   Available classes:
+   - `inline-photo-right` — floats right, ~44 % width, left margin.
+   - `inline-photo-left` — floats left, ~44 % width, right margin.
+   - On screens ≤ 767 px both collapse to full width (no float).
 
 ## Editing Rules
 - Do not commit large or unoptimized binaries.
