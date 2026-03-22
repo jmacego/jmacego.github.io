@@ -181,7 +181,7 @@ Vlan    Mac Address       Type        Ports      Moves   Last Move
 Total Mac Addresses for this criterion: 1
 ```
 
-To see if the ARP is changing, 
+To see if the ARP is changing,
 
 I like to have a window with my intermittent pings up when I do this - the change will correspond to the changes in the ping response and the MAC you want will be the one that is there when you have ping replies.
 

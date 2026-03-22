@@ -21,7 +21,7 @@ But decisiveness alone isn't enough. The best leaders aren't lone wolves issuing
 
 ## Listen to All Parties and Gather Input
 
-The first step in sound decision-making is active listening. Leaders who listen create an environment where people feel heard and valued. Unfortunately, many leaders fall short here. 
+The first step in sound decision-making is active listening. Leaders who listen create an environment where people feel heard and valued. Unfortunately, many leaders fall short here.
 
 Research from Gallup shows a significant gap between what leaders think they're doing and what employees experience. Most employees don't feel their leaders actively seek feedback before making significant changes, and even fewer believe their input is valued afterward. This listening gap leads to disengagement and poor decisions.
 
@@ -57,7 +57,7 @@ Being upfront about who owns the final decision helps manage expectations. It's 
 
 ## Set a Clear Path and Be Decisive
 
-After absorbing feedback and weighing options, a leader must set a clear path forward. This is the moment of decision. It can be challenging, especially if opinions were divided, but making the call is what leaders are there to do. 
+After absorbing feedback and weighing options, a leader must set a clear path forward. This is the moment of decision. It can be challenging, especially if opinions were divided, but making the call is what leaders are there to do.
 
 Indecision or endless debate can paralyze a team. A decision, even an imperfect one, provides direction and momentum. As one leadership guide notes, making a decision, even if it later requires adjustment, is far better than doing nothing at all.
 
