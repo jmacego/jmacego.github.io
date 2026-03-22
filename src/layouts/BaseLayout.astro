@@ -116,19 +116,20 @@ const isActive = (href) => {
       .nav-scroller {
         position: relative;
         z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
+        height: auto;
+        overflow: visible;
       }
 
-      .nav-scroller .nav {
+      .site-nav {
         display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        overflow: visible;
         text-align: center;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
+        align-items: center;
+        justify-content: center;
       }
 
       .nav-scroller .nav-link {
@@ -208,12 +209,12 @@ const isActive = (href) => {
       </header>
 
       <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between bg-light">
-          <a class:list={["p-2", isActive("/") ? "text-muted" : "text-dark"]} href="/">Home</a>
-          <a class:list={["p-2", isActive("/blog/") ? "text-muted" : "text-dark"]} href="/blog/">Posts</a>
-          <a class:list={["p-2", isActive("/projects/") ? "text-muted" : "text-dark"]} href="/projects/">Projects</a>
-          <a class:list={["p-2", isActive("/resume/") ? "text-muted" : "text-dark"]} href="/resume/">Resumé</a>
-          <a class:list={["p-2", isActive("/about/") ? "text-muted" : "text-dark"]} href="/about/">About Me</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class:list={["site-nav-link", isActive("/") && "is-current"]} aria-current={isActive("/") ? "page" : undefined} href="/">Home</a>
+          <a class:list={["site-nav-link", isActive("/blog/") && "is-current"]} aria-current={isActive("/blog/") ? "page" : undefined} href="/blog/">Posts</a>
+          <a class:list={["site-nav-link", isActive("/projects/") && "is-current"]} aria-current={isActive("/projects/") ? "page" : undefined} href="/projects/">Projects</a>
+          <a class:list={["site-nav-link", isActive("/resume/") && "is-current"]} aria-current={isActive("/resume/") ? "page" : undefined} href="/resume/">Resumé</a>
+          <a class:list={["site-nav-link", isActive("/about/") && "is-current"]} aria-current={isActive("/about/") ? "page" : undefined} href="/about/">About Me</a>
         </nav>
       </div>
 
