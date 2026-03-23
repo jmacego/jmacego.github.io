@@ -85,6 +85,13 @@ const isActive = (href) => {
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="/assets/styles.css" />
+    {site.cloudflareAnalyticsToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: site.cloudflareAnalyticsToken })}
+      ></script>
+    )}
 
     <style>
       .blog-header {

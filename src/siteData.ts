@@ -3,6 +3,7 @@ export const site = {
   description:
     "Serial entrepreneur and technology leader. Fractional CTO, consulting, and advisory services in AI/ML, network architecture, and operational transformation.",
   url: "https://jmaclabs.com",
+  cloudflareAnalyticsToken: "a65c862e4a8346ee9bf4dc4a4b611bfa",
   gaId: "G-MXYV5E3ZKH",
   /** Twitter/X @handle (with @). Leave empty to suppress twitter:site / twitter:creator tags. */
   twitterHandle: "@jmacego",
