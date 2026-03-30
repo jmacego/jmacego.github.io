@@ -16,11 +16,11 @@ In that version, you start technical. You move into management. You become strat
 
 I understand why that story exists. At some level it is true. An executive who insists on writing production code to prove relevance is usually solving the wrong problem.
 
+<!--more-->
+
 I lean toward leaders should be people-focused first and technology-focused second, but I do not find a clean separation especially believable. The technical side does, and should, creep in.
 
 The leaders I trust most in technical environments are not the ones trying to out-engineer the engineers. They are the ones who understand the work well enough to lead people through it. They can evaluate tradeoffs, ask good questions, recognize nonsense when it enters the room, and make decisions that reflect current technical reality rather than a stale memory of it.
-
-<!--more-->
 
 I have tried to stay that kind of leader.
 
