@@ -7,6 +7,7 @@ image:
   credit_text: John MacDonald
   credit_link: "https://www.jmaclabs.com"
 author: jmacego
+tags: [networking, shell scripts, automation, network operations]
 published: true
 ---
 

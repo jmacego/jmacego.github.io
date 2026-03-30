@@ -7,6 +7,7 @@ import {
   getExcerptText,
   isPublished,
   normalizeImagePath,
+  normalizeThumbnailPath,
   sortByDateDesc,
   stripDatePrefix,
 } from "../utils/content";
@@ -20,8 +21,8 @@ const secondaryPost = posts[1];
 const featuredProject = projects[0];
 
 const heroImage = normalizeImagePath(heroPost?.data.image?.path);
-const secondaryImage = normalizeImagePath(secondaryPost?.data.image?.path);
-const projectImage = normalizeImagePath(featuredProject?.data.image?.path);
+const secondaryImage = normalizeThumbnailPath(secondaryPost?.data.image?.path);
+const projectImage = normalizeThumbnailPath(featuredProject?.data.image?.path);
 
 const heroExcerpt = heroPost ? getExcerpt(heroPost.body) : "";
 const secondaryExcerpt = secondaryPost ? getExcerpt(secondaryPost.body) : "";

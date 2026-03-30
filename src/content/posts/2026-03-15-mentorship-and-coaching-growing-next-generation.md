@@ -3,7 +3,7 @@ title: "Mentorship and Coaching: Growing the Next Generation of Tech Leaders"
 date: 2026-03-15
 description: "What effective mentorship in technology actually looks like — and what I've learned from doing it badly and eventually better over 30 years."
 categories: [Leadership, Career]
-tags: [mentorship, coaching, leadership development, people management, career growth, tech leadership]
+tags: [mentorship, coaching, leadership development, people management, tech leadership]
 image:
   path: /assets/images/posts/mentorship-conversation.png
   alt: An older professional speaks across a table to a younger professional who is taking notes in a bright office setting, suggesting a one-to-one mentorship conversation.

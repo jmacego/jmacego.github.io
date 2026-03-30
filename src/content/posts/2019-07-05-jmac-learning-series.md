@@ -6,7 +6,7 @@ image:
   credit_text: Pixabay
   credit_link: "https://www.pexels.com/@pixabay"
 categories: [Learning Series,]
-tags: []
+tags: [networking fundamentals, teaching, troubleshooting, diagrams]
 published: true
 ---
 

@@ -3,11 +3,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getExcerpt,
   isPublished,
+  normalizeThumbnailPath,
   sortByDateDesc,
   stripDatePrefix,
 } from "../../utils/content";
 import { getCollection } from "astro:content";
-import { normalizeImagePath } from "../../utils/content";
 
 const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
 ---
@@ -17,7 +17,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
-      const imagePath = normalizeImagePath(project.data.image?.path);
+      const imagePath = normalizeThumbnailPath(project.data.image?.path);
       return (
         <div class="blog-post">
           <div class="row">

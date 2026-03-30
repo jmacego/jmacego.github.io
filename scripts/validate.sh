@@ -75,6 +75,9 @@ log "Check content IDs."
 check_duplicate_content_ids "$ROOT_DIR/src/content/posts" "posts"
 check_duplicate_content_ids "$ROOT_DIR/src/content/projects" "projects"
 
+log "Validate published post images."
+node "$ROOT_DIR/scripts/validate-published-post-images.mjs"
+
 log "Build site."
 pnpm run build
 

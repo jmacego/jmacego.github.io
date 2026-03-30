@@ -1,7 +1,7 @@
 #!/bin/bash
 # image resizer in place
-# preserves the original with dimensions in the filename
-# creates a resized web copy as WebP using the original basename
+# preserves the original in ./originals/ with its original filename
+# creates a resized web copy as WebP in the working folder with dimensions in the filename
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 RESMUSHIT="$DIR/resmushit-cli/resmushit-cli.sh"
@@ -10,6 +10,9 @@ if [[ "$(pwd)" = "$DIR" ]]; then
     echo "Refusing to run from assets/images. Run from a subfolder only."
     exit 1
 fi
+
+mkdir -p ./originals
+mkdir -p ./thumbnails
 
 HAS_IMAGEMAGICK=0
 HAS_SIPS=0
@@ -34,17 +37,24 @@ find . -maxdepth 1 -type f -print0 | while IFS= read -r -d '' i; do
 	    if [[ "$i" = "./resmushit-cli" || "$i" = "./resmushit-cli"/* ]]; then
 	        continue
 	    fi
+	    if [[ "$i" = "./originals" || "$i" = "./originals"/* ]]; then
+	        continue
+	    fi
 	    FILE=$(echo "$i" | perl -pe 's/^\.(\/)?(.*)\.[^.]+$/\2/')
 	    SUFFIX=$(echo "$i" | perl -pe 's/^.*(\.[^.]+)$/\1/')
 	    WEB_SUFFIX=".webp"
-	    if [[ "$SUFFIX" = "$WEB_SUFFIX" ]] && find . -maxdepth 1 -type f -name "${FILE}-*x*.*" | grep -q .; then
+	    if [[ "$SUFFIX" = "$WEB_SUFFIX" ]]; then
 	        echo "$i appears to be an existing web copy"
 	        continue
 	    fi
-	    FILESIZE=$(echo "$i" | perl -pe 's/^.*-(.*)\.....?$/\1/')
+	    ORIGINAL_FILENAME="./originals/${FILE}${SUFFIX}"
+	    if [[ -f "$ORIGINAL_FILENAME" ]]; then
+	        echo "$ORIGINAL_FILENAME already exists"
+	        continue
+	    fi
 	    if [[ "$HAS_IMAGEMAGICK" -eq 1 ]]; then
 	        SIZE=$(identify -format "%wx%h" "$i")
-    else
+	    else
         WIDTH=$(sips -g pixelWidth "$i" | awk '/pixelWidth/ {print $2}')
         HEIGHT=$(sips -g pixelHeight "$i" | awk '/pixelHeight/ {print $2}')
         if [[ -z "$WIDTH" || -z "$HEIGHT" ]]; then
@@ -53,20 +63,19 @@ find . -maxdepth 1 -type f -print0 | while IFS= read -r -d '' i; do
         fi
         SIZE="${WIDTH}x${HEIGHT}"
     fi
-	    if [[ "$SIZE" = "$FILESIZE" ]]; then # This file already has the size in it
-	        echo "$SIZE already in filename"
-	        continue
-	    fi
-	    ORIGINAL_FILENAME="$FILE-$SIZE$SUFFIX"
-	    WEB_FILENAME="$FILE$WEB_SUFFIX"
-	    if [[ -f "$ORIGINAL_FILENAME" ]]; then # Already did this file
-	        echo "$ORIGINAL_FILENAME already exists"
-	        continue
-	    fi
 	    echo "$ORIGINAL_FILENAME"
 	    mv "$i" "$ORIGINAL_FILENAME"
 	    if [[ "$HAS_IMAGEMAGICK" -eq 1 ]]; then
-	        convert "$ORIGINAL_FILENAME" -resize 1536x1536\> -quality 82 "$WEB_FILENAME"
+	        TEMP_WEB_FILENAME="${FILE}${WEB_SUFFIX}"
+	        convert "$ORIGINAL_FILENAME" -resize 1536x1536\> -quality 82 "$TEMP_WEB_FILENAME"
+	        WEB_SIZE=$(identify -format "%wx%h" "$TEMP_WEB_FILENAME")
+	        WEB_FILENAME="${FILE}-${WEB_SIZE}${WEB_SUFFIX}"
+	        mv "$TEMP_WEB_FILENAME" "$WEB_FILENAME"
+	        TEMP_THUMB_FILENAME="./thumbnails/${FILE}${WEB_SUFFIX}"
+	        convert "$ORIGINAL_FILENAME" -resize 400x400\> -quality 80 "$TEMP_THUMB_FILENAME"
+	        THUMB_SIZE=$(identify -format "%wx%h" "$TEMP_THUMB_FILENAME")
+	        THUMB_FILENAME="./thumbnails/${FILE}-${THUMB_SIZE}${WEB_SUFFIX}"
+	        mv "$TEMP_THUMB_FILENAME" "$THUMB_FILENAME"
 	    else
 	        echo "WebP output requires ImageMagick. Install ImageMagick and re-run."
 	        exit 1

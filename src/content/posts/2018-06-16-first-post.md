@@ -7,6 +7,7 @@ image:
   credit_text: John MacDonald
   credit_link: "https://www.jmaclabs.com"
 author: jmacego
+tags: [site history, personal website, static publishing, web nostalgia]
 published: true
 ---
 This is definitely a first post.

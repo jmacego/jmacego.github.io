@@ -3,7 +3,7 @@ title: "Pattern Recognition: How Knitting Prepared Me for Engineering and Leader
 date: 2026-02-28
 description: "As a crocher, knitter, and former yarn store owner, I discovered surprising parallels between knitting and software development and engineering — precision, debugging, pattern libraries, the cost of a single dropped stitch, and when to call in a specialist."
 categories: [Leadership, Arts]
-tags: [knitting, coding, patterns, debugging, attention to detail, creativity, hobbies, leadership]
+tags: [knitting, pattern recognition, debugging, systems thinking, creative practice]
 published: true
 image:
   path: /assets/images/posts/knitting-pattern-recognition.png

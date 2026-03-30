@@ -3,7 +3,7 @@ title: "What Mentors Get From Mentoring"
 date: 2026-03-18
 description: "Why mentorship keeps experienced leaders sharp: new ideas, generational perspective, customer insight, and a steady defense against rigidity."
 categories: [Leadership, Career]
-tags: [mentorship, coaching, leadership development, learning, generational perspective, tech leadership]
+tags: [mentorship, leadership development, learning, generational perspective, tech leadership]
 image:
   path: /assets/images/posts/mentorship-post-hero.png
   alt: |

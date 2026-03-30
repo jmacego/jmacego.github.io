@@ -10,6 +10,7 @@ image:
     in a calm modern workspace. Neutral tones with a single blue accent, clean
     shapes, and no text.
 published: true
+tags: [git, github, forks, pull requests, version control]
 ---
 
 I find that most of the time, when I am forking a respository to do a pull request, I've already cloned the respository. I don't do it often enough that I have it memorized, so I go looking for guides... and find that they all are for cloning a new repository, making changes, then doing the pull request. Then I go look up the actual commands that I want and proceed.

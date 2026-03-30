@@ -2,7 +2,7 @@
 title: "Leaving Disney: What I Learned, What Changed, and What I'd Do Again"
 date: 2026-02-03 09:00
 categories: [Leadership, Operations, Career]
-tags: [Disney, Leadership, Reliability, Org Design]
+tags: [career transition, disney, reliability, org design, enterprise leadership]
 published: true
 image:
   path: /assets/images/posts/leaving-disney-1200.png
@@ -100,4 +100,3 @@ I also had to recalibrate my technical instincts. I'm naturally inclined to chas
 This chapter sharpened how I think about the interaction between technology, leadership, and organizational design under pressure. The biggest lesson wasn't a fixed rule. Learning to recognize what stage an organization is in, and whether the right move is building technical debt or deliberately paying it down is the most important.
 
 That judgment, balancing posture, timing, and constraints, is the mark I'm taking with me. It's also what I'll be writing about more as I figure out what comes next.
-

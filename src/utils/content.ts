@@ -1,4 +1,6 @@
 import { marked } from "marked";
+import { existsSync, readdirSync } from "node:fs";
+import path from "node:path";
 
 marked.setOptions({
   mangle: false,
@@ -33,6 +35,34 @@ export function normalizeImagePath(path?: string) {
     return path;
   }
   return path.startsWith("/") ? path : `/${path}`;
+}
+
+export function normalizeThumbnailPath(imagePath?: string) {
+  const normalized = normalizeImagePath(imagePath);
+  if (!normalized || normalized.startsWith("http")) {
+    return normalized;
+  }
+
+  const relativePath = normalized.replace(/^\//, "");
+  const absolutePath = path.join(process.cwd(), "public", relativePath);
+  const absoluteDir = path.dirname(absolutePath);
+  const thumbDir = path.join(absoluteDir, "thumbnails");
+
+  if (!existsSync(thumbDir)) {
+    return normalized;
+  }
+
+  const ext = path.extname(absolutePath);
+  const stem = path.basename(absolutePath, ext).replace(/-\d+x\d+$/, "");
+  const matches = readdirSync(thumbDir)
+    .filter((entry) => entry.startsWith(`${stem}-`) && entry.endsWith(ext))
+    .sort();
+
+  if (!matches.length) {
+    return normalized;
+  }
+
+  return `${path.posix.dirname(normalized)}/thumbnails/${matches[0]}`.replace(/\/{2,}/g, "/");
 }
 
 export function getExcerpt(markdown: string) {

@@ -3,7 +3,7 @@ title: "Last Day at Disney Studios: Closing One Chapter, Opening the Next"
 date: 2026-01-31 09:00:00 -0800
 description: "A short reflection on my final day at Disney Studios, gratitude for the people and work, and what comes next in semi-retirement."
 categories: [Career, Leadership, Reflection]
-tags: [Disney Studios, Career, Travel, Technology]
+tags: [career transition, disney, semi-retirement, reflection, gratitude]
 author: "John MacDonald"
 image:
   path: /assets/images/posts/john-badges-cleaned.png
