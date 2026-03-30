@@ -1,58 +1,104 @@
 ---
-title: "Juggling Multiple Ventures: Leadership Lessons from Running 4–5 Companies"
+title: "Juggling Multiple Ventures: Leadership Lessons from Running 4-5 Companies"
 date: 2026-02-19
-description: "What happens when you're leading multiple companies simultaneously? A candid look at the challenges, the rewards, and the hard-won lessons of wearing many hats at once."
+description: "What running several companies at once taught me about attention, delegation, and the hard limits of leadership in a context-switched life."
 categories: [Leadership, Entrepreneurship]
-tags: [entrepreneurship, time management, delegation, leadership, multi-company, focus]
+tags: [portfolio leadership, delegation, focus, attention management, context switching, entrepreneurship]
 published: false
 ---
 
-Somewhere around my third or fourth simultaneous leadership role, I stopped trying to explain it at dinner parties and just said I was "semi-retired." It was easier than describing the reality: that I was actively involved in several companies at once, each at a different stage, each in a different domain, all competing for the same finite hours in a day.
+There was a stretch where my Mondays started with five versions of the same problem.
 
-This is a piece about what that actually looks like — the unglamorous parts, the genuinely rewarding parts, and what I've learned about leadership by doing it in parallel across very different contexts.
+One company had a hiring issue. Another had a customer escalation. A third needed a decision about architecture. A fourth wanted help with investor communication. Somewhere in there was the rest of my actual life, which was apparently expected to continue functioning.
+
+From the outside, this kind of work can look energetic, strategic, even glamorous. From the inside, it mostly feels like a constant negotiation with attention. Every company has real needs. Every team has something that feels urgent from where they sit. Your job is not to do everything. Your job is to decide what deserves your mind, when, and at what depth.
 
 <!--more-->
 
-## How This Happens
+I did not set out to run four or five companies at once. It accumulated. Advisory work deepened. Board work expanded. Fractional engagements overlapped with existing business interests and personal projects. At some point I stopped trying to explain it at dinner and just said I was "semi-retired," which was easier and only slightly less accurate.
 
-Nobody plans to run five companies simultaneously. It tends to accumulate. You have one venture, you get involved in another as an advisor, the advisory role deepens, someone asks if you'd consider a board seat, an old colleague brings you in on something interesting. Before long, you have a portfolio of commitments and a calendar that requires serious management.
+Doing it for a while taught me a few things about leadership that I doubt I would have learned as quickly in a single company.
 
-In my case, it's a combination of fractional CTO engagements, existing business interests, board-level involvement, and a couple of projects I care about personally. The common thread is that each one draws on different parts of my experience — technology strategy, operations, retail, aviation — so they're not quite as fragmented as they might look from the outside.
+## Attention Becomes the Real Operating Constraint
 
-But they are genuinely simultaneous. Multiple Monday mornings, multiple teams expecting my attention, multiple sets of problems I need to hold in my head.
+When you lead one company full-time, it is still possible to pretend your limitation is time. It usually is not. It is attention.
+
+Multiple ventures remove the illusion.
+
+You cannot be deeply present in five places at once. You cannot hold every dependency, every personnel issue, every product debate, every customer nuance in active memory all day. If you try, you become expensive noise.
+
+That realization changed how I think about leadership more generally. In most organizations, the bottleneck is not intelligence or goodwill. It is fragmented attention. The system is asking too many people to context-switch too often, and then wondering why judgment gets worse.
+
+Running several companies made that visible in an exaggerated way. It also forced me to respect it.
 
 ## What Actually Works
 
-**Strict time blocking, religiously maintained.** Each company gets dedicated time — specific days or half-days where my attention belongs to them completely. When I'm in that block, I'm not checking messages from the other companies, I'm not half-present. I'm genuinely there. This sounds obvious but it requires real discipline, because the temptation to blur context is constant.
+The first thing that works is hard boundaries.
 
-**A single capture system.** Every commitment, every open question, every follow-up gets into one system immediately. I've experimented with different tools over the years; what matters isn't which tool but that everything is in one place. The moment something lives in your head instead of a trusted system, you've introduced a failure point.
+I do not mean vague intentions to focus better. I mean specific blocks of time that belong to one company and are treated that way. If I am in one of those blocks, I am not half-answering another company's messages just because they arrived with the emotional label of urgency attached.
 
-**Delegation as a forcing function.** Running multiple companies forces you to delegate in ways you might not if you had only one. You simply cannot be the bottleneck across five organizations. This sounds like a constraint, but it's actually one of the most clarifying things you can do — it forces you to identify which decisions actually require your judgment and which ones you're holding onto out of habit or ego.
+This sounds obvious until you try to do it for real. The temptation to be lightly available to everyone is constant. It feels responsive. It is usually just diluted.
 
-**Clear written communication.** When you're not always available, clarity matters more. I've gotten much better at written communication — being specific about decisions, rationale, and next steps — because my teams can't always get synchronous time with me when they need it. The discipline of writing things down clearly is good for your own thinking too.
+The second thing that works is one trusted capture system. Every commitment, follow-up, open loop, and question goes into the same place. I do not care much what tool someone prefers. I care that nothing important is relying on memory. Once the number of active contexts gets high enough, memory stops being a professional asset and starts being an avoidable risk.
 
-**Knowing which company needs what, right now.** Not every company needs the same kind of attention at the same time. One might be in a steady operational phase where my involvement is light. Another might be in the middle of a critical hiring decision or a technical inflection point that needs more bandwidth. Calibrating intensity across the portfolio is an ongoing exercise.
+The third thing that works is delegation that is real rather than ceremonial.
 
-## What Doesn't Work
+Multiple ventures force honesty here. You learn quickly which decisions actually require your judgment and which ones you are holding onto because being needed feels good. That distinction is not always flattering.
 
-**Context-switching mid-task.** Jumping between companies within the same hour is expensive. The cognitive switching cost is real, and you tend to do mediocre work on both rather than excellent work on either. The time blocks exist to prevent this.
+I have found that many leaders describe themselves as strong delegators when what they really mean is that they distribute tasks while keeping ownership of every meaningful decision. That model breaks immediately when your attention is divided. If everything still has to come back through you, you are not leading several companies. You are serializing their progress through one overcommitted human being.
 
-**Trying to maintain the same management style across all companies.** A 50-person company with an established engineering team needs different things from me than a 5-person startup still finding product-market fit. I've learned to shift registers deliberately — and to not assume that what works in one context will transfer directly.
+## What Gets Harder Than People Think
 
-**Underestimating the emotional weight.** When things go wrong — and they will — it's harder when you're carrying multiple companies. There's less emotional slack. I've had quarters where two companies were simultaneously in difficult periods, and the accumulated stress was genuinely significant. You have to manage that actively, not just push through.
+The hardest part is not scheduling. It is emotional carryover.
 
-## What I've Learned About Leadership From This
+If one company has a bad week, you still have to show up coherently for the others. If two companies have a bad week at the same time, the weight becomes very noticeable. I have had quarters where one team needed calm in the middle of a stressful transition while another needed hard decisions delivered clearly and quickly. That is not impossible. It is draining in a way that does not show up on a calendar.
 
-Running multiple companies in parallel accelerates certain kinds of learning. You see the same problem pattern play out across different organizations and start to recognize what's universal versus what's context-specific. You develop stronger judgment about what actually moves the needle because you don't have the luxury of spending energy on things that don't matter.
+The second hard part is register-shifting.
 
-You also get better at reading organizational health quickly. When you're coming into a company context cold every week, you get good at picking up signals — how people communicate, what's not being said in a meeting, whether the team has genuine confidence or is papering over problems. That diagnostic sense is valuable.
+A 5-person startup, a board conversation, and a more mature operating company do not need the same version of me. One context needs speed and simplification. Another needs patience and institutional memory. Another needs bluntness because everyone is already overexplaining the obvious. Switching that deliberately is part of the work.
 
-And you develop a healthier relationship with not knowing everything. In a single company, a leader can sometimes maintain the illusion of having a hand in everything. Across multiple companies, you can't. You have to trust your people more, which — if you've built the right teams — turns out to be a feature, not a bug.
+The mistake is assuming that leadership style should be consistent in expression rather than consistent in principles. The principles should hold. The delivery has to adapt.
 
-## Is This For Everyone?
+## What This Taught Me About Organizations
 
-No. Candidly, this approach requires a specific disposition. You have to be comfortable with ambiguity, with imperfect information, with the fact that something will always be going less well than you'd like. You have to have enough self-awareness to know when you're stretched too thin — because no one else is going to tell you.
+Seeing multiple companies in parallel is a fast education in pattern recognition.
 
-You also have to have built enough of a track record that companies are willing to engage with you in this way. Trust is the foundation. Nobody brings in a fractional leader they don't believe will actually show up, mentally and practically, for their specific needs.
+The same issues recur everywhere with different costumes on: unclear ownership, leaders who postpone conflict until it becomes costlier, teams protecting local convenience at system expense, technical choices being asked to compensate for organizational ambiguity.
 
-But for those for whom it fits, running multiple ventures simultaneously is one of the more genuinely interesting ways to spend a career chapter. The variety is energizing. The cross-pollination of ideas is real. And the accumulated perspective you develop — from seeing many different organizational challenges in a compressed period — compounds in ways that I'm still discovering.
+When you see the same pattern three times in one month across unrelated businesses, you get less impressed by surface differences. That is useful. It sharpens judgment.
+
+It also makes you better at reading organizational health quickly.
+
+When you walk into a company only part of the week, you notice signals full-time insiders often normalize. How people talk about absent colleagues. Whether a meeting produces clarity or residue. Whether the executive team is actually aligned or merely polite. Whether the confidence in the room is real or performative.
+
+I do not mean intuition in a mystical sense. I mean pattern recognition developed under repeated exposure.
+
+## The Less Flattering Lesson
+
+Doing this work also made one thing very clear: there is a limit.
+
+Some people are attracted to multi-company leadership because it flatters the ego. A lot of people want to be the person with many hats. Fewer people are honest about where the model stops working.
+
+It stops working when your presence becomes too thin to matter. It stops working when you are always context-switching and never thinking. It stops working when every company gets a version of you that is technically responsive but strategically absent.
+
+The discipline is not just accepting work. It is declining work before quality collapses.
+
+That sounds simple. It is not. Opportunity has its own momentum. So does the desire to stay useful, interesting, and in motion. I know those impulses well enough to distrust them.
+
+## Who This Is Actually For
+
+I would not recommend this model to everyone.
+
+It fits people who are comfortable with ambiguity, genuinely willing to trust others, and realistic about their own limits. It also fits only when the companies involved understand what they are buying. If someone wants full-time attention, emotional reassurance on demand, and immediate answers to every question, a fractional or portfolio model is the wrong tool.
+
+But when the fit is right, the upside is real. The variety is energizing. The cross-pollination is real. The compressed exposure to different failure modes improves judgment fast.
+
+Mostly, though, it teaches respect for focus.
+
+That may be the least glamorous lesson available from running multiple ventures, but it is the one I keep relearning: leadership is often less about doing more than about protecting enough coherent attention for the right things to actually get done.
+
+## Further Reading
+
+- Peter F. Drucker, *The Effective Executive*
+- Cal Newport, *Deep Work*
+- Greg McKeown, *Essentialism*

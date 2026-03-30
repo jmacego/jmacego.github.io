@@ -1,70 +1,91 @@
 ---
-title: "Lessons from the Dot-Com Boom (and Bust) for Today's Innovators"
+title: "Lessons from the Dot-Com Boom and Bust"
 date: 2026-02-19
-description: "I ran a web hosting startup from 1995 to 2001. Here's what I learned from the exuberance, the excess, and the collapse — and why the patterns feel familiar today."
+description: "I co-founded a web hosting company in 1995 and lived through the boom and collapse from inside the infrastructure layer. What that period taught me still feels relevant."
 categories: [Leadership, Entrepreneurship]
-tags: [dot-com, startup, history, entrepreneurship, sustainability, growth, lessons learned]
+tags: [dot-com, web hosting, market cycles, capital discipline, entrepreneurship, technology history]
 published: false
 ---
 
-In 1995, I co-founded a web hosting company. At the time, most people didn't have a clear mental model of what the internet was going to become, but we were certain it was going to be enormous. We were right about that. We were wrong about a lot of the specifics.
+I co-founded a web hosting company in 1995, which was an excellent time to be both right and wrong about the internet.
 
-By 2001, the landscape had changed completely. The dot-com bubble had inflated spectacularly, then deflated with equal spectacle. A lot of companies that had seemed unstoppable were gone. Some that had seemed modest were still standing.
+We were right that the internet was going to matter enormously. We were wrong, along with plenty of other people, about how quickly business reality would reassert itself once money and optimism stopped behaving like they were exempt from gravity.
 
-I've been thinking about that period more as I watch today's AI hype cycle. History doesn't repeat, but it rhymes. Here's what I saw up close from 1995 to 2001, and what I think it means for people building things today.
+Living through the dot-com boom from inside infrastructure was clarifying in a way that later commentary rarely captures. The period was exhilarating. It was also full of category errors that only became obvious once the market stopped rewarding them.
 
 <!--more-->
 
-## The Atmosphere at the Peak
+By the peak, the atmosphere had become genuinely strange. Capital was abundant. Growth was treated as proof of strategy. Companies with no real business model were being valued as though revenue were a technical detail to be solved later. "Eyeballs" was not a joke. It was discussed seriously.
 
-If you weren't there, it's hard to convey how strange the peak of the dot-com era felt from the inside. The money was flowing in ways that seemed to defy gravity. Companies with no revenue were going public and being valued at hundreds of millions of dollars. "Eyeballs" — the number of people visiting your website — was seriously discussed as a primary business metric, as though ad revenue would eventually arrive by magic if you could only accumulate enough users.
+That environment changes how people think, including people who should know better.
 
-I remember conversations with investors who were more concerned about whether we were growing fast enough than whether we were building a real business. The implicit assumption was that growth trumped everything, that market share was all that mattered, that monetization was a problem for later. We'd figure it out when we got there.
+Web hosting was a more grounded business than many of the companies burning brightly around us. We had paying customers and real infrastructure to run. Even so, some of the surrounding logic still seeped in. When the market is rewarding speed, it takes discipline not to confuse acceleration with strength.
 
-Some of that thinking infected us, even though we were in a more fundamentally sound business than many of our contemporaries. Web hosting was real infrastructure with paying customers. But we still made decisions oriented around growth at the expense of operational discipline that we later regretted.
+## What the Boom Encouraged
 
-## The Specific Mistakes
+The boom years encouraged a few predictable mistakes.
 
-**Spending as though the bull market was permanent.** Hiring ahead of revenue, leasing space at prices that made sense only if growth continued indefinitely, investing in capabilities that weren't necessary at our actual scale. When the market turned, a lot of that spending couldn't be unwound quickly enough.
+**Spending as though the tailwind were permanent.** Hiring ahead of revenue, committing to costs that only made sense under uninterrupted growth, expanding before the underlying business had fully earned it. When the environment turned, those commitments became liabilities very quickly.
 
-**Measuring the wrong things.** Traffic, growth rate, press mentions — these were the metrics that felt important because they were the metrics the market seemed to reward. The metrics that actually predicted survival — customer lifetime value, unit economics, retention — were harder to track and less exciting to talk about.
+**Measuring what impressed the market rather than what sustained the business.** Traffic, growth rate, attention, momentum. Those are not meaningless, but they are weak substitutes for retention, unit economics, and customers who will still pay you when sentiment changes.
 
-**Competitive anxiety driving bad decisions.** When you see competitors growing rapidly and raising money, there's enormous pressure to match them — to move faster, spend more, expand into adjacent markets before you've mastered your core one. Some of that expansion was premature for us, and when the environment changed, the stretched commitments became vulnerabilities.
+**Treating competitive panic as strategy.** When neighboring companies are raising money aggressively and expanding fast, restraint starts to feel like cowardice. Sometimes it is just judgment.
 
-**Assuming the tailwind was strategy.** When everything is going up because an entire sector is in a bubble, it's easy to mistake good fortune for good execution. Some of what we did was genuinely smart. Some of it was just surfing the wave. The crash made it very clear which was which.
+**Mistaking a market wave for operating excellence.** In a boom, some companies are genuinely well run and some are merely buoyant. It is hard to tell the difference while everything is rising. The downturn sorts that out brutally.
 
-## What the Bust Revealed
+## What the Bust Clarified
 
-The businesses that survived 2001-2002 shared certain characteristics.
+When the market corrected, the question changed from "who is growing fastest?" to "who built something durable?"
 
-They had real customers paying real money for things they genuinely needed. Not "eyeballs" or "users" but actual customers with real retention and real willingness to pay.
+The companies that held up best tended to share the same traits.
 
-They had cost structures that could sustain themselves through a downturn. They hadn't built operations on the assumption of perpetual growth.
+They had real customers paying for something that actually mattered.
 
-They had leadership that understood the difference between growth and sustainability and was willing to make the harder choices — slowing expansion, cutting costs before it became a crisis, prioritizing profitability over market share.
+They had cost structures that did not require permanently favorable conditions.
 
-And most of them were less celebrated than the companies that imploded. They were building something slower, less glamorous, and more durable. The press wasn't particularly interested in them during the boom years. They're still operating today.
+They had leaders willing to distinguish between growth and health.
 
-## What I See Repeating
+They understood that sustainable businesses are usually less glamorous than the story the market wants to hear at the top.
 
-I'm not making a specific prediction about the current AI investment cycle. But some patterns feel familiar.
+That last point is worth dwelling on. Many of the companies that endured did not look particularly exciting during the peak. They were less celebrated because they were doing the slower, less theatrical work of building businesses that could survive contact with ordinary economic reality.
 
-Valuations that outrun demonstrated business value. A gold-rush mentality where infrastructure companies (then: web hosting, bandwidth, servers; now: GPU compute, cloud AI APIs) make out regardless of which specific applications survive. A general atmosphere where the failure to move quickly enough is treated as a more serious risk than moving poorly.
+## What Feels Familiar Now
 
-The specific technology is different. The underlying human dynamics of boom-cycle investment are not.
+I am not arguing that every modern technology wave is a replay of the late 1990s. It is not. The underlying technologies are different. The infrastructure is different. The market structure is different.
 
-## What I'd Tell Someone Building Today
+The human behavior, though, is familiar.
 
-Build for customers, not for investors. These are not always the same thing, and when they diverge, it's worth noticing.
+You still see valuations detach from demonstrated value. You still see investors and operators talking themselves into the idea that this time monetization, adoption, or defensibility will behave differently. You still see urgency elevated to a virtue even when the thing being accelerated is not yet sound.
 
-Know your unit economics. Not eventually — now. Even at early stage, you should have a story about what it costs to acquire a customer and what that customer is worth over time.
+Watching the current AI cycle has brought that period back to mind for me, not because the technologies are equivalent, but because boom logic is remarkably consistent across eras.
 
-Treat growth as one metric among several, not as the metric. Growing in ways that destroy margin, require constant capital infusion, or build organizational complexity you can't sustain is not actually good growth.
+## What I Took From It
 
-Be skeptical of competitive panic. The pressure to match a competitor's moves is real, but competitors burning through capital faster than you isn't evidence you're losing — it might be evidence they're making worse decisions than you.
+The dot-com era left me with a durable suspicion of narratives that treat scale as self-justifying.
 
-Prepare for the environment to change. Not by being pessimistic, but by ensuring that your business can survive a significant change in conditions. The companies that survived 2001 were the ones that had prepared for that possibility even when everything was going well.
+It also left me with more respect for boring fundamentals than I had when I started. Customers who pay. Margins that make sense. Costs that can survive a downturn. Leaders who can tell the difference between momentum and strength. Those things sound almost insultingly basic during a boom. They become very interesting once the boom ends.
 
-The dot-com boom was one of the most energizing and disorienting periods of my professional life. I learned more in those six years than in any equivalent period before or since. I'm grateful for it, including the bust. The downturn clarified things that the boom had obscured.
+I also learned that infrastructure businesses often occupy a peculiar position during gold-rush periods. When everyone else is chasing the next application-layer winner, the picks-and-shovels layer can do quite well regardless of which specific stories survive. That was true then. It is visible again now in different forms.
 
-Building durable businesses is slower and less exciting than building for a hype cycle. It's also far more likely to result in something that matters.
+## What I Would Tell Someone Building in a Hot Market
+
+Build for customers before investors. If those interests diverge, notice it early.
+
+Know your economics before the market forces you to.
+
+Be suspicious of growth that requires permanently favorable conditions.
+
+Do not assume your tailwind is your strategy.
+
+And prepare, emotionally and operationally, for the environment to change while you still have the luxury of doing so calmly.
+
+The dot-com boom was one of the most energizing periods of my career. I am grateful for it. I am also grateful for the bust, because it clarified things the boom concealed.
+
+Booms are exciting. Corrections are educational. If you survive both, you come out with a healthier respect for reality.
+
+## Further Reading
+
+- Carlota Perez, *Technological Revolutions and Financial Capital*
+- John Cassidy, *Dot.con*
+- Geoffrey A. Moore, *Crossing the Chasm*
+- Hyman P. Minsky, *Stabilizing an Unstable Economy*

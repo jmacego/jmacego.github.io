@@ -57,9 +57,9 @@ Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
 - Optimize images before commit using `public/assets/images/resizer.sh`.
   - Run it from the target subdirectory, not the repo root: `cd public/assets/images/posts && ../resizer.sh`
   - Requires ImageMagick (`identify`/`convert`) or macOS `sips`.
-  - The script renames the original file to include its dimensions (e.g., `photo.jpg` → `photo-1536x1024.jpg` as the preserved original), then creates a web copy at the original name resized to max **1536×1536** px.
-  - Files already containing dimensions in their name are skipped (they are preserved originals).
-- Always reference the **undimensioned filename** in content (e.g., `mentorship-post-hero.png`) — that is the web copy the script creates.
+  - The script moves the original file into an `originals/` subfolder using its original filename (e.g., `photo.png` → `originals/photo.png`), then creates a resized web copy in the working folder as WebP with dimensions in the filename (e.g., `photo-1536x1024.webp`).
+  - Files in `originals/` are preserved source assets and should not be referenced directly in posts.
+- Always reference the **dimensioned web copy** in content (e.g., `photo-1536x1024.webp`), not the original.
 - Provide descriptive alt text for every image and aria labels for controls; avoid generic placeholders.
 
 ### Hero Images (Front Matter)
@@ -113,6 +113,14 @@ Three patterns are used inside Markdown body content, in order of preference:
 - Do not commit large or unoptimized binaries.
 - Prefer Markdown over HTML unless needed for layout control.
 - Keep HTML/CSS changes minimal and accessibility-focused.
+
+## Editorial Style Guide
+- Evaluate post and project writing against `STYLE_GUIDE.md` in the repo root.
+- Use it as the primary reference for diction, tone, narrative stance, and prose craft when drafting, revising, or reviewing content for this site.
+- Do not default to the generic "started technical, moved into management, then became strategic" narrative. John has always operated in leadership, including at smaller companies and in founder/owner contexts, while often remaining relatively hands-on.
+- Frame John as a people-first leader. The point is not that leaders should behave like full-time engineers; it is that leaders should understand the work well enough to speak credibly with engineers, ask better questions, and make sound decisions.
+- When describing John's technical edge, make clear that he maintains it primarily outside of work through personal projects, infrastructure, experimentation, and continued learning. Avoid implying that he is doing day-to-day IC work inside leadership roles unless a specific role actually required it.
+- John is more technical than many leaders by choice and habit, and that distinction matters. Do not flatten him into either a generic executive or a "technical founder turned manager" stereotype.
 
 ## Instruction Sources
 - Copilot instructions should reference this file.

@@ -1,92 +1,108 @@
 ---
-title: "Building Your Personal Brand as a Tech Leader"
+title: "Public Thinking Without the Performance"
 date: 2026-02-19
-description: "Why senior technology leaders should build a public presence — and how to do it in a way that's authentic, sustainable, and actually useful to the people reading it."
+description: "Why experienced technology leaders should make their thinking legible in public, and how to do it without sounding like a brand manager or an influencer."
 categories: [Leadership, Career]
-tags: [personal brand, thought leadership, LinkedIn, writing, content, consulting, networking, career]
+tags: [public writing, professional reputation, consulting, leadership communication, credibility]
 published: false
 ---
 
-For most of my career, I didn't think about "personal brand." I thought about doing good work, building good relationships, and developing capabilities that would be useful to organizations I cared about. That was sufficient for a long time.
+For most of my career, I thought good work was enough.
 
-When I transitioned to fractional CTO and consulting work, I had to reckon with a different reality: the people and organizations I wanted to work with often had no way to discover me or evaluate my credibility before a direct introduction. The work I'd done, the problems I'd solved, the perspectives I'd developed — none of it was visible unless someone happened to know someone who knew me.
+Inside companies, it often is. People see how you operate. They watch the decisions you make, the problems you solve, the teams you build, and the standards you hold. Your reputation accumulates through direct experience.
 
-Building a public presence changed that. And in doing it, I learned several things about why it's worth doing, how to do it without feeling performative, and what actually works.
+That model works well until you step outside the institution that made your work legible.
+
+When I moved into fractional CTO and consulting work, I ran into a simple problem: much of my best work had happened in rooms the public would never see. The people I wanted to work with had no practical way to judge how I thought unless we had a mutual connection or I was already sitting in front of them. A resume helped, but not much. Titles signal scope. They do not show judgment.
+
+That is the real case for writing in public as a senior leader. Not "personal brand." Not content strategy. Legibility.
 
 <!--more-->
 
-## Why This Matters for Senior Tech Leaders Specifically
+## The Problem Is Not Visibility. It Is Evaluation
 
-Junior engineers don't need strong personal brands. Their work speaks for itself within the organizations they work in, and their career advancement comes primarily through internal recognition and direct referrals within professional networks.
+People use "personal brand" to cover several different things, and that muddies the conversation.
 
-Senior leaders — and especially those who are considering consulting, fractional work, board roles, or executive positions outside their current organization — operate differently. The opportunities available to them often depend on how visible they are and how easily their value can be assessed by people who don't know them directly.
+The question is not whether more people know your name. The useful question is whether the right people can tell, with reasonable speed, what kind of leader you are, what problems you understand, and whether your judgment is likely to be useful in their context.
 
-A well-developed public presence serves several functions:
+For a senior technology leader, especially one doing consulting, advisory, or fractional work, that matters. Your value is not only that you have done hard things. It is that you can help someone else think through their version of a hard thing. Public writing gives them evidence.
 
-**Discoverability.** People looking for expertise in your domain can find you and evaluate whether you're a fit before reaching out. This is far more efficient than relying entirely on warm introductions.
+That evidence is far richer than a polished bio. A bio says you held responsibility. A good essay shows how you think under responsibility.
 
-**Credibility signaling.** Content that demonstrates your thinking on relevant problems gives prospective clients, partners, or employers a much richer view of your capabilities than a resume. A thoughtful post about how you approached a hard organizational problem says more than a bullet point claiming "strategic leadership."
+## The Part That Feels Gross
 
-**Thought development.** Writing publicly forces clarity of thought in ways that internal thinking often doesn't. When you have to explain something to an external audience — without the context shortcuts that internal familiarity provides — you often discover that your understanding of it is less precise than you thought. The discipline is valuable.
+Most experienced leaders resist this because they do not want to become self-promotional. I understand that instinct. A lot of public professional writing is exactly that: self-advertising with a thin coating of insight.
 
-**Community building.** Consistent public engagement brings people to you who share your interests and perspectives. That network has value far beyond any individual transaction.
+The way through it is to stop thinking in terms of promotion and start thinking in terms of usefulness.
 
-## The Authenticity Problem — and How to Solve It
+The standard I use is simple: if someone reads this, will they leave with a clearer way to think about a real problem? If the answer is yes, the piece is probably worth publishing. If the piece mostly exists to imply that I am wise, accomplished, or unusually strategic, it is not ready.
 
-The main objection I hear from senior tech leaders who haven't built a public presence is some version of: "I don't want to be self-promotional." This is understandable. Much of what passes for personal branding is, in fact, thin self-promotion dressed up as insight.
+That sounds obvious. It is also where most public writing fails.
 
-The answer isn't to avoid building a public presence. It's to be genuinely helpful rather than performing helpfulness.
+## What Senior Leaders Actually Have to Offer
 
-The content that has served me best is content that I would have wanted to read earlier in my career — things I learned the hard way, frameworks I developed through experience, perspectives on problems I see recurrently. The test I apply: if someone read this, would they come away with something useful that they didn't have before? If yes, the content is worth creating. If the answer is "they'd know more about how impressive I am," I've written the wrong thing.
+If you have spent enough years leading teams and systems, you already have material.
 
-This sounds obvious. It's also genuinely the distinction that separates content that builds real credibility from content that produces LinkedIn engagement but not actual value.
+You have decisions that looked right and were wrong. You have organizational patterns you now recognize faster than you did 10 years ago. You have examples of where process saved you, where culture hurt you, where a customer told you something your dashboards did not, where a talented person failed because the environment made success nearly impossible.
 
-## What to Actually Write About
+That is the material. Not abstractions about innovation. Not recycled management slogans. Not summaries of articles everyone else already read.
 
-If you have more than a decade of technology leadership experience, you have more material than you can probably publish. The challenge isn't finding things to say — it's deciding which things are worth writing up.
+The most useful public writing usually starts from one of these:
 
-I find it useful to start with specific, concrete experiences rather than general principles. "Here's a general principle about change management" is less interesting than "here's a specific situation where our change management process failed and what we learned from it." The general principle can come at the end, but the specific experience is what makes it credible and memorable.
+- a decision that went badly and what it revealed
+- a recurring failure pattern across more than one company
+- a technical or organizational tradeoff that looks different from the executive seat
+- a lesson from another domain that changed how you lead
+- a transition that forced you to revise your self-image or operating model
 
-Topics that tend to resonate:
+This is also where distinctiveness comes from. My own perspective is shaped not just by enterprise technology work, but by aviation, retail, photography, medicine, and time spent in organizations at very different scales. That variety is not a branding trick. It is simply where my judgment was formed. If I write from that honestly, the writing sounds like me. If I write the way "technology leadership content" is supposed to sound, it immediately gets worse.
 
-- Specific decisions that went wrong and what the failure revealed
-- Frameworks you've actually used, with concrete examples of applying them
-- Cross-domain analogies that illuminate technology problems from unexpected angles
-- Honest assessments of industry trends with explicit acknowledgment of uncertainty
-- Career transitions and what you actually learned from them (not the sanitized version)
+## Why Writing Helps the Writer
 
-The specificity and honesty are the differentiators. Generic thought leadership is abundant and undifferentiated. Content that reflects genuine experience and is honest about complexity is much rarer and more valuable.
+Public writing is not only outbound. It is diagnostic.
 
-## The Consistency Requirement
+Putting an idea into prose forces a kind of clarity that internal confidence often lets you avoid. A thought that feels solid in your head may turn out to be vague, overstated, or too dependent on context once you try to explain it cleanly. That is useful. It reveals where your reasoning is strong and where it is mostly habit.
 
-One post every six months doesn't build a public presence. Consistency matters, and it matters in ways that aren't entirely about the algorithm (though the algorithm is real and does reward consistency).
+This matters more as you get more senior. Experience creates judgment, but it can also create smooth, polished certainty. Writing is one of the better tools I know for checking whether a conclusion still deserves the confidence you are giving it.
 
-Consistency matters because it demonstrates that this is an ongoing commitment rather than a moment of enthusiasm. People will follow and engage with someone who reliably produces useful content. They won't maintain attention for someone who posts occasionally when the mood strikes.
+## What to Publish, and What to Skip
 
-What works for maintaining consistency:
+The pieces worth publishing are usually concrete.
 
-**Tie writing to your existing thinking.** If you're working through a hard problem, write about it as you work through it — or after you've worked through it. If you read something that sparks a reaction, write the reaction down. This keeps writing connected to real thinking rather than treating it as an additional obligation separate from your actual work.
+A post about a failed change-management process is better than a post about "the importance of accountability." A post about what shifted when I moved from enterprise leadership into fractional work is better than a post about "embracing change." A post about the operational realities of AI adoption is better than a post announcing that leaders need an AI strategy.
 
-**Lower the bar for individual pieces.** Not everything needs to be a fully developed 1500-word essay. A clear observation, a specific question worth thinking about, a reaction to something you read — these are legitimate content that maintains presence without requiring the full production cycle.
+Just as important is knowing what to skip.
 
-**Batch when you're in the flow.** There are periods when writing comes easily and periods when it doesn't. When you're in a writing period, produce more than you need and stockpile for the periods when you're not.
+I would avoid:
 
-## Your Distinctive Angle
+- performative vulnerability
+- hot takes written mainly to join a conversation
+- generic encouragement aimed at everyone
+- praise of trends without contact with actual implementation
+- posts that sound as if they were reverse-engineered from what performs well on LinkedIn
 
-The most effective personal brand isn't built by writing about what everyone else in your field writes about. It's built by bringing something to the conversation that isn't already abundant.
+None of that builds durable credibility. At best it builds reach. Those are not the same thing.
 
-I write from the intersection of technology leadership and unexpected domains — aviation, photography, knitting, retail, medicine — because that's genuinely who I am and because those cross-domain perspectives produce insights that pure technology writing doesn't. That's not a calculated positioning strategy; it's just writing about what I actually know and care about.
+## Consistency Matters, but Not for the Usual Reason
 
-What's your intersection? What makes your perspective on technology leadership different from someone who has only ever done technology? That's the territory worth developing.
+Yes, consistency helps people find and remember your work. But that is not the main reason it matters.
 
-The leaders who build the most durable public presences are the ones who are writing from a genuinely specific vantage point — not "I'm a tech leader" but "I'm a tech leader who also flew planes, built a retail business, and spent 30 years watching the same organizational patterns repeat across different industries." The specificity makes the perspective distinctive. The distinctiveness is what makes it worth reading.
+Consistency matters because it demonstrates that your public thinking is part of your professional practice rather than a temporary burst of self-marketing. It signals seriousness. It also helps your voice stabilize. The first few pieces are usually more guarded, more formal, and more derivative than the later ones. That is normal. You get more like yourself by doing the work repeatedly.
 
-## Starting
+The easiest way to stay consistent is to write from problems you are already thinking about. If writing becomes a separate performance layer on top of your actual work, it gets forced quickly. If it stays attached to what you are genuinely trying to understand, it remains useful.
 
-If you've read this and are considering building more of a public presence, the only advice that actually moves things forward is to start writing before you feel ready.
+## The Standard I Would Hold
 
-The first few pieces won't be your best. The clarity improves with practice, the voice develops over time, the topics get sharper as you discover what resonates and what doesn't. The gap between the first piece and the tenth piece is always larger than people expect.
+For senior leaders, public writing should do two things at once.
 
-But you can't write the tenth piece without writing the first one. Start with something small, something specific, something you know well. Write it down, edit it once, and put it out. See what happens. Adjust from there.
+It should help the reader think more clearly, and it should give the reader an honest way to evaluate how you think.
 
-The alternative — continuing to do excellent work that nobody outside your immediate professional network can discover — is increasingly costly for leaders who want to shape their own career trajectories rather than depend entirely on existing relationships. Your experience deserves a wider audience than the people who already know you.
+If it does both, the right opportunities tend to follow.
+
+That is a much better goal than "building a brand." It is also more difficult, because it requires having something real to say and saying it plainly. But the result is better. It attracts people who value judgment rather than polish, which is exactly the audience I would want.
+
+## Further Reading
+
+- Austin Kleon, *Show Your Work!*
+- Dorie Clark, *The Long Game*
+- David H. Maister, Charles H. Green, and Robert M. Galford, *The Trusted Advisor*

@@ -1,74 +1,97 @@
 ---
-title: "Tech Is Only 10% Tech: Why People and Process Drive Success"
+title: "Tech Is Only 10% Tech"
 date: 2026-02-19
-description: "After 30 years in technology leadership, the most reliable lesson I have is that the technology itself is rarely what makes or breaks a project. Here's what actually does."
+description: "The number is deliberately provocative, but the pattern is real: most technology initiatives fail or succeed on problem definition, trust, decision-making, and change adoption long before the stack becomes the deciding factor."
 categories: [Leadership, Technology]
-tags: [people, process, culture, leadership, technology, software delivery, organizational success]
+tags: [org design, change management, decision rights, problem definition, cross-functional alignment, technology strategy]
 published: false
 ---
 
-Early in my career, I believed that the key to successful technology delivery was choosing the right technology. Pick the right architecture. Use the right tools. Hire people with the right technical skills. Get the technical decisions right, and the rest would follow.
+Early in my career, I thought successful technology delivery was mostly a technical problem.
 
-I was wrong about the weight of that. Not entirely wrong — technical decisions matter. But after 30 years of watching technology projects succeed and fail, I've arrived at a number that feels roughly right: the technology itself accounts for maybe 10% of the outcome.
+Pick the right architecture. Choose the right tools. Hire the right engineers. Avoid obvious mistakes and the rest should largely take care of itself.
 
-The other 90% is people and process.
+That was not fully wrong. A bad architecture can absolutely hurt you. Security decisions made badly at the start can create very expensive futures. Technical debt compounds whether you believe in it or not.
 
-This is not a comfortable thing to say in an industry that celebrates technical complexity. But it's what I've actually observed.
+What I had wrong was the weighting.
+
+After thirty years of watching projects ship, stall, recover, and fail, I have come to believe that technology itself is often only a small part of the outcome. The number I use is 10%, partly because it is provocative and partly because it is directionally true often enough to be useful.
 
 <!--more-->
 
-## What I Mean By "Only 10%"
+The technical choices matter. They are just rarely the thing that decides the result.
 
-I don't mean that technical decisions are unimportant. Choosing a fundamentally flawed architecture can create problems that are very expensive to unwind. Ignoring security at the design level creates vulnerabilities that are sometimes irreparable. Technical debt accumulates and eventually demands payment.
+## Where I Learned This
 
-What I mean is that among all the factors that determine whether a technology initiative succeeds, the technical choices are rarely the deciding ones. I've watched technically sophisticated projects fail because the team couldn't communicate, the leadership couldn't make decisions, the organization couldn't change its processes to take advantage of the new system. I've watched technically modest projects succeed because the team executed with discipline, communicated clearly, and maintained relentless focus on what customers actually needed.
+More than once, I have inherited an environment with competent engineers, reasonable tooling, and no obvious catastrophe in the architecture. On paper it looked fine. In practice the organization was exhausted, customers were frustrated, and trust in the technology function was weak.
 
-The technology was not the variable. The people and the process were.
+The causes were almost never "the wrong stack."
 
-## Where Projects Actually Fail
+They were unclear ownership, muddy decision rights, weak communication between technical and business teams, poor problem definition, missing documentation, and a culture that surfaced bad news too late. The technical system reflected the organizational system around it.
 
-**Unclear problem definition.** A stunning proportion of failed technology projects were solving the wrong problem — either a problem that wasn't the most important one, or a problem that didn't quite match what customers actually needed. No technology solves for a wrong problem definition. This is a human failure: inadequate conversation, inadequate listening, inadequate willingness to challenge initial assumptions.
+That is the pattern behind the 10%.
 
-**Communication breakdown between technical and business stakeholders.** Engineers who can't explain what they're building to the people who need to use it, or business leaders who can't articulate their actual needs to the people building for them — this gap is responsible for an enormous amount of wasted effort. It's not a technical problem. It's a communication and culture problem.
+## What Actually Decides Outcomes
 
-**Change management failures.** Organizations consistently underestimate how hard it is to change how people work. Successful technology implementation requires changing habits, workflows, and sometimes organizational structures. Most technology projects plan for the build and not for the change. The technology is installed; the organization doesn't actually change. Value is never realized.
+The first deciding variable is usually problem definition.
 
-**Leadership that can't make decisions.** Projects drift when no one can commit to a direction. Technical teams need clear direction to execute well. When leadership is conflict-averse or politically paralyzed, projects go in circles. This has nothing to do with the technology.
+Teams can execute brilliantly against the wrong target. They do it all the time. A technically elegant solution to the wrong business problem is still the wrong solution. The more sophisticated the team, the easier it can be to hide this for a while because good engineers can make almost anything appear coherent.
 
-**Team dysfunction and psychological safety.** Teams where people can't surface problems, where the culture punishes bad news, where individuals protect their turf rather than collaborate — these teams don't build good things, regardless of their technical ability. The best engineers I've known underperform in bad cultures.
+The second deciding variable is communication quality.
 
-## The Underrated Elements
+I have seen enormous waste generated by technical teams that could not explain tradeoffs clearly to business stakeholders, and by business stakeholders who could not articulate what outcome they actually needed. This is not a soft problem. It is one of the main sources of rework, delay, and distrust.
 
-**Documentation.** Boring, unglamorous, endlessly deferred. Also essential. Systems without adequate documentation are fragile — they depend on institutional knowledge held in the heads of specific people. When those people leave, the knowledge leaves with them. The discipline of writing things down clearly is one of the most leveraged investments a technology organization can make.
+The third is organizational willingness to change.
 
-**Communication rituals.** Regular, structured communication — not meetings for the sake of meetings, but predictable forums where the right information gets to the right people — dramatically reduces the coordination failures that derail projects. This sounds obvious. It's rarely done well.
+A new system does not create value because it exists. It creates value because people change behavior around it. New workflows get adopted. Old authority structures adjust. Habits get retrained. If that work never happens, the implementation may be technically successful and organizationally useless.
 
-**Hiring for character as much as skill.** Technical skills can be learned and developed. Intellectual honesty, willingness to acknowledge mistakes, genuine curiosity, and collaborative instincts are much harder to develop in adults. I've made the mistake of overweighting technical credentials and underweighting character. It reliably produces problems.
+The fourth is team culture.
 
-**Process that enables rather than constrains.** The word "process" has a bad reputation in technology culture — it evokes bureaucracy, slowdowns, gatekeepers. But the right process is the opposite of that. A good deployment process makes deployments faster and safer. A good code review process improves quality and shares knowledge. The difference between process as bureaucracy and process as enabler is whether the process was designed to serve the people doing the work, or to serve the people managing it.
+Amy Edmondson's work on psychological safety gave language to something many operators had already learned the hard way: people do better work when they can surface concerns, uncertainty, and mistakes early. Teams where people hide problems to protect status are dangerous no matter how strong the engineering talent is.
 
-**Customer proximity.** Technology teams that are close to customers — who talk to them regularly, who see how the product is actually used, who feel the friction customers feel — make better decisions. This sounds obvious, but there's enormous organizational pressure that creates distance between engineers and users. That distance is costly.
+## What Leaders Underinvest In
 
-## A Story That Illustrates This
+Leaders routinely underinvest in the boring mechanisms that make complex work reliable.
 
-At one of my executive roles, I inherited a technology organization that was technically competent by most measures. Good engineers, reasonable tooling, solid architecture decisions. But the uptime was poor, the team was burned out, and the business was losing trust in technology's ability to deliver.
+Documentation is one of them. Not because it is glamorous, but because undocumented systems become private property. Knowledge held only in individual heads turns into fragility, gatekeeping, and operational drag.
 
-We didn't fix this by changing the technology stack. We fixed it by changing the culture and the process. We implemented disciplined change management — requiring review and approval for risky changes, establishing blackout periods during critical business events, making post-mortems blameless and genuinely learning from them.
+Decision hygiene is another. Who decides? On what basis? With what input? By when? A surprising amount of project pain comes from organizations that do not answer those questions clearly enough for execution to follow.
 
-Within a year, outage hours had dropped by 97%.
+Then there is change management, which is still treated in too many places as a clerical afterthought rather than the thing that determines whether the value is realized. The DORA research has been helpful here because it put data behind what many leaders had already seen: high performance is not about drama. It is about repeatable, disciplined delivery.
 
-The technology hadn't changed. The engineering talent hadn't changed. The culture of how the team operated — the shared understanding of what careful work looked like — had changed. And that change was what delivered the outcome.
+Customer proximity also belongs on this list. Teams that remain too far from customers begin solving for internal logic, local incentives, and technical elegance. Teams that stay close to real user frustration make better tradeoffs.
 
-## What This Means for Technology Leaders
+## What Still Belongs in the 10%
 
-If you accept that people and process are the primary levers, the implications are significant.
+I do not want this argument misread as anti-technical.
 
-Your most important hires are not just the most technically sophisticated people — they're the people who can communicate, collaborate, and build trust with non-technical stakeholders. The "brilliant jerk" is a net negative regardless of their technical output.
+There are cases where the technical choice is decisive. Security architecture can be decisive. Data-model decisions can be decisive. Reliability posture can be decisive. A deeply constrained system can fail because the technical design really was wrong.
 
-Your most important investments are in organizational clarity — clear ownership, clear decision rights, clear communication channels. These are less exciting than technology investments but more consequential.
+But even there, the surrounding question is often still organizational. Why was the wrong design accepted? Why were warnings ignored? Why was no one empowered to challenge the assumption? Why was the rollout structured in a way that made failure expensive?
 
-The things that don't feel like "real work" — writing documentation, holding retrospectives, facilitating alignment conversations — are often the highest-leverage activities available to you.
+The technical failure often has a human prehistory.
 
-And when something goes wrong, the instinct to look for a technical explanation first is usually wrong. Start with the human and organizational dynamics. The technical issues are often downstream of those.
+## What This Changes for Leaders
 
-Technology matters. But the people and process that surround it matter more. That's not a limitation to accept reluctantly. It's actually good news — because culture and process are things you can shape deliberately, which means the outcomes are more within your control than the technology's inherent constraints would suggest.
+If you accept this framing, leadership priorities shift.
+
+You spend more time on clarity and less on symbolic busyness.
+
+You care more about who can translate across functions than who can merely sound smartest in a narrow room.
+
+You treat process not as bureaucracy by default, but as something that can either preserve momentum or quietly destroy it depending on how well it is designed.
+
+You stop assuming that every technology problem deserves a technology-first explanation.
+
+Most importantly, you stop flattering yourself that buying a better tool is the same thing as fixing the system around it.
+
+Technology matters. It is just embedded inside a larger operating reality made of trust, structure, incentives, judgment, and communication. Ignore that larger system and the stack will not save you.
+
+That is what I mean when I say tech is only 10% tech.
+
+## Further Reading
+
+- Nicole Forsgren, Jez Humble, and Gene Kim, *Accelerate*
+- Amy C. Edmondson, *The Fearless Organization*
+- Gene Kim, Kevin Behr, and George Spafford, *The Phoenix Project*
+- Matthew Skelton and Manuel Pais, *Team Topologies*

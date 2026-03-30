@@ -3,64 +3,83 @@ title: "Checklist Manifesto for Tech: What Aviation Taught Me About Process"
 date: 2026-02-19
 description: "As a licensed pilot, I've seen how checklists and standard procedures save lives. The same principles can dramatically reduce errors in software operations — if you're willing to let go of the ego that resists them."
 categories: [Leadership, Technology]
-tags: [aviation, checklists, process, operations, reliability, safety culture, software deployment]
+tags: [aviation, checklists, reliability, safety culture, runbooks, change management]
 published: false
 ---
 
-I've held a pilot's license for most of my adult life. Aviation is not just a professional interest for me — it's shaped how I think about risk, process, and operational reliability in ways that have influenced every technology leadership role I've held.
+The outage did not begin with incompetence. It began with routine.
 
-Here is the central lesson aviation offers: experts need checklists more than novices do.
+An experienced engineer was making a change that, on paper, was straightforward. The plan was familiar. The environment was not completely calm, but it was calm enough to create false confidence. Someone interrupted with a question midway through the work, the engineer resumed from memory, and one skipped verification step turned into a much larger problem than it had any right to be.
 
-This sounds backwards. The intuition is that checklists are for people who don't know what they're doing — that an experienced pilot (or engineer, or surgeon) doesn't need to be reminded of basic steps. That intuition is wrong, and understanding why it's wrong is one of the most practically useful things a technology leader can absorb.
+I have seen versions of that story enough times that I no longer find it surprising. I also do not think the fix is "hire better people." The fix is to build operating habits that assume competent people are still human.
+
+That is where aviation has influenced me most. I have held a pilot's license for most of my adult life, and one of aviation's deepest lessons is this: experts need checklists more than novices do.
 
 <!--more-->
 
-## Why Experts Need Checklists
+## Why Expertise Increases the Risk
 
-The reason experts are particularly susceptible to checklist-preventable errors is exactly their expertise. When you've done something hundreds of times, the steps become automatic — which means they also become invisible to conscious attention. Your hands are doing the right things, mostly, while your mind has moved on to the next problem.
+This feels backwards to people the first time they hear it. Surely novices need checklists more than experts.
 
-This works fine until something breaks the automatic pattern. An interruption. An unusual situation. A distraction at a critical moment. When you're operating on autopilot, the recovery mechanism isn't "go back to the procedure" — it's "assume you did the thing you normally do." That assumption is exactly what checklists are designed to counter.
+For training, yes. For operations, often no.
 
-Aviation recognized this decades ago. The checklist is not a training document. It's an operational tool that experienced, competent pilots use on every flight because the consequences of skipping a step are too serious to rely on memory alone.
+The reason is simple. Once a task becomes familiar, the steps stop feeling like steps. They compress into instinct. That is efficient, right up until the environment changes, an interruption lands at the wrong moment, or one assumption turns out not to be true this time.
 
-In technology, we largely haven't absorbed this lesson. We tend to treat detailed procedures and checklists as bureaucratic overhead — something for junior engineers, or for compliance documentation, or for contexts where you don't fully trust the people doing the work. That framing is exactly backwards.
+Pilots understand this at a very deep level. The checklist is not there because the pilot is underqualified. It is there because memory is unreliable under routine, interruption, and stress. Technology operations contain all three.
 
-## What This Looks Like in Practice
+I have seen highly capable engineers skip steps not because they were careless, but because they were experienced enough to feel safe. That is exactly when written procedure becomes most valuable.
 
-**Deployment checklists.** Every production deployment should have a checklist — not a mental model of what should happen, but a written list of steps that gets checked off in real time. Pre-deployment verification: have all tests passed? Has the change been reviewed? Is there a rollback plan? Is the deployment window appropriate? Post-deployment verification: are the key metrics healthy? Are there any error spikes? Is the rollback procedure ready if needed?
+The healthcare literature arrived at a similar conclusion from a different direction. The [WHO surgical safety checklist](https://iris.who.int/items/d4d4327e-8a91-4ed9-9dd2-cf09d8ac1857) did not spread because surgeons suddenly became less skilled. It spread because complex, interrupt-driven work benefits from simple shared controls that make the critical steps harder to skip.
 
-This takes time. That time is less than the time required to diagnose and recover from a deployment that went wrong because someone skipped a step.
+## What a Useful Checklist Actually Does
 
-**Incident response runbooks.** When something is on fire is the worst time to improvise the response. A structured runbook that walks the responder through diagnosis steps, escalation criteria, and recovery procedures doesn't eliminate judgment — it creates a scaffolding that supports good judgment under stress. Aviation calls these "emergency checklists," and they are deliberately designed to be simple enough to execute correctly when your hands are shaking.
+A useful checklist does not replace judgment. It protects judgment from predictable human failure modes.
 
-**Release readiness reviews.** Before a major release — not a routine deployment, but a significant new capability — a structured review that covers security, performance, operational readiness, communication plans, and rollback capability catches the things that fall through the gaps of distributed development. Not as a gatekeeping exercise, but as a shared discipline.
+In technology, the most obvious use is deployment. Before a production change, the checklist should force confirmation of a few things that too often remain assumptions: review is complete, rollback is real, timing is acceptable, dependencies are understood, and someone is explicitly watching the post-change signals that matter.
 
-**On-call onboarding and handoff procedures.** The information needed to effectively handle on-call duties should be captured explicitly, not transmitted verbally and incompletely during a handoff. What are the most common alerts? What are the first steps for the most common incidents? Who are the escalation contacts? Written, maintained, and reviewed regularly.
+Runbooks serve the same function during incidents. Under pressure, people narrow cognitively. They forget options, skip diagnostics, and reach too quickly for the explanation they saw last time. A good runbook does not make the responder robotic. It keeps them from improvising badly in the first five minutes.
 
-## The Ego Problem
+I also like checklists for handoffs, on-call preparation, and major release readiness. Anywhere an organization currently depends on memory, hallway conversation, or "the senior person just knows," there is usually a checklist opportunity hiding in plain sight.
 
-Here's the honest challenge: checklists require a kind of humility that engineering culture often resists.
+## The Resistance Is Usually Ego
 
-The implicit message of a checklist is that you might forget something, that your memory is not sufficient on its own, that a procedure written down is more reliable than your expertise in the moment. For people who have strong professional identities built around technical competence, this can feel like an indictment.
+The technical objection to checklists is rarely technical.
 
-It isn't. It's an accurate description of how human cognition works under the specific conditions of complex, high-stakes operations. The pilots with the best safety records are not the ones who trust themselves to remember everything — they're the ones who trust the checklist.
+It is cultural. Checklists imply that memory is not enough, experience is not enough, and even very competent people benefit from discipline outside themselves. For some engineers, that feels insulting.
 
-The same shift in mindset applies in technology. The senior engineer who uses the deployment checklist is not demonstrating weakness. They're demonstrating exactly the kind of operational discipline that makes them trustworthy with the most critical systems.
+I do not see it that way at all. I see checklists as a mark of seriousness.
 
-## Blameless Culture: Aviation's Other Gift
+In aviation, nobody worth learning from argues that the checklist is beneath them. In fact, the pilot who skips it casually is telling you something unflattering about how they think risk works. The same applies in operations. The engineer who uses a checklist for consequential work is not less expert. They are usually more trustworthy.
 
-Aviation's other major contribution to operational thinking is the concept of no-fault incident investigation.
+## The Leadership Part
 
-In aviation, when something goes wrong — even when someone makes a mistake — the investigation is structured to understand the systemic causes that made that mistake possible. What about the environment, the procedure, the information available, made this error likely? This is explicitly not about assigning blame, because blame doesn't prevent future accidents. System improvement does.
+This is not just an individual habit. Leaders have to create the environment in which checklists are normal, maintained, and respected.
 
-The technology industry has been developing its own version of this through the "blameless post-mortem" culture, and it's broadly correct. When engineers fear punishment for surfacing problems, they hide problems. When they can surface problems without fear, the organization learns. The learning is the goal.
+That means a few things.
 
-This doesn't mean there are never consequences for behavior. Repeated disregard for safety procedures is a different matter. But honest mistakes, made by competent people working within imperfect systems, should generate learning — not blame.
+First, the checklist has to be short enough to be used. Bloated procedure manuals are a different problem disguised as a solution.
 
-## The Payoff
+Second, the checklist has to be reviewed after reality breaks it. If it misses a recurrent failure mode, that is feedback.
 
-Atul Gawande documented in "The Checklist Manifesto" that a simple surgical checklist, implemented across hospitals in multiple countries, cut complication rates by more than a third. The steps in the checklist were things that surgical teams already knew. The checklist worked because knowing and reliably doing are different things.
+Third, leaders have to model that using a checklist is not a sign of weak engineering. If the culture quietly celebrates the person who "doesn't need all that," the checklist will become theater.
 
-The same dynamic operates in technology operations. The steps in a deployment checklist are things your engineers already know. The value of the checklist isn't the information — it's the reliable execution.
+That is why I separate checklist culture from bureaucracy. Bureaucracy protects itself. A real checklist protects the work.
 
-Boring is good. In aviation, a boring flight is a safe flight. In technology operations, a boring deployment is a successful deployment. Build the culture and the processes that make boring the norm, and you'll spend far less energy recovering from the exciting ones.
+## Why I Keep Coming Back to It
+
+Atul Gawande's writing on surgical checklists made this visible to a wider audience, but I had already seen the principle elsewhere. In every high-consequence environment I have trusted, the pattern is the same: competent people use simple tools to keep routine work from becoming unnecessarily dramatic.
+
+Technology still resists this more than it should.
+
+We like the identity of the brilliant engineer who holds the whole system in their head. Sometimes that engineer exists. Even then, memory is still memory, interruption is still interruption, and fatigue is still fatigue.
+
+The point of a checklist is not to compensate for bad people. It is to make good people more reliable.
+
+That is a trade I will take every time.
+
+## Further Reading
+
+- Atul Gawande, *The Checklist Manifesto*
+- James Reason, *Human Error*
+- FAA, *Risk Management Handbook*
+- Google, *Site Reliability Engineering*

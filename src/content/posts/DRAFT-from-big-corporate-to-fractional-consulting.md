@@ -1,60 +1,93 @@
 ---
-title: "From Big Corporate to Fractional Consulting: Adapting Your Leadership Style"
+title: "From Big Corporate to Fractional Consulting: What Stops Working, What Transfers"
 date: 2026-02-19
-description: "The skills that made you effective in a large enterprise won't automatically transfer to advisory work. Here's what actually has to change when you move from corporate to consulting."
+description: "Leaving enterprise leadership for fractional CTO work taught me very quickly which parts of my effectiveness were genuinely mine and which parts had belonged to the institution."
 categories: [Leadership, Consulting]
-tags: [leadership transition, consulting, corporate, startups, adaptability, executive coaching]
+tags: [fractional cto, consulting, executive transition, startups, advisory work, operating leverage]
 published: false
 ---
 
-When I left my corporate executive role and started working as a fractional CTO for startups and growth-stage companies, I made an assumption that turned out to be wrong. I assumed that after more than three decades in technology — including significant time in large enterprise environments — I would adapt quickly. I had the experience. I had the credentials. I had the scars.
+When I left enterprise leadership and started working fractionally with startups and growth-stage companies, I expected the adjustment to be mostly about pace.
 
-What I underestimated was how much of my effectiveness in large organizations depended on things that simply don't exist in smaller ones. Authority. Budget. Headcount. Organizational momentum. A known brand that opened doors. In corporate, you can get things done through a combination of positional power and institutional weight. In consulting, you have neither.
+I was wrong.
 
-Here's what I had to actually change.
+The deeper adjustment was about leverage. In large organizations, even when you are personally effective, some portion of your effectiveness is borrowed from the institution. Your title carries weight. The budget exists. The process exists. The org chart gives your decisions somewhere to land. People may disagree with you, but they understand where the authority sits.
+
+Fractional work strips that away almost immediately.
+
+You still have experience. You still have judgment. You still have pattern recognition. But now you are operating without most of the machinery that used to turn those things into action. That is clarifying in a way I did not fully appreciate until I was living inside it.
 
 <!--more-->
 
-## What Changes
+## What Disappears First
 
-**Authority becomes influence.** In a corporate CTO role, I could make a decision and expect it to be implemented. I had direct reports who would execute. I had budget authority. I had organizational credibility built over years.
+The first thing that stops working is authority.
 
-In fractional work, you have none of that. You're an outsider — a trusted one, you hope, but still an outsider. Decisions happen through people who don't report to you, in cultures you're still learning, with history you weren't part of. Everything is influence, which means everything is communication, relationship, and trust-building. That shift is harder than it sounds for people who've operated through authority for years.
+In an enterprise role, I could make a decision, assign the work, allocate the resources, and expect execution to follow. There were limits, politics, and delays, but there was a system underneath me. In fractional work, there is no such system unless the client builds one with you.
 
-**Speed of orientation.** In a full-time role, you have the luxury of time. The first 90 days can be spent listening, learning, building relationships. You might not make big moves until month four or five, and nobody thinks less of you for it.
+That means everything shifts toward influence. Not soft influence in the abstract, but practical influence: getting clear on what the founder actually wants, understanding who the real decision-makers are, earning enough trust that people will tell you where the bodies are buried, and making recommendations that fit the company's stage rather than the environment you came from.
 
-Fractional engagements don't work that way. You're brought in because something needs to happen — usually soon. You need to orient faster, form judgments faster, and be willing to act on incomplete information. The standard for "good enough to proceed" is different.
+This sounds obvious. It is still easy to get wrong.
 
-**Assumptions about context.** In large enterprises, you can assume a certain level of infrastructure: established HR processes, legal teams, finance functions, procurement frameworks. Many of these exist because they need to. When I moved into startup consulting, I had to recalibrate my baseline assumptions constantly. Some startups have almost none of this, and that's actually appropriate for their stage. Bringing in enterprise-style process before it's warranted is one of the most common ways consultants create friction rather than value.
+One of the habits I had to unlearn was assuming that if I gave the right answer clearly enough, the organization would move. In smaller companies, especially early ones, the answer is rarely the bottleneck. The bottleneck is usually capacity, context, founder alignment, or the simple fact that nobody owns the thing well enough to carry it through.
 
-**The emotional contract.** In corporate, the organization has a structure for handling ambiguity. There are processes, committees, escalation paths. In advisory work, the ambiguity often lands directly on you. Founders are scared, teams are uncertain, the stakes feel personal in a way they sometimes don't in large organizations. The emotional register is different, and you need to be present to it in a different way.
+## What I Had to Recalibrate
 
-## What Transfers
+I also had to recalibrate my sense of what "normal" looks like.
 
-Some things transfer remarkably well.
+Large organizations come with invisible infrastructure. Legal review. Procurement. Finance. HR. Established change control. Existing management layers. Even when those systems are frustrating, they provide structure. Startups often have little of that, and in many cases they should not. A company of 12 people does not need an enterprise governance model. A company of 60 may need one in only a few places. A company approaching 150 is often already paying for not having built one earlier.
 
-**Pattern recognition.** Having seen a lot of technology organizations succeed and fail, you develop an instinct for what's working and what isn't. This is genuinely valuable in any context, and it's something early-career leaders simply can't replicate regardless of their technical skills.
+The mistake experienced enterprise leaders make is importing mature-company process too early and then mistaking the resulting friction for discipline.
 
-**Stakeholder communication.** Years of presenting to boards, briefing executives, and translating technical complexity into business language is a durable skill. Early-stage companies often desperately need someone who can help them communicate with investors and boards in language those audiences actually respond to.
+I had to learn, again, that process is stage-dependent. The right question is not "What would a well-run large company do?" The right question is "What is the minimum structure this company needs in order to stop bleeding energy and make better decisions?"
 
-**Knowing what you don't know.** Counterintuitively, one of the most valuable things you develop after decades in technology is a clear sense of your own limitations. You've been wrong enough times that you've built calibration. That epistemic humility is rare and valuable in any advisory relationship.
+That is a much harder judgment call than applying a framework you already know.
 
-**The network.** Thirty years of relationships with engineers, executives, investors, and vendors creates a network that can be genuinely useful to early-stage companies. A warm introduction from someone who knows the landscape is worth real money in time saved.
+## What Still Transfers
 
-## Practical Advice for Making the Transition
+Some things travel well.
 
-**Start before you're ready.** If you're waiting until you feel fully prepared for the shift from corporate to consulting, you'll wait indefinitely. The learning happens by doing.
+Pattern recognition travels. After enough years in technology leadership, you begin to recognize the difference between a company with a messy but workable architecture and a company whose real problem is that nobody can make a decision. You can tell the difference between founder urgency and founder panic. You can tell when a hiring problem is actually a role-definition problem, when a technical-debt complaint is actually a prioritization complaint, and when a "communication issue" is really a trust issue.
 
-**Take a few lower-stakes engagements first.** If you can, start with companies where the consequences of getting the transition wrong are manageable — for them and for you. Use those early engagements to calibrate your assumptions about what works in this new context.
+Translation travels too. A surprising amount of the work is still helping non-technical leaders understand what their technology organization can and cannot do, what their technical risk actually is, and where the expensive mistake is likely to happen next.
 
-**Find a community of other fractional leaders.** The challenges are similar enough that others who've made this transition have useful things to say. Fractional leadership communities have grown significantly in recent years and the peer learning is genuine.
+Humility travels, if you have it.
 
-**Be honest about what you're still figuring out.** The fastest way to destroy trust in a consulting relationship is to project more certainty than you have. Clients can tell when you're on solid ground versus when you're improvising, and they'll respect you more for naming the difference.
+In some ways that became more important, not less. Fractional work exposes the limits of your knowledge quickly because you are moving across companies, products, and cultures without the luxury of long acclimation. The faster I learned to say "I need another week to understand this properly" or "this is not the stage where that recommendation makes sense," the more useful I became.
 
-**Rebuild patience with yourself.** You're going to be less effective initially than you were at your corporate peak. That's not failure; it's the normal shape of a transition. The executives I've watched struggle most with this shift are the ones who interpret the discomfort of early-stage consulting as a sign they've made a mistake, rather than a temporary state of building new competence.
+## The Emotional Shift
 
-## The Long View
+What surprised me most was the emotional register of the work.
 
-A few months into my fractional work, the skills I built in corporate contexts are showing up in unexpected ways — and the gaps I had to fill are making me a more complete leader. The adaptation is real, but it's also clarifying. You find out, pretty quickly, which of your capabilities are genuinely yours and which were on loan from the institution.
+In large organizations, ambiguity is distributed. There are committees, peers, escalation paths, and institutional rituals for absorbing uncertainty. In smaller companies, that uncertainty often lands directly on the founder or the small leadership team. The money feels personal. The runway is short. A bad hire or a delayed release can materially change the trajectory of the company.
 
-For experienced technology leaders considering this path: the transition is hard, worthwhile, and probably not as permanent a shift as it initially feels. The core of what made you effective travels with you. The packaging just has to change.
+You feel that in the room.
+
+That requires a different posture from the one I used in enterprise contexts. Less declaration. More diagnosis. Less "here is the answer." More "here is the actual problem, here are the tradeoffs, and here is what I would do if I were carrying this risk with you."
+
+The authority is lower, but the intimacy of the decision is often higher.
+
+## What I Understand Now
+
+I used to think this transition was mainly about learning to work faster with less information.
+
+That is part of it, but it is not the heart of it.
+
+The heart of it is discovering which parts of your leadership were truly yours and which parts were amplified by institutional force. Fractional work removes the amplification. What remains is your judgment, your ability to build trust quickly, your ability to read the actual problem, and your willingness to adapt your recommendations to the company in front of you instead of the company you came from.
+
+That has been humbling. It has also been useful.
+
+I think it has made me sharper.
+
+For experienced technology leaders considering this move, my honest view is that the transition is harder than it looks from outside. It is also one of the fastest ways to find out whether your effectiveness travels.
+
+Some of it does. Some of it does not.
+
+That is worth learning.
+
+## Further Reading
+
+- Michael D. Watkins, *The First 90 Days*
+- Edgar H. Schein, *Humble Inquiry*
+- David H. Maister, *Managing the Professional Service Firm*
+- Andy Grove, *High Output Management*

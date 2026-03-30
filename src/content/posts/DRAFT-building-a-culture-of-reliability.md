@@ -1,76 +1,81 @@
 ---
 title: "Building a Culture of Reliability: Lessons from 97% Fewer Outages"
 date: 2026-02-19
-description: "How disciplined change management and a culture shift — not better technology — drove a 97% reduction in outage hours. What reliability actually requires from a leadership perspective."
+description: "How disciplined change management and a culture shift, not better technology, drove a 97% reduction in outage hours and changed how I think about reliability leadership."
 categories: [Leadership, Technology]
-tags: [reliability, SRE, change management, culture, outages, operations, incident management, blameless postmortem]
+tags: [reliability, change management, incident management, outage reduction, operations leadership, change control]
 published: false
 ---
 
-When I took over technology operations for a large organization, the environment I inherited had a reliability problem. Outages were frequent, often stemmed from changes made without adequate review, and the team had developed a firefighting culture — people were recognized for heroic incident response rather than for preventing incidents from happening in the first place.
+I have spent enough time in technology to know the seduction of tool-based explanations. When reliability is poor, the first instinct is often to look for better monitoring, better dashboards, better automation, better platforms, better something.
 
-Within a year of implementing a disciplined change management culture, outage hours had dropped by 97%.
+In one large enterprise environment I led, that instinct would have missed the actual problem almost completely.
 
-I want to be precise about what that sentence means, because I've seen similar statistics misused. We didn't achieve this by deploying new monitoring tools. We didn't achieve it by migrating to a new cloud provider. We didn't achieve it by hiring better engineers. We achieved it by changing the culture of how the team operated — how decisions were made, how risks were assessed, how accountability was distributed.
+The environment I inherited had frequent outages, weak change discipline, and a culture that rewarded heroics more than prevention. Within a year, outage hours had dropped by 97%. That result was real, but the interesting part was not the number. It was what caused it.
 
-Here's what that actually looked like.
+We did not get there by changing the stack. We got there by changing the operating culture around the stack.
 
 <!--more-->
 
-## The Diagnosis
+## The Pattern We Found
 
-The first step was understanding what was actually causing outages. Not at the technical level — what specific system failed — but at the causal level: what human or process factors allowed that failure to happen.
+Once we stopped treating each outage as an isolated event, the pattern was hard to miss. The majority of our pain came from change. Not from aging hardware giving up the ghost in the middle of the night. Not from exotic edge cases. From changes.
 
-What we found was consistent: the vast majority of outages were caused by changes. Not failures of existing, stable systems — but changes made to those systems. Software deployments, configuration updates, maintenance operations. Things that were supposed to make the environment better were routinely making it worse.
+Configuration edits. Cutovers. "Simple" maintenance. Good intentions plus incomplete context.
 
-This is actually a well-documented pattern in operations research. Changes are the primary source of instability in complex systems. But knowing this intellectually is different from building an organization that acts on it.
+That lines up with what operations research and [DORA's delivery-performance work](https://dora.dev/research/) have made easier to talk about in concrete terms: change is where a large share of operational instability enters the system. The point is not that change is bad. The point is that unmanaged change is expensive.
 
-## What We Changed
+In our case, the technical environment mattered, but it was not the deciding variable. The deeper problem was that the organization had no shared discipline around risk. Documentation was inconsistent. Review was inconsistent. Escalation was inconsistent. Engineers were often relying on memory and personal heroics where the environment really needed procedure and group judgment.
 
-**Formal change management, without apology.** Every significant change to production systems required documentation, peer review, and approval before implementation. This created friction — intentional, valuable friction. The discipline of writing down what you were about to do, why, and what you would do if it went wrong forced engineers to think more carefully before acting. It also created a paper trail that made post-incident analysis much more useful.
+## What We Actually Changed
 
-**Risk tiered by impact and reversibility.** Not all changes carry equal risk. A configuration change to a customer-facing system during peak hours is different from a backend library update on a Saturday morning. We built a tiered system: low-risk changes could be reviewed and approved by peers; higher-risk changes required additional sign-off; the highest-risk changes required explicit leadership awareness. This let us maintain velocity for routine work while applying appropriate caution where it mattered.
+The fix was not glamorous.
 
-**Blackout windows.** We established periods — around major business events, holidays, quarter-end — when the bar for changes was significantly higher. Not zero changes, but changes requiring exceptional justification. This required saying no to business stakeholders sometimes, which required leadership backing. We had it, and it made a concrete difference.
+We made significant changes slower, more visible, and more reviewable. Every meaningful production change had to be written down, reviewed, and approved before execution. That added friction, but it was the right kind of friction. Writing a change plan forces a level of thinking that confidence alone does not.
 
-**Blameless post-mortems, with genuine accountability.** "Blameless" is a term that gets misunderstood. It doesn't mean "no consequences." It means that the goal of post-incident analysis is learning, not punishment. When people fear blame, they hide information. When they can surface problems honestly, the organization learns faster and the same mistake is less likely to repeat.
+We also tiered change risk. Not every change deserves the same ceremony. Some are reversible and low impact. Some are neither. Treating those as equivalent is how organizations get both bureaucracy and outages. Risk tiering let us keep routine work moving while raising the bar where the downside was real.
 
-We ran structured post-mortems after every significant incident. The template had specific questions: What happened? What was the timeline? What triggered the failure? What made it worse? What could have detected it sooner? What would prevent recurrence? The output was specific action items with owners and timelines, not vague commitments to "be more careful."
+We established blackout windows around periods when the business impact of mistakes was unusually high. That sounds obvious. It is also one of those things organizations violate the first time an impatient stakeholder wants an exception. It worked only because leadership backed the line publicly.
 
-**Rewarding prevention, not just heroics.** This was perhaps the most culturally significant change. In a firefighting culture, the people who get recognition are the ones who work through the night to restore service. That's understandable — they deserve recognition. But it creates a perverse incentive structure where preventing fires is invisible and fighting them is celebrated.
+Postmortems changed too. We made them structured, blameless in the useful sense, and specific. Not "everyone be more careful next time." Instead: what happened, what conditions made it likely, what would have detected it sooner, and what exactly changes now.
 
-We explicitly started recognizing prevention. When an engineer caught a risky change before it went out, when a team implemented monitoring that detected an emerging problem before it became an outage, when someone raised a concern that led to a rollback — these became visible and valued. The culture followed the recognition.
+The hardest shift was cultural. We had to move recognition away from heroics alone. Firefighting still mattered. But catching a bad change before it shipped had to count. Improving documentation had to count. Saying, "this is not ready," had to count. If the reward system only celebrates dramatic recoveries, people will unconsciously optimize for drama.
 
-## The Aviation Analogy
+## Where Leadership Actually Mattered
 
-I'm a licensed pilot, and aviation's safety culture has always influenced how I think about reliability in technology.
+This is the part that gets flattened in a lot of reliability writing.
 
-In aviation, "boring is good." A boring flight is a safe flight. The goal isn't to demonstrate your ability to handle emergencies — it's to execute procedures so reliably that emergencies rarely happen, and when they do, you handle them without drama. Checklists aren't a sign of distrust in pilots' competence; they're an acknowledgment that human memory is fallible and that consistent execution matters more than individual performance.
+The technical controls were not self-executing. They worked because leadership kept reinforcing them when they were inconvenient.
 
-Technology operations can learn a great deal from this. The goal of operations isn't to showcase individual expertise in crisis response. It's to build systems and processes so reliable that crisis response is rarely required, and when it is, the response is calm and systematic rather than heroic.
+Saying no to risky timing required executive air cover. Keeping engineers inside the process required consistency from managers and technical leads. If leadership made private exceptions, the discipline would have died almost immediately.
 
-Heroism in operations is often a sign of failure, not success. It means something went wrong that procedures should have prevented.
+This is why I increasingly distrust the framing of reliability as mainly a tooling problem. Tools help. Monitoring helps. Automation helps. But none of them substitute for leadership that is willing to absorb friction in order to reduce preventable damage.
 
-## The Leadership Requirements
+Speed came back, but in a better form. At first, the process felt slower. Then the environment stabilized, incidents dropped, rework dropped, and decision quality improved. That is one of the most durable leadership lessons I know: speed built on ambiguity is fake speed. It merely delays the bill.
 
-Implementing this kind of change requires specific things from leadership.
+## Why "Boring" Matters
 
-**Willingness to slow down before you speed up.** Adding process friction initially reduces velocity. Engineers who were used to deploying quickly now had to document, review, get approval. That's slower in the short term. You have to hold the line on the long-term benefit while absorbing the short-term pain.
+My background in aviation shaped how I thought about this long before I had the language for it.
 
-**Backbone with business stakeholders.** "We can't make that change right now" is not a popular sentence. Business stakeholders under pressure want their changes deployed. Saying no — or "not yet, not without proper review" — requires leadership support for the operations team to feel safe making that call.
+In aviation, boring is good. A boring flight means the system, the crew, and the procedures all did what they were supposed to do. Nobody serious in aviation wants to prove how good they are at managing emergencies. They want a system in which emergencies are rare.
 
-**Consistent modeling of the behavior you want.** If leadership bypasses the process when it's inconvenient, the process is effectively optional. Engineers watch what leaders do more than what they say. A CTO who routes around change management sends a clear signal about what actually matters.
+Operations should feel similar. Calm is not evidence that the team lacks skill. Often it is evidence that the team has finally built enough discipline that skill is being applied before the crisis instead of during it.
 
-**Patience.** Culture change is slow. The 97% reduction took a year, not a quarter. There were setbacks — outages that felt like evidence the approach wasn't working, stakeholders who pushed back on the friction, team members who resented the new constraints. Staying consistent through that period, continuing to believe in the approach, and continuing to communicate why it mattered was part of the work.
+I do not mean that every environment can be made quiet. Some are inherently volatile. But even in volatile systems, you can reduce preventable drama. That is leadership work.
 
-## The Result
+## What the 97% Actually Meant
 
-The number — 97% reduction in outage hours — is real and I'm proud of it. But I'm more interested in what it revealed.
+I am proud of the 97% number, but the number is not the real story.
 
-It revealed that reliability is primarily a cultural and process problem, not a technology problem. The same engineers, the same systems, the same basic tooling — with different processes and a different culture — produced dramatically different outcomes.
+The real story is that the same engineers, working on essentially the same systems, produced radically different outcomes once the operating culture changed. Expectations changed. Review changed. Accountability changed. The definition of careful work changed.
 
-It revealed that investment in prevention is almost always higher-leverage than investment in recovery. The post-mortem processes we implemented prevented far more outages than our monitoring improvements detected.
+That experience reinforced something I now believe very strongly: reliability is not just a technical property of systems. It is a behavioral property of organizations.
 
-And it revealed that teams generally want to do good work. The engineers didn't want to cause outages. They wanted the processes and clarity that would let them avoid causing them. When we gave them that, they delivered.
+When leaders treat reliability as a culture to be built rather than a tool to be purchased, results get much better.
 
-Reliability isn't a technical outcome. It's a cultural one. And cultures can be changed, deliberately, by leadership that understands what it's actually trying to build.
+## Further Reading
+
+- Gene Kim, Jez Humble, Patrick Debois, and John Willis, *The DevOps Handbook*
+- Nicole Forsgren, Jez Humble, and Gene Kim, *Accelerate*
+- Google, *Site Reliability Engineering*
+- John Allspaw, "Blameless PostMortems and a Just Culture"

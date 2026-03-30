@@ -1,74 +1,95 @@
 ---
-title: "Lifelong Learning in Tech: How to Stay Relevant and Curious"
+title: "Learning Again After You're Supposed to Know What You're Doing"
 date: 2026-02-19
-description: "In a field that changes as fast as technology, continuous learning isn't optional. Here's how I've approached staying current and curious across 30+ years — and why the curiosity matters as much as the knowledge."
+description: "What learning looks like once you're senior enough that people expect answers: less about chasing every trend, more about protecting curiosity and re-entering beginner mode on purpose."
 categories: [Leadership, Career]
-tags: [learning, continuous education, career, curiosity, personal development, technology, generalist, growth mindset]
+tags: [continuous learning, career longevity, curiosity, machine learning, professional growth]
 published: false
 ---
 
-In 30 years in technology, I've been involved in web hosting before most people knew what the internet was, aviation technology, specialty retail systems, enterprise IT at scale, machine learning for network operations, and now AI-augmented consulting. The common thread across all of it — the thing that made each transition possible and each chapter productive — has been a consistent commitment to learning as a practice, not as an event.
+There is a point in a long technology career where the hardest part of learning is no longer time. It is identity.
 
-This piece is about what that practice actually looks like, what's sustained it over time, and what I think matters most about maintaining curiosity in a field that changes as fast as ours does.
+When you are early in your career, nobody is surprised that you are still figuring things out. That is the job. You are expected to ask basic questions, read manuals, make beginner mistakes, and build competence in public.
+
+Later on, the expectation changes. You are the experienced one. People come to you for judgment. Your value is partly that you have seen enough to recognize patterns quickly and avoid bad mistakes. That is good. It is also dangerous.
+
+The danger is not ignorance. It is calcification.
+
+The senior people I have watched age best in technology were not the ones who tried to know everything. They were the ones who stayed willing to become beginners again, repeatedly, without letting it damage their sense of self.
 
 <!--more-->
 
-## The Half-Life of Technical Knowledge
+That sounds abstract until you have to do it.
 
-Technical knowledge depreciates faster than most people intuitively account for. The specific skills that made a developer highly employable in 2010 — in terms of specific languages, frameworks, and architectural patterns — are different from what makes someone highly employable today. Most of that change happened gradually, but it's cumulatively dramatic.
+For me, one of the clearest versions was machine learning. I had enough technical background to understand why it mattered, enough operational experience to see where it might actually help, and nowhere near enough depth to be satisfied with my own understanding. At that point I had a choice familiar to many senior people: talk about it at altitude, or go learn it properly.
 
-This is not a crisis for people who learn continuously. It's a significant problem for people who don't.
+I went back to textbooks, coursework, and hands-on work. Not because I needed another credential, but because I did not trust summary-level familiarity. Eventually that work contributed to a patent. More importantly, it reminded me of something I had half-forgotten: serious learning is humbling, and that is part of its value.
 
-The engineers I've watched struggle most through major technology transitions are the ones who established expertise in a specific stack and then stopped learning substantially. They weren't negligent; they were busy doing their jobs. But the environment moved, and their skills didn't, and at some point the gap became visible.
+## The Real Skill Is Re-Entering Beginner Mode
 
-The engineers who've navigated multiple technology eras successfully are, consistently, the ones who maintained a learning practice throughout. Not just learning new frameworks within a familiar paradigm, but genuine engagement with new ideas, new approaches, and sometimes entirely different ways of thinking about problems.
+Most people think continuous learning is a discipline problem. In my experience, at senior levels it is more often an ego problem.
 
-## What a Learning Practice Actually Looks Like
+You can usually find an hour to read. What is harder is willingly putting yourself back into the position of not yet understanding. That feels inefficient. It feels embarrassing in ways that are hard to admit. It can even feel professionally risky if your identity has become too attached to being the person with the answer.
 
-"Stay current" and "keep learning" are easy to say and hard to operationalize. Here's what has actually worked for me.
+That is exactly why it matters.
 
-**Reading with intent, not just quantity.** I read a lot, but not everything. I've developed a filter over time: is this deepening my understanding of something I care about, or am I just consuming because consuming feels like learning? The latter is easy to confuse with the former and much less productive. A few deeply read books or papers in a year produce more enduring knowledge than dozens of articles skimmed.
+A leader who cannot re-enter beginner mode eventually starts mistaking fluency for truth. They keep operating with high confidence in areas where the world has moved faster than their models. From the outside that can still look polished for quite a while. The damage shows up later, in stale judgment.
 
-**Adjacent domains as sources of insight.** Some of my most useful professional thinking has come from reading outside technology entirely — books on decision-making, organizational behavior, complex systems, and history. The patterns in how human organizations succeed and fail are surprisingly consistent across domains and time periods. The literature on organizational behavior and systems thinking, for instance, has shaped how I think about technology organizations far more than most explicitly technology-focused material.
+## Reading Is Not the Same as Learning
 
-**Learning by building, not just reading.** Reading about a technology gives you theoretical familiarity. Building something with it gives you experiential knowledge that's much richer — including an understanding of where the rough edges are, what the learning curve actually looks like, and what problems emerge in practice that the documentation doesn't mention. I've built things with technologies I had no professional need for, specifically to understand them from the inside.
+One reason smart, experienced people fool themselves here is that reading about a subject feels productive.
 
-**Community engagement where practitioners are candid.** The places where practitioners talk honestly — technical conferences, good online communities, high-quality blogs by working engineers — are often more informative than polished vendor content or mainstream technology journalism. The person working through a real implementation challenge and writing about what they're learning is a better source than a press release about how transformative something is.
+Sometimes it is. Often it is only familiarity.
 
-**Formally structured learning when the depth requires it.** For topics where I needed serious depth — machine learning, for instance — I've gone back to structured coursework: textbooks, online courses with real assessments, working through foundational materials rather than just reading summaries. The ML work that led to a patent required that kind of depth, and self-directed reading wouldn't have produced it.
+I read a lot, and I have for decades, but the things that changed how I think most were rarely the things I merely skimmed. The important shift usually happened when I had to wrestle with a concept long enough that I could explain it, apply it, and notice where my understanding broke down.
 
-## The Role of Diverse Interests
+That is why some of the most useful learning I have done mid-career involved structure:
 
-One of the underappreciated aspects of continuous learning is that the best cross-domain insights come from genuine engagement with the other domain, not superficial familiarity.
+- textbooks instead of summaries
+- exercises instead of opinions
+- small experiments instead of passive consumption
+- practitioners who show their working instead of polished commentary
 
-My background in aviation shaped how I think about operational safety culture in ways that reading about safety culture abstractly would not have. My practice in photography shaped how I think about perspective-taking in problem-solving in ways that wouldn't have happened through a leadership course. My experience in retail gave me a customer-proximity perspective that I couldn't have acquired through user research frameworks alone.
+Reading broadly is useful for awareness. It is not enough for judgment.
 
-These aren't metaphors I'm reaching for after the fact. They're actual thinking tools that emerged from genuine immersion in different domains and that operate continuously in how I approach technology leadership problems.
+## Side Interests Are Not Decorative
 
-The argument for diverse interests is not that they make you interesting at dinner parties (though they do). It's that genuine depth in domains outside your primary field produces a different kind of thinking — one that recognizes patterns across domains and generates insights that specialists in a single field are less likely to reach.
+Some of the best thinking tools I have came from outside technology.
 
-The research on this is consistent: people who develop expertise across multiple domains are, under the right conditions, better at certain kinds of innovation than deep specialists. The right conditions include developing genuine depth in at least a few domains, not just casual familiarity with many.
+Aviation taught me procedural discipline and the value of calm in high-consequence systems. Retail taught me what immediate customer feedback actually feels like. Photography taught me something about perspective, framing, and patient observation. None of those were resume accessories. They changed how I reason.
 
-## Avoiding Burnout in a Fast-Moving Field
+That is one reason I distrust the narrowest version of professional development. If all your inputs come from your own field, your models get efficient but repetitive. Cross-domain learning creates new analogies, new pattern recognition, and sometimes new humility because another field has already solved a problem yours is still naming.
 
-One genuine risk in a commitment to continuous learning is burnout. Technology moves fast enough that trying to keep up with everything is exhausting and, ultimately, impossible. Many people I know experience a version of this: a low-grade anxiety that they're behind, that something important is happening that they don't know about, that the field is moving too fast to stay current.
+The point is not to collect hobbies so you sound interesting. The point is to let genuine outside interests sharpen how you think.
 
-The reframe that's helped me: you don't need to know everything. You need to know enough to make good decisions in your current context, to have productive conversations with the people you work with, and to recognize when something important is happening that you need to dig into.
+## Selective Depth Beats Ambient Anxiety
 
-That's a much more manageable goal, and it's actually what's required. The CTO who is anxiously trying to be current on every technology development is probably not spending enough time on the human and organizational dimensions that actually drive outcomes. The CTO who has given up on technical currency entirely is a different problem. The right calibration is selective depth: genuine engagement with areas that are relevant to your current decisions, and enough broad awareness to recognize when something outside your current focus is becoming relevant.
+Technology changes too fast for total coverage. Anyone trying to keep up with everything is going to fail and be tired.
 
-I've also found that the anxiety about keeping up decreases significantly when you have a stable practice and trust that the practice will surface what's important. If you read thoughtfully, build regularly, and stay engaged with good communities, the things that matter will tend to reach you. Perfect coverage is impossible; good coverage through consistent practice is very achievable.
+What has worked better for me is selective depth.
 
-## What Curiosity Protects You Against
+I want enough broad awareness to notice when something matters. Then I want real depth in the areas tied to the decisions I am making or the questions I actually care about. That is a more realistic standard, and a more useful one.
 
-In the long run, I think curiosity is as important as the specific knowledge it produces.
+It also reduces the low-grade panic that many people carry around technology now. If your model of competence is "I should know all of it," you will live in permanent deficit. If your model is "I need a practice that helps me notice what matters and then go deep," the problem becomes manageable.
 
-Leaders who are genuinely curious ask better questions, hold their conclusions more lightly, and update their mental models more readily when evidence contradicts them. They're more interesting to the people who work with them, because they're engaging with the world rather than just executing on established beliefs.
+That is a much healthier relationship to learning, and in my experience it produces better judgment.
 
-Leaders who have lost their curiosity — who have settled into their existing frameworks and stopped finding new things genuinely interesting — tend to make worse decisions over time, not because they become less intelligent but because their models stop updating while the world keeps changing.
+## Curiosity Is Operationally Useful
 
-Curiosity is, in this sense, a form of epistemic hygiene. It keeps you from the comfortable but expensive mistake of assuming that what you already know is sufficient for the decisions you'll face next.
+I do not think curiosity is a soft virtue. I think it is part of how leaders stay accurate.
 
-After 30 years, I'm still finding things genuinely interesting. Technologies I haven't worked with. Problems I haven't thought through before. Questions I don't know the answers to. That continued sense of genuine interest in the work — in the ideas, not just in the professional outcomes — is something I'd protect before almost anything else in a career.
+Curious leaders update faster. They ask better questions. They surface weak assumptions earlier. They are less likely to become performative about expertise because they are still genuinely engaged with what they do not yet understand.
 
-It's the thing that keeps the work worth doing, and the thing that keeps doing the work from making you worse at it over time.
+The opposite state is not stupidity. It is closure.
+
+Closure is when someone knows enough to sound authoritative and has stopped letting the world meaningfully revise them. That is a dangerous state in technology, where the surface changes quickly and the underlying human patterns never change quite enough.
+
+After a long career, I have become more protective of curiosity, not less. It keeps the work interesting, but more than that, it keeps the judgment alive.
+
+If I had to compress the lesson, it would be this: the point is not to stay current for its own sake. The point is to remain teachable long after your career has started rewarding you for looking finished.
+
+## Further Reading
+
+- David Epstein, *Range*
+- Anders Ericsson and Robert Pool, *Peak*
+- Peter Senge, *The Fifth Discipline*

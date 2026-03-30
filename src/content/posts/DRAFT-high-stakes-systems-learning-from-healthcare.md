@@ -1,66 +1,89 @@
 ---
 title: "High-Stakes Systems: Learning from Healthcare for IT Reliability"
 date: 2026-02-19
-description: "Medicine and technology share more than analogies. The systems-thinking approaches that underpin patient safety have direct applications to building reliable technology infrastructure."
+description: "What patient-safety thinking taught me about diagnosis, error reduction, and building more reliable technology operations."
 categories: [Leadership, Technology]
-tags: [reliability, healthcare, systems thinking, incident response, root cause analysis, safety culture, IT operations]
+tags: [healthcare, patient safety, reliability, root cause analysis, systems thinking, incident response]
 published: false
 ---
 
-My path into technology was not the most direct one. I have a biology degree. My family background is in medicine. Before I spent my career in technology, I had a period of genuine immersion in how medical professionals think about complex systems, failure modes, and the challenge of keeping people safe when the margins for error are very small.
+I grew up around medicine. My family background is medical, I studied biology, and long before I had a career in technology I had already absorbed a way of thinking that medicine takes seriously: when the stakes are high, human skill is necessary but insufficient.
 
-I've spent 30 years applying those frameworks to technology infrastructure, usually without naming them explicitly. But they've shaped my thinking more than I often acknowledge.
+That idea has followed me for decades.
 
-Healthcare and technology share a common challenge: they are both high-stakes domains where complex systems interact with human judgment under time pressure, where failures can cascade in ways that are hard to predict, and where the people doing the work are highly skilled but still fallible. The lessons that medicine has learned — often painfully — about making these systems more reliable have direct applications to technology.
+I do not mean that technology is the same as healthcare. It is not. The moral stakes are different, the timelines are different, and the costs of failure are different. But the systems problem is similar enough to be useful. In both domains, skilled people work inside complex environments, under uncertainty, with incomplete information, while small mistakes can combine into large failures.
+
+Some of the most useful things I know about reliability did not come from technology at all. They came from how medicine thinks about diagnosis, error, and system design.
 
 <!--more-->
 
-## The Diagnostic Mindset
+## Diagnosis Before Action
 
-Medicine has one of the most developed traditions of structured problem-solving under uncertainty. When a patient presents with symptoms, the physician doesn't immediately reach for the most obvious explanation — they construct a differential diagnosis: a ranked list of possible causes, from most likely to least likely, with a plan for how to gather evidence that would distinguish between them.
+One of medicine's great strengths is diagnostic discipline.
 
-This process is valuable because it forces explicit acknowledgment of uncertainty. Instead of acting on the first hypothesis that seems to fit (which is what pattern-matching under cognitive load tends to produce), it structures the investigation to consider alternatives.
+When a patient presents with a confusing set of symptoms, a serious clinician does not simply seize the first plausible answer and charge ahead. They build a differential. What are the likely explanations? What are the dangerous explanations? What evidence would separate them?
 
-In technology troubleshooting, we often skip this. When an alert fires, the instinct is to reach for the most common cause of that alert and start acting on it. Sometimes that's right. Sometimes it commits the team to an hour of work in the wrong direction while the actual problem gets worse.
+Technology teams often say they do this. Under stress, many do not.
 
-A more diagnostic approach: when a problem arises, explicitly name your top hypotheses before acting. What's the most likely cause? What else could explain these symptoms? What evidence would help distinguish between them? This small discipline consistently produces faster, more accurate diagnosis — especially for novel problems where pattern-matching misleads.
+A service goes sideways, an alert fires, and the team rushes toward the last thing that looked similar. Sometimes that works. Sometimes it burns an hour while the real problem deepens.
 
-**The debugging parallel:** Good debugging is diagnostic medicine. The engineer who says "let me check the logs, form a hypothesis, then confirm or rule it out" resolves incidents faster than the engineer who tries things until something works. The structured approach feels slower in the first five minutes and is faster by the thirtieth.
+The medical mindset is useful here because it forces explicit uncertainty. Name the top hypotheses. State what evidence would confirm or disprove them. Be willing to say, "we do not know yet."
 
-## Redundancy, Fail-Safes, and Graceful Degradation
+The teams I have seen debug well operate this way even if they do not call it a differential diagnosis. They behave less like people trying random fixes and more like people investigating a system with discipline.
 
-Medical equipment is designed with the assumption that any single component can fail. Ventilators have battery backup and manual override. Operating rooms have backup power systems. Critical medication processes have double-check requirements built in. The design philosophy assumes failure and engineers around it.
+## Human Error Is a Design Constraint
 
-Technology infrastructure has largely adopted this principle at the hardware and network layer — redundant systems, failover paths, geographically distributed deployments. But it's applied inconsistently at the application layer.
+Medicine also takes human fallibility more seriously than technology often does.
 
-Graceful degradation deserves more attention than it typically gets. When a downstream service fails, does your application fail entirely, or does it degrade to a reduced but functional state? When a database is slow, does your service become unresponsive, or does it serve cached content while the backend recovers? The architecture decisions that enable graceful degradation are exactly the fail-safe design principles that medical devices employ.
+That is not because medical professionals are less capable. It is because the profession learned, often painfully, that highly trained people still make predictable mistakes under fatigue, time pressure, interruption, and overload. The response was not to become sentimental about error. It was to design systems that assume it.
 
-The question to ask about any system: what happens when this specific dependency fails? Not in theory — but in practice, right now, if that specific thing stopped working at peak load. Working through that exercise systematically reveals the single points of failure that theoretical architectures tend to obscure.
+Technology understands this unevenly.
 
-## Root Cause Analysis, Done Seriously
+At the infrastructure layer, we are comfortable with redundancy, failover, and graceful degradation. At the human layer, we still sometimes talk as though the right senior engineer should be able to think their way cleanly through any situation in real time. That is a flattering story. It is not a serious operating model.
 
-Medicine has a strong tradition of root cause analysis (RCA) for serious adverse events. When a patient is harmed by a medical error, the institution is expected to investigate not just what happened but why — what systemic factors created the conditions for that error.
+The better question is the one medicine asks constantly in different forms: what about this environment makes error more likely?
 
-The methodology distinguishes between the "root cause" (the underlying systemic factor) and the "immediate cause" (the specific thing that went wrong). In medicine, the immediate cause of a medication error might be "nurse administered wrong dose." The root cause might be "similar-looking medications stored adjacent to each other, inadequate labeling, no double-check protocol for high-risk medications." The systemic fix addresses the root cause, not just the immediate trigger.
+Poor labeling has a software equivalent. So does ambiguous handoff. So does unsafe default timing. So does requiring a person to remember too many conditionals in the middle of an incident.
 
-Technology post-mortems often stop too early. "The deployment caused the outage" is an immediate cause. "Our deployment process has no automated rollback and no canary stage, so every deployment is a binary risk event" is closer to a root cause. "Our culture treats rapid deployment velocity as the primary metric and under-invests in deployment safety infrastructure" might be the root cause.
+## Root Cause Means Going Further Upstream
 
-The further you push the analysis, the more actionable and durable the improvements tend to be. Surface-level fixes prevent the specific incident from recurring. Root cause fixes prevent a class of incidents.
+I have always liked medicine's distinction between immediate cause and systemic cause.
 
-## The Second Victim Problem
+A patient receives the wrong medication dose. That is the event. But the event is not the whole explanation. Were similarly labeled medications stored together? Was the handoff poor? Was the double-check missing? Was the staffing ratio unsafe? Did the workflow make the mistake easy?
 
-One aspect of healthcare's approach to error that technology has underappreciated is what the medical community calls "the second victim phenomenon." When a medical professional makes an error that harms a patient, they are also harmed — by guilt, by self-doubt, by the emotional weight of having been the proximate cause of suffering. Ignoring this cost, or treating it as unprofessional to acknowledge, compounds the harm and makes it harder for the professional to recover their effectiveness.
+Technology postmortems often stop too close to the event.
 
-Technology has a version of this that's rarely named. Engineers who cause significant outages often carry that with them. The on-call engineer who made the configuration change that took down production for six hours has a bad few weeks that the blameless post-mortem culture is partially designed to address — but only partially.
+"The deployment caused the outage" is not a root cause. It is barely a sentence. The more useful question is what made that deployment so fragile. Missing rollback? Weak review? Excessive change size? A culture that prized speed and quietly discounted operational risk?
 
-Building cultures that support the humans involved in failures — not by excusing errors, but by acknowledging that errors affect the people who make them and that recovery is part of the work — produces teams that are more resilient and more willing to engage honestly with what went wrong.
+The deeper you push the analysis, the more likely you are to fix a class of failures instead of memorializing one. That is also why I continue to like the way [AHRQ teaches root cause analysis](https://psnet.ahrq.gov/primer/root-cause-analysis): it keeps pushing the discussion away from the last human touchpoint and back toward the system that made the touchpoint consequential.
 
-## Systems Thinking as a Practice
+## The Human Aftermath Matters Too
 
-The most durable thing I absorbed from medicine's approach to complex systems is the habit of thinking systemically. Individual failures are almost never the full story. The question is always: what about the system made this failure possible, likely, or inevitable?
+Healthcare has a phrase for something technology still names awkwardly, if at all: the second victim problem.
 
-Technology leaders who approach reliability from a systems-thinking perspective spend their time differently than those who focus on individual failures. Instead of asking "who screwed up?" they ask "what were the conditions that made this screwup possible?" Instead of patching the immediate problem, they look upstream for the factors that created it.
+When a medical professional makes a serious mistake, the harm does not end with the immediate event. The person involved often carries guilt, fear, and a loss of confidence that can impair them long after the formal incident has closed.
 
-This perspective is more demanding. It requires resisting the satisfying simplicity of a clear culprit and sitting with the harder, messier analysis of interacting factors. But it's the analysis that produces systems that are actually safer — not just systems where the most recent accident has been patched.
+Technology has the same phenomenon. Engineers who trigger a large outage rarely forget it quickly. Sometimes that memory makes them better. Sometimes it makes them hesitant, brittle, or privately miserable. The healthcare literature on the [second victim phenomenon](https://pubmed.ncbi.nlm.nih.gov/30872062/) is useful here not because the domains are identical, but because it names the cost clearly: serious incidents do not only damage the system and the customer. They can also damage the operator involved.
 
-Medicine has had centuries to learn that human fallibility is a design constraint, not a moral failure. Technology would do well to internalize the same lesson.
+Blameless culture is supposed to help here, but it only helps if it is real. Real means the organization learns aggressively without pretending the humans involved are unaffected. Real means distinguishing between reckless disregard and normal human error inside an imperfect system.
+
+That distinction matters because teams do not become safer by terrorizing the people closest to the failure. They become safer by learning more honestly from what the failure exposed.
+
+## Why I Keep Returning to This Frame
+
+The most durable lesson I borrowed from medicine is not a checklist or a slogan. It is a habit of mind.
+
+When something goes wrong, resist the satisfying simplicity of a culprit. Ask what conditions made the mistake possible. Ask what the operators knew at the time. Ask what the system rewarded, tolerated, obscured, or made unnecessarily difficult.
+
+That way of thinking is slower at the beginning and much more useful in the long run.
+
+Technology likes precision, and rightly so. But in reliability work, precision without systems thinking easily turns into very detailed blame.
+
+Medicine learned a long time ago that safety depends on respecting both complexity and fallibility. Technology would benefit from learning the same lesson more completely than it has.
+
+## Further Reading
+
+- James Reason, *Human Error*
+- Sidney Dekker, *Drift into Failure*
+- Agency for Healthcare Research and Quality, *Root Cause Analysis and Actions*
+- Atul Gawande, *Better*

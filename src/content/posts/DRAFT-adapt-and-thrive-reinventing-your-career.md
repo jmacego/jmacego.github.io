@@ -1,72 +1,95 @@
 ---
 title: "Adapt and Thrive: Reinventing Your Career Across Industries"
 date: 2026-02-19
-description: "From web hosting startup to aviation leasing to specialty retail to enterprise IT — what I learned about transferable skills and the courage required to start over."
+description: "From web hosting startup to aviation leasing to specialty retail to enterprise IT, what I've learned about starting over, carrying skills across domains, and tolerating the discomfort of being new again."
 categories: [Leadership, Career]
-tags: [career change, transferable skills, entrepreneurship, reinvention, leadership, personal growth]
+tags: [career transitions, transferable skills, cross-industry experience, reinvention, adaptability]
 published: false
 ---
 
-On paper, my career doesn't have an obvious through-line. Web hosting company co-founder. Aviation leasing entrepreneur. Specialty retail operator. Enterprise IT executive. Fractional technology consultant.
+On paper, my career looks less like a plan than a collection of abrupt turns. Web hosting. Aviation leasing. Specialty retail. Enterprise IT. Fractional technology consulting.
 
-These are not the resume of someone who found a lane and stayed in it. They're the record of someone who repeatedly concluded that the most interesting thing to do next was something genuinely different — and then did it.
-
-I've been asked whether this was a deliberate strategy or a series of fortunate accidents. The honest answer is: mostly the latter, occasionally the former, and in retrospect impossible to fully distinguish. But I've learned enough from the experience to say something useful about what enables successful transitions across industries.
+That list makes more sense in retrospect than it did while I was living it. At several points I walked into a room where everyone else knew the local language, the local rules, and the local hierarchy, and I did not. That is what career reinvention actually feels like. Not glamorous. Not especially linear. Just the repeated experience of being competent in one context and newly ignorant in another.
 
 <!--more-->
 
-## The Moves
+I've been asked whether that was deliberate. The honest answer is only partly. Some transitions came from curiosity. Some came from opportunity. Some came from recognizing that the chapter I was in had reached its natural limit. What made the moves work was not a master strategy. It was a set of habits that turned out to travel better than domain expertise.
 
-**1995–2001: Web hosting and the early internet.** Co-founding a web hosting company in 1995 meant building infrastructure for an industry that barely existed yet. We made it up as we went, learned from every failure, and experienced the full arc of the dot-com era from inside. By 2001, the landscape had changed enough that the next chapter made sense.
+## What Starting Over Actually Looks Like
 
-**Aviation leasing.** I've held a pilot's license for most of my adult life. Aviation has always been a deep interest. At a certain point I had an opportunity to do something in the business of aviation itself — not just fly as a hobby but participate in the commercial side of the industry. That required learning a specialized domain with its own vocabulary, regulatory environment, financial logic, and relationship networks. I was starting over in a very specific sense.
+The public story of a career transition usually sounds cleaner than the lived one. In the public version, you "pivot." In the lived version, you spend a while feeling slower than you are used to feeling.
 
-**Specialty retail: Sheep's Clothing.** Building a specialty retail business from scratch is one of the more humbling things I've done. Retail is relentless and immediate. Every day, customers either respond to what you're offering or they don't. There's nowhere to hide from the market. We built the business to a successful exit, but not without a sustained education in what it actually means to run an operation that depends on face-to-face customer experience.
+When I moved from early internet infrastructure into aviation leasing, I had to learn a business with its own regulatory logic, financial assumptions, and relationship networks. When I went into specialty retail, the market corrected me every single day. Customers either responded to what we built or they did not, and there was no abstraction layer between their reaction and ours. When I later moved into large-enterprise technology leadership, I had to relearn how to operate through institutional structure instead of around it.
 
-**Enterprise IT at Disney.** After running my own ventures, taking an executive role at a large organization meant learning to operate through institutions rather than around them. Different constraints, different leverage points, different time horizons. A genuinely different skill set in some respects, even if the underlying problems — technology strategy, team leadership, operational reliability — were familiar.
+Each move required the same emotional adjustment: accepting that I was not entitled to competence on day one just because I had earned it somewhere else.
 
-**Fractional CTO.** The current chapter, which draws on everything that came before.
+That is the part many experienced people resist. They want the status of expertise to transfer fully intact. It doesn't.
 
 ## What Actually Transfers
 
-Most people, when they think about transferable skills, think about technical capabilities. Can my coding skills transfer? Can my financial modeling? Can my specific domain expertise?
+The usual conversation about transferable skills focuses too much on technical overlap. Can this specific expertise move from one industry to another? Sometimes yes, but usually only in part.
 
-That's the wrong question. Those skills usually transfer partially, often depreciate quickly in a new context, and rarely explain successful transitions.
+What has transferred most reliably for me is something deeper.
 
-What actually transfers:
+**Problem decomposition.** Every field has its own vocabulary, but most serious work eventually reduces to the same discipline: what is the real problem here, what is merely a symptom, and what constraints actually matter? That habit has been useful everywhere.
 
-**Problem decomposition.** The ability to look at a complex, ambiguous situation and figure out what the actual problem is — not the presenting symptom, not the stated concern, but the underlying thing that needs to be addressed. This is valuable in every domain. It's one of the reasons people with diverse backgrounds often make strong consultants and advisors: they've developed a domain-agnostic version of this skill.
+**Trust-building.** In a new domain, titles and past wins only carry you so far. People watch whether you listen well, whether you understand their reality, and whether you behave like someone worth trusting before they decide what to do with your experience.
 
-**Building trust quickly.** Every time you enter a new industry, you're unknown. Your credentials don't transfer the way they do within a field. The ability to establish credibility and trust with unfamiliar people — to listen carefully, demonstrate you understand their context, and earn respect through behavior rather than titles — becomes essential.
+**Comfort with ambiguity.** Reinvention means operating before you feel ready. You are making judgments with partial information, trying to learn the map while already moving through the terrain. People who can stay calm there have a large advantage.
 
-**Managing through ambiguity.** When you're new to a field, you don't have the comfort of deep expertise. You're operating with incomplete information, making judgment calls you're not fully confident in, and staying functional in conditions of uncertainty. People who have done this multiple times get better at it.
+**Knowing what you do not know.** This one gets more important with age. The more experience you have, the more tempting it is to mistake familiarity for universality. Some principles travel. Some assumptions belong only to the environment where you learned them. Knowing the difference matters.
 
-**Understanding what you don't know.** Experienced people in any field have strong opinions about how things work. Sometimes those opinions are correct. Sometimes they're artifacts of that specific field's culture or history that don't apply outside it. Knowing which is which — and being willing to have your assumptions challenged — is critical when you're a newcomer trying to operate effectively.
+## What Does Not Transfer
 
-## What Requires Genuine Courage
+Institutional leverage does not transfer.
 
-The thing that career-transition advice often skips over is the emotional reality of starting over.
+This is one of the more useful lessons I learned late. In one role, your effectiveness may depend partly on budget authority, a known brand, a mature team, or an existing reputation. Move industries, or move into a smaller company, and much of that disappears overnight.
 
-When you've established yourself in a field, you have a social and professional identity built around that expertise. People know who you are and what you do. You know where you stand. You have the psychological comfort of competence.
+That can be clarifying. You find out which capabilities are actually yours and which were partly borrowed from the surrounding structure.
 
-Entering a new field means giving that up — at least temporarily. You're unknown. You're making mistakes that more experienced people find obvious. You're absorbing more than you're contributing. That's genuinely uncomfortable, and the discomfort doesn't go away just because you remind yourself that it's temporary.
+I do not mean that dismissively. Institutions matter. Scale matters. Position matters. But career reinvention has a way of stripping away borrowed advantages and forcing you to rebuild your effectiveness on more durable foundations.
 
-The leaders I've watched fail at transitions — and I've watched a few — usually fail not because they lacked the capability to succeed in the new domain, but because they couldn't tolerate the discomfort of the learning curve. They tried to reassert the identity they had in their previous field rather than genuinely apprenticing to the new one. They brought the answers before they understood the questions.
+## The Real Requirement Is Humility
 
-The willingness to be a beginner — to sit with the discomfort of not knowing, to ask questions you're slightly embarrassed not to already know the answers to, to do the unglamorous work of learning a new domain at depth — is the real prerequisite.
+The leaders I have watched struggle most with reinvention were usually not short on intelligence. They struggled because they could not tolerate becoming novices again.
 
-## The Unexpected Benefits
+They wanted to arrive with answers before they understood the questions. They reached too quickly for analogies from the old world. They interpreted the discomfort of not yet knowing as evidence that the move itself was a mistake.
 
-The things I learned in retail make me a better technology leader. Not metaphorically — concretely. Understanding what it actually feels like for a customer to interact with a product or service, having seen it up close in a context where the feedback is immediate and unfiltered, has shaped how I think about user experience in software systems.
+The people who adapt best do something harder. They apprentice. They ask the slightly embarrassing questions. They let the new domain correct them. They accept a temporary drop in fluency without treating it as an assault on identity.
 
-Aviation gave me a framework for operational discipline and safety culture that I've applied in data center management and now in consulting. The checklist culture, the no-blame incident investigation, the commitment to procedures even when they feel like friction — these ideas travel.
+That is not passive. It takes a surprising amount of discipline to remain teachable once you are used to being the person other people come to for answers.
 
-The cross-domain perspective is itself a capability. When you've seen the same problem pattern in multiple industries, you recognize it faster. When you've seen the same mistake made in different contexts, you can warn against it with more credibility. The unusual career path becomes an asset rather than an explanation to be made.
+## Why It Was Worth It
 
-But you have to actually go through the transitions to get there. The benefit doesn't accrue to people who talk about being curious and generalist while staying safely in their lane.
+The payoff is not just a more interesting resume. It is better judgment.
 
-## For Whoever Needs to Hear This
+Retail made me better at customer empathy in technology because it removed all interpretive distance. Aviation reinforced my respect for checklists, discipline, and failure analysis. Enterprise leadership sharpened how I think about structure, incentives, and focus. Consulting is drawing on all of it at once.
 
-If you're considering a significant career transition and feeling afraid that you don't have the right credentials or background, the question isn't whether you're qualified in the traditional sense. It's whether you have the adaptability, the humility to learn, and the patience to earn credibility in a new context.
+Cross-domain experience is useful because patterns repeat. Once you have watched the same failure mode show up in different industries, you stop mistaking it for a one-off local problem. You recognize it faster and often earlier.
 
-Those qualities are rarer than credentials. And they're almost entirely within your control.
+That is the real advantage of reinvention. Not novelty. Pattern recognition.
+
+## What I Would Say to Someone Considering a Change
+
+If you are considering a major career shift, the question is not whether every credential transfers cleanly. They won't.
+
+The real questions are simpler and harder.
+
+Can you learn in public without protecting your ego?
+
+Can you tolerate being slower for a while?
+
+Can you earn trust without leaning too heavily on your past title?
+
+Can you tell the difference between principles that travel and habits that do not?
+
+If the answer is yes, you can probably make a bigger jump than you think.
+
+The through-line in my career was never a single industry. It was the willingness to keep becoming new.
+
+## Further Reading
+
+- Herminia Ibarra, *Working Identity*
+- David Epstein, *Range*
+- Annie Duke, *Thinking in Bets*
+- Amy Edmondson, *Right Kind of Wrong*

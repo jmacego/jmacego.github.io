@@ -1,52 +1,102 @@
 ---
-title: "Three Decades in Tech: What's Changed and What's Stayed the Same"
+title: "Technology Accelerated. Organizations Didn't."
 date: 2026-02-19
-description: "A panoramic reflection on 30+ years in the tech industry, from the dot-com era to the current AI wave — and the leadership principles that have remained constant throughout."
+description: "Three decades in technology taught me that capability now outruns institutional absorption, and many leadership mistakes happen in that gap."
 categories: [Leadership, Technology]
-tags: [tech history, leadership, career, AI, cloud, dot-com, perspective, fundamentals]
+tags: [technology history, organizational change, cloud, ai, adoption, institutional inertia]
 published: false
 ---
 
-I started in technology before the World Wide Web was accessible to most people. I've watched the industry cycle through mainframes to PCs to the internet to mobile to cloud to AI, each wave declared the most transformative thing to ever happen — and each one genuinely transformative in its own way.
+One of the strangest parts of spending decades in technology is watching the tooling accelerate while the human machinery around it moves at roughly the same old pace.
 
-After more than 30 years, I have a perspective that isn't available from inside any single era. I've been present for enough of the changes to have opinions about which ones actually mattered and which ones were mostly noise. More importantly, I've watched the same human dynamics play out across every cycle, under every new technology, in every market condition.
+I have lived through a version of both worlds.
 
-Here's what I've seen change, what hasn't, and what that means for people leading technology organizations today.
+Early on, infrastructure was physical in ways that are easy to forget now. Servers had to be acquired, racked, powered, cooled, and connected. Lead times were real. Data center constraints were real. Entire projects moved at the speed of procurement, shipping, installation, and coordination.
+
+Now I can watch a new model or platform show up, see companies testing it within days, and watch executives convince themselves a strategic answer is due by the end of the quarter.
+
+That is an extraordinary change in capability diffusion.
+
+What has not changed at the same pace is the organization's ability to absorb new capability without confusing access with readiness.
+
+That gap matters more than most technology leaders want to admit. This is not mainly a hype-cycle argument. It is an organizational-speed argument.
 
 <!--more-->
 
-## What Has Actually Changed
+## What Really Got Faster
 
-**The speed of capability diffusion.** In the early 1990s, a significant technological capability might take a decade to become widely adopted. The infrastructure, the skills, the tooling, the organizational change management — all of it moved slowly. Today, a new AI model goes from research paper to widespread enterprise experimentation in months. The window between "early adopters playing with this" and "everyone has access to this" has compressed dramatically.
+The obvious answer is the technology itself.
 
-This has real implications for competitive strategy. The first-mover advantage window is shorter. The technology moats that used to last years now last months. Leadership has to move faster and be more comfortable with incomplete information than previous generations of technology executives.
+Provisioning, experimentation, and distribution all became dramatically faster. Cloud changed how much physical constraint most teams had to care about. Open source changed access to sophisticated tooling. AI is compressing the path from new technical capability to broad experimentation even further. In some parts of the industry, the time between "this was a paper" and "someone is pitching it to the board" is now absurdly short.
 
-**The talent landscape.** In the 1990s, software developers were a relatively rare breed. "Computer science degree from a good school" was a strong filter, and the supply-demand imbalance meant that companies competed intensely for a narrow pool of candidates. Today, the paths into technology are radically more diverse — bootcamps, self-taught developers, international talent, open-source contribution histories. Assessment has to be more sophisticated because credentials are less predictive.
+That creates real opportunities. It also creates a consistent temptation: because a capability arrived quickly, leaders assume the organization can meaningfully use it just as quickly.
 
-**Infrastructure expectations.** I ran data centers. Physical servers, power circuits, raised floors, generator contracts, cooling calculations. I watched the cloud shift eliminate most of that as a day-to-day operational concern for most organizations. The skills required to run infrastructure have changed fundamentally, and a lot of what constituted hard-won expertise in the 1990s and 2000s is simply no longer relevant.
+Usually it cannot.
 
-**The business-technology integration.** When I started my career, technology was largely a back-office concern. IT departments were cost centers that kept the lights on. The notion that technology was a strategic differentiator was an emerging idea, not an established fact. Today, in most industries, technology strategy and business strategy are inseparable. The CTO or CIO is at the strategy table, not just the budget meeting.
+## What Stayed Stubbornly Slow
 
-**Remote and distributed work.** I spent years managing teams that were all in the same building, then the same campus, then the same time zone. The last decade forced organizations to develop competence at distributed collaboration that most of them hadn't needed before. Some of those capabilities are genuinely valuable and will persist.
+Trust did not accelerate.
 
-## What Hasn't Changed
+Cross-functional clarity did not accelerate.
 
-**The fundamental importance of trust.** Every technology organization I've led or advised runs on trust — trust between leadership and teams, trust between technical staff and business stakeholders, trust between the company and its customers. The form that trust-building takes has evolved, but the underlying requirement hasn't. Technology doesn't change the fact that people do their best work in environments where they feel psychologically safe.
+The ability of teams to absorb change without losing focus did not accelerate.
 
-**The gap between what technology can do and what organizations can absorb.** In every decade, the technology has been ahead of the organizational and human capacity to use it well. In the 1990s, companies were installing ERP systems that could transform their operations and managing those deployments badly. Today, companies are implementing AI tools in ways that don't account for the human workflow changes required to make them effective. The pattern repeats because it's fundamentally about organizational change, not technology capability.
+The discipline required to say no to shiny distractions definitely did not accelerate.
 
-**The value of clear communication.** I've worked with brilliant technologists who couldn't explain what they were doing to anyone outside their immediate team, and I've watched that limitation cost them and their organizations significantly. The ability to translate technical complexity into clear, business-relevant language has been valuable for 30 years and shows no signs of becoming less so.
+This is the pattern I have watched repeat for years. A new technical capability shows up. The technical part is often impressive and sometimes genuinely transformative. But the determining factor is rarely the capability alone. It is whether the organization can integrate it into real workflows, train people to use it well, make good decisions about scope, and stay honest about what problem is actually being solved.
 
-**Customer-centricity as a differentiator.** The organizations that focus relentlessly on what customers actually need — not what the technology can do, not what's interesting to engineers, but what solves a real problem for a real person — outperform over time. This was true in 1995, it was true in 2005, it was true in 2015, and it's true now. The companies that forget this in favor of chasing technological capability for its own sake reliably underperform.
+In other words, the constraint keeps moving back toward human systems.
 
-**The importance of saying no.** Leaders who can't say no to new technology initiatives, new features, new directions — because they don't want the conflict, or because everything sounds exciting, or because they haven't developed the judgment to distinguish what matters from what doesn't — create organizational chaos. The best technology leaders I've known have been selective in ways that sometimes looked like stubbornness in the moment but proved wise in retrospect.
+That was true when companies were deploying ERP systems they were organizationally unprepared to absorb. It was true in the dot-com period, when growth stories outran business discipline. It is true now when companies announce AI strategies that are really enthusiasm with a budget attached.
 
-## What This Means for Leaders Today
+The details change. The failure mode is familiar.
 
-If I were advising a technology leader who was 15 years into their career and wondering what the next 15 looked like, I'd say this:
+## Why This Produces So Much Confusion
 
-The technology will keep changing. Whatever you've mastered will be partially obsolete. You need to accept that and build the skills of continuous learning rather than the comfort of expertise in a specific stack or platform.
+Part of the confusion is that the technology often is real.
 
-But the human and organizational skills compound differently. Leadership, communication, judgment, trust-building — these get better with time and experience in ways that technical skills don't necessarily. The investment in those capabilities has a longer half-life.
+That makes it easy to slide from "this capability is genuine" to "our organization is ready to use it well" to "we must move immediately or we are falling behind." Those are not the same statement.
 
-And the fundamentals matter. Across every technological era I've watched, the organizations that focused on clear problem definition, genuine customer value, sustainable growth, and strong team culture outperformed the ones chasing whatever was new and exciting. That's probably the most boring insight I have after 30 years in technology. It's also probably the most reliable.
+I have seen strong organizations get this roughly right, and weak organizations get it badly wrong. The strongest ones do not treat adoption speed as the main virtue. They ask harder questions.
+
+Do we understand the problem well enough?
+
+Do we have the team structure to support this?
+
+What process or policy changes will be required for this to actually create value?
+
+What are we willing to stop doing in order to do this well?
+
+Those are less exciting questions than the demo. They are also more predictive of outcome.
+
+## The Part That Has Stayed Reliable
+
+Across the different eras, the organizations that held up best were not the ones with the best slogans about innovation. They were the ones that kept a few boring disciplines intact:
+
+- clear problem definition
+- honest communication
+- customer proximity
+- selective focus
+- willingness to make tradeoffs instead of collecting initiatives
+
+None of that is anti-technology. In practice, it is what lets technology matter.
+
+This is one reason I remain skeptical of any story that treats new capability as if it automatically confers advantage. Access is cheaper than judgment. Tooling is easier to acquire than organizational coherence. The market is full of companies that had access to the right technology and still made poor decisions about how to use it.
+
+## What I'd Tell a Leader Coming Up Now
+
+Learn the new tools. Absolutely.
+
+But do not confuse fluency with perspective.
+
+If you want durability over a long career, pay attention to the underlying organizational constraints that survive each technical wave. Learn how trust is built. Learn how teams actually change. Learn how strategy becomes execution instead of presentation. Learn how to say no when a technology is real but not right for your context.
+
+That is the part that compounds.
+
+After enough cycles, my view is simpler than it used to be. Technology keeps accelerating. Organizations remain human. The leaders who do best are the ones who understand both speeds and do not mistake one for the other.
+
+## Further Reading
+
+- Carlota Perez, *Technological Revolutions and Financial Capital*
+- Clayton Christensen, *The Innovator's Dilemma*
+- Andy Grove, *Only the Paranoid Survive*

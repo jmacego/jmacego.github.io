@@ -1,78 +1,93 @@
 ---
-title: "Beyond the Hype: Focusing on Fundamentals in a Trend-Driven Tech World"
+title: "Beyond the Hype: What I Learned From 30 Years of Tech Manias"
 date: 2026-02-19
-description: "After living through multiple hype cycles — dot-com, Web 2.0, blockchain, and now AI — here's a practical framework for separating meaningful technological shifts from expensive distractions."
+description: "From the dot-com years to AI, I've watched the same pattern repeat: a real technology, inflated claims, bad capital allocation, and a smaller set of durable winners. This is how I evaluate the difference."
 categories: [Leadership, Technology]
-tags: [hype cycle, fundamentals, strategy, technology trends, decision-making, AI, blockchain, leadership]
+tags: [technology hype, capital allocation, technology strategy, ai, blockchain, dot-com]
 published: false
 ---
 
-I've watched technology hype cycles from the inside for 30 years. The dot-com boom. The Web 2.0 wave. Social media as a business panacea. Big Data. Blockchain and Web3. And now, the AI wave that's currently cresting.
+One of the stranger investor conversations of my career happened during the dot-com years.
 
-Each cycle has the same basic structure: a genuine technological capability emerges, its potential is extrapolated beyond what the current state of the technology can deliver, enormous amounts of capital flow toward the extrapolation rather than the current reality, and then a correction occurs that leaves some real value standing while sweeping away the overstatement.
+We were in a real business. Customers paid us. The infrastructure mattered. The economics were not imaginary. None of that was what the investor wanted to talk about. The conversation kept drifting back to growth rate, category land grab, and how quickly we could pour fuel on the fire. The working assumption was that if enough attention and capital showed up early, the business model could be sorted out later.
 
-The value is real. The correction is also real. The question for technology leaders is how to engage with genuine technological shifts while maintaining appropriate skepticism about the extrapolations.
+That was not an isolated conversation. It was the atmosphere.
 
-Here's what I've learned about that navigation.
+I've watched versions of that same atmosphere return several times since: Web 2.0, social media as a universal business strategy, blockchain, and now AI. The technology changes. The human behavior is much more stable.
 
 <!--more-->
 
-## What Hype Cycles Have in Common
+What I've come to believe is that hype cycles are not evidence that the underlying technology is fake. They're what happens when a real capability collides with projection, competitive anxiety, and too much money.
 
-Every major technology hype cycle I've observed shares several features.
+Carlota Perez's work on technological revolutions is useful here. Her argument, simplified, is that major technologies tend to arrive with a period of financial overexcitement before they settle into broader productive use. That framing matches what I saw in practice. The bubble phase is often wrong in its timing, wrong in its valuations, and wrong in many of its specific bets. It is not always wrong that something important is happening.
 
-**A genuine underlying technology.** The dot-com boom was built on the internet, which really did change almost everything. Blockchain solved real distributed consensus problems, even if most blockchain applications turned out not to require those solutions. Generative AI represents genuine capability in language modeling and pattern recognition. The hype is always attached to something real — it's the extrapolation that becomes problematic.
+## What Hype Usually Gets Right
 
-**Extrapolation that outpaces evidence.** In every cycle, the narrative gets ahead of the demonstrated capability. In the dot-com era, the hypothesis that "internet companies don't need profitable business models" was stated seriously and believed widely. In the blockchain era, the idea that decentralized ledgers would replace most financial and contractual intermediaries was mainstream venture capital belief. Current AI narratives include claims about AGI timelines and sweeping transformations of industries that may or may not materialize on the timescales being discussed.
+The technology is usually real.
 
-**Capital misallocation at scale.** The extrapolation attracts investment. Enormous amounts of capital flow into use cases that turn out not to work, at valuations that turn out not to be defensible, toward companies that turn out not to create sustainable value. This is economically wasteful, and organizations that participate in it without discipline pay real costs.
+The internet really did reorganize commerce and communication. Cloud computing really did change how infrastructure gets built and bought. Machine learning really does make some classes of prediction, classification, and automation substantially better than older approaches.
 
-**Survivorship bias in the post-hype assessment.** After the correction, the successful applications that did emerge are often used to retroactively justify the scale of the original hype. "See, the internet really did change everything." Yes, but at a fraction of the speed that was projected and at a fraction of the economic value that was claimed. The correction happened, the adjustment of expectations to reality was painful, and the genuine value that emerged could have been invested in more precisely if the hype had been more calibrated.
+This matters because the easiest mistake during a hype cycle is to react against the overclaim by dismissing the underlying capability. I've seen leaders do that. Sometimes they feel very smart in the moment. A few years later they are explaining why their organization has no coherent position on something that turned out to matter.
 
-## Why Smart People Believe the Hype
+The right reaction is not dismissal. It is separation.
 
-There are structural reasons why intelligent people — including experienced technology leaders — get pulled into hype cycles.
+Separate the real capability from the story being told about it. Separate the demonstrated use cases from the extrapolated ones. Separate the companies with actual customers from the companies riding narrative and cheap capital.
 
-**The genuine uncertainty problem.** It's genuinely difficult to know in advance which applications of a new technology will succeed. Given that uncertainty, being dismissive carries real risk — you might dismiss what turns out to be transformative. So the rational response for many people is to invest broadly, "just in case."
+## What Hype Usually Gets Wrong
 
-**Competitive anxiety.** If you believe your competitors are getting ahead by investing in a new technology, the cost of not participating seems higher than the cost of investing unwisely. This is sometimes rational and sometimes a rationalization.
+First, timing.
 
-**Social proof cascades.** When enough credible people publicly endorse a technology or approach, skepticism starts to look uninformed. Sophisticated investors, accomplished executives, and recognized experts are all enthusiastic — doesn't that mean something?
+Adoption is almost always slower than advocates predict because organizations do not absorb change at the speed of a keynote. Even when the technology is ready, process, training, incentives, regulation, and habit slow deployment. I watched that in the late 1990s, and I am watching it again now.
 
-It means something, but not as much as it feels like in the moment. History is full of sophisticated people who were wrong in coordinated ways.
+Second, scope.
 
-**Sunk cost and identity.** Once you've made a significant investment in a technology direction — financially or in terms of your public positioning — it becomes psychologically difficult to update based on new evidence. The belief has become part of your identity.
+During the inflated phase, every technology becomes a proposed answer to problems it does not actually fit. Blockchain is the cleanest recent example. Distributed trust without a central intermediary is a real technical achievement. It is also not the problem most enterprises are actually trying to solve. I watched too many pilots that were impressive as demonstrations and empty as operating systems.
 
-## A Framework for Evaluation
+Third, capital discipline.
 
-The framework I've developed for evaluating technology trends starts with a few basic questions.
+When a market gets overheated, money chases adjacency and narrative as easily as it chases product-market fit. Hyman Minsky's work on speculative excess is a useful reminder that this is not unique to technology. People convince themselves that the usual standards no longer apply, right up until they do again.
 
-**Does it solve a problem that currently exists and matters?** Not "could this create new possibilities" — that's almost always true of any significant technology — but: is there a real, identifiable problem that this solves better than existing alternatives, for a specific population that's willing to pay for the solution?
+## The Questions I Ask Now
 
-**Is the value proposition clear at current capability levels?** If the technology requires assuming significant future improvements to generate value, that's a warning sign. The applications that survive hype cycles are usually ones that were valuable at the technology's current state of development, not ones that were valuable given where it would eventually get to.
+After living through enough of these cycles, the questions I trust are not especially glamorous.
 
-**What's the realistic best case, and does it justify the investment at current valuations?** Hype inflates valuations beyond what even optimistic scenarios can support. Doing the math honestly on "what does success actually look like, and what's it worth if it happens?" often reveals that the investment doesn't make sense even if everything goes right.
+What specific problem does this solve better than the current alternative?
 
-**What does historical adoption of similar technologies suggest?** Adoption of transformative technologies tends to be slower than proponents predict. Computing has gotten dramatically more powerful over 30 years; it's still not managed healthcare or replaced most knowledge workers. Some of that is still coming. Most of it is further away than the hype suggests.
+Is that problem expensive enough, painful enough, or common enough that someone will reliably pay to solve it?
 
-**Are you doing this because it's right for your specific context, or because everyone else is?** "We have to have an AI strategy" is not a strategy. "We've identified these three specific use cases where ML can improve our operations, and here's how we'll evaluate whether they're working" is a strategy.
+Does the value exist at current capability levels, or only in a future version of the technology people are imagining into existence?
 
-## What I'm Skeptical About and What I'm Not
+If adoption is slower than the market story suggests, does the investment still make sense?
 
-For transparency: I'm relatively skeptical about Web3/blockchain applications in most enterprise contexts. The problems they solve — decentralized trust without a central intermediary — are genuine but they're not the problems that most enterprises actually face. Most enterprise data and transaction problems are better solved with established distributed systems and governance frameworks. I've watched too many blockchain pilot programs produce impressive demonstrations and no production deployments.
+If this works, what actually improves: cost, speed, margin, reliability, customer experience, risk, or strategic position?
 
-I'm genuinely enthusiastic about AI/ML in operational contexts — with the qualification that I've articulated elsewhere that it requires careful problem definition and realistic expectations. I've seen it work in specific, well-defined applications. The current generation of language models opens new possibilities that are real even if the timelines for their full deployment are longer than the hype suggests.
+And my favorite: would we still want to do this if nobody else were talking about it?
 
-The distinction I'm drawing is between technologies where I see clear, demonstrated value in current applications versus technologies where the value proposition depends primarily on future improvements or on solving problems that organizations don't actually have.
+That last question clears a surprising amount of fog.
 
-## The Leader's Responsibility
+## Where I Am Skeptical and Where I Am Not
 
-Technology leaders have a specific responsibility in hype cycles: to serve as the voice of analytical clarity in environments where enthusiasm is commercially incentivized.
+My skepticism is strongest where the value proposition depends on social coordination, speculative resale, or a theory that every institution in the chain will reinvent itself at once. That is one reason I stayed unconvinced by most enterprise blockchain pitches. Too much had to go right, too many parties had to align, and the real alternatives were usually more boring and more workable.
 
-Vendors, investors, and consultants have financial interests in your adoption of new technology. That doesn't make them dishonest — they often genuinely believe what they're selling — but it means that their analysis isn't unbiased. Your job is to bring unbiased analysis to the table.
+My enthusiasm is strongest where the problem is already concrete, the data is already abundant, and the success criteria are already measurable. That is why I take AI and ML far more seriously in operational contexts than in sweeping "this changes everything tomorrow" claims. Alert prioritization, anomaly detection, forecasting, incident classification, and support workflows all live in territory where bounded applications can create real value.
 
-That sometimes means disappointing people who want you to be more enthusiastic. It sometimes means being wrong — the technology you were skeptical of turned out to be more transformative than you thought. That's a recoverable mistake; investing heavily in something that doesn't deliver is often more costly.
+The middle ground is where most leadership judgment lives. You do not need to be an evangelist or a cynic. You need to be able to say, calmly, "Yes, something meaningful is here. No, I do not believe all the surrounding claims. Here is where I think it fits for us, and here is where I think it does not."
 
-The leaders who have served their organizations best through the hype cycles I've witnessed were not the ones who were most enthusiastic or most skeptical. They were the ones who were most honest about what was known and what wasn't, and who made deliberate choices about where to invest based on that honesty.
+## What Leaders Owe Their Organizations
 
-That's a durable approach to an environment that will continue to produce hype cycles regardless of what we do. The next one is probably already forming.
+During hype cycles, vendors are paid to be enthusiastic. Investors are often paid to be early. Consultants are often paid to accelerate adoption. Leaders inside operating companies have a different job.
+
+The job is to preserve analytical clarity.
+
+That means being curious enough not to miss the real thing, disciplined enough not to buy the whole story, and honest enough to admit when the evidence changes your view.
+
+Some of the best technology decisions I have seen were cautious. Not timid. Not slow by default. Just clear-eyed about what was known, what was not, and what the organization was actually trying to achieve.
+
+That approach is less exciting than a manifesto. It is also a lot more durable.
+
+## Further Reading
+
+- Carlota Perez, *Technological Revolutions and Financial Capital*
+- Geoffrey A. Moore, *Crossing the Chasm*
+- Hyman P. Minsky, *Stabilizing an Unstable Economy*
+- Clayton M. Christensen, *The Innovator's Dilemma*

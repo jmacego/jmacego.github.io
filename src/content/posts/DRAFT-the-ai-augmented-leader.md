@@ -1,62 +1,93 @@
 ---
-title: "The AI-Augmented Leader: Leveraging AI/ML in Tech Operations"
+title: "The AI-Augmented Leader: Where AI Actually Helps Operations"
 date: 2026-02-19
-description: "Practical perspectives on integrating AI and ML into technology leadership — drawing from a patent in machine learning for cloud networking and years of operational experience separating hype from reality."
+description: "I've worked with machine learning in operational environments long enough to have seen both the value and the failure modes. This is where AI genuinely helps, where it does not, and what leadership still owns."
 categories: [Leadership, Technology]
-tags: [AI, machine learning, operations, automation, cloud, innovation, tech leadership, MLOps]
+tags: [ai operations, machine learning, anomaly detection, incident triage, decision support, ai governance]
 published: false
 ---
 
-I hold a patent in machine learning for cloud networking. I mention this not as a credential-establishing boast but as context for what follows: I've been working with ML in operational contexts long enough to have a perspective on the gap between what AI advocates promise and what practitioners actually deliver.
+Years before the current AI wave, I worked on machine learning for cloud networking.
 
-The gap is real, and it's instructive. AI and ML have genuine, significant, proven applications in technology operations. They also attract an enormous amount of hype, vendor overstatement, and organizational enthusiasm that outruns practical deployment capability. Learning to navigate between these two realities is one of the more important skills a technology leader can develop right now.
+The problem was not glamorous. It was operational. Networks generate more telemetry than humans can reason through in real time, and some of the patterns that precede trouble are visible only in retrospect unless you have help finding them. The work made sense because the problem was bounded, the feedback loop was real, and the success criteria were not vague. We were not trying to make the network intelligent in some abstract way. We were trying to detect emerging trouble earlier and respond better.
+
+That experience has made me more optimistic about AI than some people expect, and more skeptical than current market rhetoric would prefer.
 
 <!--more-->
 
-## Where AI in Operations Is Genuinely Useful
+I am not skeptical that AI has real value. I am skeptical of how casually people slide from "this tool is useful in narrow, measurable contexts" to "this changes management, engineering, and operations from top to bottom."
 
-Let me start with the real, not the theoretical.
+Those are different claims.
 
-**Anomaly detection and predictive maintenance.** Networks, infrastructure, and application systems generate enormous amounts of telemetry data. Human operators can't process this data at scale — not in real time. ML models trained on historical patterns can identify anomalies that precede failures, flag unusual traffic patterns, and prioritize alerts in ways that reduce alert fatigue and improve response times. This is not glamorous, but it's operationally valuable and relatively well-understood.
+## Where I Trust It
 
-My work in ML for cloud networking was in exactly this space: using machine learning to predict network behavior and identify emerging problems before they became outages. The key insight was that patterns in network telemetry that preceded failures were often subtle enough to miss in manual review but consistent enough for a well-trained model to identify. The system worked because the problem was well-defined, the training data was plentiful, and the feedback loop for model improvement was direct.
+I trust AI most where the work has four characteristics.
 
-**Resource optimization and capacity planning.** Cloud infrastructure costs can scale dramatically with workload, and over-provisioning is expensive while under-provisioning causes problems. ML-based demand forecasting and automated scaling has become a standard capability in mature cloud operations, and when implemented well, it produces real cost savings with minimal operational risk.
+First, the problem is specific. "Improve operations" is not a problem definition. "Reduce alert noise," "classify incidents faster," "forecast demand more accurately," and "surface likely root causes sooner" are.
 
-**Security threat detection.** Security operations centers deal with more data than humans can process. ML classifiers that help prioritize potential threats, identify unusual access patterns, and flag anomalies in authentication behavior are genuinely useful in security operations. This is an area where the volume of data makes some form of automation essentially mandatory.
+Second, the environment generates enough data to learn from. Operational systems usually do. Logs, metrics, traces, event streams, ticket histories, and change records are all fertile ground if they are reasonably clean and the labels are good enough.
 
-**Intelligent incident management.** ML can assist with incident routing (identifying which team should handle a given type of incident), with similar incident retrieval (surfacing past incidents that resemble the current one and their resolutions), and with impact prediction (estimating how many users or systems an incident affects). These are narrow applications but practically useful ones.
+Third, the cost of a wrong answer is manageable. I am much more comfortable using models to prioritize, classify, summarize, and recommend than I am using them to take consequential autonomous action in production.
 
-## Where the Hype Exceeds the Reality
+Fourth, the feedback loop is short enough to improve the system. If you can tell reasonably quickly whether the model helped, hurt, or hallucinated, you have a chance to build something durable.
 
-**"AI will replace operations teams."** This claim has been made about ML in operations for at least a decade. What's actually happened is that ML has automated specific, well-defined tasks while human operators remain essential for novel situations, judgment calls, and anything that requires contextual understanding. Automation shifts the work rather than eliminating it.
+This is why I take AI seriously in anomaly detection, incident triage, demand forecasting, knowledge retrieval, and support workflows. Those are real operating problems. They are measurable. They are often ugly enough that incremental improvement matters.
 
-**Deploying AI before you understand the problem.** I've watched organizations implement ML pipelines for use cases where the training data was inadequate, the problem was not well-defined, or the operational context made model outputs unreliable. The models were sophisticated; the applications were not appropriate. The result was substantial investment in tooling that didn't actually improve outcomes.
+## Where I Do Not Trust It
 
-**Ignoring the maintenance burden.** ML models require ongoing maintenance. Production environments change; the patterns that were true when the model was trained may drift. Models that are deployed and forgotten typically degrade, sometimes in ways that are hard to detect until something goes wrong. This operational cost is systematically underestimated in AI adoption plans.
+I do not trust AI when the organization is using it as a substitute for thinking.
 
-**Overconfidence in model outputs.** Models can be confidently wrong in ways that are subtle and difficult to detect. Building operational workflows that treat model outputs as ground truth — rather than as one input among several — creates fragility. The best ML deployments I've seen maintain human review for consequential decisions and use model output to assist and prioritize rather than to replace human judgment.
+I have seen teams try to apply machine learning to problems they had not actually defined, with data they had not examined, to workflows they had not stabilized. The result is usually an expensive layer of complexity on top of an already fuzzy process.
 
-## A Framework for Responsible AI Adoption in Operations
+I also do not trust the common managerial fantasy that AI will let leaders skip the hard human parts of the job.
 
-Given the genuine value and the genuine risks, here's how I think about AI adoption in technology operations:
+It will not build trust for you.
 
-**Start with a clear problem definition.** What specific operational outcome are you trying to improve? How will you measure whether the AI intervention is working? What does success look like? Vague goals — "use AI to improve operations" — produce vague results. Specific goals — "reduce mean time to detection for anomalous network behavior from 15 minutes to 5 minutes" — create accountability.
+It will not decide which tradeoff matters more when a system is under pressure and multiple stakeholders want incompatible outcomes.
 
-**Validate with a pilot before committing.** Run a bounded pilot before broad deployment. Measure the outcomes against your success criteria. Be willing to conclude that the approach isn't working and change direction. Organizations that invest heavily in AI initiatives before validating effectiveness create pressure to declare success regardless of actual results.
+It will not create accountability in an organization that avoids it.
 
-**Plan for model maintenance.** Before deploying any ML system to production, have a plan for monitoring its performance, detecting drift, and retraining when necessary. This is operational work, not R&D work, and it needs operational ownership.
+It will not rescue a weak operating model.
 
-**Pair AI with human oversight for consequential decisions.** The appropriate human-AI collaboration model depends on the stakes. For prioritizing alerts, AI can act relatively autonomously because the cost of a wrong prioritization is low. For making changes to production systems, human review should be maintained because the cost of an error is high.
+The [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) is useful because it treats AI as a socio-technical system rather than just a model. That matches what I have seen. Most real failures in operational AI are not only model failures. They are failures of governance, bad process design, weak oversight, poor incentives, or wishful thinking about what the system was doing. Google's long-running [Rules of Machine Learning](https://developers.google.com/machine-learning/guides/rules-of-ml) makes a similar point from the engineering side: get the metrics, the infrastructure, and the problem framing right before you congratulate yourself for having deployed ML at all.
 
-**Develop your team's AI literacy.** The engineers who will operate AI-augmented systems need to understand enough about how those systems work to diagnose problems, evaluate outputs critically, and make appropriate judgments about when to trust model outputs and when to override them. Deploying AI without building this capability in your team creates new fragilities.
+## What Leadership Still Owns
 
-## What AI Actually Changes for Technology Leaders
+The leader's job does not get replaced. It gets sharpened.
 
-The most honest thing I can say about AI's impact on technology leadership is this: it doesn't change the fundamental job. It changes the specific skills required and the specific tools available.
+You still have to define the problem well. In some ways this matters more now, because vague organizations produce vague prompts, vague evaluation criteria, and vague systems that sound plausible while doing the wrong thing.
 
-The technology leader's job remains what it's always been: understand the business, build the right team, make good resource allocation decisions, manage risk, and create the conditions for sustained delivery of value. AI is a powerful new category of tool that changes what's possible in some of those areas — particularly in operations automation and decision support. It doesn't substitute for the judgment, communication, and organizational skills that effective leadership requires.
+You still have to decide where human review stays in the loop. Google's old "Rules of ML" remains useful because it assumes production systems are fragile, changing things, not one-time demos. That is the right mindset. Models drift. Context changes. Incentives distort usage. If the workflow has no human judgment at the right checkpoints, the organization is usually borrowing risk it does not understand.
 
-Leaders who treat AI as a replacement for strategy, for team development, or for their own judgment will make expensive mistakes. Leaders who treat AI as a genuinely powerful set of tools — to be applied thoughtfully, with appropriate skepticism and human oversight — will find it a meaningful addition to their operational capability.
+You still have to build team literacy. The people operating AI-augmented workflows need to know enough to distrust confident nonsense, to recognize drift, and to distinguish "helpful model output" from "truth." A team that treats model output as objective reality is a fragile team.
 
-I remain genuinely excited about AI's potential in technology operations. I also remain committed to evaluating that potential against actual evidence rather than enthusiasm. Both of those things are true, and I think both are necessary.
+You still have to decide where the return is worth the maintenance burden. This is the part people underweight. Models are not free once deployed. They create monitoring, retraining, evaluation, governance, and workflow design overhead. Sometimes the gain justifies it. Sometimes a cleaner rule set, a better runbook, or a more disciplined process would have produced more value for less effort.
+
+## The Pattern I Keep Coming Back To
+
+The best AI deployments I have seen are humble.
+
+They do not try to look like science fiction. They make a noisy workflow quieter. They make a slow triage process faster. They make a support team more consistent. They help a human operator notice something they would otherwise have missed.
+
+That may sound small. In operations, small and repeatable improvements compound.
+
+The worst deployments I have seen were burdened from the start by the need to symbolize innovation. Too much of the investment was really about saying, "We are doing AI." Once that becomes the hidden requirement, honest evaluation gets harder.
+
+## My View
+
+I am genuinely excited about AI in operations. I have been for a long time.
+
+I am also convinced that leaders need to treat it the way they should treat any powerful operational tool: with clear problem definitions, disciplined pilots, human oversight, and a willingness to conclude that some proposed use cases are not worth doing.
+
+AI is not the new leader. It is not the new operating model. It is not a shortcut around organizational discipline.
+
+Used well, it can make a good operating system better.
+
+Used badly, it mostly gives a confused organization a more expensive way to be confused.
+
+## Further Reading
+
+- NIST, *AI Risk Management Framework (AI RMF 1.0)*
+- Chip Huyen, *Designing Machine Learning Systems*
+- Google, "Rules of Machine Learning"
+- Gene Kim, Betsy Beyer, Chris Jones, and Jennifer Petoff, *Site Reliability Engineering*
