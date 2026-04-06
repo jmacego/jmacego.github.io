@@ -14,7 +14,7 @@ image:
 published: true
 ---
 
-My flight is delayed. I'm in the [Plaza Premium Lounge](https://www.plazapremiumlounge.com/en-uk/find/asia/philippines/cebu/mactan-cebu-international-airport?stype=All) at Mactan-Cebu International Airport, Terminal 2, corner window seat, claimed the moment I walked in. Windrose is blasting in my ears: "Diggy Diggy Hole," if you're curious. There's a gin and tonic on the armrest. Through the floor-to-ceiling glass, an Eva Air A330 in full Sanrio livery sits directly in front of me, pastels and cartoon characters in the equatorial light. Beside me, a DHL Air Hong Kong A330, its tail an almost absurd yellow. The Hello Kitty section is hidden behind a jetway.
+My flight is delayed. I'm in the [Plaza Premium Lounge](https://www.plazapremiumlounge.com/en-uk/find/asia/philippines/cebu/mactan-cebu-international-airport?stype=All) at Mactan-Cebu International Airport, Terminal 2, corner window seat, claimed the moment I walked in. Windrose is blasting in my ears: "Diggy Diggy Hole," if you're curious. There's a gin and tonic on the armrest. Through the floor-to-ceiling glass, an Eva Air A330 in full Sanrio livery sits directly in front of me, pastels and cartoon characters in the equatorial light. The Hello Kitty section is hidden behind a jetway. Beside me, a DHL Air Hong Kong A330, its tail an almost absurd yellow.
 
 I've been in the Philippines for three weeks, and the wifi has been, without exaggeration, the worst I've encountered in recent memory.
 
