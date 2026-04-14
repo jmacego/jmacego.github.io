@@ -1,10 +1,10 @@
 ---
 title: JMac's Learning Series
 image:
-  path: /assets/images/posts/learning_series/learn-scrabble.jpg
+  src: /assets/images/posts/learning_series/learn-scrabble.jpg
   alt: LEARN in Scrabble Letters
-  credit_text: Pixabay
-  credit_link: "https://www.pexels.com/@pixabay"
+  credit: Pixabay
+  creditUrl: "https://www.pexels.com/@pixabay"
 categories: [Learning Series,]
 tags: [networking fundamentals, teaching, troubleshooting, diagrams]
 published: true

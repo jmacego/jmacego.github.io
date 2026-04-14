@@ -11,6 +11,8 @@
     "preview:build": "pnpm build && pnpm preview",
     "preview:watch": "pnpm dev",
     "astro": "astro",
+    "test:image-frontmatter": "node --test scripts/migrate-image-frontmatter.test.mjs",
+    "test:html-parity": "node scripts/check-html-parity.mjs",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:install": "playwright install chromium",

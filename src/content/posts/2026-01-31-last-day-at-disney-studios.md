@@ -6,7 +6,7 @@ categories: [Career, Leadership, Reflection]
 tags: [career transition, disney, semi-retirement, reflection, gratitude]
 author: "John MacDonald"
 image:
-  path: /assets/images/posts/john-badges-cleaned.png
+  src: /assets/images/posts/john-badges-cleaned.png
   alt: "A collage of Disney Studios access badges from different roles and years, representing a long and meaningful career chapter."
 published: true
 ---

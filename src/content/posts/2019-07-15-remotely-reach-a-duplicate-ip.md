@@ -1,10 +1,10 @@
 ---
 title: Help! I have a duplicate IP at a remote site!
 image:
-  path: /assets/images/posts/learning_series/man-person-people-emotions-2048x1192.jpg
+  src: /assets/images/posts/learning_series/man-person-people-emotions-2048x1192.jpg
   alt: Man with to faces
-  credit_text: Gratisography
-  credit_link: "https://www.pexels.com/@gratisography"
+  credit: Gratisography
+  creditUrl: "https://www.pexels.com/@gratisography"
 categories: [Learning Series, quick-fix, duplicate ip, troubleshooting, arp]
 tags: [duplicate ip, arp, remote troubleshooting, network operations, incident response]
 published: true

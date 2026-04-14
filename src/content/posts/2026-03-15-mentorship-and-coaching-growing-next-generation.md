@@ -5,7 +5,7 @@ description: "What effective mentorship in technology actually looks like — an
 categories: [Leadership, Career]
 tags: [mentorship, coaching, leadership development, people management, tech leadership]
 image:
-  path: /assets/images/posts/mentorship-conversation.png
+  src: /assets/images/posts/mentorship-conversation.png
   alt: An older professional speaks across a table to a younger professional who is taking notes in a bright office setting, suggesting a one-to-one mentorship conversation.
 published: true
 ---

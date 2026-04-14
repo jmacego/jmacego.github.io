@@ -33,11 +33,11 @@ Single source of truth for agent and Copilot instructions in this repo.
   - `date` (recommended; if omitted on posts, the date is inferred from the filename prefix)
   - `description` or `summary` (recommended for SEO/social; excerpt is used if both are missing)
   - `categories` and `tags` (optional arrays)
-  - `image` (optional object with `path`, `alt`, `credit_text`, `credit_link`)
+  - `image` (optional object with `src`, `alt`, `credit`, `creditUrl`)
   - `published: false` (optional to hide drafts)
 - Excerpts are generated from the content before `<!--more-->`. Add it to control homepage/listing teasers.
 - Images for posts/projects live under `public/assets/images/posts/` and `public/assets/images/projects/`.
-- Use optimized images (run `public/assets/images/resizer.sh` when needed) and reference them via `/assets/images/...` in `image.path`.
+- Use optimized images (run `public/assets/images/resizer.sh` when needed) and reference them via `/assets/images/...` in `image.src`.
 
 ## Local Build & Validation (Astro)
 Run these from the repo root:
@@ -68,16 +68,16 @@ Hero images are set via the `image` object in YAML front matter. They render aft
 Format:
 ```yaml
 image:
-  path: /assets/images/posts/my-image.png
+  src: /assets/images/posts/my-image.png
   alt: |
     Descriptive alt text for accessibility and social cards.
     May span multiple lines using YAML literal block syntax.
-  credit_text: Photographer Name   # optional attribution
-  credit_link: "https://example.com/photographer"  # optional link
+  credit: Photographer Name   # optional attribution
+  creditUrl: "https://example.com/photographer"  # optional link
 ```
-- `path` (required): absolute site path starting with `/assets/images/...`.
+- `src` (required): absolute site path starting with `/assets/images/...`.
 - `alt` (optional but strongly recommended): falls back to the post title if omitted.
-- `credit_text` / `credit_link` (optional): attribution for third-party images.
+- `credit` / `creditUrl` (optional): attribution for third-party images.
 
 ### Inline Images (Body Content)
 Three patterns are used inside Markdown body content, in order of preference:

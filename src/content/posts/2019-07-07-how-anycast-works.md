@@ -1,10 +1,10 @@
 ---
 title: What is Anycast?
 image:
-  path: /assets/images/posts/learning_series/cloudflare-cdn-network.png
+  src: /assets/images/posts/learning_series/cloudflare-cdn-network.png
   alt: Cloudflare CDN Graphic
-  credit_text: CloudFlare
-  credit_link: "https://www.cloudflare.com/"
+  credit: CloudFlare
+  creditUrl: "https://www.cloudflare.com/"
 categories: [Learning Series, DNS, Anycast, Redundancy]
 tags: [anycast, dns, routing, redundancy, network design]
 published: true

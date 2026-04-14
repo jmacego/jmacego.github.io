@@ -5,7 +5,7 @@ categories: [Leadership, Operations, Career]
 tags: [career transition, disney, reliability, org design, enterprise leadership]
 published: true
 image:
-  path: /assets/images/posts/leaving-disney-1200.png
+  src: /assets/images/posts/leaving-disney-1200.png
   alt: |
     Wide, minimalist editorial illustration of an executive presenting a global
     strategy in a calm, modern environment. A leader stands before a large

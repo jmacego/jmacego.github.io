@@ -5,7 +5,7 @@ description: "Why senior technology leaders should stay close enough to the work
 categories: [Leadership, Technology]
 tags: [technical leadership, engineering management, technical credibility, architecture, executive leadership, hands-on learning]
 image:
-  path: /assets/images/posts/staying-hands-on-hero-1536x1024.webp
+  src: /assets/images/posts/staying-hands-on-hero-1536x1024.webp
   alt: A working desk with a laptop showing code and system diagrams, surrounded by travel documents, manuscript pages, notebooks, coffee, and small electronics components, representing personal technical projects outside of work.
 published: true
 ---

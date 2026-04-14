@@ -2,10 +2,10 @@
 title: 'First Post!'
 date: 2018-06-16 11:02 -0700
 image:
-  path: /assets/images/jmac-at-jefferson-airport.jpg
+  src: /assets/images/jmac-at-jefferson-airport.jpg
   alt: John and a plane
-  credit_text: John MacDonald
-  credit_link: "https://www.jmaclabs.com"
+  credit: John MacDonald
+  creditUrl: "https://www.jmaclabs.com"
 author: jmacego
 tags: [site history, personal website, static publishing, web nostalgia]
 published: true

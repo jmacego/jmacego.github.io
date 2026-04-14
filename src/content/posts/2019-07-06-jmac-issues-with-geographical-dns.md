@@ -1,10 +1,10 @@
 ---
 title: Issues Presented by Geographical DNS
 image:
-  path: /assets/images/posts/learning_series/map-standing-on-map-2048x1367.jpg
+  src: /assets/images/posts/learning_series/map-standing-on-map-2048x1367.jpg
   alt: CDN Graphic
-  credit_text: Slon Pics
-  credit_link: "https://www.slon.pics/"
+  credit: Slon Pics
+  creditUrl: "https://www.slon.pics/"
 categories: [Learning Series, DNS, firewalls]
 tags: [dns, geodns, traffic steering, network architecture, firewalls]
 published: true

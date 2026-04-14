@@ -3,7 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 import { normalizeImagePath } from "../utils/content";
 
 const { title, description, image, socialImage, socialImageAlt, ogImage, ogImageAlt, ogType, publishedTime, author } = Astro.props;
-const imagePath = normalizeImagePath(image?.path);
+const imagePath = normalizeImagePath(image?.src);
 ---
 
 <BaseLayout

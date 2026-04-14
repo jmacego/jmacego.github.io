@@ -5,7 +5,7 @@ description: "Mactan airport, a delayed flight, three weeks of terrible wifi, an
 categories: [Personal, Travel]
 tags: [travel, aviation, airports, philippines, remote work, async]
 image:
-  path: /assets/images/posts/mactan-lounge-window-1536x1152.webp
+  src: /assets/images/posts/mactan-lounge-window-1536x1152.webp
   alt: |
     Corner window seat in the Plaza Premium Lounge at Mactan-Cebu
     International Airport, laptop open on the table, feet up on the

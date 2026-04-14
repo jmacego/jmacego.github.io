@@ -17,7 +17,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
-      const imagePath = normalizeThumbnailPath(project.data.image?.path);
+      const imagePath = normalizeThumbnailPath(project.data.image?.src);
       return (
         <div class="blog-post">
           <div class="row">

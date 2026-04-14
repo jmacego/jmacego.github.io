@@ -3,7 +3,7 @@ title: 'PlotThing - Story Management and Writing Tool'
 description: "One-stop shop for managing characters, places, scenes, and books with direct export to Kindle, Word, and more"
 categories: [writing, saas, tools]
 image:
-  path: /assets/images/projects/plotthing-logo.png
+  src: /assets/images/projects/plotthing-logo.png
   alt: PlotThing logo - orange quill pen on document
 date: 2026-01-29 12:00 -0800
 ---

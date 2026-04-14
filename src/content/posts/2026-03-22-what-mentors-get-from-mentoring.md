@@ -5,7 +5,7 @@ description: "Why mentorship keeps experienced leaders sharp: new ideas, generat
 categories: [Leadership, Career]
 tags: [mentorship, leadership development, learning, generational perspective, tech leadership]
 image:
-  path: /assets/images/posts/mentorship-post-hero.png
+  src: /assets/images/posts/mentorship-post-hero.png
   alt: |
     Two professionals in relaxed conversation at a round cafe table — an
     older man with silver hair listening attentively and a younger man in

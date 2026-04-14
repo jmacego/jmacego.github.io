@@ -29,11 +29,11 @@ function getImagePath(frontmatter) {
   if (!imageBlock) {
     return undefined;
   }
-  const pathMatch = imageBlock[1].match(/^\s*path:\s*(.+)\s*$/m);
+  const pathMatch = imageBlock[1].match(/^\s*(src|path):\s*(.+)\s*$/m);
   if (!pathMatch) {
     return undefined;
   }
-  return pathMatch[1].trim().replace(/^["']|["']$/g, "");
+  return pathMatch[2].trim().replace(/^["']|["']$/g, "");
 }
 
 function normalizePublicPath(assetPath) {

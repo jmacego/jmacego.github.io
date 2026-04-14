@@ -5,7 +5,7 @@ description: "I decided to retire and travel the world. Two days later, I got si
 categories: [Life, Travel, Health]
 tags: [retirement, world travel, pneumonia, recovery, planning]
 image:
-  path: /assets/images/posts/pneumonia-iv-walk.jpg
+  src: /assets/images/posts/pneumonia-iv-walk.jpg
   alt: "Walking with an IV pole between hospital imaging areas during pneumonia treatment."
 published: true
 ---

@@ -1,11 +1,32 @@
 import { defineCollection, z } from "astro:content";
 
+const modernImageSchema = z.object({
+  src: z.string(),
+  alt: z.string().optional(),
+  credit: z.string().optional(),
+  creditUrl: z.string().optional(),
+});
+
+const legacyImageSchema = z.object({
+  path: z.string(),
+  alt: z.string().optional(),
+  credit_text: z.string().optional(),
+  credit_link: z.string().optional(),
+});
+
 const imageSchema = z
-  .object({
-    path: z.string(),
-    alt: z.string().optional(),
-    credit_text: z.string().optional(),
-    credit_link: z.string().optional(),
+  .union([modernImageSchema, legacyImageSchema])
+  .transform((image) => {
+    if ("src" in image) {
+      return image;
+    }
+
+    return {
+      src: image.path,
+      alt: image.alt,
+      credit: image.credit_text,
+      creditUrl: image.credit_link,
+    };
   })
   .optional();
 

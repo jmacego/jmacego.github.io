@@ -2,10 +2,10 @@
 title: Some useful network scripts
 date: 2018-09-12 22:30 -0700
 image:
-  path: assets/images/posts/git-name-interfaces-gist.png
+  src: assets/images/posts/git-name-interfaces-gist.png
   alt: Screenshot of script
-  credit_text: John MacDonald
-  credit_link: "https://www.jmaclabs.com"
+  credit: John MacDonald
+  creditUrl: "https://www.jmaclabs.com"
 author: jmacego
 tags: [networking, shell scripts, automation, network operations]
 published: true

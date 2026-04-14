@@ -20,9 +20,9 @@ const heroPost = posts[0];
 const secondaryPost = posts[1];
 const featuredProject = projects[0];
 
-const heroImage = normalizeImagePath(heroPost?.data.image?.path);
-const secondaryImage = normalizeThumbnailPath(secondaryPost?.data.image?.path);
-const projectImage = normalizeThumbnailPath(featuredProject?.data.image?.path);
+const heroImage = normalizeImagePath(heroPost?.data.image?.src);
+const secondaryImage = normalizeThumbnailPath(secondaryPost?.data.image?.src);
+const projectImage = normalizeThumbnailPath(featuredProject?.data.image?.src);
 
 const heroExcerpt = heroPost ? getExcerpt(heroPost.body) : "";
 const secondaryExcerpt = secondaryPost ? getExcerpt(secondaryPost.body) : "";

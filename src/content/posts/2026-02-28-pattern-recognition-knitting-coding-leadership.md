@@ -6,7 +6,7 @@ categories: [Leadership, Arts]
 tags: [knitting, pattern recognition, debugging, systems thinking, creative practice]
 published: true
 image:
-  path: /assets/images/posts/knitting-pattern-recognition.png
+  src: /assets/images/posts/knitting-pattern-recognition.png
   alt: |
     Editorial illustration of knitting needles and yarn beside code and
     pattern diagrams, representing the parallel between knitting patterns

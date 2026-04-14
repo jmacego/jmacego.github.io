@@ -2,10 +2,10 @@
 title: GPG Symmetric Encryption of Disk Image
 date: 2018-06-29 19:20 -0700
 image:
-  path: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg
+  src: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg
   alt: Laptop, Book, Phone in Chains
-  credit_text: Pixabay
-  credit_link: "https://www.pexels.com/@pixabay"
+  credit: Pixabay
+  creditUrl: "https://www.pexels.com/@pixabay"
 author: jmacego
 tags: [gpg, disk encryption, cross-platform, data protection, command line]
 published: true

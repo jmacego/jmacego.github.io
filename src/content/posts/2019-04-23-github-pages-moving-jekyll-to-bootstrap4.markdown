@@ -1,10 +1,10 @@
 ---
 title: Github Pages - Moving Jekyll to Bootstrap4
 image:
-  path: /assets/images/posts/bootstrap-logo.png
+  src: /assets/images/posts/bootstrap-logo.png
   alt: Bootstrap4 Logo
-  credit_text: Bootstrap Project
-  credit_link: "http://www.getbootstrap.com"
+  credit: Bootstrap Project
+  creditUrl: "http://www.getbootstrap.com"
 categories: []
 published: false
 ---

@@ -75,6 +75,10 @@ log "Check content IDs."
 check_duplicate_content_ids "$ROOT_DIR/src/content/posts" "posts"
 check_duplicate_content_ids "$ROOT_DIR/src/content/projects" "projects"
 
+log "Validate image frontmatter schema."
+node --test "$ROOT_DIR/scripts/migrate-image-frontmatter.test.mjs"
+node "$ROOT_DIR/scripts/migrate-image-frontmatter.mjs" --check
+
 log "Validate published post images."
 node "$ROOT_DIR/scripts/validate-published-post-images.mjs"
 

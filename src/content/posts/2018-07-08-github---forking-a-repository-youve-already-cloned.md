@@ -3,7 +3,7 @@ title: GitHub - Forking a repository you've already cloned
 date: 2018-07-08 18:26 -0700
 author: jmacego
 image:
-  path: /assets/images/posts/github-forking-illustration.png
+  src: /assets/images/posts/github-forking-illustration.png
   alt: |
     Minimalist editorial illustration of a developer forking a repository on
     GitHub, with a clear upstream-to-fork branching diagram on a large screen
