@@ -7,8 +7,6 @@ description: Career summary and resume for John MacDonald.
 
 [linkedin.com/in/jmacego](https://www.linkedin.com/in/jmacego) | Los Angeles, CA
 
-Download the current resume: [john-macdonald-resume.pdf](/assets/files/john-macdonald-resume.pdf)
-
 ---
 
 ## Technology Leader & Serial Entrepreneur
