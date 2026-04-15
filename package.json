@@ -20,15 +20,19 @@
   },
   "packageManager": "pnpm@10.27.0",
   "dependencies": {
-    "@astrojs/rss": "^4.0.17",
-    "@astrojs/sitemap": "3.7.0",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "3.7.2",
     "astro": "^5.18.1",
     "marked": "^17.0.4"
   },
   "pnpm": {
     "overrides": {
-      "fast-xml-parser": ">=5.3.7",
-      "devalue": ">=5.6.3"
+      "fast-xml-parser": "5.6.0",
+      "devalue": ">=5.6.3",
+      "h3": "1.15.11",
+      "smol-toml": "1.6.1",
+      "picomatch": "4.0.4",
+      "defu": "6.1.7"
     }
   },
   "devDependencies": {
