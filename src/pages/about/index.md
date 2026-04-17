@@ -9,9 +9,9 @@ I've always clicked on *About Me* pages, too — so thanks for stopping by.
 
 ### Today
 
-I'm a **serial entrepreneur and technology leader** now semi-retired and running multiple ventures. After six years leading network operations at The Walt Disney Studios, I've returned to what I love most: building and operating my own companies while selectively advising others.
+I'm a **Fractional CTO** focused on AI strategy, architecture, and technical leadership at inflection points. I'm available for **advisory engagements, speaking, podcast interviews, and peer conversations** with founders and executives.
 
-Currently I'm **Fractional CTO at Equivalent Smart Graphics**, an AI-powered accessible SVG solutions company. I'm also exploring new ventures and taking on select consulting engagements in **leadership, AI/ML, and network architecture**.
+I'm currently **Fractional CTO at Equivalent Smart Graphics**, an AI-powered accessible SVG solutions company. After six years leading network operations at The Walt Disney Studios, I've returned to building and advising at the intersection of **AI/ML, network architecture, and operational leadership**.
 
 I'm an **inventor on U.S. Patent No. 12,360,789**, applying machine learning to optimize cloud networking file transfers, and recipient of the **Disney Inventor Award** for AI-driven network automation.
 
@@ -47,9 +47,9 @@ I've also been a **Cisco-certified engineer** and an **international award-winni
 ### Work With Me
 
 I'm selectively available for:
-- **Fractional CTO/leadership** roles for growing companies
-- **Consulting** on network architecture, AI/ML, and operational transformation
-- **Advisory** for technology startups
+- **Fractional CTO** work focused on AI strategy, architecture, and technical leadership
+- **Advisory** engagements with founders and executives at inflection points
+- **Speaking and podcast interviews** on AI/ML, leadership, network architecture, and operational transformation
 
 If you have something interesting, [reach out on LinkedIn](https://www.linkedin.com/in/jmacego).
 

@@ -11,7 +11,7 @@ description: Career summary and resume for John MacDonald.
 
 ## Technology Leader & Serial Entrepreneur
 
-Founder and operator of multiple successful ventures spanning technology, media, aviation, and retail. Award-winning engineering leader with deep expertise in AI/ML, network architecture, and operational transformation. Currently building and advising companies while selectively taking on leadership and consulting engagements.
+Fractional CTO for AI strategy, architecture, and technical leadership at inflection points. Large-scale cloud leader, serial entrepreneur, and AI/ML patent holder. Available for advisory engagements, speaking, podcast interviews, and peer conversations with founders and executives.
 
 Recipient, **Disney Inventor Award (2021)** for developing algorithms and code that apply machine learning to networking.
 
@@ -129,7 +129,7 @@ Recipient, **Disney Inventor Award (2021)** for developing algorithms and code t
 - Award-winning technology leader with expertise in AI/ML, network architecture, and operational transformation.
 - **U.S. Patent 12,360,789** inventor for machine learning methods in cloud networking.
 - Proven ability to build teams, manage budgets, and deliver measurable results in both startups and enterprises.
-- Available for fractional leadership, advisory, and consulting engagements.
+- Available for fractional CTO work, advisory engagements, speaking, podcast interviews, and executive peer conversations.
 
 ---
 
