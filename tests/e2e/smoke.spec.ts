@@ -55,10 +55,17 @@ async function expectSocialMetadata(
 test("home page exposes primary navigation and a visible heading", async ({ page }) => {
   await page.goto("/");
 
+  await expect(page).toHaveTitle("John MacDonald — Fractional CTO, Advisor, Speaker");
   const primaryNav = page.getByRole("navigation").first();
   await expect(primaryNav.getByRole("link", { name: "Posts" })).toBeVisible();
   await expect(primaryNav.getByRole("link", { name: "Projects" })).toBeVisible();
   await expect(page.locator("h1").first()).toBeVisible();
+});
+
+test("resume page title uses only the site name", async ({ page }) => {
+  await page.goto("/resume/");
+
+  await expect(page).toHaveTitle("John MacDonald");
 });
 
 test("published post exposes hero image social metadata", async ({ page }) => {

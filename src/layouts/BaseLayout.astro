@@ -4,6 +4,7 @@ import { buildSeo } from "../utils/seo";
 
 const {
   title,
+  rawTitle,
   description,
   currentPath,
   socialImage,
@@ -15,7 +16,7 @@ const {
   author,
 } = Astro.props;
 const pathname = Astro.url.pathname;
-const pageTitle = title ? `${title} | ${site.title}` : site.title;
+const pageTitle = rawTitle ?? (title ? `${title} | ${site.title}` : site.title);
 const pageDescription = description ?? site.description;
 const seo = buildSeo({
   currentPath: currentPath ?? pathname,
