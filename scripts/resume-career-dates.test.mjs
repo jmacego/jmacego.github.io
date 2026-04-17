@@ -11,24 +11,26 @@ function read(path) {
   return readFileSync(path, "utf8");
 }
 
-test("resume keeps the venture timeline in start-date order", () => {
+test("resume keeps the venture timeline in reverse chronological order", () => {
   const resume = read(resumePath);
 
   assert.doesNotMatch(resume, /Hyak Photography \/ Hyakdev\.com LLC/);
-  assert.match(resume, /\*\*PowerSurge Technologies \/ FastServers\.net\*\* \| Cedar Rapids, IA \(1995–1996\)/);
-  assert.match(resume, /\*\*5GuysTech\.com, LLC\*\* \| Seattle, WA \(1997–2001\)/);
-  assert.match(resume, /### Avitus Aviation Corp \| Gig Harbor, WA\s+\*\*President\*\*\s+\*2001 – 2010\*/);
-  assert.match(resume, /### Hyakdev\.com LLC \| Snoqualmie Pass, WA\s+\*\*Owner\*\*\s+\*2005 – 2010\*/);
-  assert.match(resume, /### Hyak Photography \| Snoqualmie Pass, WA\s+\*\*Owner\*\*\s+\*2009 – 2015\*/);
+  assert.match(resume, /\*\*Website Management Systems\*\* \| Las Vegas, NV \(2016–2017\)/);
   assert.match(resume, /### Sheep's Clothing \| Kennewick, WA\s+\*\*Owner\*\*\s+\*2010 – 2015\*/);
+  assert.match(resume, /### Hyak Photography \| Snoqualmie Pass, WA\s+\*\*Owner\*\*\s+\*2009 – 2015\*/);
+  assert.match(resume, /### Hyakdev\.com LLC \| Snoqualmie Pass, WA\s+\*\*Owner\*\*\s+\*2005 – 2010\*/);
+  assert.match(resume, /### Avitus Aviation Corp \| Gig Harbor, WA\s+\*\*President\*\*\s+\*2001 – 2010\*/);
+  assert.match(resume, /\*\*5GuysTech\.com, LLC\*\* \| Seattle, WA \(1997–2001\)/);
+  assert.match(resume, /\*\*PowerSurge Technologies \/ FastServers\.net\*\* \| Cedar Rapids, IA \(1995–1996\)/);
 
   const orderedEntries = [
-    "**PowerSurge Technologies / FastServers.net** | Cedar Rapids, IA (1995–1996)",
-    "**5GuysTech.com, LLC** | Seattle, WA (1997–2001)",
-    "### Avitus Aviation Corp | Gig Harbor, WA",
-    "### Hyakdev.com LLC | Snoqualmie Pass, WA",
-    "### Hyak Photography | Snoqualmie Pass, WA",
+    "**Website Management Systems** | Las Vegas, NV (2016–2017)",
     "### Sheep's Clothing | Kennewick, WA",
+    "### Hyak Photography | Snoqualmie Pass, WA",
+    "### Hyakdev.com LLC | Snoqualmie Pass, WA",
+    "### Avitus Aviation Corp | Gig Harbor, WA",
+    "**5GuysTech.com, LLC** | Seattle, WA (1997–2001)",
+    "**PowerSurge Technologies / FastServers.net** | Cedar Rapids, IA (1995–1996)",
   ];
 
   let previousIndex = -1;
@@ -40,24 +42,24 @@ test("resume keeps the venture timeline in start-date order", () => {
   }
 });
 
-test("about page reflects the same venture order and Hyak date split", () => {
+test("about page reflects the same reverse chronology and Hyak date split", () => {
   const about = read(aboutPath);
 
   assert.doesNotMatch(about, /Hyak Photography \/ Hyakdev\.com/);
-  assert.match(about, /\*\*PowerSurge Technologies \/ FastServers\.net\*\* \(1995–1996\)/);
-  assert.match(about, /\*\*5GuysTech\.com\*\* \(1997–2001\)/);
-  assert.match(about, /\*\*Avitus Aviation Corp\*\* \(2001–2010\)/);
-  assert.match(about, /\*\*Hyakdev\.com\*\* \(2005–2010\)/);
-  assert.match(about, /\*\*Hyak Photography\*\* \(2009–2015\)/);
   assert.match(about, /\*\*Sheep's Clothing\*\* \(2010–2015\)/);
+  assert.match(about, /\*\*Hyak Photography\*\* \(2009–2015\)/);
+  assert.match(about, /\*\*Hyakdev\.com\*\* \(2005–2010\)/);
+  assert.match(about, /\*\*Avitus Aviation Corp\*\* \(2001–2010\)/);
+  assert.match(about, /\*\*5GuysTech\.com\*\* \(1997–2001\)/);
+  assert.match(about, /\*\*PowerSurge Technologies \/ FastServers\.net\*\* \(1995–1996\)/);
 
   const orderedEntries = [
-    "- **PowerSurge Technologies / FastServers.net** (1995–1996)",
-    "- **5GuysTech.com** (1997–2001)",
-    "- **Avitus Aviation Corp** (2001–2010)",
-    "- **Hyakdev.com** (2005–2010)",
-    "- **Hyak Photography** (2009–2015)",
     "- **Sheep's Clothing** (2010–2015)",
+    "- **Hyak Photography** (2009–2015)",
+    "- **Hyakdev.com** (2005–2010)",
+    "- **Avitus Aviation Corp** (2001–2010)",
+    "- **5GuysTech.com** (1997–2001)",
+    "- **PowerSurge Technologies / FastServers.net** (1995–1996)",
   ];
 
   let previousIndex = -1;
