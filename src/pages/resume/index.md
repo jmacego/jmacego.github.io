@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/BaseLayout.astro
+title: Resume
 description: Career summary and resume for John MacDonald.
 ---
 # John MacDonald

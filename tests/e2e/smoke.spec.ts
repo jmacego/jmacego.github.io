@@ -55,17 +55,20 @@ async function expectSocialMetadata(
 test("home page exposes primary navigation and a visible heading", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page).toHaveTitle("John MacDonald — Fractional CTO, Advisor, Speaker");
+  await expect(page).toHaveTitle("John MacDonald — Fractional CTO, Advisor, Speaker | John MacDonald");
   const primaryNav = page.getByRole("navigation").first();
   await expect(primaryNav.getByRole("link", { name: "Posts" })).toBeVisible();
   await expect(primaryNav.getByRole("link", { name: "Projects" })).toBeVisible();
   await expect(page.locator("h1").first()).toBeVisible();
 });
 
-test("resume page title uses only the site name", async ({ page }) => {
+test("content pages include their page title in the browser title", async ({ page }) => {
   await page.goto("/resume/");
 
-  await expect(page).toHaveTitle("John MacDonald");
+  await expect(page).toHaveTitle("Resume | John MacDonald");
+
+  await page.goto("/about/");
+  await expect(page).toHaveTitle("About Me | John MacDonald");
 });
 
 test("published post exposes hero image social metadata", async ({ page }) => {
