@@ -19,11 +19,12 @@ I'm an **inventor on U.S. Patent No. 12,360,789**, applying machine learning to 
 
 I've founded and operated **5+ companies** across technology, aviation, photography, and retail:
 
-- **Sheep's Clothing** (2010–2015): Built a specialty retail business from scratch to successful exit, growing revenue 10x.
-- **Avitus Aviation Corp** (2001–2010): Founded and ran an aviation leasing company, managing aircraft, pilots, and operations.
-- **Hyak Photography / Hyakdev.com** (2005–2010): Commercial photography plus business consulting and sales focused on network/WiFi for condominiums and hotels across the Pacific Northwest.
-- **5GuysTech.com** (1997–2001): Managed services and web hosting during the dot-com boom.
 - **PowerSurge Technologies / FastServers.net** (1995–1996): Co-founded one of the early dedicated server hosting companies.
+- **5GuysTech.com** (1997–2001): Managed services and web hosting during the dot-com boom.
+- **Avitus Aviation Corp** (2001–2010): Founded and ran an aviation leasing company, managing aircraft, pilots, and operations.
+- **Hyakdev.com** (2005–2010): Business consulting, web design, and network/WiFi sales for condominiums and hotels across the Pacific Northwest.
+- **Hyak Photography** (2009–2015): Built a commercial photography business serving Pacific Northwest clients.
+- **Sheep's Clothing** (2010–2015): Built a specialty retail business from scratch to successful exit, growing revenue 10x.
 
 These ventures taught me that technology is only part of the equation. Success comes from understanding customers, managing risk, building teams, and executing relentlessly.
 

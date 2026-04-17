@@ -62,16 +62,12 @@ Recipient, **Disney Inventor Award (2021)** for developing algorithms and code t
 
 ## Founded & Operated Companies
 
-### Sheep's Clothing | Kennewick, WA
-**Owner**  
-*2010 – 2015*
+**PowerSurge Technologies / FastServers.net** | Cedar Rapids, IA (1995–1996)
+- Co-founded one of the early dedicated server hosting companies.
+- Built infrastructure and customer base before successful exit.
 
-- Built specialty retail business from startup to successful exit.
-- Grew revenue **10x** through product curation, customer experience, and local marketing.
-- Managed all aspects: inventory, staffing, finance, vendor relationships, and marketing.
-- Successfully sold business to new ownership.
-
----
+**5GuysTech.com, LLC** | Seattle, WA (1997–2001)
+- Senior Partner in managed services and web hosting company during dot-com boom.
 
 ### Avitus Aviation Corp | Gig Harbor, WA
 **President**  
@@ -84,30 +80,40 @@ Recipient, **Disney Inventor Award (2021)** for developing algorithms and code t
 
 ---
 
-### Hyak Photography / Hyakdev.com LLC | Snoqualmie Pass, WA
-**Owner**  
-*2005 – 2010*
-
-- Founded photography and web development business serving Pacific Northwest clients.
-- Delivered commercial photography, web design, and custom software solutions.
-- Built client base through reputation and referrals in competitive market.
-
----
-
-### Earlier Ventures
-
-**Website Management Systems** | Las Vegas, NV (2016–2017)
-- Came out of retirement to relaunch technology career through software development and DevOps.
-
 **White Dog Media, LLC** | Las Vegas, NV (2001–2003)
 - Partner in digital media venture during early web era.
 
-**5GuysTech.com, LLC** | Seattle, WA (1997–2001)
-- Senior Partner in managed services and web hosting company during dot-com boom.
+### Hyakdev.com LLC | Snoqualmie Pass, WA
+**Owner**  
+*2005 – 2010*
 
-**PowerSurge Technologies / FastServers.net** | Cedar Rapids, IA (1995–1996)
-- Co-founded one of the early dedicated server hosting companies.
-- Built infrastructure and customer base before successful exit.
+- Provided web design, custom software, and business consulting for Pacific Northwest clients.
+- Led sales and consulting focused on network and WiFi solutions for condominiums and hotels.
+- Built client relationships through referrals in a competitive market.
+
+---
+
+### Hyak Photography | Snoqualmie Pass, WA
+**Owner**  
+*2009 – 2015*
+
+- Built commercial photography business serving Pacific Northwest clients.
+- Delivered commissioned photography work and grew client base through reputation and referrals.
+- Earned recognition as an international award-winning photographer.
+
+---
+
+### Sheep's Clothing | Kennewick, WA
+**Owner**  
+*2010 – 2015*
+
+- Built specialty retail business from startup to successful exit.
+- Grew revenue **10x** through product curation, customer experience, and local marketing.
+- Managed all aspects: inventory, staffing, finance, vendor relationships, and marketing.
+- Successfully sold business to new ownership.
+
+**Website Management Systems** | Las Vegas, NV (2016–2017)
+- Came out of retirement to relaunch technology career through software development and DevOps.
 
 ---
 

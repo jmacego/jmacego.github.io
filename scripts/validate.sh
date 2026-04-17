@@ -79,6 +79,9 @@ log "Validate image frontmatter schema."
 node --test "$ROOT_DIR/scripts/migrate-image-frontmatter.test.mjs"
 node "$ROOT_DIR/scripts/migrate-image-frontmatter.mjs" --check
 
+log "Validate resume career dates."
+node --test "$ROOT_DIR/scripts/resume-career-dates.test.mjs"
+
 log "Validate published post images."
 node "$ROOT_DIR/scripts/validate-published-post-images.mjs"
 
