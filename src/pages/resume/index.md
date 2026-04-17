@@ -5,7 +5,7 @@ description: Career summary and resume for John MacDonald.
 ---
 # John MacDonald
 
-[linkedin.com/in/jmacego](https://www.linkedin.com/in/jmacego) | Los Angeles, CA
+[linkedin.com/in/jmacego](https://www.linkedin.com/in/jmacego) | Currently in SE Asia
 
 ---
 
