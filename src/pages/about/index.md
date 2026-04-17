@@ -9,7 +9,7 @@ I've always clicked on *About Me* pages, too — so thanks for stopping by.
 
 ### Today
 
-I'm a **Fractional CTO** focused on AI strategy, architecture, and technical leadership at inflection points. I'm available for **advisory engagements, speaking, podcast interviews, and peer conversations** with founders and executives.
+I'm actively available for **advisory engagements, speaking, podcast interviews, and peer conversations** with founders and executives. I'm a **Fractional CTO** focused on AI strategy, architecture, and technical leadership at inflection points.
 
 I'm currently **Fractional CTO at Equivalent Smart Graphics**, an AI-powered accessible SVG solutions company. After six years leading network operations at The Walt Disney Studios, I've returned to building and advising at the intersection of **AI/ML, network architecture, and operational leadership**.
 
@@ -46,10 +46,10 @@ I've also been a **Cisco-certified engineer** and an **international award-winni
 
 ### Work With Me
 
-I'm selectively available for:
-- **Fractional CTO** work focused on AI strategy, architecture, and technical leadership
+I'm currently available for:
 - **Advisory** engagements with founders and executives at inflection points
 - **Speaking and podcast interviews** on AI/ML, leadership, network architecture, and operational transformation
+- **Fractional CTO** work focused on AI strategy, architecture, and technical leadership
 
 If you have something interesting, [reach out on LinkedIn](https://www.linkedin.com/in/jmacego).
 
