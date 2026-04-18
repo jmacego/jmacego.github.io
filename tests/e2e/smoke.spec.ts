@@ -281,6 +281,40 @@ test("longform pages use the same contained shell width across pages", async ({
   }
 });
 
+test("post and project detail titles span the full contained header width", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1200 });
+
+  const measureTitle = async (path: string) => {
+    await page.goto(path);
+
+    return page.evaluate(() => {
+      const header = document.querySelector(".post-header");
+      const title = document.querySelector(".post-title");
+
+      if (!(header instanceof HTMLElement) || !(title instanceof HTMLElement)) {
+        throw new Error("Expected post header and title elements.");
+      }
+
+      const headerStyles = window.getComputedStyle(header);
+      const headerRect = header.getBoundingClientRect();
+      const titleRect = title.getBoundingClientRect();
+      const horizontalPadding =
+        Number.parseFloat(headerStyles.paddingLeft) + Number.parseFloat(headerStyles.paddingRight);
+      const innerWidth = headerRect.width - horizontalPadding;
+
+      return {
+        titleToInnerWidthDelta: Math.abs(titleRect.width - innerWidth),
+      };
+    });
+  };
+
+  const postMetrics = await measureTitle("/blog/pattern-recognition-knitting-coding-leadership/");
+  const projectMetrics = await measureTitle("/projects/plotthing-story-management/");
+
+  expect(postMetrics.titleToInnerWidthDelta).toBeLessThanOrEqual(2);
+  expect(projectMetrics.titleToInnerWidthDelta).toBeLessThanOrEqual(2);
+});
+
 test("published post exposes hero image social metadata", async ({ page }) => {
   await page.goto("/blog/pattern-recognition-knitting-coding-leadership/");
 
