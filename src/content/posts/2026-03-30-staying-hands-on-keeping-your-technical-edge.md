@@ -14,9 +14,9 @@ I have spent enough time in leadership to know the standard story.
 
 In that version, you start technical. You move into management. You become strategic. If all goes well, you eventually stop touching the technical work except at a safe rhetorical distance. Your value is supposed to migrate upward into vision, people, budgets, and influence.
 
-I understand why that story exists. At some level it is true. An executive who insists on writing production code to prove relevance is usually solving the wrong problem.
-
 <!--more-->
+
+I understand why that story exists. At some level it is true. An executive who insists on writing production code to prove relevance is usually solving the wrong problem.
 
 I lean toward leaders should be people-focused first and technology-focused second, but I do not find a clean separation especially believable. The technical side does, and should, creep in.
 
