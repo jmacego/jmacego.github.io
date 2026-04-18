@@ -108,6 +108,50 @@ test("home hero title spans the full hero shell above the split content row", as
   expect(metrics.titleAboveBody).toBe(true);
 });
 
+test("home feature card titles span the full card above the split content row", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1200 });
+  await page.goto("/");
+
+  const metrics = await page.locator(".feature-card").evaluateAll((cards) =>
+    cards.map((card) => {
+      const header = card.querySelector(".feature-card-header");
+      const title = card.querySelector(".feature-card-title");
+      const copy = card.querySelector(".feature-card-copy");
+      const media = card.querySelector(".feature-card-media");
+
+      if (
+        !(header instanceof HTMLElement) ||
+        !(title instanceof HTMLElement) ||
+        !(copy instanceof HTMLElement) ||
+        !(media instanceof HTMLElement)
+      ) {
+        throw new Error("Expected card header, title, copy, and media elements.");
+      }
+
+      const styles = window.getComputedStyle(header);
+      const rect = header.getBoundingClientRect();
+      const titleRect = title.getBoundingClientRect();
+      const copyRect = copy.getBoundingClientRect();
+      const mediaRect = media.getBoundingClientRect();
+      const horizontalPadding = Number.parseFloat(styles.paddingLeft) + Number.parseFloat(styles.paddingRight);
+      const innerWidth = rect.width - horizontalPadding;
+
+      return {
+        titleToInnerWidthDelta: Math.abs(titleRect.width - innerWidth),
+        titleToCopyRatio: titleRect.width / copyRect.width,
+        titleAboveBody: titleRect.bottom <= Math.min(copyRect.top, mediaRect.top),
+      };
+    }),
+  );
+
+  expect(metrics).toHaveLength(2);
+  for (const metric of metrics) {
+    expect(metric.titleToInnerWidthDelta).toBeLessThanOrEqual(2);
+    expect(metric.titleToCopyRatio).toBeGreaterThanOrEqual(1.5);
+    expect(metric.titleAboveBody).toBe(true);
+  }
+});
+
 test("content pages include their page title in the browser title", async ({ page }) => {
   await page.goto("/resume/");
 
