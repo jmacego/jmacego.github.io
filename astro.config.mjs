@@ -8,6 +8,7 @@ const privateRoutes = new Set(["/slide-palette/"]);
 export default defineConfig({
   site: "https://jmaclabs.com",
   trailingSlash: "always",
+  cacheDir: process.env.ASTRO_CACHE_DIR ?? ".astro",
   markdown: {
     remarkPlugins: [remarkIgnoreMissingLocalImages],
     rehypePlugins: [rehypeExternalLinks],

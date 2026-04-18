@@ -57,6 +57,8 @@ export ASTRO_TELEMETRY_DISABLED=1
 export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-/tmp}"
 export CI="${CI:-1}"
 export NPM_CONFIG_LOGLEVEL=error
+VALIDATION_ASTRO_CACHE_DIR="$ROOT_DIR/.astro-validate"
+export ASTRO_CACHE_DIR="$VALIDATION_ASTRO_CACHE_DIR"
 
 QUICK=0
 if [[ "${1:-}" == "--quick" ]]; then
@@ -68,8 +70,9 @@ if [[ "$QUICK" -eq 0 ]]; then
   pnpm install --frozen-lockfile
 fi
 
-# Generated cache only; resetting keeps content indexing deterministic.
-rm -rf "$ROOT_DIR/.astro"
+# Use a dedicated Astro cache for validation so a running dev server keeps its own .astro state.
+trap 'rm -rf "$VALIDATION_ASTRO_CACHE_DIR"' EXIT
+rm -rf "$VALIDATION_ASTRO_CACHE_DIR"
 
 log "Check content IDs."
 check_duplicate_content_ids "$ROOT_DIR/src/content/posts" "posts"
@@ -77,6 +80,7 @@ check_duplicate_content_ids "$ROOT_DIR/src/content/projects" "projects"
 
 log "Validate image frontmatter schema."
 node --test "$ROOT_DIR/scripts/migrate-image-frontmatter.test.mjs"
+node --test "$ROOT_DIR/scripts/validate-cache-isolation.test.mjs"
 node "$ROOT_DIR/scripts/migrate-image-frontmatter.mjs" --check
 
 log "Validate resume career dates."

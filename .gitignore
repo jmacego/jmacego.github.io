@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .astro/
+.astro-validate/
 .cache/
 .frontmatter/
 .DS_Store

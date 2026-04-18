@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { expect, test, type Page } from "@playwright/test";
 
 function parseRgb(color: string) {
@@ -69,6 +70,41 @@ test("content pages include their page title in the browser title", async ({ pag
 
   await page.goto("/about/");
   await expect(page).toHaveTitle("About Me | John MacDonald");
+});
+
+test("about page uses a reachable current profile image for social metadata and the footer headshot", async ({
+  page,
+}) => {
+  await page.goto("/about/");
+
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+    "content",
+    "https://jmaclabs.com/assets/images/jmac-profile.jpg",
+  );
+  await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute(
+    "content",
+    "https://jmaclabs.com/assets/images/jmac-profile.jpg",
+  );
+
+  const footerImage = page.locator(".about-author img");
+  await expect(footerImage).toHaveAttribute("src", "/assets/images/jmac-profile.jpg");
+
+  const presentation = await footerImage.evaluate((image) => {
+    const styles = window.getComputedStyle(image);
+    return {
+      objectFit: styles.objectFit,
+      objectPosition: styles.objectPosition,
+    };
+  });
+
+  expect(presentation.objectFit).toBe("cover");
+  expect(presentation.objectPosition).toBe("50% 50%");
+
+  const imageResponse = await page.request.get("/assets/images/jmac-profile.jpg");
+  expect(imageResponse.ok()).toBe(true);
+  expect(imageResponse.headers()["content-type"]).toContain("image/jpeg");
+  const imageHash = createHash("sha256").update(await imageResponse.body()).digest("hex");
+  expect(imageHash).toBe("a55840ccdeaaacc5be7df8b9f9181ac7e2f529cf128b787778cf0d0c6fa27efb");
 });
 
 test("published post exposes hero image social metadata", async ({ page }) => {
