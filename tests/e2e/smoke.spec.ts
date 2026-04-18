@@ -129,3 +129,51 @@ test("primary navigation keeps active pill centered and readable in light and da
     expect(metrics.otherFitsWithinNav).toBe(true);
   }
 });
+
+test("slide palette recipe cards stay compact and readable on desktop", async ({ page }) => {
+  await page.setViewportSize({ width: 1180, height: 1300 });
+  await page.goto("/slide-palette/");
+
+  const denyAnalytics = page.locator("#cookie-notice-deny");
+  if (await denyAnalytics.isVisible()) {
+    await denyAnalytics.click();
+  }
+
+  const recipeHeading = page.getByRole("heading", { name: "Three ways the palette can show up on slides" });
+  await recipeHeading.scrollIntoViewIfNeeded();
+
+  const metrics = await page.locator(".recipe-card").evaluateAll((cards) =>
+    cards.map((card) => {
+      const frame = card.querySelector(".recipe-frame");
+      const title = card.querySelector(".recipe-frame-copy h3");
+      const body = card.querySelector(".recipe-frame-copy p");
+      const note = card.querySelector(".recipe-notes p");
+      const cardRect = card.getBoundingClientRect();
+      const frameRect = frame?.getBoundingClientRect();
+      const noteRect = note?.getBoundingClientRect();
+
+      return {
+        cardHeight: Math.round(cardRect.height),
+        frameHeight: Math.round(frameRect?.height ?? 0),
+        titleFits: title ? title.scrollHeight - title.clientHeight <= 3 : false,
+        bodyFits: body ? body.scrollHeight - body.clientHeight <= 3 : false,
+        noteFits: note ? note.scrollHeight - note.clientHeight <= 3 : false,
+      };
+    }),
+  );
+
+  expect(metrics).toHaveLength(3);
+
+  const cardHeights = metrics.map((metric) => metric.cardHeight);
+  const frameHeights = metrics.map((metric) => metric.frameHeight);
+
+  expect(Math.max(...cardHeights)).toBeLessThan(600);
+  expect(Math.max(...cardHeights) - Math.min(...cardHeights)).toBeLessThanOrEqual(2);
+  expect(Math.max(...frameHeights) - Math.min(...frameHeights)).toBeLessThanOrEqual(2);
+
+  for (const metric of metrics) {
+    expect(metric.titleFits).toBe(true);
+    expect(metric.bodyFits).toBe(true);
+    expect(metric.noteFits).toBe(true);
+  }
+});

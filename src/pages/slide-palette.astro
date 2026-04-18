@@ -1,0 +1,819 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const paletteGroups = [
+  {
+    title: "Neutrals",
+    kind: "surface",
+    description: "Low-glare foundations for dark canvases, inset cards, and presentation chrome.",
+    tokens: [
+      { name: "Neutral/950", hex: "#0E0F10", role: "Backdrop / stage" },
+      { name: "Neutral/900", hex: "#15171A", role: "Primary slide field" },
+      { name: "Neutral/850", hex: "#1C1F24", role: "Inset panel" },
+      { name: "Neutral/800", hex: "#2A2F36", role: "Card shell" },
+      { name: "Neutral/700", hex: "#3A404A", role: "Rules and dividers" },
+    ],
+  },
+  {
+    title: "Text on Dark",
+    kind: "type",
+    description: "Readable hierarchy for dim rooms, laptop screens, and exported PDFs.",
+    tokens: [
+      { name: "Text/PrimaryOnDark", hex: "#F2F4F7", role: "Headlines and large numbers", sample: "Primary headline" },
+      { name: "Text/SecondaryOnDark", hex: "#C7CDD6", role: "Body copy and labels", sample: "Supporting detail" },
+      { name: "Text/MutedOnDark", hex: "#98A2B3", role: "Metadata and side notes", sample: "Quiet annotation" },
+    ],
+  },
+  {
+    title: "Lime Accent",
+    kind: "accent",
+    description: "Use for momentum, emphasis, and action moments that need to read fast.",
+    tokens: [
+      { name: "Lime/300", hex: "#B7FF6A", role: "Soft highlight" },
+      { name: "Lime/400", hex: "#9AF23C", role: "Primary accent" },
+      { name: "Lime/500", hex: "#7ED61A", role: "Dense accent / data fill" },
+    ],
+  },
+  {
+    title: "Violet Accent",
+    kind: "accent",
+    description: "A cooler counterweight for structure, sectioning, and contrast with lime.",
+    tokens: [
+      { name: "Violet/300", hex: "#C9B8FF", role: "Soft glow / wash" },
+      { name: "Violet/400", hex: "#A78BFA", role: "Secondary accent" },
+      { name: "Violet/500", hex: "#8B5CF6", role: "Charts and anchors" },
+    ],
+  },
+];
+
+const slideRecipes = [
+  {
+    name: "Opening Slide",
+    eyebrow: "Quarterly Narrative",
+    title: "Sharper contrast. Calmer stage.",
+    body: "Let the darkest neutral carry the room, then spend the lime on exactly one idea.",
+    note: "Best for title slides, section breaks, and decisive one-line messaging.",
+    accent: "#9AF23C",
+    glow: "rgba(154, 242, 60, 0.25)",
+    tokens: ["Neutral/950", "Text/PrimaryOnDark", "Lime/400"],
+    bars: ["78%", "52%", "31%"],
+  },
+  {
+    name: "Insight Slide",
+    eyebrow: "Signal + Context",
+    title: "Violet handles structure while secondary text keeps density under control.",
+    body: "This pairing feels analytical without going cold, especially for roadmap and architecture material.",
+    note: "Best for denser strategy slides, frameworks, and mid-deck explanation pages.",
+    accent: "#A78BFA",
+    glow: "rgba(167, 139, 250, 0.26)",
+    tokens: ["Neutral/850", "Text/SecondaryOnDark", "Violet/400"],
+    bars: ["64%", "56%", "43%"],
+  },
+  {
+    name: "Data Callout",
+    eyebrow: "Decision Point",
+    title: "Use lime for the metric and violet for the system that surrounds it.",
+    body: "The two accents can coexist if one is clearly the hero and the other stays structural.",
+    note: "Best for KPI moments, recommendation slides, and end-of-section proof points.",
+    accent: "#C9B8FF",
+    glow: "rgba(201, 184, 255, 0.24)",
+    tokens: ["Neutral/900", "Lime/300", "Violet/500"],
+    bars: ["82%", "37%", "68%"],
+  },
+];
+
+const tokenCount = paletteGroups.reduce((total, group) => total + group.tokens.length, 0);
+---
+
+<BaseLayout
+  title="Slide Palette Lab"
+  description="Private color swatch study for dark presentation decks."
+  robots="noindex, nofollow"
+>
+  <div class="palette-lab">
+    <section class="lab-hero">
+      <div class="lab-copy">
+        <p class="eyebrow">Private Slide Study</p>
+        <h1>Deck Palette Lab</h1>
+        <p class="lede">
+          A dark-first swatch board for testing your new neutral, lime, and violet palette in actual
+          presentation contexts.
+        </p>
+        <div class="lab-flags" aria-label="Page notes">
+          <span>Unlinked route</span>
+          <span>Noindex</span>
+          <span>Sitemap excluded</span>
+        </div>
+        <div class="lab-metrics" aria-label="Palette summary">
+          <article>
+            <span class="metric-value">{tokenCount}</span>
+            <span class="metric-label">Tokens</span>
+          </article>
+          <article>
+            <span class="metric-value">2</span>
+            <span class="metric-label">Accent families</span>
+          </article>
+          <article>
+            <span class="metric-value">16:9</span>
+            <span class="metric-label">Slide-first framing</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-board" aria-hidden="true">
+        <div class="hero-slide">
+          <div class="hero-slide-topline">
+            <span>Palette direction</span>
+            <span>April 2026</span>
+          </div>
+          <div class="hero-slide-body">
+            <p class="hero-kicker">NEW DECK SYSTEM</p>
+            <h2>Dark neutrals with one clear signal color at a time.</h2>
+            <p>
+              Built to stay quiet on projectors, crisp on laptops, and legible when the room lights
+              drop.
+            </p>
+          </div>
+          <div class="hero-token-row">
+            <span class="token-pill token-pill-lime">Lime/400</span>
+            <span class="token-pill token-pill-violet">Violet/400</span>
+            <span class="token-pill token-pill-neutral">Neutral/850</span>
+          </div>
+        </div>
+
+        <div class="hero-mini-card hero-mini-card-lime">
+          <span class="mini-label">Signal</span>
+          <strong>#9AF23C</strong>
+        </div>
+        <div class="hero-mini-card hero-mini-card-violet">
+          <span class="mini-label">Structure</span>
+          <strong>#A78BFA</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" aria-labelledby="palette-families-title">
+      <div class="section-heading">
+        <p class="eyebrow">Token Families</p>
+        <h2 id="palette-families-title">Swatches with deck-minded usage notes</h2>
+      </div>
+
+      <div class="family-grid">
+        {paletteGroups.map((group) => (
+          <article class="family-card" data-kind={group.kind}>
+            <header class="family-header">
+              <h3>{group.title}</h3>
+              <p>{group.description}</p>
+            </header>
+
+            <div class="swatch-grid">
+              {group.tokens.map((token) => (
+                <div class="swatch-card" style={`--swatch:${token.hex};`}>
+                  <div class="swatch-preview" aria-hidden="true">
+                    {group.kind === "type" ? (
+                      <div class="type-preview">
+                        <span>{token.sample}</span>
+                        <small>Neutral/900 backdrop</small>
+                      </div>
+                    ) : group.kind === "accent" ? (
+                      <div class="accent-preview">
+                        <span class="accent-dot"></span>
+                        <span class="accent-line"></span>
+                      </div>
+                    ) : (
+                      <div class="surface-preview">
+                        <span class="surface-chip"></span>
+                      </div>
+                    )}
+                  </div>
+
+                  <div class="swatch-copy">
+                    <div class="swatch-meta">
+                      <h4>{token.name}</h4>
+                      <code>{token.hex}</code>
+                    </div>
+                    <p>{token.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section-shell" aria-labelledby="deck-recipes-title">
+      <div class="section-heading">
+        <p class="eyebrow">Deck Recipes</p>
+        <h2 id="deck-recipes-title">Three ways the palette can show up on slides</h2>
+      </div>
+
+      <div class="recipe-grid">
+        {slideRecipes.map((recipe) => (
+          <article class="recipe-card" style={`--recipe-accent:${recipe.accent}; --recipe-glow:${recipe.glow};`}>
+            <div class="recipe-frame">
+              <div class="recipe-frame-topline">
+                <span>{recipe.eyebrow}</span>
+                <span>{recipe.name}</span>
+              </div>
+              <div class="recipe-frame-copy">
+                <h3>{recipe.title}</h3>
+                <p>{recipe.body}</p>
+              </div>
+              <div class="recipe-bars">
+                {recipe.bars.map((bar) => <span style={`width:${bar};`}></span>)}
+              </div>
+            </div>
+
+            <div class="recipe-notes">
+              <p>{recipe.note}</p>
+              <div class="recipe-token-list" aria-label={`${recipe.name} token stack`}>
+                {recipe.tokens.map((token) => <span>{token}</span>)}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .palette-lab {
+      --neutral-950: #0e0f10;
+      --neutral-900: #15171a;
+      --neutral-850: #1c1f24;
+      --neutral-800: #2a2f36;
+      --neutral-700: #3a404a;
+      --text-primary-on-dark: #f2f4f7;
+      --text-secondary-on-dark: #c7cdd6;
+      --text-muted-on-dark: #98a2b3;
+      --lime-300: #b7ff6a;
+      --lime-400: #9af23c;
+      --lime-500: #7ed61a;
+      --violet-300: #c9b8ff;
+      --violet-400: #a78bfa;
+      --violet-500: #8b5cf6;
+      margin: 1.25rem 0 3rem;
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .lab-hero,
+    .section-shell {
+      position: relative;
+      overflow: hidden;
+      border-radius: 28px;
+      border: 1px solid rgba(36, 42, 50, 0.9);
+      box-shadow:
+        0 30px 60px -42px rgba(0, 0, 0, 0.55),
+        0 40px 90px -60px rgba(139, 92, 246, 0.22);
+    }
+
+    .lab-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+      gap: 1.5rem;
+      padding: 1.6rem;
+      background:
+        radial-gradient(circle at top left, rgba(183, 255, 106, 0.1), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(167, 139, 250, 0.16), transparent 40%),
+        linear-gradient(145deg, rgba(28, 31, 36, 0.97), rgba(14, 15, 16, 0.99));
+      color: var(--text-primary-on-dark);
+    }
+
+    .lab-copy,
+    .section-heading {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.65rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--lime-300);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      color: inherit;
+    }
+
+    h1 {
+      max-width: 10ch;
+      font-size: clamp(2.7rem, 6vw, 4.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    .lede {
+      max-width: 40rem;
+      margin: 1rem 0 0;
+      font-size: 1.08rem;
+      color: var(--text-secondary-on-dark);
+    }
+
+    .lab-flags,
+    .recipe-token-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .lab-flags {
+      margin-top: 1.25rem;
+    }
+
+    .lab-flags span,
+    .recipe-token-list span,
+    .token-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2rem;
+      border-radius: 999px;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .lab-flags span {
+      border: 1px solid rgba(242, 244, 247, 0.12);
+      background: rgba(42, 47, 54, 0.72);
+      color: var(--text-primary-on-dark);
+    }
+
+    .lab-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 1.35rem;
+    }
+
+    .lab-metrics article,
+    .family-card,
+    .recipe-card,
+    .hero-mini-card {
+      border: 1px solid rgba(242, 244, 247, 0.08);
+      background: rgba(28, 31, 36, 0.74);
+      backdrop-filter: blur(16px);
+    }
+
+    .lab-metrics article {
+      display: grid;
+      gap: 0.15rem;
+      padding: 0.95rem 1rem;
+      border-radius: 18px;
+    }
+
+    .metric-value {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-primary-on-dark);
+    }
+
+    .metric-label {
+      color: var(--text-muted-on-dark);
+      font-size: 0.9rem;
+    }
+
+    .hero-board {
+      position: relative;
+      min-height: 22rem;
+      display: grid;
+      place-items: center;
+      padding: 0.4rem;
+    }
+
+    .hero-slide {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 33rem);
+      min-height: 19rem;
+      padding: 1.2rem;
+      border-radius: 26px;
+      border: 1px solid rgba(242, 244, 247, 0.1);
+      background:
+        linear-gradient(180deg, rgba(42, 47, 54, 0.92), rgba(21, 23, 26, 0.96)),
+        linear-gradient(135deg, rgba(154, 242, 60, 0.08), rgba(167, 139, 250, 0.12));
+      box-shadow:
+        0 24px 60px -42px rgba(0, 0, 0, 0.8),
+        0 28px 70px -50px rgba(154, 242, 60, 0.18);
+    }
+
+    .hero-slide-topline,
+    .recipe-frame-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--text-muted-on-dark);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .hero-slide-body {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 3.25rem;
+    }
+
+    .hero-kicker {
+      margin: 0;
+      color: var(--violet-300);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    .hero-slide h2 {
+      max-width: 14ch;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-slide p:last-child {
+      max-width: 28rem;
+      margin: 0;
+      color: var(--text-secondary-on-dark);
+    }
+
+    .hero-token-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 2rem;
+    }
+
+    .token-pill {
+      border: 1px solid transparent;
+    }
+
+    .token-pill-lime {
+      background: rgba(154, 242, 60, 0.14);
+      color: var(--lime-300);
+      border-color: rgba(154, 242, 60, 0.3);
+    }
+
+    .token-pill-violet {
+      background: rgba(167, 139, 250, 0.14);
+      color: var(--violet-300);
+      border-color: rgba(167, 139, 250, 0.3);
+    }
+
+    .token-pill-neutral {
+      background: rgba(58, 64, 74, 0.55);
+      color: var(--text-secondary-on-dark);
+      border-color: rgba(242, 244, 247, 0.12);
+    }
+
+    .hero-mini-card {
+      position: absolute;
+      display: grid;
+      gap: 0.2rem;
+      min-width: 9rem;
+      padding: 0.85rem 1rem;
+      border-radius: 18px;
+      box-shadow: 0 26px 44px -34px rgba(0, 0, 0, 0.65);
+    }
+
+    .hero-mini-card-lime {
+      top: 1.5rem;
+      right: 1rem;
+    }
+
+    .hero-mini-card-violet {
+      bottom: 1.25rem;
+      left: 0.5rem;
+    }
+
+    .mini-label {
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted-on-dark);
+    }
+
+    .hero-mini-card strong {
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-mini-card-lime strong {
+      color: var(--lime-300);
+    }
+
+    .hero-mini-card-violet strong {
+      color: var(--violet-300);
+    }
+
+    .section-shell {
+      padding: 1.35rem;
+      background:
+        linear-gradient(180deg, rgba(26, 29, 34, 0.98), rgba(19, 21, 24, 0.99)),
+        linear-gradient(135deg, rgba(183, 255, 106, 0.04), rgba(167, 139, 250, 0.08));
+      color: var(--text-primary-on-dark);
+    }
+
+    .section-heading {
+      display: grid;
+      gap: 0.35rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-heading h2 {
+      max-width: 18ch;
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+    }
+
+    .family-grid,
+    .recipe-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .family-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .family-card,
+    .recipe-card {
+      border-radius: 24px;
+      padding: 1.1rem;
+    }
+
+    .family-header {
+      display: grid;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .family-header h3,
+    .recipe-frame-copy h3 {
+      font-size: 1.35rem;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .family-header p,
+    .recipe-frame-copy p,
+    .recipe-notes p,
+    .swatch-copy p {
+      margin: 0;
+      color: var(--text-secondary-on-dark);
+    }
+
+    .swatch-grid {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .swatch-card {
+      display: grid;
+      grid-template-columns: 7.5rem minmax(0, 1fr);
+      gap: 0.9rem;
+      align-items: stretch;
+      padding: 0.7rem;
+      border-radius: 20px;
+      background: rgba(15, 17, 20, 0.72);
+      border: 1px solid rgba(242, 244, 247, 0.06);
+    }
+
+    .swatch-preview {
+      min-height: 5.6rem;
+      border-radius: 16px;
+      border: 1px solid rgba(242, 244, 247, 0.08);
+      background: var(--swatch);
+      overflow: hidden;
+    }
+
+    .surface-preview,
+    .accent-preview,
+    .type-preview {
+      width: 100%;
+      height: 100%;
+    }
+
+    .surface-preview {
+      position: relative;
+      background:
+        linear-gradient(135deg, rgba(242, 244, 247, 0.08), transparent 50%),
+        var(--swatch);
+    }
+
+    .surface-chip {
+      position: absolute;
+      left: 0.7rem;
+      bottom: 0.7rem;
+      width: 2rem;
+      height: 0.45rem;
+      border-radius: 999px;
+      background: rgba(242, 244, 247, 0.22);
+    }
+
+    .accent-preview {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.85rem;
+      background:
+        linear-gradient(145deg, rgba(28, 31, 36, 0.95), rgba(14, 15, 16, 0.98));
+    }
+
+    .accent-dot {
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 999px;
+      background: var(--swatch);
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.04);
+    }
+
+    .accent-line {
+      height: 0.4rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--swatch), rgba(255, 255, 255, 0.12));
+    }
+
+    .type-preview {
+      display: grid;
+      align-content: end;
+      gap: 0.15rem;
+      padding: 0.8rem;
+      background:
+        linear-gradient(180deg, rgba(42, 47, 54, 0.5), rgba(21, 23, 26, 0.1)),
+        var(--neutral-900);
+      color: var(--swatch);
+    }
+
+    .type-preview span {
+      font-size: 0.98rem;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .type-preview small {
+      color: var(--text-muted-on-dark);
+      font-size: 0.72rem;
+    }
+
+    .swatch-copy {
+      display: grid;
+      align-content: center;
+      gap: 0.45rem;
+    }
+
+    .swatch-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.4rem 0.8rem;
+      align-items: baseline;
+    }
+
+    .swatch-meta h4 {
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    code {
+      font-family: "IBM Plex Sans", "Helvetica Neue", sans-serif;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--text-muted-on-dark);
+      background: transparent;
+      padding: 0;
+    }
+
+    .recipe-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+    }
+
+    .recipe-card {
+      display: grid;
+      grid-template-rows: auto auto;
+      align-content: start;
+      gap: 0.95rem;
+      background:
+        linear-gradient(180deg, rgba(28, 31, 36, 0.78), rgba(14, 15, 16, 0.86));
+    }
+
+    .recipe-frame {
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      gap: 1rem;
+      height: 20rem;
+      min-height: 20rem;
+      padding: 1.1rem;
+      border-radius: 20px;
+      border: 1px solid rgba(242, 244, 247, 0.08);
+      background:
+        radial-gradient(circle at top right, var(--recipe-glow), transparent 28%),
+        linear-gradient(160deg, rgba(42, 47, 54, 0.88), rgba(21, 23, 26, 0.96));
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04),
+        0 18px 42px -34px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+
+    .recipe-frame-copy {
+      display: grid;
+      gap: 0.7rem;
+      align-content: start;
+      min-height: 0;
+    }
+
+    .recipe-frame-copy h3 {
+      font-size: clamp(1.15rem, 1rem + 0.55vw, 1.5rem);
+    }
+
+    .recipe-frame-copy p {
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .recipe-bars {
+      display: flex;
+      align-items: end;
+      gap: 0.45rem;
+      min-height: 3rem;
+    }
+
+    .recipe-bars span {
+      display: block;
+      height: 0.5rem;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--recipe-accent), rgba(242, 244, 247, 0.12));
+      box-shadow: 0 0 18px -8px var(--recipe-glow);
+    }
+
+    .recipe-notes {
+      display: grid;
+      align-content: start;
+      gap: 0.85rem;
+    }
+
+    .recipe-token-list span {
+      background: rgba(15, 17, 20, 0.7);
+      border: 1px solid rgba(242, 244, 247, 0.08);
+      color: var(--text-primary-on-dark);
+    }
+
+    @media (max-width: 1050px) {
+      .family-grid,
+      .recipe-grid,
+      .lab-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-board {
+        min-height: 18rem;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .palette-lab {
+        margin-top: 0.9rem;
+      }
+
+      .lab-hero,
+      .section-shell {
+        border-radius: 22px;
+        padding: 1rem;
+      }
+
+      .lab-metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .swatch-card {
+        grid-template-columns: 1fr;
+      }
+
+      .swatch-preview {
+        min-height: 4.7rem;
+      }
+
+      .hero-slide {
+        min-height: 17rem;
+      }
+
+      .hero-mini-card {
+        position: static;
+      }
+
+      .hero-board {
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</BaseLayout>

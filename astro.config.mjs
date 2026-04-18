@@ -3,6 +3,8 @@ import sitemap from "@astrojs/sitemap";
 import rehypeExternalLinks from "./src/plugins/rehype-external-links.mjs";
 import remarkIgnoreMissingLocalImages from "./src/plugins/remark-ignore-missing-local-images.mjs";
 
+const privateRoutes = new Set(["/slide-palette/"]);
+
 export default defineConfig({
   site: "https://jmaclabs.com",
   trailingSlash: "always",
@@ -10,5 +12,9 @@ export default defineConfig({
     remarkPlugins: [remarkIgnoreMissingLocalImages],
     rehypePlugins: [rehypeExternalLinks],
   },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => !privateRoutes.has(new URL(page).pathname),
+    }),
+  ],
 });
