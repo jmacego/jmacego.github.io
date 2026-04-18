@@ -1,0 +1,23 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter, title, description, socialImage, socialImageAlt, ogImage, ogImageAlt, ogType, publishedTime, author } =
+  Astro.props;
+---
+
+<BaseLayout
+  title={title ?? frontmatter?.title}
+  description={description ?? frontmatter?.description}
+  frontmatter={frontmatter}
+  socialImage={socialImage ?? ogImage}
+  socialImageAlt={socialImageAlt ?? ogImageAlt ?? title ?? frontmatter?.title}
+  ogType={ogType}
+  publishedTime={publishedTime}
+  author={author}
+>
+  <article class="post-shell page-shell">
+    <div class="post-content page-content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

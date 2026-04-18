@@ -3,17 +3,28 @@ import { expect, test, type Page } from "@playwright/test";
 
 function parseRgb(color: string) {
   const match = color.match(/rgba?\(([^)]+)\)/i);
-  if (!match) {
-    throw new Error(`Unsupported color format: ${color}`);
+  if (match) {
+    const [red, green, blue, alpha = "1"] = match[1].split(",").map((value) => value.trim());
+    return {
+      red: Number(red),
+      green: Number(green),
+      blue: Number(blue),
+      alpha: Number(alpha),
+    };
   }
 
-  const [red, green, blue, alpha = "1"] = match[1].split(",").map((value) => value.trim());
-  return {
-    red: Number(red),
-    green: Number(green),
-    blue: Number(blue),
-    alpha: Number(alpha),
-  };
+  const srgbMatch = color.match(/color\(srgb\s+([0-9.]+)\s+([0-9.]+)\s+([0-9.]+)\s*(?:\/\s*([0-9.]+))?\)/i);
+  if (srgbMatch) {
+    const [, red, green, blue, alpha = "1"] = srgbMatch;
+    return {
+      red: Number(red) * 255,
+      green: Number(green) * 255,
+      blue: Number(blue) * 255,
+      alpha: Number(alpha),
+    };
+  }
+
+  throw new Error(`Unsupported color format: ${color}`);
 }
 
 function relativeLuminance(color: { red: number; green: number; blue: number }) {
@@ -72,6 +83,40 @@ test("content pages include their page title in the browser title", async ({ pag
   await expect(page).toHaveTitle("About Me | John MacDonald");
 });
 
+test("slashless internal routes resolve without Astro's trailing-slash warning page", async ({ page }) => {
+  await page.goto("/about");
+
+  await expect(page).toHaveURL(/\/about$/);
+  await expect(page).toHaveTitle("About Me | John MacDonald");
+  await expect(page.getByRole("heading", { name: "About Me" })).toBeVisible();
+  await expect(
+    page.getByText("Your site is configured with trailingSlash set to always"),
+  ).toHaveCount(0);
+});
+
+test("internal page links use trailing-slash canonical routes", async ({ page }) => {
+  const pagesToCheck = ["/", "/about/", "/projects/keybase-identity-verification/"];
+
+  for (const path of pagesToCheck) {
+    await page.goto(path);
+
+    const offenders = await page.evaluate(() => {
+      return Array.from(document.querySelectorAll("a[href]"))
+        .map((anchor) => anchor.getAttribute("href"))
+        .filter((href): href is string => Boolean(href))
+        .filter((href) => href.startsWith("/"))
+        .filter((href) => !href.startsWith("//"))
+        .filter((href) => !href.startsWith("/assets/"))
+        .filter((href) => !href.includes("#"))
+        .filter((href) => !/\.[a-z0-9]+$/i.test(href))
+        .filter((href) => href !== "/")
+        .filter((href) => !href.endsWith("/"));
+    });
+
+    expect(offenders).toEqual([]);
+  }
+});
+
 test("about page uses a reachable current profile image for social metadata and the footer headshot", async ({
   page,
 }) => {
@@ -91,20 +136,71 @@ test("about page uses a reachable current profile image for social metadata and 
 
   const presentation = await footerImage.evaluate((image) => {
     const styles = window.getComputedStyle(image);
+    const card = image.closest(".about-author");
+    const cardStyles = card ? window.getComputedStyle(card) : null;
     return {
       objectFit: styles.objectFit,
       objectPosition: styles.objectPosition,
+      cardRadius: cardStyles?.borderTopLeftRadius ?? null,
     };
   });
 
   expect(presentation.objectFit).toBe("cover");
   expect(presentation.objectPosition).toBe("50% 50%");
+  expect(presentation.cardRadius).toBe("24px");
 
   const imageResponse = await page.request.get("/assets/images/jmac-profile.jpg");
   expect(imageResponse.ok()).toBe(true);
   expect(imageResponse.headers()["content-type"]).toContain("image/jpeg");
   const imageHash = createHash("sha256").update(await imageResponse.body()).digest("hex");
   expect(imageHash).toBe("a55840ccdeaaacc5be7df8b9f9181ac7e2f529cf128b787778cf0d0c6fa27efb");
+});
+
+test("longform pages use the same contained shell width across pages", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1400 });
+
+  const measureRail = async (path: string, selectors: string[]) => {
+    await page.goto(path);
+
+    return page.evaluate((activeSelectors) => {
+      const rail = document.querySelector(".content-rail");
+      if (!(rail instanceof HTMLElement)) {
+        throw new Error("Expected a shared content rail.");
+      }
+
+      const railRect = rail.getBoundingClientRect();
+
+      return activeSelectors.map((selector) => {
+        const element = document.querySelector(selector);
+        if (!(element instanceof HTMLElement)) {
+          throw new Error(`Expected element for selector: ${selector}`);
+        }
+
+        const rect = element.getBoundingClientRect();
+
+        return {
+          selector,
+          widthDelta: Math.abs(rect.width - railRect.width),
+          leftDelta: Math.abs(rect.left - railRect.left),
+          rightDelta: Math.abs(rect.right - railRect.right),
+        };
+      });
+    }, selectors);
+  };
+
+  const homeMetrics = await measureRail("/", [".jumbotron", ".home-feature-grid", ".about-author"]);
+  const aboutMetrics = await measureRail("/about/", [".post-shell", ".about-author"]);
+  const resumeMetrics = await measureRail("/resume/", [".post-shell", ".about-author"]);
+  const pubkeyMetrics = await measureRail("/pubkey/", [".post-shell", ".about-author"]);
+  const postMetrics = await measureRail("/blog/pattern-recognition-knitting-coding-leadership/", [".post-shell", ".about-author"]);
+
+  for (const metric of [...homeMetrics, ...aboutMetrics, ...resumeMetrics, ...pubkeyMetrics, ...postMetrics]) {
+    expect(metric.widthDelta).toBeLessThanOrEqual(1);
+    expect(metric.leftDelta).toBeLessThanOrEqual(1);
+    expect(metric.rightDelta).toBeLessThanOrEqual(1);
+  }
 });
 
 test("published post exposes hero image social metadata", async ({ page }) => {
@@ -163,6 +259,155 @@ test("primary navigation keeps active pill centered and readable in light and da
     expect(metrics.otherCenterOffset).toBeLessThanOrEqual(2);
     expect(metrics.currentFitsWithinNav).toBe(true);
     expect(metrics.otherFitsWithinNav).toBe(true);
+  }
+});
+
+test("header logo swaps to the matching wordmark for light and dark themes", async ({ page }) => {
+  for (const colorScheme of ["light", "dark"] as const) {
+    await page.emulateMedia({ colorScheme });
+    await page.goto("/");
+
+    const logo = page.locator(".blog-header-logo img");
+    await expect(logo).toBeVisible();
+    await expect(logo).toHaveAttribute("alt", "John MacDonald");
+
+    const renderedLogo = await logo.evaluate((image) => image.currentSrc);
+    expect(renderedLogo).toContain(
+      colorScheme === "dark"
+        ? "/assets/images/branding/logo-white-text.png"
+        : "/assets/images/branding/logo-black-text.png",
+    );
+  }
+});
+
+test("header logo remains centered in the header", async ({ page }) => {
+  await page.goto("/");
+
+  const metrics = await page.locator(".blog-header").evaluate((header) => {
+    const image = header.querySelector(".blog-header-logo img");
+    if (!(image instanceof HTMLImageElement)) {
+      throw new Error("Expected a header logo image.");
+    }
+
+    const headerRect = header.getBoundingClientRect();
+    const imageRect = image.getBoundingClientRect();
+    const headerCenter = headerRect.left + headerRect.width / 2;
+    const imageCenter = imageRect.left + imageRect.width / 2;
+
+    return {
+      centerOffset: Math.abs(imageCenter - headerCenter),
+      imageFitsWithinHeader:
+        imageRect.left >= headerRect.left && imageRect.right <= headerRect.right,
+    };
+  });
+
+  expect(metrics.centerOffset).toBeLessThanOrEqual(1);
+  expect(metrics.imageFitsWithinHeader).toBe(true);
+});
+
+test("branding logos are tightly cropped and normalized to the same exported size", async ({ page }) => {
+  await page.goto("/");
+
+  const metrics = await page.evaluate(async () => {
+    async function measure(url: string, threshold: number) {
+      const image = new Image();
+      image.src = url;
+      await image.decode();
+
+      const canvas = document.createElement("canvas");
+      canvas.width = image.naturalWidth;
+      canvas.height = image.naturalHeight;
+      const context = canvas.getContext("2d");
+      if (!context) {
+        throw new Error("Expected a 2D canvas context.");
+      }
+
+      context.drawImage(image, 0, 0);
+      const { data, width, height } = context.getImageData(0, 0, canvas.width, canvas.height);
+
+      let left = width;
+      let top = height;
+      let right = -1;
+      let bottom = -1;
+
+      for (let y = 0; y < height; y += 1) {
+        for (let x = 0; x < width; x += 1) {
+          const alpha = data[(y * width + x) * 4 + 3];
+          if (alpha >= threshold) {
+            left = Math.min(left, x);
+            top = Math.min(top, y);
+            right = Math.max(right, x);
+            bottom = Math.max(bottom, y);
+          }
+        }
+      }
+
+      if (right === -1 || bottom === -1) {
+        throw new Error(`No visible pixels found for ${url}`);
+      }
+
+      return {
+        url,
+        naturalWidth: image.naturalWidth,
+        naturalHeight: image.naturalHeight,
+        padding: {
+          left,
+          top,
+          right: width - (right + 1),
+          bottom: height - (bottom + 1),
+        },
+      };
+    }
+
+    const threshold = 1;
+    return Promise.all([
+      measure("/assets/images/branding/logo-black-text.png", threshold),
+      measure("/assets/images/branding/logo-white-text.png", threshold),
+    ]);
+  });
+
+  expect(metrics[0].naturalWidth).toBe(metrics[1].naturalWidth);
+  expect(metrics[0].naturalHeight).toBe(metrics[1].naturalHeight);
+
+  for (const metric of metrics) {
+    expect(metric.padding.left).toBe(0);
+    expect(metric.padding.top).toBe(0);
+    expect(metric.padding.right).toBe(0);
+    expect(metric.padding.bottom).toBe(0);
+  }
+});
+
+test("404 page is branded and theme-aware", async ({ page }) => {
+  for (const colorScheme of ["light", "dark"] as const) {
+    await page.emulateMedia({ colorScheme });
+    const response = await page.goto("/definitely-missing-page/");
+
+    expect(response?.status()).toBe(404);
+    await expect(page).toHaveTitle("Page not found | John MacDonald");
+    await expect(page.getByRole("heading", { name: "Sorry, that page is missing." })).toBeVisible();
+    await expect(page.locator(".error-shell .error-logo img")).toBeVisible();
+    await expect(page.getByRole("link", { name: "Go home" })).toBeVisible();
+    await expect(page.getByText("Here are a few good next steps:")).toBeVisible();
+
+    const theme = await page.evaluate(() => {
+      const rootStyles = window.getComputedStyle(document.documentElement);
+      const shellStyles = window.getComputedStyle(document.querySelector(".error-shell"));
+      return {
+        rootBackground: rootStyles.backgroundColor,
+        shellBackground: shellStyles.backgroundColor,
+      };
+    });
+
+    const rootLuminance = relativeLuminance(parseRgb(theme.rootBackground));
+    const shellLuminance = relativeLuminance(parseRgb(theme.shellBackground));
+
+    if (colorScheme === "dark") {
+      expect(rootLuminance).toBeLessThan(0.1);
+      expect(shellLuminance).toBeLessThan(0.2);
+    } else {
+      expect(rootLuminance).toBeGreaterThan(0.85);
+      expect(shellLuminance).toBeGreaterThan(0.8);
+    }
   }
 });
 
