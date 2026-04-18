@@ -43,40 +43,46 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
   socialImage={heroImage}
   socialImageAlt={heroPost?.data.image?.alt ?? heroPost?.data.title}
 >
-  <div class="jumbotron p-4 p-md-5 text-white">
-    <div class="row align-items-center">
-      {heroPost && (
-        <div class:list={["px-0", heroImage ? "col-lg-6 pr-lg-4" : "col"]}>
+  <div class="jumbotron p-4 p-md-5 text-white home-hero">
+    {heroPost && (
+      <>
+        <div class="home-hero-header">
           <p class="section-kicker section-kicker--signal">Latest post</p>
-          <h1 class="display-4">
+          <h1 class="display-4 home-hero-title">
             <a class="text-white" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
               {heroPost.data.title}
             </a>
           </h1>
-          {heroDate && <div class="mb-3 text-muted">{formatDate(heroDate)}</div>}
-          <p class="lead my-3" set:html={heroExcerpt} />
-          <p class="lead mb-0">
-            <a
-              href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
-              title={heroPost.data.title}
-              class="hero-link"
-            >
-              Continue reading
-            </a>
-          </p>
         </div>
-      )}
-      {heroPost && heroImage && (
-        <div class="col-lg-6 px-0 mt-4 mt-lg-0">
-          <a class="feature-thumb d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
-            <img
-              src={heroImage}
-              alt={heroPost.data.image?.alt ?? heroPost.data.title}
-            />
-          </a>
+
+        <div class:list={["home-hero-body", !heroImage && "home-hero-body--single"]}>
+          <div class="home-hero-copy">
+            {heroDate && <div class="mb-3 text-muted">{formatDate(heroDate)}</div>}
+            <p class="lead my-3" set:html={heroExcerpt} />
+            <p class="lead mb-0">
+              <a
+                href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
+                title={heroPost.data.title}
+                class="hero-link"
+              >
+                Continue reading
+              </a>
+            </p>
+          </div>
+
+          {heroImage && (
+            <div class="home-hero-media">
+              <a class="feature-thumb d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
+                <img
+                  src={heroImage}
+                  alt={heroPost.data.image?.alt ?? heroPost.data.title}
+                />
+              </a>
+            </div>
+          )}
         </div>
-      )}
-    </div>
+      </>
+    )}
   </div>
 
   <div class="home-feature-grid">

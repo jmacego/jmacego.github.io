@@ -74,6 +74,40 @@ test("home page exposes primary navigation and a visible heading", async ({ page
   await expect(page.locator("h1").first()).toBeVisible();
 });
 
+test("home hero title spans the full hero shell above the split content row", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1200 });
+  await page.goto("/");
+
+  const metrics = await page.locator(".home-hero").evaluate((hero) => {
+    const title = hero.querySelector(".home-hero-title");
+    const copy = hero.querySelector(".home-hero-copy");
+    const media = hero.querySelector(".home-hero-media");
+
+    if (!(title instanceof HTMLElement) || !(copy instanceof HTMLElement) || !(media instanceof HTMLElement)) {
+      throw new Error("Expected hero title, copy, and media elements.");
+    }
+
+    const heroStyles = window.getComputedStyle(hero);
+    const heroRect = hero.getBoundingClientRect();
+    const titleRect = title.getBoundingClientRect();
+    const copyRect = copy.getBoundingClientRect();
+    const mediaRect = media.getBoundingClientRect();
+    const horizontalPadding =
+      Number.parseFloat(heroStyles.paddingLeft) + Number.parseFloat(heroStyles.paddingRight);
+    const innerWidth = heroRect.width - horizontalPadding;
+
+    return {
+      titleToInnerWidthDelta: Math.abs(titleRect.width - innerWidth),
+      titleToCopyRatio: titleRect.width / copyRect.width,
+      titleAboveBody: titleRect.bottom <= Math.min(copyRect.top, mediaRect.top),
+    };
+  });
+
+  expect(metrics.titleToInnerWidthDelta).toBeLessThanOrEqual(2);
+  expect(metrics.titleToCopyRatio).toBeGreaterThanOrEqual(1.6);
+  expect(metrics.titleAboveBody).toBe(true);
+});
+
 test("content pages include their page title in the browser title", async ({ page }) => {
   await page.goto("/resume/");
 

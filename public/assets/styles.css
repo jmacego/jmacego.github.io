@@ -455,6 +455,36 @@ img {
   max-width: 14ch;
 }
 
+.home-hero-header {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+}
+
+.home-hero-title {
+  max-width: none !important;
+  margin-bottom: 0;
+}
+
+.home-hero-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.88fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.home-hero-body--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.home-hero-copy {
+  min-width: 0;
+}
+
+.home-hero-media {
+  min-width: 0;
+}
+
 .jumbotron .text-muted {
   color: #98a2b3 !important;
   font-family: var(--font-mono);
@@ -924,6 +954,10 @@ img {
   }
 
   .home-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-body {
     grid-template-columns: 1fr;
   }
 
