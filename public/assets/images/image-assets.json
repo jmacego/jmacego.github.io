@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "assets": {
+    "android-chrome-192x192.png": {
+      "assetId": "img_39668922acdce8c7",
+      "filename": "android-chrome-192x192.png",
+      "originalFilename": "android-chrome.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "39668922acdce8c734f091d1c2e065b6701123a85f8b118167c06bb0d737997e",
+      "width": 192,
+      "height": 192,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "android-chrome-192x192.png",
+        "thumb": "android-chrome-192x192-192x192.png"
+      }
+    },
+    "android-chrome-512x512.png": {
+      "assetId": "img_2209a44f14aa65ea",
+      "filename": "android-chrome-512x512.png",
+      "originalFilename": "android-chrome.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "2209a44f14aa65eaa687d912e4c9709d2c1d6837528d4877ab7dcc4ac8d39824",
+      "width": 512,
+      "height": 512,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "android-chrome-512x512.png",
+        "thumb": "android-chrome-512x512-400x400.png"
+      }
+    },
+    "apple-touch-icon.png": {
+      "assetId": "img_0400f3e5a2f4a6aa",
+      "filename": "apple-touch-icon.png",
+      "originalFilename": "apple-touch-icon.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "0400f3e5a2f4a6aa7c89ce1398a282188520f1f9ced646534249e496056f4b9b",
+      "width": 180,
+      "height": 180,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "apple-touch-icon.png",
+        "thumb": "apple-touch-icon-180x180.png"
+      }
+    },
+    "favicon-16x16.png": {
+      "assetId": "img_bfcf0d65c91d5962",
+      "filename": "favicon-16x16.png",
+      "originalFilename": "favicon.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "bfcf0d65c91d5962b55cca2e9bcfab6bc7b256982ef694659b0a22cfa0f15c27",
+      "width": 16,
+      "height": 16,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "favicon-16x16.png",
+        "thumb": "favicon-16x16-16x16.png"
+      }
+    },
+    "favicon-32x32.png": {
+      "assetId": "img_b861e1193bda5ed0",
+      "filename": "favicon-32x32.png",
+      "originalFilename": "favicon.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "b861e1193bda5ed06c1f3be1faba36d03bcb82ea94ef1713cf44d14e21bf9550",
+      "width": 32,
+      "height": 32,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "favicon-32x32.png",
+        "thumb": "favicon-32x32-32x32.png"
+      }
+    },
+    "github-compare-and-pull-request.png": {
+      "assetId": "img_b4bd12bd4a32bfab",
+      "filename": "github-compare-and-pull-request.png",
+      "originalFilename": "github-compare-and-pull-request.png",
+      "alt": "JMac At Jefferson Airport",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "b4bd12bd4a32bfab646557aae726f6df476da79bfd410a4301e76ef12da49c60",
+      "width": 1966,
+      "height": 302,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "github-compare-and-pull-request.png",
+        "thumb": "github-compare-and-pull-request-400x61.png"
+      }
+    },
+    "github-no-conflicts.png": {
+      "assetId": "img_05942660894820ca",
+      "filename": "github-no-conflicts.png",
+      "originalFilename": "github-no-conflicts.png",
+      "alt": "JMac At Jefferson Airport",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "05942660894820cad787794666d081c031eee30cf5a8ee888999d60be35e5b82",
+      "width": 1608,
+      "height": 266,
+      "createdAt": "2026-03-29T06:21:46.440Z",
+      "updatedAt": "2026-03-29T06:21:46.440Z",
+      "renditions": {
+        "web": "github-no-conflicts.png",
+        "thumb": "github-no-conflicts-400x66.png"
+      }
+    },
+    "github-open-a-pull-request.png": {
+      "assetId": "img_68d48a76e36ee79d",
+      "filename": "github-open-a-pull-request.png",
+      "originalFilename": "github-open-a-pull-request.png",
+      "alt": "JMac At Jefferson Airport",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "68d48a76e36ee79d8d6b6eebd89b7b07ef0f6118fcf65dd4e69c61b58fd43035",
+      "width": 2030,
+      "height": 1794,
+      "createdAt": "2026-03-29T06:21:46.444Z",
+      "updatedAt": "2026-03-29T06:21:46.444Z",
+      "renditions": {
+        "web": "github-open-a-pull-request.png",
+        "thumb": "github-open-a-pull-request-400x353.png"
+      }
+    },
+    "gpg-keychain-encrypt-file.png": {
+      "assetId": "img_91d4cd0654ab19bb",
+      "filename": "gpg-keychain-encrypt-file.png",
+      "originalFilename": "gpg-keychain-encrypt-file.png",
+      "alt": "Services -> OpenPGP: Encrypt File",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "91d4cd0654ab19bb0cbe003896cce1a7c3fcfc2eeddd59d838683718b488601c",
+      "width": 2210,
+      "height": 1218,
+      "createdAt": "2026-03-29T06:21:46.444Z",
+      "updatedAt": "2026-03-29T06:21:46.444Z",
+      "renditions": {
+        "web": "gpg-keychain-encrypt-file.png",
+        "thumb": "gpg-keychain-encrypt-file-400x220.png"
+      }
+    },
+    "jmac-at-jefferson-airport.jpg": {
+      "assetId": "img_1bffd53030b64c95",
+      "filename": "jmac-at-jefferson-airport.jpg",
+      "originalFilename": "jmac-at-jefferson-airport.jpg",
+      "alt": "John and a plane",
+      "caption": "",
+      "credit": "John MacDonald",
+      "creditUrl": "https://www.jmaclabs.com",
+      "mimeType": "image/jpeg",
+      "checksum": "1bffd53030b64c957da51352665e4a7fc80d08b70f4e4827b750e130b55c61e2",
+      "width": 388,
+      "height": 286,
+      "createdAt": "2026-03-29T06:21:46.444Z",
+      "updatedAt": "2026-03-29T06:21:46.444Z",
+      "renditions": {
+        "web": "jmac-at-jefferson-airport.jpg",
+        "thumb": "jmac-at-jefferson-airport-388x286.jpg"
+      }
+    },
+    "jmac-headshot.webp": {
+      "assetId": "img_7912b7c2c6b119b4",
+      "filename": "jmac-headshot.webp",
+      "originalFilename": "jmac-headshot.webp",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/webp",
+      "checksum": "7912b7c2c6b119b4eb20f39bd6c640977b1a794e79814f4be2ebd8f303d5bd6f",
+      "width": 200,
+      "height": 200,
+      "createdAt": "2026-04-17T11:40:07.927Z",
+      "updatedAt": "2026-04-17T11:40:07.927Z",
+      "renditions": {
+        "web": "jmac-headshot.webp",
+        "thumb": "jmac-headshot-200x200.webp"
+      }
+    },
+    "jmac-profile-old.jpg": {
+      "assetId": "img_92b53748efdd5347",
+      "filename": "jmac-profile-old.jpg",
+      "originalFilename": "jmac-profile-old.jpg",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/jpeg",
+      "checksum": "92b53748efdd5347fd42ad14c79934b0b91688905a54e40ff74b00215066e0fb",
+      "width": 200,
+      "height": 200,
+      "createdAt": "2026-04-17T11:48:08.176Z",
+      "updatedAt": "2026-04-17T11:48:08.176Z",
+      "renditions": {
+        "web": "jmac-profile-old.jpg",
+        "thumb": "jmac-profile-old-200x200.jpg"
+      }
+    },
+    "jmac-profile.jpg": {
+      "assetId": "img_92b53748efdd5347",
+      "filename": "jmac-profile.jpg",
+      "originalFilename": "jmac-profile.jpg",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/jpeg",
+      "checksum": "92b53748efdd5347fd42ad14c79934b0b91688905a54e40ff74b00215066e0fb",
+      "width": 200,
+      "height": 200,
+      "createdAt": "2026-03-29T06:21:46.444Z",
+      "updatedAt": "2026-03-29T06:21:46.444Z",
+      "renditions": {
+        "web": "jmac-profile.jpg",
+        "thumb": "jmac-profile-200x200.jpg"
+      }
+    },
+    "mac-osx-create-exfat-image.png": {
+      "assetId": "img_52883f734bc7cf12",
+      "filename": "mac-osx-create-exfat-image.png",
+      "originalFilename": "mac-osx-create-exfat-image.png",
+      "alt": "MacOSX ExFAT Image Creation",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "52883f734bc7cf120b7e34cbb23b71687d22313d718e161b9eaedb2d8d57b3f0",
+      "width": 1864,
+      "height": 1198,
+      "createdAt": "2026-03-29T06:21:46.444Z",
+      "updatedAt": "2026-03-29T06:21:46.444Z",
+      "renditions": {
+        "web": "mac-osx-create-exfat-image.png",
+        "thumb": "mac-osx-create-exfat-image-400x257.png"
+      }
+    },
+    "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png": {
+      "assetId": "img_8ac09919cdb11f8d",
+      "filename": "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png",
+      "originalFilename": "chatgpt-image-apr-19-2026-05-34-35-pm.png",
+      "alt": "",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "8ac09919cdb11f8df18bb9e311844d01a4edf19a15ab9e9da4005d85ce56f410",
+      "width": 1024,
+      "height": 1536,
+      "createdAt": "2026-04-19T09:35:34.639Z",
+      "updatedAt": "2026-04-19T09:35:34.639Z",
+      "renditions": {
+        "original": "originals/chatgpt-image-apr-19-2026-05-34-35-pm.png",
+        "web": "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png",
+        "thumb": "chatgpt-image-apr-19-2026-05-34-35-pm-267x400.png"
+      }
+    }
+  }
+}
