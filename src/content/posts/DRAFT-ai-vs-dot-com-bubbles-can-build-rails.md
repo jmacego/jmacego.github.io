@@ -1,13 +1,11 @@
-# Moved Draft Notice
-
-Canonical location for further edits:
-[DRAFT-ai-vs-dot-com-bubbles-can-build-rails.md](/home/jmac/git/personal/jmaclabs/src/content/posts/DRAFT-ai-vs-dot-com-bubbles-can-build-rails.md)
-
-The content below is an older working copy preserved only for history.
-
-# AI vs. Dot-Com: Bubbles Can Build Rails
-
-_Working draft. Not yet ready for publication._
+---
+title: "AI vs. Dot-Com: Bubbles Can Build Rails"
+date: 2026-04-19
+description: "The dot-com bubble destroyed capital and still financed infrastructure, interfaces, and habits that changed the world. AI may be following a similar pattern."
+categories: [Leadership, Technology]
+tags: [ai, dot-com, technology strategy, market cycles, infrastructure, internet history]
+published: false
+---
 
 I advertised JMac CGI Archive and JMaclabs.com in my high school yearbook.
 
@@ -20,6 +18,8 @@ That matters to me because I do not want to write about bubbles as if they are o
 The dot-com era was not clean or coherent. It was exhilarating, sloppy, useful, destructive, and full of people who were directionally right long before they had any idea how to turn that insight into durable economics.
 
 That also sounds familiar.
+
+<!--more-->
 
 ## Mania Arrives in Layers
 
@@ -157,9 +157,9 @@ That was true of the internet.
 
 I believe it is about to be true of AI.
 
-## Working Further Reading
+## Further Reading
 
-- J. Bradford DeLong and Konstantin Magin, “A Short Note on the Size of the Dot-Com Bubble”
-- Shane Greenstein and Ryan McDevitt, “The Broadband Bonus: Accounting for Broadband Internet’s Impact on U.S. GDP”
-- Anders Humlum and Emilie Vestergaard, “The Rapid Adoption of Generative AI”
-- Daron Acemoglu, “The Simple Macroeconomics of AI”
+- J. Bradford DeLong and Konstantin Magin, "A Short Note on the Size of the Dot-Com Bubble"
+- Shane Greenstein and Ryan McDevitt, "The Broadband Bonus: Accounting for Broadband Internet's Impact on U.S. GDP"
+- Anders Humlum and Emilie Vestergaard, "The Rapid Adoption of Generative AI"
+- Daron Acemoglu, "The Simple Macroeconomics of AI"
