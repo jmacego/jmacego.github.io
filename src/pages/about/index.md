@@ -19,7 +19,7 @@ I'm an **inventor on U.S. Patent No. 12,360,789**, applying machine learning to 
 
 I've founded and operated **5+ companies** across technology, aviation, photography, and retail:
 
-- **Sheep's Clothing** (2010–2015): Built a specialty retail business from scratch to successful exit, growing revenue 10x.
+- **Sheep's Clothing** (2010–2015): Acquired a specialty retail business and grew revenue 10x to a successful exit.
 - **Hyak Photography** (2009–2015): Built a commercial photography business serving Pacific Northwest clients.
 - **Hyakdev.com** (2005–2010): Business consulting, web design, and network/WiFi sales for condominiums and hotels across the Pacific Northwest.
 - **Avitus Aviation Corp** (2001–2010): Founded and ran an aviation leasing company, managing aircraft, pilots, and operations.

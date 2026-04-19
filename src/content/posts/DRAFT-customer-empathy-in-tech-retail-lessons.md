@@ -9,7 +9,7 @@ published: false
 
 One of the most useful things I ever did for my technology career was leave technology for a while.
 
-I built and ran a specialty retail business, Sheep's Clothing, from the ground up. We sold yarn, fiber, and knitting supplies to a customer base that knew exactly what it liked and was perfectly capable of telling us when we got something wrong.
+I acquired and ran a specialty retail business, Sheep's Clothing. We sold yarn, fiber, and knitting supplies to a customer base that knew exactly what it liked and was perfectly capable of telling us when we got something wrong.
 
 Retail teaches you something that is oddly hard to learn inside most technology organizations: what it actually feels like to be on the customer side of the counter.
 
