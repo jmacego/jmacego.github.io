@@ -1,6 +1,7 @@
 ---
 import { site } from "../siteData";
 import { buildSeo } from "../utils/seo";
+import "../assets/styles.css";
 
 const {
   title,
@@ -90,7 +91,6 @@ const isActive = (href) => {
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfd" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e0f10" />
-    <link rel="stylesheet" href="/assets/styles.css" />
     {site.cloudflareAnalyticsToken && (
       <script
         defer
