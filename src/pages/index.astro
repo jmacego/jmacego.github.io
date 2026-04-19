@@ -58,7 +58,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
         <div class:list={["home-hero-body", !heroImage && "home-hero-body--single"]}>
           <div class="home-hero-copy">
             {heroDate && <div class="mb-3 text-muted">{formatDate(heroDate)}</div>}
-            <p class="lead my-3" set:html={heroExcerpt} />
+            <div class="home-hero-excerpt lead my-3" set:html={heroExcerpt} />
             <p class="lead mb-0">
               <a
                 href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
@@ -101,7 +101,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             <div class:list={["feature-card-body", !secondaryImage && "feature-card-body--single"]}>
               <div class="feature-card-copy p-4 pt-0">
                 {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
-                <p class="mb-auto" set:html={secondaryExcerpt} />
+                <div class="mb-auto" set:html={secondaryExcerpt} />
                 <a
                   class="card-link stretched-link"
                   href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}
@@ -138,7 +138,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             <div class:list={["feature-card-body", !projectImage && "feature-card-body--single"]}>
               <div class="feature-card-copy p-4 pt-0">
                 {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
-                <p class="mb-auto" set:html={projectExcerpt} />
+                <div class="mb-auto" set:html={projectExcerpt} />
                 <a
                   class="card-link stretched-link"
                   href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}

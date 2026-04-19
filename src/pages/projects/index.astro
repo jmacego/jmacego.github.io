@@ -30,7 +30,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
                   Categories: {project.data.categories.join(", ")}
                 </p>
               ) : null}
-              <p set:html={excerpt} />
+              <div set:html={excerpt} />
               <p>
                 <a class="card-link" href={`/projects/${slug}/`}>Continue reading</a>
               </p>

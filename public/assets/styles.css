@@ -497,6 +497,10 @@ img {
   color: #c7cdd6;
 }
 
+.home-hero-excerpt :is(p, ul, ol, li) {
+  color: #c7cdd6;
+}
+
 .blog-post-title a,
 .jumbotron a {
   color: inherit;
