@@ -72,7 +72,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
 
           {heroImage && (
             <div class="home-hero-media">
-              <a class="feature-thumb d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
+              <a class="feature-thumb feature-thumb--hero d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
                 <img
                   src={heroImage}
                   alt={heroPost.data.image?.alt ?? heroPost.data.title}
@@ -99,7 +99,18 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             </div>
 
             <div class:list={["feature-card-body", !secondaryImage && "feature-card-body--single"]}>
-              <div class="feature-card-copy p-4 pt-0">
+              {secondaryImage && (
+                <div class="feature-card-media">
+                  <div class="feature-thumb feature-thumb--card feature-thumb--post">
+                    <img
+                      src={secondaryImage}
+                      alt={secondaryPost.data.image?.alt ?? secondaryPost.data.title}
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div class="feature-card-copy">
                 {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
                 <div class="mb-auto" set:html={secondaryExcerpt} />
                 <a
@@ -110,15 +121,6 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                   Continue reading
                 </a>
               </div>
-
-              {secondaryImage && (
-                <div class="feature-card-media d-none d-lg-block feature-thumb">
-                  <img
-                    src={secondaryImage}
-                    alt={secondaryPost.data.image?.alt ?? secondaryPost.data.title}
-                  />
-                </div>
-              )}
             </div>
           </>
         )}
@@ -136,7 +138,18 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             </div>
 
             <div class:list={["feature-card-body", !projectImage && "feature-card-body--single"]}>
-              <div class="feature-card-copy p-4 pt-0">
+              {projectImage && (
+                <div class="feature-card-media">
+                  <div class="feature-thumb feature-thumb--card feature-thumb--project">
+                    <img
+                      src={projectImage}
+                      alt={featuredProject.data.image?.alt ?? featuredProject.data.title}
+                    />
+                  </div>
+                </div>
+              )}
+
+              <div class="feature-card-copy">
                 {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
                 <div class="mb-auto" set:html={projectExcerpt} />
                 <a
@@ -147,15 +160,6 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                   Continue reading
                 </a>
               </div>
-
-              {projectImage && (
-                <div class="feature-card-media d-none d-lg-block feature-thumb">
-                  <img
-                    src={projectImage}
-                    alt={featuredProject.data.image?.alt ?? featuredProject.data.title}
-                  />
-                </div>
-              )}
             </div>
           </>
         )}

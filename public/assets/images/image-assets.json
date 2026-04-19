@@ -58,6 +58,26 @@
         "thumb": "apple-touch-icon-180x180.png"
       }
     },
+    "bubble-builds-infrastructure-1536x1024.png": {
+      "assetId": "img_6e04bcd996d09e57",
+      "filename": "bubble-builds-infrastructure-1536x1024.png",
+      "originalFilename": "bubble-builds-infrastructure.png",
+      "alt": "Fiber lines, servers, and power infrastructure framed inside a glowing money bubble around communications towers and datacenter capacity.",
+      "caption": "Even badly allocated capital can leave behind durable rails if it funds capacity, access, and operational infrastructure the next wave inherits.",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "6e04bcd996d09e5738847926631abf98a65b96ffbdc0ebe93b9755d419d8993a",
+      "width": 1536,
+      "height": 1024,
+      "createdAt": "2026-04-19T13:06:22.362Z",
+      "updatedAt": "2026-04-19T13:06:22.362Z",
+      "renditions": {
+        "original": "originals/bubble-builds-infrastructure.png",
+        "web": "bubble-builds-infrastructure-1536x1024.png",
+        "thumb": "bubble-builds-infrastructure-400x267.png"
+      }
+    },
     "favicon-16x16.png": {
       "assetId": "img_bfcf0d65c91d5962",
       "filename": "favicon-16x16.png",
@@ -248,6 +268,26 @@
         "thumb": "jmac-profile-200x200.jpg"
       }
     },
+    "jmac-yearbook-window-ai-1536x1024.png": {
+      "assetId": "img_3c879db689b32a11",
+      "filename": "jmac-yearbook-window-ai-1536x1024.png",
+      "originalFilename": "jmac-yearbook-window-ai.png",
+      "alt": "A teenage builder at a desk with JMac's CGI Archive and JMacLabs.com on an old monitor, looking out at a city skyline overlaid with an AI symbol.",
+      "caption": "",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "3c879db689b32a11733ad834baea363bb84135d09444af59a6085275a4200525",
+      "width": 1536,
+      "height": 1024,
+      "createdAt": "2026-04-19T13:06:20.650Z",
+      "updatedAt": "2026-04-19T13:06:20.650Z",
+      "renditions": {
+        "original": "originals/jmac-yearbook-window-ai.png",
+        "web": "jmac-yearbook-window-ai-1536x1024.png",
+        "thumb": "jmac-yearbook-window-ai-400x267.png"
+      }
+    },
     "mac-osx-create-exfat-image.png": {
       "assetId": "img_52883f734bc7cf12",
       "filename": "mac-osx-create-exfat-image.png",
@@ -267,12 +307,52 @@
         "thumb": "mac-osx-create-exfat-image-400x257.png"
       }
     },
-    "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png": {
+    "netscape-linkexchange-desk-1536x1024.png": {
+      "assetId": "img_238e365d1d64b075",
+      "filename": "netscape-linkexchange-desk-1536x1024.png",
+      "originalFilename": "netscape-linkexchange-desk.png",
+      "alt": "A late-1990s desk with Netscape, LinkExchange material, domain registration papers, and early web-building notes.",
+      "caption": "Before the market narrative hardened, a lot of us were just trying to make the web more usable, discoverable, and legible.",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "238e365d1d64b075b939e82491af59cf98bc57d2ef131bedc0a5501c42d36c42",
+      "width": 1536,
+      "height": 1024,
+      "createdAt": "2026-04-19T13:06:21.374Z",
+      "updatedAt": "2026-04-19T13:06:21.374Z",
+      "renditions": {
+        "original": "originals/netscape-linkexchange-desk.png",
+        "web": "netscape-linkexchange-desk-1536x1024.png",
+        "thumb": "netscape-linkexchange-desk-400x267.png"
+      }
+    },
+    "operators-vs-hype-machines-1536x1024.png": {
+      "assetId": "img_8d58e7a77a88a427",
+      "filename": "operators-vs-hype-machines-1536x1024.png",
+      "originalFilename": "operators-vs-hype-machines.png",
+      "alt": "A split illustration contrasting server-room operators doing technical work with a party scene of hype-driven financiers celebrating market gains.",
+      "caption": "The period rewarded both real operators and people who were much better at selling the story than running the business.",
+      "credit": "",
+      "creditUrl": "",
+      "mimeType": "image/png",
+      "checksum": "8d58e7a77a88a4274460fbaf17b008c612e44b3b88c358788d4988fe71d8fbd6",
+      "width": 1536,
+      "height": 1024,
+      "createdAt": "2026-04-19T13:06:21.882Z",
+      "updatedAt": "2026-04-19T13:06:21.882Z",
+      "renditions": {
+        "original": "originals/operators-vs-hype-machines.png",
+        "web": "operators-vs-hype-machines-1536x1024.png",
+        "thumb": "operators-vs-hype-machines-400x267.png"
+      }
+    },
+    "singapore-ai-reflection-1024x1536.png": {
       "assetId": "img_8ac09919cdb11f8d",
-      "filename": "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png",
-      "originalFilename": "chatgpt-image-apr-19-2026-05-34-35-pm.png",
-      "alt": "",
-      "caption": "",
+      "filename": "singapore-ai-reflection-1024x1536.png",
+      "originalFilename": "singapore-ai-reflection.png",
+      "alt": "A man looking out over Singapore at dusk, with a large AI face reflected in the glass beside the skyline.",
+      "caption": "The AI wave is arriving through existing cities, companies, and workflows, not on a blank slate.",
       "credit": "",
       "creditUrl": "",
       "mimeType": "image/png",
@@ -280,11 +360,11 @@
       "width": 1024,
       "height": 1536,
       "createdAt": "2026-04-19T09:35:34.639Z",
-      "updatedAt": "2026-04-19T09:35:34.639Z",
+      "updatedAt": "2026-04-19T13:38:37.527Z",
       "renditions": {
-        "original": "originals/chatgpt-image-apr-19-2026-05-34-35-pm.png",
-        "web": "chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png",
-        "thumb": "chatgpt-image-apr-19-2026-05-34-35-pm-267x400.png"
+        "original": "originals/singapore-ai-reflection.png",
+        "web": "singapore-ai-reflection-1024x1536.png",
+        "thumb": "singapore-ai-reflection-267x400.png"
       }
     }
   }

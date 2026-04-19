@@ -33,7 +33,7 @@ Every revolution will have huge winners and huge losers. The path is finding how
 
 ## Working 5-Post Shape
 
-1. AI vs. Dot-Com: Bubbles Can Build Rails
+1. AI vs. Dot-Com: Bubbles Can Build Foundations
 2. Amazon, E-Commerce, and the Rewiring of Retail
 3. From DVD Mail to Streaming
 4. Smartphones Made the Internet Ambient

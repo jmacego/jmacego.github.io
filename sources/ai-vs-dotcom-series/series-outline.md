@@ -20,7 +20,7 @@ This series is not pro-hype and not anti-technology. It is pro-judgment.
 
 ### Working Title
 
-AI vs. Dot-Com: Bubbles Can Build Rails
+AI vs. Dot-Com: Bubbles Can Build Foundations
 
 ### Purpose
 

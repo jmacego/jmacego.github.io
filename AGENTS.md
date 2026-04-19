@@ -37,7 +37,9 @@ Single source of truth for agent and Copilot instructions in this repo.
   - `published: false` (optional to hide drafts)
 - Excerpts are generated from the content before `<!--more-->`. Add it to control homepage/listing teasers.
 - Images for posts/projects live under `public/assets/images/posts/` and `public/assets/images/projects/`.
-- Use optimized images (run `public/assets/images/resizer.sh` when needed) and reference them via `/assets/images/...` in `image.src`.
+- All new image assets should follow the **CMS-managed asset workflow**. Do not manually run local image tooling unless the user explicitly asks for a one-off repair task.
+- Before CMS upload, the only manual file operation allowed is renaming the source file to the intended canonical stem.
+- After CMS upload, reference the CMS-generated asset path via `/assets/images/...` in `image.src`.
 
 ## Local Build & Validation (Astro)
 Run these from the repo root:
@@ -54,12 +56,16 @@ Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
 
 ## Images (Required)
 - Store images under `public/assets/images/` and organize by topic (e.g., `posts/`, `projects/`).
-- Optimize images before commit using `public/assets/images/resizer.sh`.
-  - Run it from the target subdirectory, not the repo root: `cd public/assets/images/posts && ../resizer.sh`
-  - Requires ImageMagick (`identify`/`convert`) or macOS `sips`.
-  - The script moves the original file into an `originals/` subfolder using its original filename (e.g., `photo.png` → `originals/photo.png`), then creates a resized web copy in the working folder as WebP with dimensions in the filename (e.g., `photo-1536x1024.webp`).
-  - Files in `originals/` are preserved source assets and should not be referenced directly in posts.
-- Always reference the **dimensioned web copy** in content (e.g., `photo-1536x1024.webp`), not the original.
+- This repo’s standard is the **CMS asset workflow**, not ad hoc local processing.
+- For CMS-managed images:
+  - The CMS owns renditions and metadata under `public/assets/images/`, `public/assets/images/originals/`, `public/assets/images/thumbnails/`, and `public/assets/images/image-assets.json`.
+  - Do not manually move uploaded assets between those locations.
+  - Do not manually edit `image-assets.json`.
+  - Do not manually run `public/assets/images/resizer.sh`.
+  - Do not convert, resize, deduplicate, or otherwise alter source files before upload.
+  - The only manual preprocessing step allowed by default is renaming the original file before upload.
+- Always reference the CMS-generated web asset in content, never the file under `originals/`.
+- If an image task does not clearly fit the CMS flow, stop and verify before touching files.
 - Provide descriptive alt text for every image and aria labels for controls; avoid generic placeholders.
 
 ### Hero Images (Front Matter)

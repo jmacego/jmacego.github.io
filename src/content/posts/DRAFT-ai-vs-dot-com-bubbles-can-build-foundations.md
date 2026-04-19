@@ -1,7 +1,7 @@
 ---
-title: 'AI vs. Dot-Com: Bubbles Can Build Rails'
+title: 'AI vs. Dot-Com: Bubbles Can Build Foundations'
 date: '2026-04-19T00:00:00.000Z'
-published: false
+published: true
 description: >-
   The dot-com bubble destroyed capital and still financed infrastructure,
   interfaces, and habits that changed the world. AI may be following a similar
@@ -16,22 +16,22 @@ tags:
 categories:
   - Leadership
   - Technology
+image:
+  src: /assets/images/jmac-yearbook-window-ai-1536x1024.png
+  alt: >-
+    A teenage builder at a desk with JMac's CGI Archive and JMacLabs.com on an
+    old monitor, looking out at a city skyline overlaid with an AI symbol.
 ---
-I advertised JMac's CGI Archive and JMacLabs.com in my high school yearbook. I left high school and got my GED the following year.
-
-I was already working for PowerSurge Technologies, inc.
+I started working for PowerSurge Technologies, inc. in the 1995-1996 school year. I was in high school. The next year I left and got my GED, and was invited to become the CEO. I advertised JMac's CGI Archive and JMacLabs.com in my high school yearbook. It was a different time.
+<!--more-->
 
 That sounds ridiculous now, and it was a little ridiculous then. The internet was still niche enough that this did not read as a normal teenage activity. It read as a very particular kind of obsession. But that is part of why I keep coming back to the dot-com era when I think about AI. Before the market got truly insane, before analysts learned the vocabulary of internet inevitability, before the average person had decided this was going to matter, there was already a class of people building as if the future had plainly arrived and everyone else was just late.
 
 I was one of them.
 
-That matters to me because I do not want to write about bubbles as if they are only market events. They are also cultural events. They create believers early, opportunists soon after, and eventually enough public money and social pressure that the whole thing starts to look bigger, cleaner, and more coherent than it really is.
-
 The dot-com era was not clean or coherent. It was exhilarating, sloppy, useful, destructive, and full of people who were directionally right long before they had any idea how to turn that insight into durable economics.
 
 That also sounds familiar.
-
-&lt;!--more--&gt;
 
 ## Mania Arrives in Layers
 
@@ -53,6 +53,11 @@ That emotional structure is one of the clearest parallels to AI now. Long before
 
 ## I Built Real Things
 
+<figure class="inline-photo inline-photo-right">
+  <img src="/assets/images/netscape-linkexchange-desk-1536x1024.png" alt="A late-1990s desk with Netscape, LinkExchange material, domain registration papers, and early web-building notes." />
+  <figcaption>Before the market narrative hardened, a lot of us were just trying to make the web more usable, discoverable, and legible.</figcaption>
+</figure>
+
 My vantage on the dot-com run-up was not as a venture capitalist or an analyst. From 1995 to 2001, I was first the CEO of a moderately successful web hosting and dedicated server provider, then part of a self-funded and unsuccessful hardware-less competitor focused on services and internet adoption for businesses. By the end of 2001 I was exhausted enough by the whole thing that I was helping start a media company and an aviation business just to get away from technology for a while.
 
 That progression is important to my future career because it gave me a close look at both the real utility and the real delusion.
@@ -66,6 +71,11 @@ I built a frontend to BIND because normal people were never going to love raw DN
 That is one reason I keep thinking about current AI interfaces. ChatGPT did not invent machine learning, and it certainly did not invent intelligence. Listen to one of my in person rants on Big Data -&gt; Machine Learning -&gt; AI. What it did, very effectively, was remove a large amount of friction between ordinary people and a capability they were not going to access through research papers, APIs, or a command line. That is structurally similar to what many of us were doing in the early internet era. The first durable value often does not come from the deepest underlying system. It comes from the layer that lets ordinary people finally touch it.
 
 ## The Split Between Operators and Hype Machines
+
+<figure class="inline-photo inline-photo-left">
+  <img src="/assets/images/operators-vs-hype-machines-1536x1024.png" alt="A split illustration contrasting server-room operators doing technical work with a party scene of hype-driven financiers celebrating market gains." />
+  <figcaption>The period rewarded both real operators and people who were much better at selling the story than running the business.</figcaption>
+</figure>
 
 The dot-com years are often remembered as if everyone inside them were either a visionary or a fraud. Reality was more crowded than that.
 
@@ -97,7 +107,12 @@ This is one reason I am skeptical of simple triumphalist retrospectives. When pe
 
 Directionally right is not the same thing as economically right.
 
-## What the Bubble Bought Anyway
+## What the Bubble Built Anyway
+
+<figure class="inline-photo inline-photo-right">
+  <img src="/assets/images/bubble-builds-infrastructure-1536x1024.png" alt="Fiber lines, servers, and power infrastructure framed inside a glowing money bubble around communications towers and datacenter capacity." />
+  <figcaption>Even badly allocated capital can leave behind durable foundations if it funds capacity, access, and operational infrastructure the next wave inherits.</figcaption>
+</figure>
 
 That said, I do not think the right lesson from the dot-com bust is that the whole thing was fake. And I believe the same is, ultimately, true of AI.
 
@@ -150,6 +165,11 @@ AI is often better than an average person at bounded knowledge work. It is rarel
 In some ways, I think the near-term effect is less "AI replaces the expert" and more "AI gives more people partial access to expert-shaped assistance." That is a major change. It may also be one of the reasons creative fields are being hit emotionally and commercially faster than some of the technical ones. Creative work feels personal. Once people see synthetic systems competing in that territory, the shock lands differently.
 
 ## The Question Leaders Actually Have to Answer
+
+<figure class="inline-photo inline-photo-left">
+  <img src="/assets/images/singapore-ai-reflection-1024x1536.png" alt="A man looking out over Singapore at dusk, with a large AI face reflected in the glass beside the skyline." />
+  <figcaption>The leadership question is not whether AI exists. It is whether you can use it in ways customers value and organizations can actually sustain.</figcaption>
+</figure>
 
 The most expensive delusion I see right now is not believing that AI matters. It is forcing expensive AI solutions on customers who do not like them and employees who are not using them, even though they cost more, produce lower-quality results, and take more time.
 

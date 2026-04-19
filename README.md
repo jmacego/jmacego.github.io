@@ -28,6 +28,7 @@ Set up local git hooks (once per clone): `./scripts/setup-githooks.sh`
 ## Assets
 - Static files live in `public/`
 - Images live under `public/assets/images/` and must be optimized before commit.
+- Image handling follows the CMS asset workflow. Rename originals if needed, then use the CMS path; do not manually run local image tooling or reshuffle asset files.
 
 ## Agent Instructions
 - See `AGENTS.md` for repo-specific rules.
