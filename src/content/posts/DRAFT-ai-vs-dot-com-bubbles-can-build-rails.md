@@ -19,11 +19,6 @@ categories:
 ---
 I advertised JMac's CGI Archive and JMacLabs.com in my high school yearbook. I left high school and got my GED the following year.
 
-&lt;figure class="post-image"&gt;
-&lt;img src="/assets/images/chatgpt-image-apr-19-2026-05-34-35-pm-1024x1536.png" alt="TBD" loading="lazy" /&gt;
-&lt;figcaption&gt;TBD&lt;/figcaption&gt;
-&lt;/figure&gt; 
-
 I was already working for PowerSurge Technologies, inc.
 
 That sounds ridiculous now, and it was a little ridiculous then. The internet was still niche enough that this did not read as a normal teenage activity. It read as a very particular kind of obsession. But that is part of why I keep coming back to the dot-com era when I think about AI. Before the market got truly insane, before analysts learned the vocabulary of internet inevitability, before the average person had decided this was going to matter, there was already a class of people building as if the future had plainly arrived and everyone else was just late.
