@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../layouts/PageLayout.astro
 title: Resume
 description: Career summary and resume for John MacDonald.
 ---
@@ -71,8 +71,7 @@ Recipient, **Disney Inventor Award (2021)** for developing algorithms and code t
 **Owner**  
 *2010 – 2015*
 
-- Built specialty retail business from startup to successful exit.
-- Grew revenue **10x** through product curation, customer experience, and local marketing.
+- Acquired specialty retail business and grew revenue **10x** through product curation, customer experience, and local marketing.
 - Managed all aspects: inventory, staffing, finance, vendor relationships, and marketing.
 - Successfully sold business to new ownership.
 

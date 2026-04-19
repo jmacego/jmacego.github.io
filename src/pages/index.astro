@@ -43,114 +43,122 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
   socialImage={heroImage}
   socialImageAlt={heroPost?.data.image?.alt ?? heroPost?.data.title}
 >
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="row">
-      {heroPost && (
-        <div class:list={["px-0", heroImage ? "col-md-6" : "col"]}>
-          <h1 class="display-4 font-italic">
+  <div class="jumbotron p-4 p-md-5 text-white home-hero">
+    {heroPost && (
+      <>
+        <div class="home-hero-header">
+          <p class="section-kicker section-kicker--signal">Latest post</p>
+          <h1 class="display-4 home-hero-title">
             <a class="text-white" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
               {heroPost.data.title}
             </a>
           </h1>
-          {heroDate && <div class="mb-1 text-muted">{formatDate(heroDate)}</div>}
-          <p class="lead my-3" set:html={heroExcerpt} />
-          <p class="lead mb-0">
-            <a
-              href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
-              title={heroPost.data.title}
-              class="text-white font-weight-bold"
-            >
-              Continue reading...
-            </a>
-          </p>
         </div>
-      )}
-      {heroPost && heroImage && (
-        <div class="col-md-6 px-0" style="height: 100%; width: 100%">
-          <a href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
-            <img
-              style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%"
-              src={heroImage}
-              alt={heroPost.data.image?.alt ?? heroPost.data.title}
-            />
-          </a>
+
+        <div class:list={["home-hero-body", !heroImage && "home-hero-body--single"]}>
+          <div class="home-hero-copy">
+            {heroDate && <div class="mb-3 text-muted">{formatDate(heroDate)}</div>}
+            <div class="home-hero-excerpt lead my-3" set:html={heroExcerpt} />
+            <p class="lead mb-0">
+              <a
+                href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
+                title={heroPost.data.title}
+                class="hero-link"
+              >
+                Continue reading
+              </a>
+            </p>
+          </div>
+
+          {heroImage && (
+            <div class="home-hero-media">
+              <a class="feature-thumb d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
+                <img
+                  src={heroImage}
+                  alt={heroPost.data.image?.alt ?? heroPost.data.title}
+                />
+              </a>
+            </div>
+          )}
         </div>
-      )}
-    </div>
+      </>
+    )}
   </div>
 
-  <div class="row mb-2">
-    <div class="col-md-6 px-0">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong>
-            <a class="d-inline-block mb-2 text-primary" href="/blog/">Posts</a>
-          </strong>
-          {secondaryPost && (
-            <>
-              <h3 style="font-size:1.5rem" class="mb-0">
+  <div class="home-feature-grid">
+      <div class="feature-card border rounded overflow-hidden shadow-sm position-relative">
+        {secondaryPost && (
+          <>
+            <div class="feature-card-header p-4">
+              <p class="section-kicker">Posts</p>
+              <h2 class="feature-card-title mb-0">
                 <a href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}>
                   {secondaryPost.data.title}
                 </a>
-              </h3>
-              {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
-              <p class="mb-auto" set:html={secondaryExcerpt} />
-              <a
-                class="stretched-link"
-                href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}
-                title={secondaryPost.data.title}
-              >
-                Continue reading {secondaryPost.data.title}
-              </a>
-            </>
-          )}
-        </div>
-        {secondaryPost && secondaryImage && (
-          <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
-            <img
-              style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%"
-              src={secondaryImage}
-              alt={secondaryPost.data.image?.alt ?? secondaryPost.data.title}
-            />
-          </div>
+              </h2>
+            </div>
+
+            <div class:list={["feature-card-body", !secondaryImage && "feature-card-body--single"]}>
+              <div class="feature-card-copy p-4 pt-0">
+                {secondaryDate && <div class="mb-1 text-muted">{formatDate(secondaryDate)}</div>}
+                <div class="mb-auto" set:html={secondaryExcerpt} />
+                <a
+                  class="card-link stretched-link"
+                  href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}
+                  title={secondaryPost.data.title}
+                >
+                  Continue reading
+                </a>
+              </div>
+
+              {secondaryImage && (
+                <div class="feature-card-media d-none d-lg-block feature-thumb">
+                  <img
+                    src={secondaryImage}
+                    alt={secondaryPost.data.image?.alt ?? secondaryPost.data.title}
+                  />
+                </div>
+              )}
+            </div>
+          </>
         )}
       </div>
-    </div>
-    <div class="col-md-6 px-0">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong>
-            <a class="d-inline-block mb-2 text-success" href="/projects/">Projects</a>
-          </strong>
-          {featuredProject && (
-            <>
-              <h3 style="font-size:1.5rem" class="mb-0">
+      <div class="feature-card border rounded overflow-hidden shadow-sm position-relative">
+        {featuredProject && (
+          <>
+            <div class="feature-card-header p-4">
+              <p class="section-kicker">Projects</p>
+              <h2 class="feature-card-title mb-0">
                 <a href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}>
                   {featuredProject.data.title}
                 </a>
-              </h3>
-              {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
-              <p class="mb-auto" set:html={projectExcerpt} />
-              <a
-                class="stretched-link"
-                href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}
-                title={featuredProject.data.title}
-              >
-                Continue reading {featuredProject.data.title}
-              </a>
-            </>
-          )}
-        </div>
-        {featuredProject && projectImage && (
-          <div class="col d-none d-lg-block" style="height: 100%; width: 100%">
-            <img
-              style="object-fit: cover; width: inherit; height: inherit; max-width: 100%; max-height: 100%"
-              src={projectImage}
-              alt={featuredProject.data.image?.alt ?? featuredProject.data.title}
-            />
-          </div>
+              </h2>
+            </div>
+
+            <div class:list={["feature-card-body", !projectImage && "feature-card-body--single"]}>
+              <div class="feature-card-copy p-4 pt-0">
+                {projectDate && <div class="mb-1 text-muted">{formatDate(projectDate)}</div>}
+                <div class="mb-auto" set:html={projectExcerpt} />
+                <a
+                  class="card-link stretched-link"
+                  href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}
+                  title={featuredProject.data.title}
+                >
+                  Continue reading
+                </a>
+              </div>
+
+              {projectImage && (
+                <div class="feature-card-media d-none d-lg-block feature-thumb">
+                  <img
+                    src={projectImage}
+                    alt={featuredProject.data.image?.alt ?? featuredProject.data.title}
+                  />
+                </div>
+              )}
+            </div>
+          </>
         )}
       </div>
-    </div>
   </div>
 </BaseLayout>

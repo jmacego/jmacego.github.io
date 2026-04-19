@@ -13,7 +13,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
 ---
 
 <BaseLayout title="John MacDonald's Projects" description="John MacDonald's Projects">
-  <div class="row">
+  <div class="listing-stack">
     {projects.map((project) => {
       const slug = stripDatePrefix(project.slug);
       const excerpt = getExcerpt(project.body);
@@ -30,9 +30,9 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
                   Categories: {project.data.categories.join(", ")}
                 </p>
               ) : null}
-              <p set:html={excerpt} />
-              <p class="lead">
-                Continue reading about <a href={`/projects/${slug}/`}>{project.data.title}</a>
+              <div set:html={excerpt} />
+              <p>
+                <a class="card-link" href={`/projects/${slug}/`}>Continue reading</a>
               </p>
             </div>
             {imagePath && (

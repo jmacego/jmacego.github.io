@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../layouts/PageLayout.astro
 title: About Me
 description: Background, focus, and leadership experience for John MacDonald.
 ---

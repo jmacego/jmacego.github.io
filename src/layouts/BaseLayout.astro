@@ -73,7 +73,7 @@ const isActive = (href) => {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -88,7 +88,8 @@ const isActive = (href) => {
     <link rel="manifest" href="/assets/images/site.webmanifest" />
     <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfd" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e0f10" />
     <link rel="stylesheet" href="/assets/styles.css" />
     {site.cloudflareAnalyticsToken && (
       <script
@@ -97,126 +98,28 @@ const isActive = (href) => {
         data-cf-beacon={JSON.stringify({ token: site.cloudflareAnalyticsToken })}
       ></script>
     )}
-
-    <style>
-      .blog-header {
-        line-height: 1;
-        border-bottom: 1px solid #e5e5e5;
-      }
-
-      .blog-header-logo {
-        font-size: 2.25rem;
-      }
-
-      .blog-header-logo:hover {
-        text-decoration: none;
-      }
-
-      h1, h2, h3, h4, h5, h6 {
-        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-      }
-
-      .display-4 {
-        font-size: 2.5rem;
-      }
-      @media (min-width: 768px) {
-        .display-4 {
-          font-size: 3rem;
-        }
-      }
-
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: auto;
-        overflow: visible;
-      }
-
-      .site-nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.35rem;
-        overflow: visible;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .nav-scroller .nav-link {
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-        font-size: 0.875rem;
-      }
-
-      .h-250 { height: 250px; }
-      @media (min-width: 768px) {
-        .h-md-250 { height: 250px; }
-      }
-
-      .blog-title {
-        margin-bottom: 0;
-        font-size: 2rem;
-        font-weight: 400;
-      }
-      .blog-description {
-        font-size: 1.1rem;
-        color: #999;
-      }
-
-      @media (min-width: 40em) {
-        .blog-title {
-          font-size: 3.5rem;
-        }
-      }
-
-      .blog-pagination {
-        margin-bottom: 4rem;
-      }
-      .blog-pagination > .btn {
-        border-radius: 2rem;
-      }
-
-      .blog-post {
-        margin-bottom: 4rem;
-      }
-      .blog-post-title {
-        margin-bottom: 0.25rem;
-        font-size: 2.5rem;
-      }
-      .blog-post-meta {
-        margin-bottom: 1.25rem;
-        color: #999;
-      }
-
-      .blog-footer {
-        padding: 0;
-        color: #999;
-        text-align: center;
-        background-color: transparent;
-        border-top: 0;
-      }
-      .blog-footer p:last-child {
-        margin-bottom: 0;
-      }
-    </style>
   </head>
   <body>
     <span id="top-of-page"></span>
     <div class="container">
       <header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1"></div>
-          <div class="col-4 text-center">
-            <a
-              class:list={["blog-header-logo", "text-dark", (pathname === "/" || pathname === "/index.html") && "active"]}
-              href="/"
-            >
-              {site.title}
-            </a>
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center"></div>
+        <div class="blog-header-inner">
+          <a
+            class="blog-header-logo"
+            href="/"
+            aria-label={`${site.title} home`}
+          >
+            <picture>
+              <source
+                srcset="/assets/images/branding/logo-white-text.png"
+                media="(prefers-color-scheme: dark)"
+              />
+              <img
+                src="/assets/images/branding/logo-black-text.png"
+                alt={site.title}
+              />
+            </picture>
+          </a>
         </div>
       </header>
 
@@ -230,38 +133,40 @@ const isActive = (href) => {
         </nav>
       </div>
 
-      <main>
-        <slot />
+      <main class="site-main">
+        <div class="content-rail">
+          <slot />
+        </div>
       </main>
 
       <footer class="blog-footer">
-        <div class="about-author row justify-content-md-center text-white rounded bg-dark d-flex flex-wrap align-items-center">
-          <div class="col-md-auto">
+        <div class="content-rail">
+          <div class="about-author">
             <img
               src="/assets/images/jmac-profile.jpg"
               alt="John MacDonald"
-              style="border-radius:50%; border: 4px solid #ddd; box-shadow:0 0 2px 1px #ddd; width:100px; height:100px; object-fit:cover; object-position:center"
+              class="about-author-image"
             />
-          </div>
-          <div class="col">
-            <p class="lead">About John</p>
-            <p>
-              John MacDonald is a Fractional CTO and advisor focused on AI strategy, architecture,
-              and technical leadership. He's also a licensed pilot, recovering entrepreneur, and
-              occasional tinkerer. For the full story, visit the <a href="/about">About Me</a> page.
-            </p>
+            <div class="about-author-copy">
+              <p class="lead">About John</p>
+              <p>
+                John MacDonald is a Fractional CTO and advisor focused on AI strategy, architecture,
+                and technical leadership. He's also a licensed pilot, recovering entrepreneur, and
+                occasional tinkerer. For the full story, visit the <a href="/about/">About Me</a> page.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
     </div>
 
     {site.gaId && (
-      <div id="cookie-notice">
-        <span>We would like to use Google Analytics to monitor website utilization.</span>
-        <a href="#" id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
-        <a href="#" id="cookie-notice-deny" class="btn btn-primary btn-sm">Deny</a>
-      </div>
-    )}
+        <div id="cookie-notice">
+          <span>We would like to use Google Analytics to monitor website utilization.</span>
+          <a href="#" id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+          <a href="#" id="cookie-notice-deny" class="btn btn-outline-primary btn-sm">Deny</a>
+        </div>
+      )}
 
     {site.gaId && (
       <script is:inline define:vars={{ gaId: site.gaId }}>

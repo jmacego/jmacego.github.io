@@ -13,7 +13,7 @@ How do you know that that person you need to message on Slack, Facebook, LinkedI
 
 By meeting in a dark alley, exchanging information that only you and the other person know, then tatooing their public key on your arm and manually typing it in to a computer that has never touched the internet, and then passing the messages onto this computer, signing (and potentially encrypting) them, and then passing them back to the internet using the IPoAC protocol.
 
-Er, yeah, no. Well, if you have something that is that important, you know you do, and are already doing some variation of the above. If you need to get such messages to or from me, I guess you can check out my [Public Key Page](/pubkey) and we can arrange something.
+Er, yeah, no. Well, if you have something that is that important, you know you do, and are already doing some variation of the above. If you need to get such messages to or from me, I guess you can check out my [Public Key Page](/pubkey/) and we can arrange something.
 
 For everyone else, there's [Keybase.io - Crypto for everyone!](https://keybase.io).
 
