@@ -1,5 +1,6 @@
 ---
 title: Issues Presented by Geographical DNS
+date: 2019-07-06
 image:
   src: /assets/images/posts/learning_series/map-standing-on-map-2048x1367.jpg
   alt: CDN Graphic

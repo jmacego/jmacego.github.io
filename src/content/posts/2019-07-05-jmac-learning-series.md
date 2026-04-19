@@ -1,5 +1,6 @@
 ---
 title: JMac's Learning Series
+date: 2019-07-05
 image:
   src: /assets/images/posts/learning_series/learn-scrabble.jpg
   alt: LEARN in Scrabble Letters
