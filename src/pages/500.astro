@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Something went wrong"
+  description="An unexpected error occurred. Please try again."
+  robots="noindex, nofollow"
+>
+  <section class="error-shell">
+    <p class="section-kicker">500</p>
+
+    <picture class="error-logo">
+      <source
+        srcset="/assets/images/branding/logo-white-text.png"
+        media="(prefers-color-scheme: dark)"
+      />
+      <img src="/assets/images/branding/logo-black-text.png" alt="John MacDonald" />
+    </picture>
+
+    <h1 class="error-title">Something went wrong.</h1>
+    <p class="error-lede">
+      This is on us, not you. The issue has been noted — try again in a moment.
+    </p>
+
+    <div class="error-actions">
+      <a class="btn btn-primary" href="/">Go home</a>
+      <a class="btn btn-outline-primary" href="/blog/">Read posts</a>
+    </div>
+
+    <div class="error-help">
+      <p>A few things worth trying:</p>
+      <ul>
+        <li>Refresh the page.</li>
+        <li>Clear your browser cache and try again.</li>
+        <li>Come back in a few minutes.</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
