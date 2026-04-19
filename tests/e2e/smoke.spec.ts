@@ -82,30 +82,42 @@ test("home hero title spans the full hero shell above the split content row", as
     const title = hero.querySelector(".home-hero-title");
     const copy = hero.querySelector(".home-hero-copy");
     const media = hero.querySelector(".home-hero-media");
+    const heroBody = hero.querySelector(".home-hero-body");
 
-    if (!(title instanceof HTMLElement) || !(copy instanceof HTMLElement) || !(media instanceof HTMLElement)) {
-      throw new Error("Expected hero title, copy, and media elements.");
+    if (!(title instanceof HTMLElement) || !(copy instanceof HTMLElement)) {
+      throw new Error("Expected hero title and copy elements.");
     }
 
     const heroStyles = window.getComputedStyle(hero);
     const heroRect = hero.getBoundingClientRect();
     const titleRect = title.getBoundingClientRect();
     const copyRect = copy.getBoundingClientRect();
-    const mediaRect = media.getBoundingClientRect();
+    const mediaRect = media instanceof HTMLElement ? media.getBoundingClientRect() : null;
     const horizontalPadding =
       Number.parseFloat(heroStyles.paddingLeft) + Number.parseFloat(heroStyles.paddingRight);
     const innerWidth = heroRect.width - horizontalPadding;
+    const heroUsesSingleColumn =
+      mediaRect === null &&
+      heroBody instanceof HTMLElement &&
+      heroBody.classList.contains("home-hero-body--single");
 
     return {
       titleToInnerWidthDelta: Math.abs(titleRect.width - innerWidth),
       titleToCopyRatio: titleRect.width / copyRect.width,
-      titleAboveBody: titleRect.bottom <= Math.min(copyRect.top, mediaRect.top),
+      titleAboveBody:
+        titleRect.bottom <= (mediaRect ? Math.min(copyRect.top, mediaRect.top) : copyRect.top),
+      hasMedia: mediaRect !== null,
+      heroUsesSingleColumn,
     };
   });
 
   expect(metrics.titleToInnerWidthDelta).toBeLessThanOrEqual(2);
   expect(metrics.titleToCopyRatio).toBeGreaterThanOrEqual(1.6);
   expect(metrics.titleAboveBody).toBe(true);
+
+  if (!metrics.hasMedia) {
+    expect(metrics.heroUsesSingleColumn).toBe(true);
+  }
 });
 
 test("home feature card titles span the full card above the split content row", async ({ page }) => {
@@ -116,30 +128,35 @@ test("home feature card titles span the full card above the split content row", 
     cards.map((card) => {
       const header = card.querySelector(".feature-card-header");
       const title = card.querySelector(".feature-card-title");
+      const body = card.querySelector(".feature-card-body");
       const copy = card.querySelector(".feature-card-copy");
       const media = card.querySelector(".feature-card-media");
 
       if (
         !(header instanceof HTMLElement) ||
         !(title instanceof HTMLElement) ||
-        !(copy instanceof HTMLElement) ||
-        !(media instanceof HTMLElement)
+        !(copy instanceof HTMLElement)
       ) {
-        throw new Error("Expected card header, title, copy, and media elements.");
+        throw new Error("Expected card header, title, and copy elements.");
+      }
+
+      const hasMedia = media instanceof HTMLElement;
+      if (!hasMedia && !(body instanceof HTMLElement && body.classList.contains("feature-card-body--single"))) {
+        throw new Error("Expected feature cards without media to use the single-column body layout.");
       }
 
       const styles = window.getComputedStyle(header);
       const rect = header.getBoundingClientRect();
       const titleRect = title.getBoundingClientRect();
       const copyRect = copy.getBoundingClientRect();
-      const mediaRect = media.getBoundingClientRect();
+      const mediaTop = hasMedia ? media.getBoundingClientRect().top : copyRect.top;
       const horizontalPadding = Number.parseFloat(styles.paddingLeft) + Number.parseFloat(styles.paddingRight);
       const innerWidth = rect.width - horizontalPadding;
 
       return {
         titleToInnerWidthDelta: Math.abs(titleRect.width - innerWidth),
         titleToCopyRatio: titleRect.width / copyRect.width,
-        titleAboveBody: titleRect.bottom <= Math.min(copyRect.top, mediaRect.top),
+        titleAboveBody: titleRect.bottom <= Math.min(copyRect.top, mediaTop),
       };
     }),
   );
