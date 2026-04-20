@@ -17,7 +17,7 @@ categories:
   - Leadership
   - Technology
 image:
-  src: /assets/images/amazon-retail-transformation-1536x1024-1536x864.png
+  src: /assets/images/amazon-retail-transformation-1536x864.png
   alt: >-
     A split scene contrasting a 1990s shopping mall with busy anchor stores
     against a modern fulfilment centre with conveyor belts and robotics,
@@ -42,7 +42,7 @@ The retail story is worth going through carefully, because it illustrates the ch
 ## Why Early E-Commerce Looked Narrow
 
 <figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/early-ecommerce-desk-books-1536x1024-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
+  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
   <figcaption>Early online retail worked in the categories where the friction math already favored it. Books first. Everything else took longer.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: early-ecommerce-desk-books-1536x1024.png -->
@@ -59,7 +59,7 @@ Most of the executives who later failed to adapt to Amazon were not fighting a c
 ## The Build Behind the Storefront
 
 <figure class="inline-photo inline-photo-left">
-  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x1024-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
+  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
   <figcaption>Amazon did not beat retail through better web design. It beat retail by building a logistics infrastructure that changed what customers expected from anyone shipping them something.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: amazon-fulfillment-logistics-scale-1536x1024.png -->
@@ -92,7 +92,7 @@ Class A malls, well-located with strong demographic draws and differentiated ten
 ## The Overbuilding the Headlines Skip
 
 <figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
+  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
   <figcaption>The retail space did not simply disappear. It reorganized. Malls are becoming mixed-use, restaurant-anchored, and in some cases last-mile logistics nodes.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: mall-adaptation-mixed-use-1536x1024.png -->
