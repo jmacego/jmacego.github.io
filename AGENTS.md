@@ -25,6 +25,7 @@ Single source of truth for agent and Copilot instructions in this repo.
 
 ## Content Authoring (Posts & Projects)
 - Posts live in `src/content/posts/` and must be named `YYYY-MM-DD-title.md` (or `.markdown`) using kebab-case.
+- Anything being released or intended for a public URL must use the real dated post filename format. **Never** leave `DRAFT-` in the filename for a released/published post.
 - Projects live in `src/content/projects/` and should be named `kebab-case.md` (no date prefix).
 - Permalinks are derived from filenames: posts publish to `/blog/<title>/` where `<title>` is the filename without the date prefix; projects publish to `/projects/<filename>/`.
 - Keep filenames stable to preserve legacy permalinks. If a slug must change, add a redirect.

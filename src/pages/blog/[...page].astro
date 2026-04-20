@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getExcerpt,
-  isPublished,
+  isPublishedOrDraftInDev,
   normalizeThumbnailPath,
   sortByDateDesc,
   stripDatePrefix,
@@ -11,7 +11,7 @@ import {
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  const posts = (await getCollection("posts", isPublished)).sort(sortByDateDesc);
+  const posts = (await getCollection("posts", isPublishedOrDraftInDev)).sort(sortByDateDesc);
   return paginate(posts, { pageSize: PAGE_SIZE });
 }
 
