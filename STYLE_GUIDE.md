@@ -124,7 +124,7 @@ If a post could have been written by someone without deep technical or operation
 
 ## Mechanics
 
-- Use American English.
+- Write in a blend of American and British English. American spellings and idioms are the base, but British spellings (behaviour, organisation, fulfilment, colour, whilst, amongst) and occasional British phrasings should appear naturally throughout. The mix should feel like John's natural register, not a deliberate affectation.
 - Use the serial comma.
 - Contractions are fine when natural.
 - Em dashes are acceptable, but use them deliberately.

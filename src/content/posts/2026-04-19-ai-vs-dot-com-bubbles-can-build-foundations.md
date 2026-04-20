@@ -47,7 +47,7 @@ We were trying to make the internet more usable, more visible, and more obviousl
 
 I was absolutely one of the people who thought the internet was going to change everything. Not a lot of things. Everything.
 
-And I could not understand why every around me around me did not immediately see it.
+And I could not understand why everyone around me did not immediately see it.
 
 That emotional structure is one of the clearest parallels to AI now. Long before the current spending wave, long before enterprise buyers started putting "AI strategy" on slides, there was already a set of true believers who had touched something real and concluded, not irrationally, that this was going to alter the shape of work. They were not wrong. But being right at that stage does not protect you from getting the business timing, the market structure, or the investment economics badly wrong.
 
@@ -58,17 +58,17 @@ That emotional structure is one of the clearest parallels to AI now. Long before
   <figcaption>Before the market narrative hardened, a lot of us were just trying to make the web more usable, discoverable, and legible.</figcaption>
 </figure>
 
-My vantage on the dot-com run-up was not as a venture capitalist or an analyst. From 1995 to 2001, I was first the CEO of a moderately successful web hosting and dedicated server provider, then part of a self-funded and unsuccessful hardware-less competitor focused on services and internet adoption for businesses. By the end of 2001 I was exhausted enough by the whole thing that I was helping start a media company and an aviation business just to get away from technology for a while.
+My vantage point on the dot-com run-up was not as a venture capitalist or an analyst. From 1995 to 2001, I was first the CEO of a moderately successful web hosting and dedicated server provider, then part of a self-funded and unsuccessful hardware-less competitor focused on services and internet adoption for businesses. By the end of 2001 I was exhausted enough by the whole thing that I was helping start a media company and an aviation business just to get away from technology for a while.
 
-That progression is important to my future career because it gave me a close look at both the real utility and the real delusion.
+That progression shaped every leadership role I took on afterwards, because it gave me a close look at both the real utility and the real delusion.
 
 At my first company we built on other people's hardware first. Then, on a shoestring, we began deploying our own. We were not one of the companies that everyone threw money at. We were more likely to get picked up by local news as scrappy teenagers who were ahead of the curve. That is a useful place to stand if you want to understand a technology shift. You are close enough to the work to see what actually helps, but not so insulated by capital that you can mistake scale theatre for traction.
 
 Some of what we built now sounds ordinary enough to be invisible. That is exactly the point.
 
-I built a frontend to BIND because normal people were never going to love raw DNS configuration. Making DNS accessible to ordinary users felt important because it was important. I built portals and automation that tied billing to self-service hosting account provisioning. Today that sounds banal. At the time it was part of making internet infrastructure legible to people who were not going to become sysadmins. This was the time when to register a domain name you did it online and then a few months later you had to pay a paper bill for $70.
+I built a frontend to BIND because normal people were never going to love raw DNS configuration. Making DNS accessible to ordinary users felt important because it was important. I built portals and automation that tied billing to self-service hosting account provisioning. Today that sounds banal. At the time it was part of making internet infrastructure legible to people who were not going to become sysadmins. This was the time when registering a domain name meant filling out a form online and waiting for InterNIC to post you a paper invoice for $70.
 
-That is one reason I keep thinking about current AI interfaces. ChatGPT did not invent machine learning, and it certainly did not invent intelligence. Listen to one of my in person rants on Big Data -&gt; Machine Learning -&gt; AI. What it did, very effectively, was remove a large amount of friction between ordinary people and a capability they were not going to access through research papers, APIs, or a command line. That is structurally similar to what many of us were doing in the early internet era. The first durable value often does not come from the deepest underlying system. It comes from the layer that lets ordinary people finally touch it.
+That is one reason I keep thinking about current AI interfaces. ChatGPT did not invent machine learning, and it certainly did not invent intelligence. Listen to one of my in person rants on Big Data → Machine Learning → AI. What it did, very effectively, was remove a large amount of friction between ordinary people and a capability they were not going to access through research papers, APIs, or a command line. That is structurally similar to what many of us were doing in the early internet era. The first durable value often does not come from the deepest underlying system. It comes from the layer that lets ordinary people finally touch it.
 
 ## The Split Between Operators and Hype Machines
 
@@ -83,7 +83,7 @@ There were people building real operating businesses. Some succeeded. Some faile
 
 That also sounds familiar.
 
-I do not want to over moralise this. Some of the people in that second camp were cynics. Most genuinely believed their own story. Some were just surfing incentives that rewarded narrative over discipline. Markets do not require corruption to behave badly. They only require enough people to believe that someone else will buy the story at a higher price.
+I do not want to over-moralise this. Some of the people in that second camp were cynics. Most genuinely believed their own story. Some were just surfing incentives that rewarded narrative over discipline. Markets do not require corruption to behave badly. They only require enough people to believe that someone else will buy the story at a higher price.
 
 I was a real operating believer. That had advantages. I built things I thought were useful. I scoped more reasonably than some of the pure hype merchants. I came through in better shape than people who believed every fantasy around them.
 
@@ -103,7 +103,7 @@ The core problem was timing. We were too late for the first wave of technical en
 
 There is a broader lesson in that which applies far beyond the internet and very much applies to AI: being right too early is still a way of being wrong in business.
 
-This is one reason I am skeptical of simple triumphalist retrospectives. When people look backward from a world the internet already transformed, they tend to imagine that anyone who saw the future clearly should have done well. That is not how technological transitions work. They are full of good ideas that arrive before demand, before trust, before habit, before the surrounding economics are ready.
+This is one reason I am sceptical of simple triumphalist retrospectives. When people look backward from a world the internet already transformed, they tend to imagine that anyone who saw the future clearly should have done well. That is not how technological transitions work. They are full of good ideas that arrive before demand, before trust, before habit, before the surrounding economics are ready.
 
 Directionally right is not the same thing as economically right.
 
@@ -126,7 +126,7 @@ Search is high on that list. Before search became good, the internet was far mor
 
 Online payments matter just as much. E-commerce does not become ordinary until paying online becomes boring. Once payment trust becomes infrastructure instead of an event, entire categories of commerce stop feeling weird.
 
-Dark fibre and network overbuild also belong in the story. I have spent enough years in network operations to have a long memory for this. A lot of investor capital went into capacity that looked absurdly excessive. Some of it was. But later advances, including optical improvements people had not fully priced in, changed the value of that underlying buildout. The bubble did not simply finance websites with bad earnings. It also helped finance transport capacity, hosting structure, and data centre habits that later industries inherited more cheaply than they otherwise would have.
+Dark fibre and network overbuild also belong in the story. I have spent enough years in network operations to know this territory from the inside. A lot of investor capital went into capacity that looked absurdly excessive. Some of it was. But later advances, including optical improvements people had not fully priced in, changed the value of that underlying buildout. The bubble did not simply finance websites with bad earnings. It also helped finance transport capacity, hosting structure, and data centre habits that later industries inherited more cheaply than they otherwise would have.
 
 What it did not do was create mainstream consumer behaviour overnight. That part took longer. Gen X and then Millennials had to grow up inside the change and then become the spending base for it. The people who adopted early often did best, but society as a whole needed a generational handoff before the internet became less of a tool you used and more of a condition of normal life.
 
@@ -154,7 +154,7 @@ That is why I have started framing the current moment differently. This may not 
 
 ## What Skeptics and Evangelists Both Miss
 
-The skeptics who dismiss AI entirely are making the same mistake many people made about the internet. They are reacting, understandably, against bad claims by deciding the underlying capability does not matter. That is usually the wrong move.
+The sceptics who dismiss AI entirely are making the same mistake many people made about the internet. They are reacting, understandably, against bad claims by deciding the underlying capability does not matter. That is usually the wrong move.
 
 AI is not going away. Some jobs are going to be compressed, reshaped, or eliminated. We should not lie about that. It will hurt people. It already is. Standing in the way of adaptation by trying to build artificial moats around categories of work is more likely to destroy whole industries than save them.
 
@@ -173,7 +173,7 @@ In some ways, I think the near-term effect is less "AI replaces the expert" and 
 
 The most expensive delusion I see right now is not believing that AI matters. It is forcing expensive AI solutions on customers who do not like them and employees who are not using them, even though they cost more, produce lower-quality results, and take more time.
 
-That is not transformation. That is executive theater with a compute bill attached.
+That is not transformation. That is executive theatre with a compute bill attached.
 
 The practical question is much less glamorous. Where does AI actually improve cost, quality, speed, or decision support all at once? Where does it fit the workflow instead of insulting it? Where does it make strong people stronger rather than creating a second-rate substitute for judgment?
 
@@ -183,7 +183,7 @@ That is also the real lesson I took from living through the dot-com era from the
 
 I think we are somewhere in that cycle now.
 
-If I have one sentence I want an executive reader to keep, it is this: every revolution has huge winners and huge losers, and the path is not chasing either extreme but making the changes that keep you and your company relevant, useful, and profitable after the mania burns off.
+If I have one sentence I want an executive reader to keep, it is this: every revolution has huge winners and huge losers, and the path is not to chase either extreme but to make the changes that keep you and your company relevant, useful, and profitable after the mania burns off.
 
 That was true of the internet.
 
