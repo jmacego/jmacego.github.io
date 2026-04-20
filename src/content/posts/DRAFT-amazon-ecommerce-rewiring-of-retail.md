@@ -17,10 +17,10 @@ categories:
   - Leadership
   - Technology
 image:
-  src: /assets/images/amazon-retail-transformation-1536x1024.png
+  src: /assets/images/amazon-retail-transformation-1536x1024-1536x864.png
   alt: >-
     A split scene contrasting a 1990s shopping mall with busy anchor stores
-    against a modern fulfillment center with conveyor belts and robotics,
+    against a modern fulfilment centre with conveyor belts and robotics,
     representing the shift in how retail infrastructure works.
 ---
 <!-- IMAGE NEEDED: amazon-retail-transformation-1536x1024.png -->
@@ -42,7 +42,7 @@ The retail story is worth going through carefully, because it illustrates the ch
 ## Why Early E-Commerce Looked Narrow
 
 <figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
+  <img src="/assets/images/early-ecommerce-desk-books-1536x1024-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
   <figcaption>Early online retail worked in the categories where the friction math already favored it. Books first. Everything else took longer.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: early-ecommerce-desk-books-1536x1024.png -->
@@ -59,23 +59,23 @@ Most of the executives who later failed to adapt to Amazon were not fighting a c
 ## The Build Behind the Storefront
 
 <figure class="inline-photo inline-photo-left">
-  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x1024.png" alt="An aerial view of a massive Amazon fulfillment center at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
+  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x1024-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
   <figcaption>Amazon did not beat retail through better web design. It beat retail by building a logistics infrastructure that changed what customers expected from anyone shipping them something.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: amazon-fulfillment-logistics-scale-1536x1024.png -->
 <!-- Suggested prompt: Aerial editorial photograph of a massive modern fulfillment center at dusk. Long rectangular warehouse buildings with a grid of delivery trucks and vans in organized lots around them. Yellow and orange lighting of the parking areas contrasts with the blue dusk sky. Scale is emphasized — the facility dominates the frame. Photorealistic, slightly cinematic. -->
 
-What Amazon actually built was not a better store. It was a fulfillment and logistics infrastructure that happened to be fronted by a retail interface.
+What Amazon actually built was not a better store. It was a fulfilment and logistics infrastructure that happened to be fronted by a retail interface.
 
-The numbers track the build. Amazon operated 13 fulfillment centers in 2005. By 2014 that was 109. Prime launched in 2005 and rewired customer expectations around delivery time, turning two-day shipping from a premium into a default. The acquisition of Kiva Robotics in 2012 brought warehouse automation to a scale that changed what per-package handling cost. AWS launched in 2006 as a direct byproduct of the infrastructure Amazon had to build to run its own operations, and then turned out to be worth selling externally. By 2015 Amazon had surpassed Walmart in market capitalization, even though Walmart was still doing many times more total retail revenue.
+The numbers track the build. Amazon operated 13 fulfilment centres in 2005. By 2014 that was 109. Prime launched in 2005 and rewired customer expectations around delivery time, turning two-day shipping from a premium into a default. The acquisition of Kiva Robotics in 2012 brought warehouse automation to a scale that changed what per-package handling cost. AWS launched in 2006 as a direct byproduct of the infrastructure Amazon had to build to run its own operations, and then turned out to be worth selling externally. By 2015 Amazon had surpassed Walmart in market capitalization, even though Walmart was still doing many times more total retail revenue.
 
 By the mid-2010s, roughly 40 percent of people shopping online were starting their product searches on Amazon rather than a search engine. That is not a discovery story -- it is a displacement story. Amazon had become the default commercial search surface for a large share of consumer purchases, and that position was built on logistics reliability, not on having the best-looking website.
 
-Prime is where the behavior change locked in. Once a household joined Prime, switching costs accumulated from habit rather than contract. Studies found fewer than one percent of Prime members would switch to a competing retailer when Amazon carried what they wanted. That kind of retention is not built through advertising. It is built by consistently delivering the expected result, millions of times, until the alternative path disappears from the mental map.
+Prime is where the behaviour change locked in. Once a household joined Prime, switching costs accumulated from habit rather than contract. Studies found fewer than one percent of Prime members would switch to a competing retailer when Amazon carried what they wanted. That kind of retention is not built through advertising. It is built by consistently delivering the expected result, millions of times, until the alternative path disappears from the mental map.
 
 The more important point for any leader thinking about market disruption is this: Amazon was not competing on price or selection alone. It was competing on expectation. It was training customers to expect a standard of service that physical retail, in most categories, could not cost-effectively match. Once that expectation was set across a large enough base, the competitive position of every other retailer shifted, regardless of whether those retailers had done anything wrong.
 
-That is how infrastructure-level behavior shifts work. They change the baseline. Everything else gets judged against the new one.
+That is how infrastructure-level behaviour shifts work. They change the baseline. Everything else gets judged against the new one.
 
 ## What Actually Rewired Retail
 
@@ -85,14 +85,14 @@ The scale of the shift is different from what the headline implies. U.S. e-comme
 
 More importantly, Amazon was not the only force. What rewired retail was the combination of cheap search, normalized payments, fulfillment infrastructure, and a generational shift in consumer habits. NBER research on pricing behavior makes the point with specificity: retailers exposed to Amazon competition roughly doubled their monthly price-adjustment rate between 2008 and 2017, and many moved to uniform national pricing because their customers were now comparing prices in real time from anywhere. That is not one company hurting stores. That is search transparency changing competitive behavior across entire categories of retail.
 
-The actual store employment numbers are more complicated than the coverage suggests, too. If you include restaurants and service businesses when you look at physical retail -- which most press analysis does not -- the sector returned to 2006 levels by 2017 in both employment and revenue. What changed was the category mix. Electronics stores, bookstores, commodity apparel at scale, and big-box general merchandise contracted. Restaurants, specialty experiences, fitness studios, and service businesses expanded, often into the same spaces. The mall reorganized more than it died.
+The actual store employment numbers are more complicated than the coverage suggests, too. If you include restaurants and service businesses when you look at physical retail -- which most press analysis does not -- the sector returned to 2006 levels by 2017 in both employment and revenue. What changed was the category mix. Electronics stores, bookstores, commodity apparel at scale, and big-box general merchandise contracted. Restaurants, specialty experiences, fitness studios, and service businesses expanded, often into the same spaces. The mall reorganised more than it died.
 
 Class A malls, well-located with strong demographic draws and differentiated tenants, have been running near 95 percent occupancy. Class B and C malls are the ones in distress. That distribution is not consistent with a story where all physical retail is simply losing to e-commerce. It is more consistent with a story where poorly positioned retail was finally meeting the competition it had been partially insulated from for decades.
 
 ## The Overbuilding the Headlines Skip
 
 <figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
+  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
   <figcaption>The retail space did not simply disappear. It reorganized. Malls are becoming mixed-use, restaurant-anchored, and in some cases last-mile logistics nodes.</figcaption>
 </figure>
 <!-- IMAGE NEEDED: mall-adaptation-mixed-use-1536x1024.png -->
@@ -102,7 +102,7 @@ The piece of the retail story that almost no one tells correctly is how over-ret
 
 At the peak, the U.S. had roughly 23 square feet of retail space per capita, more than double most comparable economies. That baseline was fragile regardless of Amazon. Overcapacity creates survival pressure in any market, and U.S. retail had been running on a model that required an unusually high level of consumer spending per square foot just to stay viable.
 
-The anchor store failures of the 2010s illustrate the point. Sears filed for bankruptcy in 2018. Toys R Us liquidated in 2017. JCPenney was in sustained distress for years before its formal bankruptcy. In each case, the real story was internal. Sears had spent years underinvesting in stores while managing difficult debt loads. Toys R Us had been taken private in a leveraged buyout that left it structurally compromised well before Amazon became the dominant force in its categories. These were businesses with capital structure problems and strategic failures that would have been serious in any competitive retail environment.
+The anchor store failures of the 2010s illustrate the point. Sears filed for bankruptcy in 2018. Toys R Us liquidated in 2017. JCPenney was in sustained distress for years before its formal bankruptcy. In each case, the real story was internal. Sears had spent years underinvesting in stores whilst managing difficult debt loads. Toys R Us had been taken private in a leveraged buyout that left it structurally compromised well before Amazon became the dominant force in its categories. These were businesses with capital structure problems and strategic failures that would have been serious in any competitive retail environment.
 
 E-commerce accelerated the pressure. It did not create the underlying weakness.
 
@@ -110,11 +110,11 @@ What happened to struggling mall space is also worth naming. Conversion to mixed
 
 ## What the Good Operators Did
 
-The retailers that navigated the e-commerce transition most effectively were not the ones that tried to out-Amazon Amazon. They were the ones that identified what their format could do that fulfillment centers genuinely cannot, and built from there.
+The retailers that navigated the e-commerce transition most effectively were not the ones that tried to out-Amazon Amazon. They were the ones that identified what their format could do that fulfilment centres genuinely cannot, and built from there.
 
 Costco is the example I come back to. Bulk purchasing, the treasure-hunt merchandising model, high membership renewal rates, and the warehouse experience are all format features that online fulfillment has not fully neutralized. Costco invested in logistics and e-commerce capabilities without trying to become a different company. Its format held because it was actually distinctive, not because e-commerce had not yet arrived.
 
-The retailers that fared worst were the ones that added digital presence as a symbolic gesture. A website that performed worse than the store experience. An app that nobody used. An "omnichannel strategy" that reorganized the org chart without changing what customers encountered. That pattern should sound familiar.
+The retailers that fared worst were the ones that added digital presence as a symbolic gesture. A website that performed worse than the store experience. An app that nobody used. An "omnichannel strategy" that reorganised the org chart without changing what customers encountered. That pattern should sound familiar.
 
 The technology does not solve the underlying strategic question. It sharpens the consequences of getting it wrong. Organizations that were using physical retail as a comfortable moat against having to think clearly about their actual customer relationships found out that the moat was less deep than they had assumed.
 
@@ -126,7 +126,7 @@ Technology-driven market shifts do not happen because a new tool is better than 
 
 AI adoption is at roughly the stage where e-commerce was in the early 2000s. The capability is clearly real. Bick, Blandin, and Deming found that by late 2024, roughly 40 percent of the U.S. working-age population had tried generative AI, and 23 percent of employed workers had used it for work in the previous week. That is meaningful adoption. It is not yet embedded habit.
 
-What turns a useful tool into a rewired behavior is not a better demo. It is the removal of enough friction, reliably enough, that using it becomes the path of least resistance. Prime got there on delivery time and selection breadth. AI will get there, in whatever areas it genuinely gets there, through reliability, quality, and workflow integration that makes the old approach feel slower.
+What turns a useful tool into a rewired behaviour is not a better demo. It is the removal of enough friction, reliably enough, that using it becomes the path of least resistance. Prime got there on delivery time and selection breadth. AI will get there, in whatever areas it genuinely gets there, through reliability, quality, and workflow integration that makes the old approach feel slower.
 
 Current AI products are uneven on all three counts. Some are excellent in specific contexts. Some are expensive and mediocre. Some perform well on bounded tasks and degrade badly at the edges. That is also what early e-commerce looked like from the outside. The question for any business or professional positioning for what comes next is not whether AI matters. It is which of these current use cases will survive long enough to become embedded habit, and which ones are still too narrow, too unreliable, or too expensive to hold the ground they appear to be claiming.
 
