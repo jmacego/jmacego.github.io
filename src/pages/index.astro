@@ -6,6 +6,7 @@ import {
   getExcerpt,
   getExcerptText,
   isPublished,
+  isPublishedOrDraftInDev,
   normalizeImagePath,
   normalizeThumbnailPath,
   sortByDateDesc,
@@ -13,7 +14,7 @@ import {
 } from "../utils/content";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("posts", isPublished)).sort(sortByDateDesc);
+const posts = (await getCollection("posts", isPublishedOrDraftInDev)).sort(sortByDateDesc);
 const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
 
 const heroPost = posts[0];

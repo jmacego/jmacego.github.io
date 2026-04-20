@@ -2,14 +2,14 @@
 import PostLayout from "../../layouts/PostLayout.astro";
 import {
   getExcerptText,
-  isPublished,
+  isPublishedOrDraftInDev,
   normalizeImagePath,
   stripDatePrefix,
 } from "../../utils/content";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("posts", isPublished);
+  const posts = await getCollection("posts", isPublishedOrDraftInDev);
   return posts.map((post) => ({
     params: { slug: stripDatePrefix(post.slug) },
     props: { post },

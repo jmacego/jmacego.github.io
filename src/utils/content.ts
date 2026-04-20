@@ -27,6 +27,14 @@ export function isPublished<T extends EntryWithVisibility>(entry: T) {
   return !publishDate || publishDate.getTime() <= Date.now();
 }
 
+export function isPublishedOrDraftInDev<T extends EntryWithVisibility>(entry: T) {
+  if (import.meta.env.DEV) {
+    return true;
+  }
+
+  return isPublished(entry);
+}
+
 export function normalizeImagePath(path?: string) {
   if (!path) {
     return undefined;
