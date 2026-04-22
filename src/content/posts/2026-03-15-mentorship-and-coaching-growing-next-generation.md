@@ -50,7 +50,7 @@ Junior engineers see things that senior engineers have stopped seeing. The organ
 
 After years of mentorship, you realize you're watching someone develop their own leadership identity — not a copy of yours, but something that emerged partly from the conversation and partly from everything else they are. That is genuinely rewarding.
 
-<figure class="inline-photo inline-photo-right">
+<figure class="post-image post-image-inline post-image-right">
   <img src="/assets/images/posts/mentorship-network.png" alt="A four-part collage shows mentoring in an office, at an electronics workbench, on a construction site, and during a child's drawing activity, with glowing lines visually linking the scenes." />
   <figcaption>Mentorship creates a network of learning, connecting experience and guidance across generations and settings.</figcaption>
 </figure>

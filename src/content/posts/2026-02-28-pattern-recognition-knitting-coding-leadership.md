@@ -18,7 +18,7 @@ I used to own a knitting shop. This is perhaps the most unexpected sentence I co
 
 <!--more-->
 
-<figure class="inline-photo inline-photo-right">
+<figure class="post-image post-image-inline post-image-right">
   <img src="/assets/images/posts/knitting-legend-newspaper.jpeg" alt="The author featured in a newspaper cover story on knitting and photography." />
   <figcaption>From a newspaper cover story on my knitting and photography — the image that circulated afterward.</figcaption>
 </figure>
@@ -94,7 +94,7 @@ The lesson from knitting: finishing is part of the craft, not an afterthought. T
 
 ## The Unexpected Gift
 
-<figure class="inline-photo inline-photo-left">
+<figure class="post-image post-image-inline post-image-left">
   <img src="/assets/images/posts/knitting-yarn-bombing.jpeg" alt="Yarn bombing — a tree or public object wrapped in colorful knitted and crocheted pieces as guerrilla street art." />
   <figcaption>Yarn bombing: knitting escapes the living room and takes over the street.</figcaption>
 </figure>
