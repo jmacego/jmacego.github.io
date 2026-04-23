@@ -1,0 +1,261 @@
+/* ==========================================================================
+   JMacLabs / John MacDonald — Colors + Type
+   Dark-first deck palette with lime signal + violet structure accents.
+   Source of truth: uploads/index.html (Slide Palette Lab, April 2026).
+   ========================================================================== */
+
+/* ---- Brand font files (local) ---- */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype-variations'),
+       url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('fonts/CommitMonoNerdFont-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('fonts/CommitMonoNerdFont-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('fonts/CommitMonoNerdFont-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Commit Mono';
+  src: url('fonts/CommitMonoNerdFont-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Neutrals (dark-first stage) ---------- */
+  --neutral-950: #0E0F10; /* Backdrop / stage */
+  --neutral-900: #15171A; /* App surface */
+  --neutral-850: #1C1F24; /* Card surface */
+  --neutral-800: #2A2F36; /* Raised surface */
+  --neutral-700: #3A404A; /* Hairline / divider */
+  --neutral-600: #4A5160;
+  --neutral-500: #6B7280;
+
+  /* ---------- Text on dark ---------- */
+  --text-primary-on-dark:   #F2F4F7; /* Body / headings */
+  --text-secondary-on-dark: #C7CDD6; /* Supporting copy */
+  --text-muted-on-dark:     #98A2B3; /* Eyebrows / meta */
+
+  /* ---------- Text on light (blog/resume chrome) ---------- */
+  --text-primary-on-light:   #15171A;
+  --text-secondary-on-light: #4A5160;
+  --text-muted-on-light:     #999999;
+
+  /* ---------- Lime — signal accent ("go", highlight, CTA) ---------- */
+  --lime-300: #B7FF6A;
+  --lime-400: #9AF23C; /* brand signal */
+  --lime-500: #7ED61A;
+
+  /* ---------- Violet — structural accent (chrome, kickers, labels) ---------- */
+  --violet-300: #C9B8FF;
+  --violet-400: #A78BFA; /* brand structure */
+  --violet-500: #8B5CF6;
+
+  /* ---------- Semantic ---------- */
+  --color-bg:            var(--neutral-950);
+  --color-surface:       var(--neutral-850);
+  --color-surface-raised:var(--neutral-800);
+  --color-border:        rgba(242,244,247,0.08);
+  --color-border-strong: rgba(242,244,247,0.12);
+  --color-hairline:      rgba(36,42,50,0.9);
+
+  --color-fg:            var(--text-primary-on-dark);
+  --color-fg-2:          var(--text-secondary-on-dark);
+  --color-fg-muted:      var(--text-muted-on-dark);
+
+  --color-accent:        var(--lime-400); /* signal */
+  --color-accent-soft:   rgba(154,242,60,0.14);
+  --color-accent-ring:   rgba(154,242,60,0.30);
+
+  --color-structure:     var(--violet-400); /* structure */
+  --color-structure-soft:rgba(167,139,250,0.14);
+  --color-structure-ring:rgba(167,139,250,0.30);
+
+  --color-success:       var(--lime-400);
+  --color-warn:          #F4B740;
+  --color-danger:        #F07171;
+
+  /* ---------- Typography families ---------- */
+  --font-serif-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-sans:          'Plus Jakarta Sans', 'Helvetica Neue', system-ui, sans-serif;
+  --font-mono:          'Commit Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-blog-heading:  'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif; /* legacy site chrome */
+
+  /* ---------- Type scale (deck-first) ---------- */
+  --fs-eyebrow: 0.78rem;  /* UPPER, letter-spaced, lime or violet */
+  --fs-label:   0.82rem;
+  --fs-meta:    0.85rem;
+  --fs-body:    1.05rem;
+  --fs-lede:    1.08rem;
+  --fs-h4:      1.15rem;
+  --fs-h3:      1.35rem;
+  --fs-h2:      clamp(1.8rem, 3vw, 2.7rem);
+  --fs-h1:      clamp(2.7rem, 6vw, 4.6rem);
+  --fs-display: clamp(3.4rem, 8vw, 6rem);
+
+  --lh-tight:   0.96;
+  --lh-snug:    1.05;
+  --lh-normal:  1.5;
+
+  --tracking-eyebrow: 0.18em;
+  --tracking-kicker:  0.20em;
+  --tracking-tight:   -0.04em;
+
+  /* ---------- Spacing / radii / shadow ---------- */
+  --r-sm:  10px;
+  --r-md:  16px;
+  --r-lg:  20px;
+  --r-xl:  24px;
+  --r-2xl: 28px;
+  --r-pill:999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10:2.5rem;
+  --space-12:3rem;
+
+  --shadow-sm:  0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md:  0 18px 42px -34px rgba(0,0,0,0.8);
+  --shadow-lg:  0 30px 60px -42px rgba(0,0,0,0.55), 0 40px 90px -60px rgba(139,92,246,0.22);
+  --shadow-glow-lime:   0 28px 70px -50px rgba(154,242,60,0.18);
+  --shadow-glow-violet: 0 28px 70px -50px rgba(167,139,250,0.22);
+  --inset-hairline: inset 0 1px rgba(255,255,255,0.04);
+
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:   150ms;
+  --dur-med:    240ms;
+  --dur-slow:   420ms;
+}
+
+/* ==========================================================================
+   Semantic element styles (dark surface defaults)
+   ========================================================================== */
+.jmac-dark, [data-theme="dark"] {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.jmac-h1, h1.jmac, .jmac-display {
+  font-family: var(--font-serif-display);
+  font-weight: 600;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  margin: 0;
+}
+.jmac-h2, h2.jmac {
+  font-family: var(--font-serif-display);
+  font-weight: 600;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  margin: 0;
+}
+.jmac-h3, h3.jmac {
+  font-family: var(--font-serif-display);
+  font-weight: 600;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.03em;
+  color: var(--color-fg);
+  margin: 0;
+}
+.jmac-h4, h4.jmac {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h4);
+  line-height: 1.1;
+  color: var(--color-fg);
+  margin: 0;
+}
+.jmac-lede {
+  font-family: var(--font-sans);
+  font-size: var(--fs-lede);
+  line-height: var(--lh-normal);
+  color: var(--color-fg-2);
+}
+.jmac-body, p.jmac {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--color-fg-2);
+}
+.jmac-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--lime-300);
+  margin: 0;
+}
+.jmac-kicker {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-kicker);
+  text-transform: uppercase;
+  color: var(--violet-300);
+}
+.jmac-meta {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+.jmac-code, code.jmac {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--color-fg-muted);
+}

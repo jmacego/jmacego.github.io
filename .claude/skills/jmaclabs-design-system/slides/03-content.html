@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Content Slide — JMacLabs</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:#000;overflow:hidden;font-family:var(--font-sans);color:var(--color-fg)}
+  .stage{position:fixed;inset:0;display:grid;place-items:center}
+  .slide{width:1920px;height:1080px;transform-origin:center center;background:radial-gradient(circle at 12% 18%,rgba(183,255,106,.07),transparent 35%),radial-gradient(circle at 88% 82%,rgba(167,139,250,.14),transparent 40%),linear-gradient(145deg,#1C1F24,#0E0F10);padding:100px 120px;display:grid;grid-template-rows:auto 1fr auto;gap:40px;position:relative}
+  .header{display:flex;justify-content:space-between;align-items:flex-end}
+  .eye{font:600 22px/1 var(--font-sans);letter-spacing:.22em;text-transform:uppercase;color:var(--lime-300);margin:0}
+  h2{font-family:var(--font-serif-display);font-weight:600;font-size:92px;line-height:.98;letter-spacing:-.04em;margin:0;max-width:18ch}
+  .num{font:700 32px/1 var(--font-mono);color:var(--color-fg-muted);letter-spacing:.12em}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-content:center}
+  .card{border-radius:28px;padding:36px;border:1px solid var(--color-border);background:linear-gradient(180deg,#1C1F24c9,#0E0F10dd);box-shadow:0 18px 42px -34px rgba(0,0,0,.8),inset 0 1px rgba(255,255,255,.04);display:flex;flex-direction:column;gap:16px;min-height:460px;backdrop-filter:blur(16px)}
+  .card .n{font:700 34px/1 var(--font-mono);color:var(--violet-300);letter-spacing:.08em}
+  .card h3{font-family:var(--font-serif-display);font-weight:600;font-size:44px;line-height:1;letter-spacing:-.03em;margin:0;color:var(--color-fg);max-width:12ch}
+  .card p{margin:0;font-size:22px;line-height:1.5;color:var(--color-fg-2)}
+  .card .pill{margin-top:auto;align-self:flex-start;display:inline-flex;padding:.45rem 1rem;border-radius:999px;font:600 16px/1 var(--font-sans);background:rgba(154,242,60,.14);color:var(--lime-300);border:1px solid rgba(154,242,60,.3)}
+  .card.signal{background:radial-gradient(circle at top right,rgba(154,242,60,.14),transparent 32%),linear-gradient(160deg,#2A2F36e0,#15171Af5)}
+  .footer{display:flex;justify-content:space-between;align-items:center;color:var(--color-fg-muted);font:600 16px/1 var(--font-mono);letter-spacing:.14em;text-transform:uppercase}
+  .footer img{height:38px}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide" id="slide">
+    <div class="header">
+      <div>
+        <p class="eye">The scoping problem</p>
+        <h2 style="margin-top:14px">Three diagrams every AI platform needs.</h2>
+      </div>
+      <div class="num">03 / 06</div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="n">01</div>
+        <h3>Data lineage</h3>
+        <p>Where the signal comes from, where it breaks, and who is accountable when it does.</p>
+      </div>
+      <div class="card signal">
+        <div class="n" style="color:var(--lime-300)">02</div>
+        <h3>Control plane</h3>
+        <p>How models get promoted, rolled back, and audited — before a regulator asks.</p>
+        <span class="pill">Pay attention</span>
+      </div>
+      <div class="card">
+        <div class="n">03</div>
+        <h3>Eval harness</h3>
+        <p>The single test suite your whole team trusts. If it doesn't exist, write it first.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <img src="../assets/logo-jmac-filled.png" />
+      <span>jmaclabs.com · @jmacego</span>
+    </div>
+  </div>
+</div>
+<script>const s=document.getElementById('slide');function fit(){const w=innerWidth/1920,h=innerHeight/1080;s.style.transform=`scale(${Math.min(w,h)})`}fit();addEventListener('resize',fit);</script>
+</body>
+</html>

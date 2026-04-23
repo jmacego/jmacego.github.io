@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Color: Neutrals</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-sans); }
+  .wrap { padding: 20px; }
+  .row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .chip {
+    border-radius: 14px;
+    border: 1px solid var(--color-border);
+    padding: 12px 14px;
+    height: 104px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    box-shadow: var(--inset-hairline);
+  }
+  .chip .name { font-size: 12px; font-weight: 600; color: var(--color-fg); letter-spacing: .02em; }
+  .chip .hex { font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,0.7); }
+  .chip .role { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <div class="chip" style="background:#0E0F10">
+      <div class="role">Stage</div>
+      <div><div class="name" style="color:#F2F4F7">Neutral / 950</div><div class="hex">#0E0F10</div></div>
+    </div>
+    <div class="chip" style="background:#15171A">
+      <div class="role">App surface</div>
+      <div><div class="name" style="color:#F2F4F7">Neutral / 900</div><div class="hex">#15171A</div></div>
+    </div>
+    <div class="chip" style="background:#1C1F24">
+      <div class="role">Card</div>
+      <div><div class="name" style="color:#F2F4F7">Neutral / 850</div><div class="hex">#1C1F24</div></div>
+    </div>
+    <div class="chip" style="background:#2A2F36">
+      <div class="role">Raised</div>
+      <div><div class="name" style="color:#F2F4F7">Neutral / 800</div><div class="hex">#2A2F36</div></div>
+    </div>
+    <div class="chip" style="background:#3A404A">
+      <div class="role">Hairline</div>
+      <div><div class="name" style="color:#F2F4F7">Neutral / 700</div><div class="hex">#3A404A</div></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

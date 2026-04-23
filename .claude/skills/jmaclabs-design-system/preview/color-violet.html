@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Color: Violet structure</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-sans); }
+  .wrap { padding: 20px; display:grid; gap:14px; }
+  .row { display:grid; grid-template-columns: repeat(3,1fr); gap:10px; }
+  .chip { border-radius: 14px; padding: 14px; height: 100px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid rgba(0,0,0,0.2); }
+  .chip .name { font-size: 13px; font-weight: 700; color:#0E0F10; }
+  .chip .hex { font-family: var(--font-mono); font-size: 11px; color:#0E0F10cc; }
+  .chip .role { font-size: 10px; letter-spacing:.14em; text-transform:uppercase; color:#0E0F10aa; font-weight:600; }
+  .pill-row { display:flex; gap:10px; align-items:center; }
+  .pill { display:inline-flex; align-items:center; min-height: 2rem; border-radius:999px; padding:.35rem .85rem; font-size:.82rem; font-weight:600; }
+  .pill.v { background: rgba(167,139,250,0.14); color: var(--violet-300); border: 1px solid rgba(167,139,250,0.30); }
+  .label { font-size: 11px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-fg-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <div class="chip" style="background:#C9B8FF">
+      <div class="role">Text on dark</div>
+      <div><div class="name">Violet / 300</div><div class="hex">#C9B8FF</div></div>
+    </div>
+    <div class="chip" style="background:#A78BFA">
+      <div class="role">Structure (brand)</div>
+      <div><div class="name">Violet / 400</div><div class="hex">#A78BFA</div></div>
+    </div>
+    <div class="chip" style="background:#8B5CF6" >
+      <div class="role">Deep / glow src</div>
+      <div><div class="name" style="color:#F2F4F7">Violet / 500</div><div class="hex" style="color:#F2F4F7cc">#8B5CF6</div></div>
+    </div>
+  </div>
+  <div class="pill-row">
+    <div class="label">On dark:</div>
+    <span class="pill v">Violet / 400</span>
+    <span class="pill v" style="background: rgba(167,139,250,0.22);">Kicker</span>
+  </div>
+</div>
+</body>
+</html>
