@@ -26,7 +26,6 @@ image:
 When I was running 5GuysTech, we had a real office, real staff, and a real pitch: the internet is where commerce is going, and your business needs to be there before your competitors arrive. We would sit across from small business owners, walk them through what a website could do for them, and wait for the moment they understood why it mattered.
 
 Most of them heard us out. Almost none of them signed.
-<!--more-->
 
 The objection that stuck with me was not hostile. It was calm and accurate. "My customers know where I am. They come in through the door." That was not denial. That was an honest description of how those businesses had operated for the entire length of their existence. The idea that someone would find a business through a search engine, hand credit card information to a server they had never met, then wait several days for something they could pick up that afternoon. That assumed a customer psychology most brick-and-mortar operators were not yet working with. Their current customers were not those customers.
 
@@ -38,8 +37,8 @@ The retail story is worth going through carefully, because it illustrates the ch
 
 ## Why Early E-Commerce Looked Narrow
 
-<figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." loading="lazy" />
   <figcaption>Early online retail worked in the categories where the friction math already favoured it. Books first. Everything else took longer.</figcaption>
 </figure>
 
@@ -55,8 +54,8 @@ AI is following the same pattern. The current beachhead is coding assistance. Gi
 
 ## The Build Behind the Storefront
 
-<figure class="inline-photo inline-photo-left">
-  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
+<figure class="post-image post-image-inline post-image-left">
+  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." loading="lazy" />
   <figcaption>Amazon did not beat retail through better web design. It beat retail by building a logistics infrastructure that changed what customers expected from anyone shipping them something.</figcaption>
 </figure>
 
@@ -92,8 +91,8 @@ Class A malls, well-located with strong demographic draws and differentiated ten
 
 ## The Overbuilding the Headlines Skip
 
-<figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." loading="lazy" />
   <figcaption>The retail space did not simply disappear. It reorganised. Malls are becoming mixed-use, restaurant-anchored, and in some cases last-mile logistics nodes.</figcaption>
 </figure>
 
