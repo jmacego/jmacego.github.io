@@ -202,19 +202,26 @@ Amazon, E-Commerce, and the Rewiring of Retail
 
 ### Purpose
 
-Show how one of the most visible long-tail outcomes of the internet bubble was not just online shopping, but a complete rewiring of retail structure, customer expectation, price transparency, and store geography.
+Show how one of the most visible long-tail outcomes of the internet bubble was not just online shopping, but a complete rewiring of retail structure, customer expectation, price transparency, and store geography — and draw the parallel explicitly to how AI is currently winning in narrow beachheads before expanding.
 
 ### Sketch Outline
 
 1. Open with the old assumption that stores were where commerce happened and the internet was a side channel.
+   AI parallel threaded here: the same assumption surrounds AI today — it's the side channel, the novelty, not the main event. Yet.
 2. Explain why early e-commerce looked narrow and fragile.
+   AI parallel: current AI tools also look narrow — good at coding assistance, document drafting, customer service scripts. That narrowness is not permanent; it is the beachhead.
 3. Track Amazon from books to platform to infrastructure and logistics machine.
+   AI parallel at each stage: ChatGPT started in a narrow category (text generation); now AI is expanding into agents, workflows, and infrastructure. The storefront may not be the durable layer.
 4. Show that what changed retail was not one company alone, but search, payments, fulfillment, and habit formation working together.
-5. Separate "Amazon killed malls" from the fuller truth:
+   AI parallel: the current ecosystem of models, APIs, orchestration layers, and workflow integrations is the equivalent. No single company wins alone; the stack has to line up.
+5. Prime rewired customer expectations — delivery speed became a baseline, not a premium.
+   AI parallel: once enough workers use AI-assisted drafting, analysis, or coding daily, the expectation of that speed and assistance becomes the new baseline. Competitors not meeting it will feel slow, not just different.
+6. Separate "Amazon killed malls" from the fuller truth:
    malls were also overbuilt, demographically mismatched, and exposed to broader retail shifts.
-6. Use John's retail/operator perspective to analyze customer behavior versus executive myth.
-7. Close with the AI parallel:
-   current AI tools may also look narrow before they become embedded in broader behavior shifts.
+   AI parallel: "AI will replace all knowledge workers" is the equivalent oversimplification. Exposed categories were already fragile. Strong practitioners will reorganise, not disappear.
+7. What good operators did: they identified what their format could do that fulfillment centres cannot.
+   AI parallel: the equivalent question for every professional and business is not "can AI do this?" but "what do I do that AI genuinely cannot, and am I building from there?"
+8. Close with the through-line: the rewiring of retail took two decades and required search, payments, logistics, and generational habit change to all align. We do not know yet which combination of factors will make AI embedded behavior rather than an interesting tool. But we can watch for the alignment signals.
 
 ## Post 3
 
@@ -224,19 +231,25 @@ From DVD Mail to Streaming: How the Internet Changed Waiting
 
 ### Purpose
 
-Use the move from DVD-by-mail to streaming as a case study in how infrastructure, compression, broadband, licensing, and behavior all have to line up before a new model becomes normal.
+Use the move from DVD-by-mail to streaming as a case study in how infrastructure, compression, broadband, licensing, and behavior all have to line up before a new model becomes normal — and run that checklist against the current AI stack to show what still has to align.
 
 ### Sketch Outline
 
 1. Open with the weirdness of DVD-by-mail once upon a time feeling revolutionary.
-2. Explain why it worked:
-   convenience beat the old rental model even before streaming was ready.
+   AI parallel threaded here: current AI interfaces will look equally transitional in retrospect. The question is what they are the transitional phase toward.
+2. Explain why DVD-by-mail worked:
+   convenience beat the old rental model even before streaming was ready. It solved real friction with the tools available, not the ideal ones.
+   AI parallel: current AI tools are the DVD-by-mail stage. They solve real friction imperfectly. That imperfection does not mean they lose — it means the better version is still being built underneath.
 3. Show what had to become true before streaming could take over:
-   broadband, devices, licensing, CDNs, compression, habit changes.
+   broadband, devices, licensing, CDNs, compression, habit changes. None of these were guaranteed. Each took time and capital.
+   AI parallel: run the checklist explicitly. What does AI need before it becomes as embedded as streaming? Candidates: reliable latency, lower inference cost, workflow integration, trust, regulation, and the generation that grows up using it as a given. Which of these are already aligning? Which are still years out?
 4. Explain how streaming rewired expectations around access, ownership, and waiting.
-5. Note the business-model carnage and the second-order effects on media.
-6. Close with the AI parallel:
-   the first winning interface may not be the final dominant model.
+   AI parallel: once AI drafting or analysis becomes fast and reliable enough, the expectation of having it available will rewire what "normal" work pace means. The people who never had it will seem to be working with one hand tied.
+5. Note the business-model carnage: content economics were destroyed and rebuilt. Blockbuster failed not because streaming was inevitable from day one but because it could not adapt once the conditions aligned.
+   AI parallel: the parallel for knowledge-work industries is direct. The conditions for disruption are assembling. The timeline is uncertain. The direction is not.
+6. The first winning interface is not the final dominant model.
+   Netflix DVD was not Netflix streaming. ChatGPT may not be the final form of how people interact with AI. Something more ambient, more integrated, more invisible may be the actual endpoint.
+7. Close with the honest uncertainty: we do not know which AI products survive to become infrastructure the way streaming did. But we can identify which preconditions are still missing — and track when they start to close.
 
 ## Post 4
 
@@ -246,18 +259,24 @@ Smartphones Made the Internet Ambient
 
 ### Purpose
 
-Argue that the internet's deepest social change may not have been the web browser or e-commerce, but the smartphone making networked computing constant, portable, and ordinary.
+Argue that the internet's deepest social change was not the browser or e-commerce but the smartphone making networked computing constant, portable, and invisible — and ask directly whether AI will follow the same path from tool to ambient layer.
 
 ### Sketch Outline
 
-1. Open with a behavior that would have sounded absurd in 1999 but is now routine.
+1. Open with a behavior that would have sounded absurd in 1999 but is now so routine it is invisible.
+   AI parallel threaded immediately: name a specific AI-assisted behavior that sounds slightly absurd today but may be equally invisible in fifteen years. Make it concrete.
 2. Track smartphone adoption from novelty to near universality.
+   AI parallel at each stage: current AI adoption curve versus smartphone curve. Where are we on that timeline? What signals suggest acceleration or stall?
 3. Show how mobile changed navigation, communication, media, commerce, identity, and everyday coordination.
-4. Distinguish the internet as a place from the internet as an ambient layer of life.
-5. Include losses as well as gains:
-   dependency, surveillance, attention capture, social rewiring.
-6. Close with the AI parallel:
-   today's chat interfaces may be primitive precursors to something that later becomes ambient.
+   AI parallel: go category by category. Navigation → AI routing decisions. Communication → AI-drafted messages. Commerce → AI-assisted purchasing and negotiation. Identity → how does AI change how we present expertise and competence? Each of these is a real question, not a rhetorical one.
+4. The smartphone created entirely new categories of behavior that nobody predicted — Uber, Instagram, dating apps — not just faster versions of old behaviors.
+   AI parallel: the most important AI applications may not exist yet. The ones that look most powerful now may not be the ones that reshape daily life. Maintain genuine uncertainty about which applications become the Uber of AI.
+5. Distinguish the internet as a place from the internet as an ambient layer of life.
+   AI parallel: today AI is a place you go — you open a chat window. The ambient version would be AI woven into every surface you already work on. That transition, if it happens, is the equivalent of the smartphone shift.
+6. Include losses as well as gains:
+   dependency, surveillance, attention capture, social rewiring. Do not skip this.
+   AI parallel: what are the equivalent risks when AI becomes ambient? Dependency on systems you cannot audit. Homogenisation of output. The erosion of the friction that used to force people to develop judgment. These are not hypothetical.
+7. Close: the smartphone question for AI is not whether AI gets better. It is whether it gets invisible. Invisible is what changes society, not impressive.
 
 ## Post 5
 
@@ -267,24 +286,31 @@ Wireless Access and the Places That Skipped the Old Internet
 
 ### Purpose
 
-Show how mobile and wireless access created real opportunity in developing countries, especially where legacy infrastructure was weak, while also staying honest about affordability, usage gaps, and uneven gains.
+Show how mobile and wireless access created real opportunity in developing countries by leapfrogging legacy infrastructure — and ask directly whether AI will compress expert-access gaps across health, law, finance, and education in the same way, while staying honest about where those gains will not arrive automatically.
 
 ### Sketch Outline
 
 1. Open with the mistake of assuming everyone follows the same infrastructure sequence.
+   AI parallel threaded immediately: the assumption that AI adoption follows a rich-world, office-worker, knowledge-professional track may be as wrong as assuming mobile adoption would follow the landline track.
 2. Explain mobile-first adoption and leapfrogging.
+   AI parallel: countries and communities without deep expert infrastructure in medicine, law, or financial services may adopt AI-assisted versions of those services faster and more completely than wealthy countries locked into existing professional structures. The leapfrog may be sharper.
 3. Cover mobile money, entrepreneurship, labor-market shifts, and access to services.
+   AI parallel: mobile money (M-Pesa) gave people access to financial infrastructure they had been structurally excluded from. What does the equivalent look like for AI? A farmer getting crop-disease diagnosis. A patient in a low-resource clinic getting a second opinion. A first-generation student getting the kind of guidance that prep-school kids take for granted. These are not science fiction — early versions exist. The question is whether they scale and hold quality.
 4. Distinguish coverage from meaningful use.
+   AI parallel: access to an AI tool is not the same as benefit from an AI tool. The same gaps that limited mobile's reach — cost, literacy, electricity, language support, cultural fit — apply to AI. "AI is available" is not the same as "AI is useful here."
 5. Show where the optimistic story breaks:
    affordability, literacy, device access, electricity, gender gaps, regulation.
-6. Use this as the broadest societal post in the series.
-7. Close with the AI parallel:
-   the most important beneficiaries of a technology wave are not always the ones the first investors or evangelists had in mind.
+   AI parallel: run each directly. Inference cost in low-income contexts. Language model quality in minority languages. Regulatory environments that restrict AI medical or legal advice. The gender gap in technology access that mobile never fully closed.
+6. Use this as the broadest societal post in the series — zoom out to ask who gets to benefit and on what timeline.
+   The dot-com bubble was largely a wealthy-world, English-language event. Mobile was more democratic than that but still uneven. AI could be more democratic still — or could amplify existing inequalities if access, quality, and affordability are not addressed.
+7. Close: the most important beneficiaries of this wave may not be the knowledge workers in San Francisco or London who are currently most anxious about it. They may be in places that never had access to the kind of expertise AI can approximate — and for whom an imperfect AI doctor or lawyer is not a downgrade from the real thing, but an upgrade from nothing.
 
 ## Cross-Series Notes
 
 - Keep post 1 as the thesis essay and avoid spending all examples too early.
 - Save the deeper Amazon, streaming, smartphone, and development examples for the later essays.
+- **AI parallels must run throughout each post, not only at the close.** Each section of the historical argument should actively illuminate something about AI — either a direct parallel, a contrast, or an open question. The history earns its length by doing analytical work on the AI question, not by preceding a final paragraph that gestures at it.
+- **Uncertainty is an asset.** Where the AI parallel is genuinely unknown ("we don't know yet what the streaming moment will be for AI"), say so directly. That honesty is part of the series voice, not a weakness.
 - Reuse phrases carefully so the series feels coherent without sounding repetitive.
 - John should appear in every essay, but the ratio of autobiography to analysis can vary.
 - Tone target across the whole series:

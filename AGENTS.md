@@ -65,6 +65,7 @@ Set up git hooks (once per clone): `./scripts/setup-githooks.sh`
   - Do not manually run `public/assets/images/resizer.sh`.
   - Do not convert, resize, deduplicate, or otherwise alter source files before upload.
   - The only manual preprocessing step allowed by default is renaming the original file before upload.
+  - **Dimension suffixes belong in CMS-generated renditions only.** Original filenames must use the canonical stem with no dimension suffix (e.g. `my-image.png`, not `my-image-1536x1024.png`). The CMS appends dimensions when generating web and thumbnail renditions. Post and front matter `src` references should use the CMS-generated path including dimensions (e.g. `/assets/images/my-image-1536x1024.png`); always reference the web rendition, never the originals path.
 - Always reference the CMS-generated web asset in content, never the file under `originals/`.
 - If an image task does not clearly fit the CMS flow, stop and verify before touching files.
 - Provide descriptive alt text for every image and aria labels for controls; avoid generic placeholders.
