@@ -50,7 +50,7 @@ For me that has meant continuing to build real systems, just at a scale and scop
 
 That project alone has taught me a great deal about modern application design, delivery, and operations. But it is not the only one. My wife wanted to blog our travels and eventually publish educational videos, so I built an Astro-based publishing platform around GitHub, GitHub Actions, AWS deployment, scheduled publishing, and a Git-aware CMS. More recently I added a REST API for the ChatGPT app and MCP support for tools like Codex and Claude Cowork because I have found AI to be a poor writing tool but an excellent editing tool when it is scaffolded well.
 
-<figure class="inline-photo inline-photo-right" style="width:50%;">
+<figure class="post-image post-image-inline post-image-right" style="width:50%;">
   <img src="/assets/images/posts/staying-hands-on-inline-1536x1024.webp"
        alt="A thoughtful technology leader at a desk with code on a laptop, system diagrams on a whiteboard, and notes spread across the workspace, emphasizing reflective technical judgment rather than performative busyness." />
 </figure>

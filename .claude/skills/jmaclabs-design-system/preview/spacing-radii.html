@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Spacing / Radii</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .blk{display:flex;flex-direction:column;gap:10px}
+  .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted)}
+  .stack{display:flex;align-items:flex-end;gap:8px}
+  .box{background:var(--color-surface);border:1px solid var(--color-border);border-radius:4px;display:flex;align-items:flex-end;justify-content:center;color:var(--color-fg-muted);font-family:var(--font-mono);font-size:10px;padding:2px 4px}
+  .rad{height:56px;border:1px solid var(--color-border);background:linear-gradient(180deg,#2A2F36,#15171A);display:flex;align-items:center;justify-content:center;color:var(--color-fg-2);font-family:var(--font-mono);font-size:11px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="blk">
+    <div class="lbl">Spacing (4pt base)</div>
+    <div class="stack">
+      <div class="box" style="width:12px;height:12px">4</div>
+      <div class="box" style="width:16px;height:16px">8</div>
+      <div class="box" style="width:20px;height:20px">12</div>
+      <div class="box" style="width:24px;height:24px">16</div>
+      <div class="box" style="width:32px;height:32px">24</div>
+      <div class="box" style="width:44px;height:44px">32</div>
+      <div class="box" style="width:56px;height:56px">48</div>
+    </div>
+  </div>
+  <div class="blk">
+    <div class="lbl">Radii</div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+      <div class="rad" style="border-radius:10px">10</div>
+      <div class="rad" style="border-radius:16px">16</div>
+      <div class="rad" style="border-radius:20px">20</div>
+      <div class="rad" style="border-radius:24px">24</div>
+      <div class="rad" style="border-radius:28px">28</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

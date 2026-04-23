@@ -53,7 +53,7 @@ That emotional structure is one of the clearest parallels to AI now. Long before
 
 ## I Built Real Things
 
-<figure class="inline-photo inline-photo-right">
+<figure class="post-image post-image-inline post-image-right">
   <img src="/assets/images/netscape-linkexchange-desk-1536x1024.png" alt="A late-1990s desk with Netscape, LinkExchange material, domain registration papers, and early web-building notes." />
   <figcaption>Before the market narrative hardened, a lot of us were just trying to make the web more usable, discoverable, and legible.</figcaption>
 </figure>
@@ -72,7 +72,7 @@ That is one reason I keep thinking about current AI interfaces. ChatGPT did not 
 
 ## The Split Between Operators and Hype Machines
 
-<figure class="inline-photo inline-photo-left">
+<figure class="post-image post-image-inline post-image-left">
   <img src="/assets/images/operators-vs-hype-machines-1536x1024.png" alt="A split illustration contrasting server-room operators doing technical work with a party scene of hype-driven financiers celebrating market gains." />
   <figcaption>The period rewarded both real operators and people who were much better at selling the story than running the business.</figcaption>
 </figure>
@@ -109,7 +109,7 @@ Directionally right is not the same thing as economically right.
 
 ## What the Bubble Built Anyway
 
-<figure class="inline-photo inline-photo-right">
+<figure class="post-image post-image-inline post-image-right">
   <img src="/assets/images/bubble-builds-infrastructure-1536x1024.png" alt="Fiber lines, servers, and power infrastructure framed inside a glowing money bubble around communications towers and datacenter capacity." />
   <figcaption>Even badly allocated capital can leave behind durable foundations if it funds capacity, access, and operational infrastructure the next wave inherits.</figcaption>
 </figure>
@@ -166,7 +166,7 @@ In some ways, I think the near-term effect is less "AI replaces the expert" and 
 
 ## The Question Leaders Actually Have to Answer
 
-<figure class="inline-photo inline-photo-left">
+<figure class="post-image post-image-inline post-image-left">
   <img src="/assets/images/singapore-ai-reflection-1024x1536.png" alt="A man looking out over Singapore at dusk, with a large AI face reflected in the glass beside the skyline." />
   <figcaption>The leadership question is not whether AI exists. It is whether you can use it in ways customers value and organizations can actually sustain.</figcaption>
 </figure>

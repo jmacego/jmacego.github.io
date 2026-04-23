@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Color: Lime signal</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-sans); }
+  .wrap { padding: 20px; display:grid; gap:14px; }
+  .row { display:grid; grid-template-columns: repeat(3,1fr); gap:10px; }
+  .chip { border-radius: 14px; padding: 14px; height: 100px; display:flex; flex-direction:column; justify-content:space-between;
+    border:1px solid rgba(0,0,0,0.2); }
+  .chip .name { font-size: 13px; font-weight: 700; color:#0E0F10; }
+  .chip .hex { font-family: var(--font-mono); font-size: 11px; color:#0E0F10cc; }
+  .chip .role { font-size: 10px; letter-spacing:.14em; text-transform:uppercase; color:#0E0F10aa; font-weight:600; }
+  .pill-row { display:flex; gap:10px; align-items:center; }
+  .pill { display:inline-flex; align-items:center; min-height: 2rem; border-radius:999px; padding:.35rem .85rem; font-size:.82rem; font-weight:600; }
+  .pill.lime { background: rgba(154,242,60,0.14); color: var(--lime-300); border: 1px solid rgba(154,242,60,0.30); }
+  .label { font-size: 11px; letter-spacing:.14em; text-transform:uppercase; color:var(--color-fg-muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <div class="chip" style="background:#B7FF6A">
+      <div class="role">Hover / bright</div>
+      <div><div class="name">Lime / 300</div><div class="hex">#B7FF6A</div></div>
+    </div>
+    <div class="chip" style="background:#9AF23C">
+      <div class="role">Signal (brand)</div>
+      <div><div class="name">Lime / 400</div><div class="hex">#9AF23C</div></div>
+    </div>
+    <div class="chip" style="background:#7ED61A">
+      <div class="role">Press / deep</div>
+      <div><div class="name">Lime / 500</div><div class="hex">#7ED61A</div></div>
+    </div>
+  </div>
+  <div class="pill-row">
+    <div class="label">On dark:</div>
+    <span class="pill lime">Lime / 400</span>
+    <span class="pill lime" style="background: rgba(154,242,60,0.22);">Active</span>
+  </div>
+</div>
+</body>
+</html>

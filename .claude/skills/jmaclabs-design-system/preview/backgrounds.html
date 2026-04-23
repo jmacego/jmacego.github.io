@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Background / Glow</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .bg{border-radius:24px;min-height:120px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--color-border)}
+  .a{background:radial-gradient(circle at top left,rgba(183,255,106,.10),transparent 35%),radial-gradient(circle at bottom right,rgba(167,139,250,.16),transparent 40%),linear-gradient(145deg,#1C1F24F7,#0E0F10FC)}
+  .b{background:linear-gradient(180deg,#1A1D22fa,#131518fc),linear-gradient(135deg,#B7FF6A0A,#A78BFA14)}
+  .lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted)}
+  .h{font-family:var(--font-serif-display);font-weight:600;font-size:22px;letter-spacing:-.03em;line-height:1;color:var(--color-fg);margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bg a"><div class="lbl">Hero · dual radial glow</div><div class="h">lime + violet</div></div>
+  <div class="bg b"><div class="lbl">Section · subtle tint</div><div class="h">quiet surface</div></div>
+</div>
+</body>
+</html>

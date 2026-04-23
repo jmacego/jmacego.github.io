@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Logo</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .tile{border-radius:20px;border:1px solid var(--color-border);padding:14px;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;min-height:116px}
+  .dark{background:linear-gradient(180deg,#1C1F24,#0E0F10)}
+  .light{background:#F2F4F7}
+  img{max-width:240px;width:100%;height:auto;display:block;filter:drop-shadow(0 6px 16px rgba(0,0,0,.4))}
+  .light img{filter:none}
+  .cap{font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+  .dark .cap{color:var(--color-fg-muted)}
+  .light .cap{color:#4A5160}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="tile dark">
+    <img src="../assets/logo-jmac-filled.png" alt="John MacDonald filled logo" />
+    <div class="cap">On dark · primary</div>
+  </div>
+  <div class="tile light">
+    <img src="../assets/logo-jmac-on-light.png" alt="John MacDonald on-light logo" />
+    <div class="cap">On light · primary</div>
+  </div>
+</div>
+</body>
+</html>

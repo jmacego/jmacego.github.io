@@ -61,7 +61,7 @@ Mentorship gives you a far better read than articles about "what Gen Z wants" ev
 
 ## It Keeps You Fresh Instead of Rigid
 
-<figure class="inline-photo inline-photo-right">
+<figure class="post-image post-image-inline post-image-right">
   <img src="/assets/images/posts/mentorship-blog-inline.png"
        alt="Overhead view of a split desk: the left side neat and orderly with stacked books, a blank notebook, and a single pen on dark wood; the right side covered in hand-drawn diagrams, colorful sticky notes, and scattered markers on lighter wood, with a coffee cup bridging the two halves." />
   <figcaption>Experience on one side, exploration on the other — mentorship keeps the two in conversation.</figcaption>

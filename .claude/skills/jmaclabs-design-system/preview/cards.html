@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Cards</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{border-radius:24px;border:1px solid var(--color-border);padding:16px;background:linear-gradient(180deg,#1C1F24c7,#0E0F10db);box-shadow:0 18px 42px -34px rgba(0,0,0,.8),inset 0 1px rgba(255,255,255,.04);display:flex;flex-direction:column;gap:10px;min-height:128px}
+  .card.hero{background:radial-gradient(circle at top right,rgba(167,139,250,.18),transparent 35%),linear-gradient(160deg,#2A2F36e0,#15171Af5)}
+  .eye{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--lime-300)}
+  h3{font-family:var(--font-serif-display);font-weight:600;font-size:20px;line-height:1.05;letter-spacing:-.03em;margin:0}
+  p{margin:0;font-size:13px;line-height:1.5;color:var(--color-fg-2)}
+  .pill{display:inline-flex;align-items:center;border-radius:999px;padding:.25rem .6rem;font:600 11px/1 var(--font-sans);background:rgba(167,139,250,.14);color:var(--violet-300);border:1px solid rgba(167,139,250,.3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card hero">
+    <div class="eye">Palette direction</div>
+    <h3>Dark neutrals, one signal at a time.</h3>
+    <p>Quiet on projectors, crisp on laptops.</p>
+    <div><span class="pill">Lime / 400</span></div>
+  </div>
+  <div class="card">
+    <div class="eye" style="color:var(--violet-300)">Advisory note</div>
+    <h3>Neutrals</h3>
+    <p>Low-glare foundations for dark canvases and presentation chrome.</p>
+  </div>
+</div>
+</body>
+</html>

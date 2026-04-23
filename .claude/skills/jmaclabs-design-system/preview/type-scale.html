@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Type: Scale</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-sans); }
+  .wrap { padding: 16px 22px; display:grid; gap: 6px; }
+  .row { display:grid; grid-template-columns: 70px 70px 1fr; align-items:baseline; gap: 14px; padding: 4px 0; border-bottom: 1px solid rgba(242,244,247,0.06); }
+  .tok { font-size: 11px; letter-spacing:.12em; text-transform:uppercase; color:var(--color-fg-muted); font-family: var(--font-mono); }
+  .size { font-size: 11px; color: var(--color-fg-muted); font-family: var(--font-mono); }
+  .sample { font-family: var(--font-serif-display); letter-spacing:-0.03em; color:var(--color-fg); font-weight:600; line-height:1; }
+  .s-body { font-family: var(--font-sans); font-weight: 500; letter-spacing: 0; }
+  .s-mono { font-family: var(--font-mono); font-weight: 400; letter-spacing: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><div class="tok">H1</div><div class="size">44 / .98</div><div class="sample" style="font-size:40px">Deck Palette Lab</div></div>
+  <div class="row"><div class="tok">H2</div><div class="size">28 / 1.05</div><div class="sample" style="font-size:26px;font-weight:500">Swatches with deck notes</div></div>
+  <div class="row"><div class="tok">H3</div><div class="size">20 / 1.1</div><div class="sample" style="font-size:18px">Neutrals</div></div>
+  <div class="row"><div class="tok">Lede</div><div class="size">16 / 1.5</div><div class="sample s-body" style="font-size:14px;color:var(--color-fg-2);font-weight:400">A dark-first swatch board for slides.</div></div>
+  <div class="row"><div class="tok">Body</div><div class="size">14 / 1.55</div><div class="sample s-body" style="font-size:13px;color:var(--color-fg);">Fractional CTO and advisor.</div></div>
+  <div class="row"><div class="tok">Mono</div><div class="size">13 / 1.4</div><div class="sample s-mono" style="font-size:12px;color:var(--color-fg-muted);">--lime-400: #9AF23C;</div></div>
+</div>
+</body>
+</html>

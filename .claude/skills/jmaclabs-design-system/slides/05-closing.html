@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Closing Slide — JMacLabs</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:#000;overflow:hidden;font-family:var(--font-sans);color:var(--color-fg)}
+  .stage{position:fixed;inset:0;display:grid;place-items:center}
+  .slide{width:1920px;height:1080px;transform-origin:center center;background:radial-gradient(circle at 50% 30%,rgba(154,242,60,.10),transparent 38%),linear-gradient(145deg,#1C1F24,#0E0F10);padding:120px;display:flex;flex-direction:column;justify-content:center;gap:44px;text-align:center;align-items:center;position:relative}
+  .eyebrow{font:600 22px/1 var(--font-sans);letter-spacing:.24em;text-transform:uppercase;color:var(--lime-300);margin:0}
+  h1{font-family:var(--font-serif-display);font-weight:600;font-size:200px;line-height:.94;letter-spacing:-.045em;margin:0;color:var(--color-fg);max-width:14ch}
+  .links{display:grid;grid-template-columns:repeat(3,auto);gap:64px;margin-top:24px;justify-content:center}
+  .link{display:grid;gap:6px;text-align:center}
+  .link .lbl{font:600 16px/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;color:var(--color-fg-muted)}
+  .link .val{font-family:var(--font-mono);font-size:30px;color:var(--color-fg)}
+  img.logo{height:96px;margin-top:20px}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide" id="slide">
+    <p class="eyebrow">Thank you</p>
+    <h1>Let's build something legible.</h1>
+    <div class="links">
+      <div class="link"><div class="lbl">Web</div><div class="val">jmaclabs.com</div></div>
+      <div class="link"><div class="lbl">Email</div><div class="val">john@jmaclabs.com</div></div>
+      <div class="link"><div class="lbl">Twitter</div><div class="val">@jmacego</div></div>
+    </div>
+    <img class="logo" src="../assets/logo-jmac-filled.png" />
+  </div>
+</div>
+<script>const s=document.getElementById('slide');function fit(){const w=innerWidth/1920,h=innerHeight/1080;s.style.transform=`scale(${Math.min(w,h)})`}fit();addEventListener('resize',fit);</script>
+</body>
+</html>

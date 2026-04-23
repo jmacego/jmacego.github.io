@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Color: Text</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body { margin:0; background:var(--color-bg); color:var(--color-fg); font-family:var(--font-sans); }
+  .wrap { padding: 22px; display:grid; gap: 12px; }
+  .row { display:flex; align-items:center; gap: 18px; padding: 12px 14px; border-radius: 14px; background: var(--color-surface); border: 1px solid var(--color-border); }
+  .swatch { width: 44px; height: 44px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.3); }
+  .meta { display:flex; flex-direction:column; gap:2px; }
+  .name { font-weight: 600; font-size: 14px; }
+  .hex { font-family: var(--font-mono); font-size: 12px; color: var(--color-fg-muted); }
+  .sample { margin-left:auto; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row">
+    <div class="swatch" style="background:#F2F4F7"></div>
+    <div class="meta"><div class="name" style="color:#F2F4F7">Primary on dark</div><div class="hex">#F2F4F7 · text-primary-on-dark</div></div>
+    <div class="sample" style="color:#F2F4F7">Body, headings, numbers</div>
+  </div>
+  <div class="row">
+    <div class="swatch" style="background:#C7CDD6"></div>
+    <div class="meta"><div class="name" style="color:#C7CDD6">Secondary on dark</div><div class="hex">#C7CDD6 · text-secondary-on-dark</div></div>
+    <div class="sample" style="color:#C7CDD6">Supporting copy, lede</div>
+  </div>
+  <div class="row">
+    <div class="swatch" style="background:#98A2B3"></div>
+    <div class="meta"><div class="name" style="color:#98A2B3">Muted on dark</div><div class="hex">#98A2B3 · text-muted-on-dark</div></div>
+    <div class="sample" style="color:#98A2B3">Meta, eyebrows, captions</div>
+  </div>
+</div>
+</body>
+</html>

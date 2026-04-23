@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Form inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:22px;display:grid;gap:14px;max-width:560px}
+  label{display:grid;gap:6px}
+  .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);font-weight:600}
+  input,textarea,select{background:rgba(15,17,20,.7);border:1px solid var(--color-border-strong);border-radius:12px;color:var(--color-fg);font:500 14px/1 var(--font-sans);padding:12px 14px;outline:none;transition:border-color var(--dur-med) var(--ease-out),box-shadow var(--dur-med) var(--ease-out)}
+  input:focus,textarea:focus,select:focus{border-color:var(--lime-400);box-shadow:0 0 0 3px rgba(154,242,60,.18)}
+  .row{display:flex;gap:10px;align-items:center}
+  .check{width:18px;height:18px;border-radius:6px;border:1.5px solid var(--color-border-strong);background:rgba(15,17,20,.7);display:inline-flex;align-items:center;justify-content:center;color:var(--lime-400);font-size:11px}
+  .check.on{background:var(--lime-400);color:#0E0F10;border-color:var(--lime-500)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <label><span class="lbl">Name</span><input value="John MacDonald" /></label>
+  <label><span class="lbl">Engagement type</span><select><option>Fractional CTO</option><option>Advisory</option><option>Keynote</option></select></label>
+  <div class="row"><span class="check on">✓</span><span style="color:var(--color-fg-2);font-size:14px">Send prep doc 48h before</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Token Pills</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:22px;display:grid;gap:12px}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted);width:80px}
+  .pill{display:inline-flex;align-items:center;min-height:2rem;border-radius:999px;padding:.35rem .8rem;font:600 .82rem/1 var(--font-sans);letter-spacing:.01em;border:1px solid transparent}
+  .lime{background:rgba(154,242,60,.14);color:var(--lime-300);border-color:rgba(154,242,60,.30)}
+  .violet{background:rgba(167,139,250,.14);color:var(--violet-300);border-color:rgba(167,139,250,.30)}
+  .neutral{background:rgba(58,64,74,.55);color:var(--color-fg-2);border-color:rgba(242,244,247,.12)}
+  .outline{background:transparent;color:var(--color-fg);border-color:var(--color-border-strong)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="row"><div class="lbl">Signal</div><span class="pill lime">Lime / 400</span><span class="pill lime">Active</span><span class="pill lime">Shipping</span></div>
+  <div class="row"><div class="lbl">Structure</div><span class="pill violet">Violet / 400</span><span class="pill violet">Neutral / 850</span><span class="pill violet">16:9</span></div>
+  <div class="row"><div class="lbl">Neutral</div><span class="pill neutral">Unlinked route</span><span class="pill neutral">Noindex</span><span class="pill outline">Sitemap excluded</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Icons (Lucide)</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:22px;display:grid;gap:14px}
+  .grid{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}
+  .ic{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border-radius:12px;border:1px solid var(--color-border);background:var(--color-surface)}
+  .ic [data-lucide]{width:20px;height:20px;stroke:var(--color-fg-2);stroke-width:1.75}
+  .ic .n{font:500 10px/1 var(--font-mono);color:var(--color-fg-muted)}
+  .title{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-fg-muted)}
+  .accent [data-lucide]{stroke:var(--lime-300)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="title">Lucide · 1.75 stroke · currentColor</div>
+  <div class="grid">
+    <div class="ic"><i data-lucide="arrow-right"></i><div class="n">arrow-right</div></div>
+    <div class="ic"><i data-lucide="check"></i><div class="n">check</div></div>
+    <div class="ic"><i data-lucide="chevron-right"></i><div class="n">chevron-right</div></div>
+    <div class="ic"><i data-lucide="file-text"></i><div class="n">file-text</div></div>
+    <div class="ic"><i data-lucide="cpu"></i><div class="n">cpu</div></div>
+    <div class="ic"><i data-lucide="layers"></i><div class="n">layers</div></div>
+    <div class="ic accent"><i data-lucide="sparkles"></i><div class="n">sparkles</div></div>
+    <div class="ic accent"><i data-lucide="plane"></i><div class="n">plane</div></div>
+  </div>
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>

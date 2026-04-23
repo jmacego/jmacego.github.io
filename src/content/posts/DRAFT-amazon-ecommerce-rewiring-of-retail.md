@@ -26,7 +26,6 @@ image:
 When I was running 5GuysTech, we had a real office, real staff, and a real pitch: the internet is where commerce is going, and your business needs to be there before your competitors arrive. We would sit across from small business owners, walk them through what a website could do for them, and wait for the moment they understood why it mattered.
 
 Most of them heard us out. Almost none of them signed.
-<!--more-->
 
 The objection that stuck with me was not hostile. It was calm and accurate. "My customers know where I am. They come in through the door." That was not denial. That was an honest description of how those businesses had operated for the entire length of their existence. The idea that someone would find a business through a search engine, hand credit card information to a server they had never met, then wait several days for something they could pick up that afternoon. That assumed a customer psychology most brick-and-mortar operators were not yet working with. Their current customers were not those customers.
 
@@ -38,8 +37,8 @@ The retail story is worth going through carefully, because it illustrates the ch
 
 ## Why Early E-Commerce Looked Narrow
 
-<figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." />
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/early-ecommerce-desk-books-1536x1024.png" alt="A late-1990s home desk with a dial-up modem, a browser showing an early Amazon books page, and a credit card hesitantly resting next to the keyboard." loading="lazy" />
   <figcaption>Early online retail worked in the categories where the friction math already favoured it. Books first. Everything else took longer.</figcaption>
 </figure>
 
@@ -51,12 +50,12 @@ Early e-commerce did not win everywhere at once. It started in a specific catego
 
 Most of the executives who later failed to adapt to Amazon were not fighting a company that had beaten them everywhere. They were fighting a company that had beaten them in one category first, built the infrastructure in that category, and then stepped out from it. By the time the full shape of the threat was visible, the underlying logistics machine was already in place.
 
-AI is following the same pattern. The current beachhead is coding assistance. GitHub Copilot passed 1.8 million paid subscribers by 2024. The friction math works for the same reasons it worked for Amazon in books: the output is verifiable, errors are recoverable, and the value of pattern depth — knowing a vast corpus of code — outweighs what any individual practitioner can hold in memory. After coding, the categories where AI is winning are document review in legal, imaging analysis in radiology, and financial document processing. All of them share the same profile: bounded output, checkable results, depth of reference beats human recall. AI is not trying to win in criminal defence or complex surgery first. That is not Amazon starting with clothing.
+AI is following the same pattern. The current beachhead is coding assistance. GitHub Copilot passed 1.8 million paid subscribers by 2024. The friction math works for the same reasons it worked for Amazon in books: the output is verifiable, errors are recoverable, and the value of pattern depth knowing a vast corpus of code outweighs what any individual practitioner can hold in memory. After coding, the categories where AI is winning are document review in legal, imaging analysis in radiology, and financial document processing. All of them share the same profile: bounded output, checkable results, depth of reference beats human recall. AI is not trying to win in criminal defence or complex surgery first. That is not Amazon starting with clothing.
 
 ## The Build Behind the Storefront
 
-<figure class="inline-photo inline-photo-left">
-  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." />
+<figure class="post-image post-image-inline post-image-left">
+  <img src="/assets/images/amazon-fulfillment-logistics-scale-1536x864.png" alt="An aerial view of a massive Amazon fulfilment centre at dusk, surrounded by delivery trucks in orderly rows, with the scale of the operation made visible against the surrounding landscape." loading="lazy" />
   <figcaption>Amazon did not beat retail through better web design. It beat retail by building a logistics infrastructure that changed what customers expected from anyone shipping them something.</figcaption>
 </figure>
 
@@ -84,7 +83,7 @@ The scale of the shift is different from what the headline implies. U.S. e-comme
 
 More importantly, Amazon was not the only force. What rewired retail was the combination of cheap search, normalised payments, fulfilment infrastructure, and a generational shift in consumer habits. NBER research on pricing behaviour makes the point with specificity: retailers exposed to Amazon competition roughly doubled their monthly price-adjustment rate between 2008 and 2017, and many moved to uniform national pricing because their customers were now comparing prices in real time from anywhere. That is not one company hurting stores. That is search transparency changing competitive behaviour across entire categories of retail.
 
-AI is beginning to do something structurally similar to expertise pricing. A small business owner who needs a standard contract reviewed can now get a competent first pass from an AI tool without paying for a junior associate's hourly rate. A founder working through an employment question can get oriented before engaging a lawyer at all. The floor on certain categories of billable time is starting to move, for the same structural reason that search moved retail pricing: clients can now compare. This does not threaten the senior practitioner with genuine judgment and distinctive expertise any more than Amazon threatened Costco. But the opacity that let inefficiency hide — the billing model that bundled high-value judgment with routine document assembly and called it one service — is starting to look like a vulnerability.
+AI is beginning to do something structurally similar to expertise pricing. A small business owner who needs a standard contract reviewed can now get a competent first pass from an AI tool without paying for a junior associate's hourly rate. A founder working through an employment question can get oriented before engaging a lawyer at all. The floor on certain categories of billable time is starting to move, for the same structural reason that search moved retail pricing: clients can now compare. This does not threaten the senior practitioner with genuine judgment and distinctive expertise any more than Amazon threatened Costco. But the opacity that let inefficiency hide, the billing model that bundled high-value judgment with routine document assembly and called it one service, is starting to look like a vulnerability.
 
 The actual store employment numbers are more complicated than the coverage suggests, too. If you include restaurants and service businesses when you look at physical retail (which most press analysis does not), the sector returned to 2006 levels by 2017 in both employment and revenue. What changed was the category mix. Electronics stores, bookstores, commodity apparel at scale, and big-box general merchandise contracted. Restaurants, specialty experiences, fitness studios, and service businesses expanded, often into the same spaces. The mall reorganised more than it died.
 
@@ -92,8 +91,8 @@ Class A malls, well-located with strong demographic draws and differentiated ten
 
 ## The Overbuilding the Headlines Skip
 
-<figure class="inline-photo inline-photo-right">
-  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." />
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/mall-adaptation-mixed-use-1536x1024.png" alt="A former shopping mall being converted into a mixed-use development, with construction scaffolding on part of the structure, a new restaurant facade visible at ground level, and an industrial logistics bay added to the far end." loading="lazy" />
   <figcaption>The retail space did not simply disappear. It reorganised. Malls are becoming mixed-use, restaurant-anchored, and in some cases last-mile logistics nodes.</figcaption>
 </figure>
 
@@ -105,7 +104,7 @@ The anchor store failures of the 2010s illustrate the point. Sears filed for ban
 
 E-commerce accelerated the pressure. It did not create the underlying weakness.
 
-The professional services equivalent is not hard to find. Consulting, legal, and financial services firms built on high-utilisation models — where leverage depends on junior staff handling research, document drafting, and routine analysis — have been running a model that AI directly challenges. Many of those models were already questionable as efficiency propositions. The billing structure that bundled a senior partner's judgment with a first-year associate's document assembly into a single hourly rate worked because clients had no alternative comparison point. That comparison point is emerging. The Toys R Us parallel is pointed: firms that have been through ownership changes, run on borrowed capacity, and under-invested in genuinely distinctive capability are going to find the adjustment harder than firms that stayed lean and built real differentiation. E-commerce did not create the weakness in over-leveraged retailers. It exposed it. AI will do the same to over-leveraged professional service models.
+The professional services equivalent is not hard to find. Consulting, legal, and financial services firms built on high-utilisation models, where leverage depends on junior staff handling research, document drafting, and routine analysis, have been running a model that AI directly challenges. Many of those models were already questionable as efficiency propositions. The billing structure that bundled a senior partner's judgment with a first-year associate's document assembly into a single hourly rate worked because clients had no alternative comparison point. That comparison point is emerging. The Toys R Us parallel is pointed: firms that have been through ownership changes, run on borrowed capacity, and under-invested in genuinely distinctive capability are going to find the adjustment harder than firms that stayed lean and built real differentiation. E-commerce did not create the weakness in over-leveraged retailers. It exposed it. AI will do the same to over-leveraged professional service models.
 
 What happened to struggling mall space is also worth naming. Conversion to mixed use is now common: restaurants, fitness centres, medical offices, housing, and last-mile logistics facilities are all showing up in spaces that once held department stores. That is not retail dying. That is real estate reorganising to match what a given location can actually support. Blanket statements about malls as a dead category miss that the space is being repurposed rather than abandoned.
 
@@ -131,7 +130,7 @@ Technology-driven market shifts do not happen because a new tool is better than 
 
 AI adoption is at roughly the stage where e-commerce was in the early 2000s. The capability is clearly real. Bick, Blandin, and Deming found that by late 2024, roughly 40 percent of the U.S. working-age population had tried generative AI, and 23 percent of employed workers had used it for work in the previous week. That is meaningful adoption. It is not yet embedded habit.
 
-What turns a useful tool into a rewired behaviour is not a better demo. It is the removal of enough friction, reliably enough, that using it becomes the path of least resistance. Prime got there on delivery time and selection breadth. AI will get there, in whatever areas it genuinely gets there, through reliability, quality, and workflow integration that makes the old approach feel slower. Right now, trust and workflow integration are the laggards — equivalent to where payment trust was for e-commerce in 2001. The underlying capability existed. The surrounding conditions had not yet aligned.
+What turns a useful tool into a rewired behaviour is not a better demo. It is the removal of enough friction, reliably enough, that using it becomes the path of least resistance. Prime got there on delivery time and selection breadth. AI will get there, in whatever areas it genuinely gets there, through reliability, quality, and workflow integration that makes the old approach feel slower. Right now, trust and workflow integration are the laggards, equivalent to where payment trust was for e-commerce in 2001. The underlying capability existed. The surrounding conditions had not yet aligned.
 
 Current AI products are uneven on all three counts. Some are excellent in specific contexts. Some are expensive and mediocre. Some perform well on bounded tasks and degrade badly at the edges. That is also what early e-commerce looked like from the outside. The question for any business or professional positioning for what comes next is not whether AI matters. It is which of these current use cases will survive long enough to become embedded habit, and which ones are still too narrow, too unreliable, or too expensive to hold the ground they appear to be claiming.
 

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Quote Slide — JMacLabs</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:#000;overflow:hidden;font-family:var(--font-sans);color:var(--color-fg)}
+  .stage{position:fixed;inset:0;display:grid;place-items:center}
+  .slide{width:1920px;height:1080px;transform-origin:center center;background:radial-gradient(circle at 78% 22%,rgba(154,242,60,.10),transparent 36%),radial-gradient(circle at 22% 80%,rgba(167,139,250,.20),transparent 42%),linear-gradient(145deg,#1C1F24,#0E0F10);padding:160px;display:flex;flex-direction:column;justify-content:center;gap:48px;position:relative}
+  .mark{font-family:var(--font-serif-display);font-size:320px;line-height:.6;color:var(--lime-400);opacity:.9;margin:0}
+  blockquote{margin:0;font-family:var(--font-serif-display);font-style:italic;font-weight:500;font-size:110px;line-height:1.04;letter-spacing:-.035em;color:var(--color-fg);max-width:24ch}
+  cite{font-style:normal;display:flex;gap:20px;align-items:center;margin-top:20px}
+  cite .name{font:600 26px/1.2 var(--font-sans);color:var(--color-fg)}
+  cite .role{font:400 18px/1.2 var(--font-sans);letter-spacing:.16em;text-transform:uppercase;color:var(--violet-300)}
+  cite .rule{width:60px;height:3px;background:var(--lime-400);border-radius:999px}
+  .meta{position:absolute;right:160px;bottom:80px;color:var(--color-fg-muted);font:600 16px/1 var(--font-mono);letter-spacing:.14em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="slide" id="slide">
+    <div class="mark">"</div>
+    <blockquote>Most AI strategies fail because they try to ship the org chart, not the product.</blockquote>
+    <cite>
+      <div class="rule"></div>
+      <div>
+        <div class="name">John MacDonald</div>
+        <div class="role">Fractional CTO · JMacLabs</div>
+      </div>
+    </cite>
+    <div class="meta">04 / 06</div>
+  </div>
+</div>
+<script>const s=document.getElementById('slide');function fit(){const w=innerWidth/1920,h=innerHeight/1080;s.style.transform=`scale(${Math.min(w,h)})`}fit();addEventListener('resize',fit);</script>
+</body>
+</html>

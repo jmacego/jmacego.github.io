@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>JMacLabs — Card anatomy</title>
+<link rel="stylesheet" href="../colors_and_type.css" />
+<style>
+  html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-sans)}
+  .wrap{padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .card{border:1px solid var(--color-border);border-radius:24px;padding:18px;background:linear-gradient(180deg,#1C1F24c7,#0E0F10db);box-shadow:0 18px 42px -34px rgba(0,0,0,.8),inset 0 1px rgba(255,255,255,.04);display:grid;gap:8px;min-height:200px;backdrop-filter:blur(16px)}
+  .glow{background:radial-gradient(circle at top right,rgba(154,242,60,.12),transparent 30%),linear-gradient(160deg,#2A2F36e0,#15171Af5)}
+  .eye{font-size:11.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--lime-300)}
+  h3{font-family:var(--font-serif-display);font-weight:600;font-size:22px;line-height:1.05;letter-spacing:-0.03em;margin:0;color:var(--color-fg)}
+  p{margin:0;font-size:14px;line-height:1.5;color:var(--color-fg-2)}
+  .bars{display:flex;gap:6px;align-items:end;margin-top:auto}
+  .bars span{display:block;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--lime-400),rgba(242,244,247,.12));flex:1}
+  .bars span:nth-child(2){background:linear-gradient(90deg,var(--violet-400),rgba(242,244,247,.12))}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="eye">Standard card</div>
+    <h3>Quiet card, hairline border</h3>
+    <p>24px radius, 1px translucent border, layered gradient, deep-but-soft shadow with a 1px inset highlight on top.</p>
+    <div class="bars"><span></span><span></span><span></span></div>
+  </div>
+  <div class="card glow">
+    <div class="eye" style="color:var(--violet-300)">Hero card</div>
+    <h3>Framed card with radial glow</h3>
+    <p>Same anatomy, with a radial accent glow pinned to a corner. Subtle — meant to register peripherally.</p>
+    <div class="bars"><span></span><span style="flex:.6"></span><span style="flex:.3"></span></div>
+  </div>
+</div>
+</body>
+</html>
