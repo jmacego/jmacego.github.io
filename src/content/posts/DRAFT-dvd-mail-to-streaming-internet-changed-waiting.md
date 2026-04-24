@@ -3,10 +3,10 @@ title: 'From DVD Mail to Streaming: How the Internet Changed Waiting'
 date: '2026-04-27T00:00:00.000Z'
 published: false
 description: >-
-  Netflix launched the same month I was deploying servers and building DNS tools.
-  We were on the same internet, making very different bets. The story of how one
-  of those bets eventually consumed the other is a better guide to AI adoption
-  than most people realise.
+  Netflix launched the same month I was deploying servers and building DNS
+  tools. We were on the same internet, making very different bets. The story of
+  how one of those bets eventually consumed the other is a better guide to AI
+  adoption than most people realise.
 tags:
   - streaming
   - netflix
@@ -24,19 +24,17 @@ image:
     and a modern streaming interface on a flat-screen television on the right,
     representing the transition from physical to digital media delivery.
 ---
-
-[IMAGE: dvd-mail-to-streaming-transition, A dramatic split scene. Left half: a bright red Netflix DVD mailer envelope resting on a wooden surface next to a disc case, late-2000s aesthetic, warm lamp light. Right half: a modern flat-screen television showing a streaming interface with a grid of show thumbnails, blue-lit living room. The dividing line between the two halves is crisp and clean. Photorealistic, editorial tone. 1536x864.]
+\[IMAGE: dvd-mail-to-streaming-transition, A dramatic split scene. Left half: a bright red Netflix DVD mailer envelope resting on a wooden surface next to a disc case, late-2000s aesthetic, warm lamp light. Right half: a modern flat-screen television showing a streaming interface with a grid of show thumbnails, blue-lit living room. The dividing line between the two halves is crisp and clean. Photorealistic, editorial tone. 1536x864.\]
 
 Netflix launched in April 1998. I was running PowerSurge at the time, deploying dedicated servers and trying to make DNS manageable for people who should not have to love raw BIND configuration. We were on the same internet, building entirely different things. They were betting the network was good enough to manage the logistics of physical media. I was betting the network was good enough to run a hosting business. We were both right, and both bets worked for a while.
 
 Neither of us was betting the network was good enough to deliver video. Because in April 1998, it was not.
-<!--more-->
 
 That gap between what the internet could manage and what it could actually deliver is the whole story of how streaming happened. Most accounts skip it. They run a straight line from "internet existed" to "Netflix killed Blockbuster" and miss the twenty years of conditions that had to close in between. Those conditions, and the order in which they closed, are worth understanding carefully. Not for nostalgia. Because the same sequence is playing out with AI, and most of the coverage is making the same mistake of drawing the line too straight.
 
 ## The Red Envelope Was the Prototype
 
-[IMAGE: netflix-red-envelope-desk, A late-2000s home desk scene. A bright red Netflix DVD mailer envelope sits open beside a disc case and a laptop showing the Netflix queue management interface. A broadband router with blinking indicator lights is visible in the background. Slightly dated hardware, the red envelope dominating the composition. Photorealistic, warm indoor lighting. 1536x1024.]
+\[IMAGE: netflix-red-envelope-desk, A late-2000s home desk scene. A bright red Netflix DVD mailer envelope sits open beside a disc case and a laptop showing the Netflix queue management interface. A broadband router with blinking indicator lights is visible in the background. Slightly dated hardware, the red envelope dominating the composition. Photorealistic, warm indoor lighting. 1536x1024.\]
 
 Netflix spent its first nine years as a postal service.
 
@@ -54,7 +52,7 @@ The internet managed disc logistics in 2007 not because that was the ideal answe
 
 ## What Had to Become True
 
-[IMAGE: streaming-conditions-diagram, A clean editorial infographic-style illustration. A vertical list of conditions on the left: broadband coverage, adaptive compression, connected TV, delivery infrastructure, licensing stability, subscription pricing, behavioural shift. Arrows from each condition lead to a central image of a stream flowing into a television screen on the right. Neutral tones, one accent colour. Editorial, slightly technical aesthetic. 1536x1024.]
+\[IMAGE: streaming-conditions-diagram, A clean editorial infographic-style illustration. A vertical list of conditions on the left: broadband coverage, adaptive compression, connected TV, delivery infrastructure, licensing stability, subscription pricing, behavioural shift. Arrows from each condition lead to a central image of a stream flowing into a television screen on the right. Neutral tones, one accent colour. Editorial, slightly technical aesthetic. 1536x1024.\]
 
 Broadband is the explanation most people reach for when explaining why streaming took until around 2010 to become the dominant delivery model. Broadband is not wrong. It is incomplete to the point of misleading.
 
@@ -88,7 +86,7 @@ Tracking broadband adoption was the wrong single variable for predicting when st
 
 ## Blockbuster Tried
 
-[IMAGE: blockbuster-store-closing, An editorial photograph of a Blockbuster Video store in its final months. The blue and yellow signage is intact but the shelves inside are visibly sparse. A handwritten closing sale sign is partially visible through the window. A nearly empty car park in overcast daylight. The mood is not melodramatic — just the ordinary end of a business model. Photorealistic. 1536x1024.]
+\[IMAGE: blockbuster-store-closing, An editorial photograph of a Blockbuster Video store in its final months. The blue and yellow signage is intact but the shelves inside are visibly sparse. A handwritten closing sale sign is partially visible through the window. A nearly empty car park in overcast daylight. The mood is not melodramatic — just the ordinary end of a business model. Photorealistic. 1536x1024.\]
 
 Blockbuster had 4,855 U.S. stores as of January 2008. It also had a by-mail service, digital downloading partnerships, on-demand deals with device manufacturers, and a programme that let mail subscribers exchange discs at physical locations. It was not doing nothing.
 
