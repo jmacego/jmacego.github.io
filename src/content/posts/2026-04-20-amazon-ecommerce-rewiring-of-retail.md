@@ -1,7 +1,7 @@
 ---
 title: 'Amazon, E-Commerce, and the Rewiring of Retail'
 date: '2026-04-20T00:00:00.000Z'
-published: false
+published: true
 description: >-
   Amazon did not kill the mall by itself. What rewired retail was the
   combination of search, payments, logistics, and a generational shift in

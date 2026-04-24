@@ -26,8 +26,6 @@ image:
     air around them, suggesting the internet as an ambient layer of daily
     life rather than a destination.
 ---
-<!-- IMAGE HERO SUGGESTION: person on a city street at dusk, smartphone glow on face, faint ambient overlays of map lines and notification glyphs in the environment around them. Editorial, cinematic. -->
-
 In 1999 I was running a web hosting business out of real server racks, selling dedicated machines to customers who mostly reached them from Windows desktops sitting on furniture. The endpoints were known. They lived in offices and bedrooms. They plugged into the wall. If you wanted to manage your server, you sat down at a desk and did it.
 
 If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. None of them were on a trajectory to dissolve the distinction between being online and being awake.
@@ -43,8 +41,6 @@ The series so far has argued that bubbles can finance things that matter even wh
 
 ## The Ladder That Was a Curve
 
-<!-- IMAGE SUGGESTION: an adoption curve illustration, simple editorial infographic, showing the 2011 Pew "35% of US adults own a smartphone" anchor and the 2025 "91%" anchor, with named milestone events on the timeline. -->
-
 In May 2011, when Pew Research ran its first smartphone ownership survey, 35 percent of U.S. adults owned one. By 2025, that figure was 91 percent. Globally, the GSMA reported 4.6 billion people using mobile internet on their own device by end of 2023, with another 3.1 billion living inside coverage but not using it. The last decade of the Ericsson Mobility Report records 5.6 billion new smartphone subscriptions added between 2011 and 2020, and roughly 300 times more mobile data traffic over the same period.
 
 Those are not numbers that describe a gradual rollout. They describe an S-curve steeper than broadband and denser than the PC. What looks in hindsight like a ladder — iPhone 2007, App Store 2008, Android 2008, 4G 2010, mobile-majority by 2015 — was in real time a series of contested years where no one knew yet which phones would matter, which platforms would survive, or which app categories would hold value.
@@ -55,7 +51,9 @@ That distinction matters because it is the single thing that most AI coverage in
 
 ## The Storefront Was Not the Business
 
-<!-- IMAGE SUGGESTION: a desk with an early iPhone displaying the App Store icon grid, beside a stack of 2008-era tech magazines, warm editorial lighting. -->
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/app-ecosystem-emergence-1536x1024.png" alt="A smartphone displaying a colourful grid of app icons next to a notebook sketching a network diagram of connected services, suggesting the emergence of an app ecosystem as the substrate for new kinds of businesses." loading="lazy" />
+</figure>
 
 Apple launched the App Store in July 2008 with 500 applications. By 2023, the app economy was a multi-trillion-dollar distribution layer that had reshaped retail, payments, transportation, dating, healthcare booking, and the internal tooling of almost every large business that had a workforce interacting with the outside world. The App Store was not the business. It was the substrate on which businesses that could not have existed ten years earlier grew to sizes that would have been absurd to forecast in 2008.
 
@@ -68,8 +66,6 @@ The AI equivalent is already visible if you watch for it. ChatGPT, Claude, Gemin
 Trying to pick the winning foundation model is the 2026 equivalent of trying to pick the winning handset in 2008. There are people who bet correctly on Apple versus everyone else, and they did extremely well. Most people who tried to make that call got it wrong. The more reliable bet was on businesses that would benefit regardless of which handset won.
 
 ## From Pocket to Layer
-
-<!-- IMAGE SUGGESTION: split illustration — left side a person at a 2005-era desktop PC, clearly working; right side a person in a park looking at their phone while distracted ambient icons drift around them. -->
 
 The cleanest analytical move available for this post is also the one that is hardest to articulate without sounding like a TED talk. The smartphone's durable consequence was not portability. Portability was the surface feature. The durable consequence was ambient presence.
 
@@ -85,7 +81,9 @@ Software development is already through that threshold in parts. Most other doma
 
 ## The Incumbents Did Not Miss Mobile. They Mispriced It.
 
-<!-- IMAGE SUGGESTION: an editorial photo of a late-era Blackberry next to a 2008 iPhone, both slightly worn, on a wooden surface. The Blackberry is front and centre, the iPhone in soft focus. -->
+<figure class="post-image post-image-inline post-image-left">
+  <img src="/assets/images/mobile-era-transition-devices-1536x1024.png" alt="A drawer holding old feature phones, a QWERTY keyboard handset, and a PDA with a stylus, with a modern smartphone resting on the desk above them, representing the generational turnover in mobile devices as the substrate shifted." loading="lazy" />
+</figure>
 
 The smartphone transition was not a smooth march toward ambient. It was a period of sustained capital destruction, corporate collapse, and operator error that is considerably uglier in the record than the hindsight version suggests.
 
@@ -103,8 +101,6 @@ That is the rocky part the series keeps returning to. It is coming again. It is 
 
 ## What Was Actually Lost
 
-<!-- IMAGE SUGGESTION: a quiet restaurant scene where every person at a two-person table is looking at their phone instead of each other, warm restaurant lighting, editorial tone, no judgmental framing. -->
-
 Any honest assessment of the ambient internet has to include what it cost, because the AI transition will involve similar tradeoffs and the rhetorical habit of pretending those tradeoffs do not exist is itself part of the problem.
 
 The dedicated camera industry collapsed. PetaPixel's coverage of the camera market records a 94 percent drop in camera shipments between 2010 and 2023, attributed almost entirely to smartphones. Paper maps, standalone GPS units, portable music players, pocket calculators, and many low-end gaming handhelds followed similar curves. That is category destruction, and for the people who worked in those industries it was not abstract.
@@ -119,7 +115,9 @@ The AI parallel is obvious and deserves to be named rather than gestured at. Dep
 
 ## AI's Ambient Form
 
-<!-- IMAGE SUGGESTION: a developer's screen where AI assistance is woven into the IDE without a separate chat window — suggestions, inline edits, and contextual hints all present in the normal editing surface. -->
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/ambient-ai-workflow-integration-1536x864.png" alt="A developer working at a laptop with a code editor open, AI assistance woven into the editing surface rather than appearing as a separate chat window, illustrating ambient AI as an environmental condition of the workflow." loading="lazy" />
+</figure>
 
 There is a version of this post in which the AI parallel is a gesture at the end. That is the wrong version. The smartphone story is analytically useful only if it sharpens thinking about what ambient AI actually looks like and when.
 
@@ -132,8 +130,6 @@ That same pattern, when it arrives elsewhere, will not announce itself. Your CRM
 That is what ambient looks like. It is already happening, unevenly, along the axes where the workflow integration problem is easiest to solve and the reliability is good enough. It will arrive in the rest of the economy in roughly the order that those two conditions close in each domain.
 
 ## How to Position Through the Rocky Part
-
-<!-- IMAGE SUGGESTION: an operator at a whiteboard, sketching workflow diagrams rather than org charts, with a laptop open to a prototype AI-integrated tool in the foreground. -->
 
 The practical question the series has been building toward is what an operator, a career builder, or a company leader actually does with this pattern. The honest answer is not a formula. It is a set of habits that the people who came through the smartphone transition with their positions intact tended to share. They apply here too.
 

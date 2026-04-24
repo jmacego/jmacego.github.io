@@ -35,7 +35,7 @@ That gap between what the internet could manage and what it could actually deliv
 ## The Red Envelope Was the Prototype
 
 <figure class="post-image post-image-inline post-image-right">
-  <img src="/assets/images/netflix-envelope-person-1536x864.png" alt="A person pulling a bright red DVD mailer envelope from a residential mailbox, representing the days when watching a film required choosing from an online queue and waiting days for physical delivery." loading="lazy" />
+  <img src="/assets/images/netflix-red-envelope-desk-1448x1086.png" alt="A bright red DVD mailer envelope resting on a desk beside a laptop showing a queued film list, representing the Netflix-era workflow of browsing online, managing a queue, and waiting for physical delivery." loading="lazy" />
 </figure>
 
 Netflix spent its first nine years as a postal service.
