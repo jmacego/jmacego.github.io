@@ -3,7 +3,7 @@ title: 'AI vs. Dot-Com: Bubbles Can Build Foundations'
 date: '2026-04-19T00:00:00.000Z'
 published: true
 description: >-
-  The dot-com bubble destroyed capital and still financed infrastructure,
+  The DotCom bubble destroyed capital and still financed infrastructure,
   interfaces, and habits that changed the world. AI may be following a similar
   pattern.
 tags:
@@ -25,13 +25,13 @@ image:
 I started working for PowerSurge Technologies, inc. in the 1995-1996 school year. I was in high school. The next year I left and got my GED, and was invited to become the CEO. I advertised JMac's CGI Archive and JMacLabs.com in my high school yearbook. It was a different time.
 <!--more-->
 
-*Opening essay in a series on what the dot-com era can teach us about AI. [Next: Amazon, E-Commerce, and the Rewiring of Retail →](/blog/amazon-ecommerce-rewiring-of-retail/)*
+*Opening essay in a series on what the DotCom era can teach us about AI. [Next: Amazon, E-Commerce, and the Rewiring of Retail →](/blog/amazon-ecommerce-rewiring-of-retail/)*
 
-That sounds ridiculous now, and it was a little ridiculous then. The internet was still niche enough that this did not read as a normal teenage activity. It read as a very particular kind of obsession. But that is part of why I keep coming back to the dot-com era when I think about AI. Before the market got truly insane, before analysts learned the vocabulary of internet inevitability, before the average person had decided this was going to matter, there was already a class of people building as if the future had plainly arrived and everyone else was just late.
+That sounds ridiculous now, and it was a little ridiculous then. The internet was still niche enough that this did not read as a normal teenage activity. It read as a very particular kind of obsession. But that is part of why I keep coming back to the DotCom era when I think about AI. Before the market got truly insane, before analysts learned the vocabulary of internet inevitability, before the average person had decided this was going to matter, there was already a class of people building as if the future had plainly arrived and everyone else was just late.
 
 I was one of them.
 
-The dot-com era was not clean or coherent. It was exhilarating, sloppy, useful, destructive, and full of people who were directionally right long before they had any idea how to turn that insight into durable economics.
+The DotCom era was not clean or coherent. It was exhilarating, sloppy, useful, destructive, and full of people who were directionally right long before they had any idea how to turn that insight into durable economics.
 
 That also sounds familiar.
 
@@ -39,7 +39,7 @@ That also sounds familiar.
 
 One thing I want to be careful about in this series is time. Historical analogies get stupid quickly when people flatten chronology.
 
-If you look at the broad market, later academic work makes a persuasive case that the real aggregate dot-com bubble did not fully show up until roughly 1998 through early 2000. That matters. It keeps us honest. But if you were inside the early technical subculture, the feeling of mania started well before that.
+If you look at the broad market, later academic work makes a persuasive case that the real aggregate DotCom bubble did not fully show up until roughly 1998 through early 2000. That matters. It keeps us honest. But if you were inside the early technical subculture, the feeling of mania started well before that.
 
 When I first got online in any meaningful way, it did not feel like a normal product category slowly maturing. It felt like a door had opened in the wall.
 
@@ -60,7 +60,7 @@ That emotional structure is one of the clearest parallels to AI now. Long before
   <figcaption>Before the market narrative hardened, a lot of us were just trying to make the web more usable, discoverable, and legible.</figcaption>
 </figure>
 
-My vantage point on the dot-com run-up was not as a venture capitalist or an analyst. From 1995 to 2001, I was first the CEO of a moderately successful web hosting and dedicated server provider, then part of a self-funded and unsuccessful hardware-less competitor focused on services and internet adoption for businesses. By the end of 2001 I was exhausted enough by the whole thing that I was helping start a media company and an aviation business just to get away from technology for a while.
+My vantage point on the DotCom run-up was not as a venture capitalist or an analyst. From 1995 to 2001, I was first the CEO of a moderately successful web hosting and dedicated server provider, then part of a self-funded and unsuccessful hardware-less competitor focused on services and internet adoption for businesses. By the end of 2001 I was exhausted enough by the whole thing that I was helping start a media company and an aviation business just to get away from technology for a while.
 
 That progression shaped every leadership role I took on afterwards, because it gave me a close look at both the real utility and the real delusion.
 
@@ -79,7 +79,7 @@ That is one reason I keep thinking about current AI interfaces. ChatGPT did not 
   <figcaption>The period rewarded both real operators and people who were much better at selling the story than running the business.</figcaption>
 </figure>
 
-The dot-com years are often remembered as if everyone inside them were either a visionary or a fraud. Reality was more crowded than that.
+The DotCom years are often remembered as if everyone inside them were either a visionary or a fraud. Reality was more crowded than that.
 
 There were people building real operating businesses. Some succeeded. Some failed honourably. Some were too early. Some were undercapitalised. Some were good at the work and bad at the financing story. There were also people who mostly learned to talk wealthy friends into bankrolling an idea long enough to make it look larger than life, attract venture backing, and aim for public markets with massively negative earnings.
 
@@ -116,7 +116,7 @@ Directionally right is not the same thing as economically right.
   <figcaption>Even badly allocated capital can leave behind durable foundations if it funds capacity, access, and operational infrastructure the next wave inherits.</figcaption>
 </figure>
 
-That said, I do not think the right lesson from the dot-com bust is that the whole thing was fake. And I believe the same is, ultimately, true of AI.
+That said, I do not think the right lesson from the DotCom bust is that the whole thing was fake. And I believe the same is, ultimately, true of AI.
 
 It was a bubble. A lot of money was misallocated. A lot of investors got crushed. A lot of workers got hurt. A lot of companies disappeared for good reason.
 
@@ -136,7 +136,7 @@ That is another point worth holding onto now. Public benefit and investor return
 
 ## That Is Why AI Feels Familiar
 
-This is the narrow sense in which AI reminds me of the dot-com era.
+This is the narrow sense in which AI reminds me of the DotCom era.
 
 Not because every detail matches. It does not. AI is arriving through existing cloud platforms, existing devices, and existing distribution channels in a way the early commercial internet did not. Adoption is faster. Interfaces are simpler. The starting base is larger.
 
@@ -181,7 +181,7 @@ The practical question is much less glamorous. Where does AI actually improve co
 
 Those are operating questions, not branding questions.
 
-That is also the real lesson I took from living through the dot-com era from the inside. Bubbles are not just stories about greed. They are stories about sequencing. Real capability arrives. Believers overinterpret it. Capital overreacts to it. A lot of bad businesses get built around it. Some good infrastructure gets financed anyway. Then the bill comes due, and the serious work begins.
+That is also the real lesson I took from living through the DotCom era from the inside. Bubbles are not just stories about greed. They are stories about sequencing. Real capability arrives. Believers overinterpret it. Capital overreacts to it. A lot of bad businesses get built around it. Some good infrastructure gets financed anyway. Then the bill comes due, and the serious work begins.
 
 I think we are somewhere in that cycle now.
 

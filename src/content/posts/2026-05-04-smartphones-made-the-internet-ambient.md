@@ -31,11 +31,11 @@ In 1999 I was running a web hosting business out of real server racks, selling d
 If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. None of them were on a trajectory to dissolve the distinction between being online and being awake.
 <!--more-->
 
-*Part of a series on what the dot-com era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/)*
+*Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/)*
 
 That is exactly what happened anyway.
 
-I have spent the last decade in network operations, watching the consequences of that dissolution from the infrastructure side. The internet is no longer a place people go. It is a layer the world now runs on. That shift, which happened roughly between 2007 and 2015 and consolidated through the decade after it, is the most consequential durable residue the dot-com era left behind. It is also the single best template available for thinking about what AI becomes, if it becomes anything that lasts.
+I have spent the last decade in network operations, watching the consequences of that dissolution from the infrastructure side. The internet is no longer a place people go. It is a layer the world now runs on. That shift, which happened roughly between 2007 and 2015 and consolidated through the decade after it, is the most consequential durable residue the DotCom era left behind. It is also the single best template available for thinking about what AI becomes, if it becomes anything that lasts.
 
 The series so far has argued that bubbles can finance things that matter even when the investors lose money, that e-commerce rewired retail through an alignment of search, payments, logistics, and habit, and that streaming only replaced physical media once a long checklist of conditions had quietly closed. This post makes the next claim in the sequence. The biggest change the internet delivered was not any particular product. It was the transition from destination to substrate. And that transition happened through the smartphone, via a period that was considerably rockier than most retrospectives admit.
 
@@ -43,7 +43,7 @@ The series so far has argued that bubbles can finance things that matter even wh
 
 In May 2011, when Pew Research ran its first smartphone ownership survey, 35 percent of U.S. adults owned one. By 2025, that figure was 91 percent. Globally, the GSMA reported 4.6 billion people using mobile internet on their own device by end of 2023, with another 3.1 billion living inside coverage but not using it. The last decade of the Ericsson Mobility Report records 5.6 billion new smartphone subscriptions added between 2011 and 2020, and roughly 300 times more mobile data traffic over the same period.
 
-Those are not numbers that describe a gradual rollout. They describe an S-curve steeper than broadband and denser than the PC. What looks in hindsight like a ladder — iPhone 2007, App Store 2008, Android 2008, 4G 2010, mobile-majority by 2015 — was in real time a series of contested years where no one knew yet which phones would matter, which platforms would survive, or which app categories would hold value.
+Those are not numbers that describe a gradual rollout. They describe an S-curve steeper than broadband and denser than the PC. What looks in hindsight like a ladder (iPhone 2007, App Store 2008, Android 2008, 4G 2010, mobile-majority by 2015) was in real time a series of contested years where no one knew yet which phones would matter, which platforms would survive, or which app categories would hold value.
 
 The direction was visible. The pace and the shape were not.
 
@@ -59,7 +59,7 @@ Apple launched the App Store in July 2008 with 500 applications. By 2023, the ap
 
 Uber incorporated in 2009 and ran its first rides in San Francisco in 2010. Instagram launched in October 2010. WhatsApp, Snapchat, Venmo, Airbnb, DoorDash, Robinhood, Duolingo, and most of the consumer surface of modern financial services were built on the assumption of a pocket-sized computer with a camera, a location sensor, a payment credential, and a persistent connection. None of those assumptions held in 2006. By 2013 all of them did.
 
-The durable lesson of the app era is not that smartphones created new companies. It is that they relocated where value accrued. The storefront — the App Store itself, the handset, the operating system — captured a fraction of the economic surplus. The rest accrued to whoever built businesses that presupposed smartphone ubiquity as a starting condition rather than a feature.
+The durable lesson of the app era is not that smartphones created new companies. It is that they relocated where value accrued. The storefront (the App Store itself, the handset, the operating system) captured a fraction of the economic surplus. The rest accrued to whoever built businesses that presupposed smartphone ubiquity as a starting condition rather than a feature.
 
 The AI equivalent is already visible if you watch for it. ChatGPT, Claude, Gemini, and the other chat interfaces are storefronts. They are real, valuable, and not the durable business. The durable businesses are being built by companies whose products presuppose capable AI as a starting condition: coding environments where agentic assistance is load-bearing rather than optional, medical imaging pipelines where model-assisted reading is the default, legal research platforms where the human attorney is shepherding AI-generated analysis rather than producing it from scratch. Those products will not be called "AI products." They will be called products, the way we stopped calling Uber a mobile-app company and started calling it a transportation company.
 
@@ -75,7 +75,7 @@ By 2015, offline had become a state you actively had to produce. Your pocket was
 
 The internet had not gotten bigger. It had gotten ambient. It was no longer something you used. It was something you inhabited. That is the substrate shift, and most of the people who built the best businesses of the 2010s understood it implicitly even when they did not articulate it.
 
-Current AI, in 2026, is mostly still a place you go. You open a tab. You switch out of the tool you were working in. You paste context back and forth across the boundary. That is the 2008 version of the transition. It is real, it is useful, and it is not the final form. The final form — the thing that will actually change behaviour and markets — is AI as a capability present in the environment where work already happens, available without the ceremony of switching, context-aware without being told, and invisible enough that people stop noticing it is there.
+Current AI, in 2026, is mostly still a place you go. You open a tab. You switch out of the tool you were working in. You paste context back and forth across the boundary. That is the 2008 version of the transition. It is real, it is useful, and it is not the final form. The final form, the thing that will actually change behaviour and markets, is AI as a capability present in the environment where work already happens, available without the ceremony of switching, context-aware without being told, and invisible enough that people stop noticing it is there.
 
 Software development is already through that threshold in parts. Most other domains are not. Watching which ones close the gap, in what order, with what conditions aligning, is the single most useful exercise an operator can spend time on right now.
 
@@ -143,7 +143,7 @@ Position your career toward roles where ambient AI raises your ceiling rather th
 
 Accept the rocky part. The capital cycle around AI is going to produce losers, including some losers currently being described as certainties. Some data centre builds will not pencil out. Some model providers will be acquired at fractions of their last round. Some product categories that look inevitable today will turn out to have been subsidised novelties. That was also true of mobile, and it did not prevent mobile from becoming the substrate we now take for granted. It is possible, and often necessary, to hold both thoughts at once: the aggregate direction is correct, and the specific bets are rough.
 
-Build what needs to be built. The most frequent error during a substrate transition is to freeze, wait for the dust to settle, and re-enter when the shape is clearer. The shape is never clearer. The shape is obvious in retrospect and negotiable in the present. The people who did best out of the mobile transition were the ones who built during the messy years. The people who did best out of the dot-com transition were often the ones who kept building when the market was punishing everyone for building. The same choice is on offer now, in a slightly different costume.
+Build what needs to be built. The most frequent error during a substrate transition is to freeze, wait for the dust to settle, and re-enter when the shape is clearer. The shape is never clearer. The shape is obvious in retrospect and negotiable in the present. The people who did best out of the mobile transition were the ones who built during the messy years. The people who did best out of the DotCom transition were often the ones who kept building when the market was punishing everyone for building. The same choice is on offer now, in a slightly different costume.
 
 None of this guarantees anything. The point of this series has never been that there is a safe place to stand during a technology shift of this magnitude. The point is that standing still is not the safe choice people think it is, and that the history of these transitions contains more useful guidance than the current narrative around either hype or doom gives credit for.
 
@@ -151,7 +151,7 @@ The internet became ambient because enough people kept building through a decade
 
 ## Further Reading
 
-- Pew Research Center, Mobile Fact Sheet (2025) — the cleanest long-run U.S. adoption curve, useful for understanding how quickly the smartphone moved from novelty to default infrastructure.
-- GSMA, State of Mobile Internet Connectivity 2024 — the best primary source on the gap between coverage and meaningful use, which is the global dimension this post only touches on.
-- Ericsson Mobility Report (10-year retrospective, November 2021) — the most thorough record of the traffic and subscription growth that reshaped network infrastructure during the decade this post covers.
-- Bick, Blandin, and Deming, "The Rapid Adoption of Generative AI" (NBER, 2024; revised 2025) — the most useful current benchmark on how AI adoption is tracking against historical technology diffusion curves.
+- Pew Research Center, Mobile Fact Sheet (2025). The cleanest long-run U.S. adoption curve, useful for understanding how quickly the smartphone moved from novelty to default infrastructure.
+- GSMA, State of Mobile Internet Connectivity 2024. The best primary source on the gap between coverage and meaningful use, which is the global dimension this post only touches on.
+- Ericsson Mobility Report (10-year retrospective, November 2021). The most thorough record of the traffic and subscription growth that reshaped network infrastructure during the decade this post covers.
+- Bick, Blandin, and Deming, "The Rapid Adoption of Generative AI" (NBER, 2024; revised 2025). The most useful current benchmark on how AI adoption is tracking against historical technology diffusion curves.
