@@ -1,6 +1,6 @@
 ---
 title: 'Wireless Access and the Places That Skipped the Old Internet'
-date: '2026-05-11T00:00:00.000Z'
+date: '2026-05-17T00:00:00.000Z'
 published: false
 description: >-
   Mobile and wireless access gave parts of the developing world the chance to

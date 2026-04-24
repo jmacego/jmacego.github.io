@@ -1,6 +1,6 @@
 ---
 title: From DVD Mail to Streaming
-date: '2026-04-27T00:00:00.000Z'
+date: '2026-05-03T00:00:00.000Z'
 published: false
 description: >-
   Netflix launched the same month I was deploying servers and building DNS

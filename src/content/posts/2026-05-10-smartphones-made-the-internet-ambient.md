@@ -1,6 +1,6 @@
 ---
 title: 'Smartphones Made the Internet Ambient'
-date: '2026-05-04T00:00:00.000Z'
+date: '2026-05-10T00:00:00.000Z'
 published: false
 description: >-
   The smartphone did not just make the internet portable. It dissolved the
