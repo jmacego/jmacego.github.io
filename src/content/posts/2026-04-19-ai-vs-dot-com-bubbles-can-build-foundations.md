@@ -25,6 +25,8 @@ image:
 I started working for PowerSurge Technologies, inc. in the 1995-1996 school year. I was in high school. The next year I left and got my GED, and was invited to become the CEO. I advertised JMac's CGI Archive and JMacLabs.com in my high school yearbook. It was a different time.
 <!--more-->
 
+*Opening essay in a series on what the dot-com era can teach us about AI. [Next: Amazon, E-Commerce, and the Rewiring of Retail →](/blog/amazon-ecommerce-rewiring-of-retail/)*
+
 That sounds ridiculous now, and it was a little ridiculous then. The internet was still niche enough that this did not read as a normal teenage activity. It read as a very particular kind of obsession. But that is part of why I keep coming back to the dot-com era when I think about AI. Before the market got truly insane, before analysts learned the vocabulary of internet inevitability, before the average person had decided this was going to matter, there was already a class of people building as if the future had plainly arrived and everyone else was just late.
 
 I was one of them.

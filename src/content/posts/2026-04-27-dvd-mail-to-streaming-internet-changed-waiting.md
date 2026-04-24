@@ -1,5 +1,5 @@
 ---
-title: 'From DVD Mail to Streaming: How the Internet Changed Waiting'
+title: 'From DVD Mail to Streaming'
 date: '2026-04-27T00:00:00.000Z'
 published: false
 description: >-
@@ -28,6 +28,8 @@ Netflix launched in April 1998. I was running PowerSurge at the time, deploying 
 
 Neither of us was betting the network was good enough to deliver video. Because in April 1998, it was not.
 <!--more-->
+
+*Part of a series on what the dot-com era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: Amazon, E-Commerce, and the Rewiring of Retail](/blog/amazon-ecommerce-rewiring-of-retail/)*
 
 That gap between what the internet could manage and what it could actually deliver is the whole story of how streaming happened. Most accounts skip it. They run a straight line from "internet existed" to "Netflix killed Blockbuster" and miss the twenty years of conditions that had to close in between. Those conditions, and the order in which they closed, are worth understanding carefully. Not for nostalgia. Because the same sequence is playing out with AI, and most of the coverage is making the same mistake of drawing the line too straight.
 

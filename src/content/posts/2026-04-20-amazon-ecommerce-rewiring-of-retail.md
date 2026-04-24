@@ -30,6 +30,9 @@ Most of them heard us out. Almost none of them signed.
 The objection that stuck with me was not hostile. It was calm and accurate. "My customers know where I am. They come in through the door. This is expensive." That was not denial. That was an honest description of how those businesses had operated for the entire length of their existence. The idea that someone would find a business through a search engine, hand credit card information to a server they had never met, then wait several days for something they could pick up that afternoon. That assumed a customer psychology most brick-and-mortar operators were not yet working with. Their current customers were not those customers.
 
 They were right about the present. They were wrong about the direction.
+<!--more-->
+
+*Part of a series on what the dot-com era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [Next: From DVD Mail to Streaming →](/blog/dvd-mail-to-streaming-internet-changed-waiting/)*
 
 That tension between how a market currently works and the direction it is quietly heading is what I keep returning to when I look at how people are reasoning about AI today. The technology is real. The capability is real. The speculative heat around it is also real. Those things can all be true at the same time. Bubbles do not only form around frauds and fantasies. They often form around genuine shifts that investors, executives, and vendors then overprice, overstate, and oversell. The harder question is the one the 5GuysTech clients did not quite ask: how do you prepare for a shift that the current moment does not yet require you to make?
 
