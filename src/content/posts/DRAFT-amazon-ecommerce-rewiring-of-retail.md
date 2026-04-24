@@ -27,7 +27,7 @@ When I was running 5GuysTech, we had a real office, real staff, and a real pitch
 
 Most of them heard us out. Almost none of them signed.
 
-The objection that stuck with me was not hostile. It was calm and accurate. "My customers know where I am. They come in through the door." That was not denial. That was an honest description of how those businesses had operated for the entire length of their existence. The idea that someone would find a business through a search engine, hand credit card information to a server they had never met, then wait several days for something they could pick up that afternoon. That assumed a customer psychology most brick-and-mortar operators were not yet working with. Their current customers were not those customers.
+The objection that stuck with me was not hostile. It was calm and accurate. "My customers know where I am. They come in through the door. This is expensive." That was not denial. That was an honest description of how those businesses had operated for the entire length of their existence. The idea that someone would find a business through a search engine, hand credit card information to a server they had never met, then wait several days for something they could pick up that afternoon. That assumed a customer psychology most brick-and-mortar operators were not yet working with. Their current customers were not those customers.
 
 They were right about the present. They were wrong about the direction.
 
@@ -42,7 +42,7 @@ The retail story is worth going through carefully, because it illustrates the ch
   <figcaption>Early online retail worked in the categories where the friction math already favoured it. Books first. Everything else took longer.</figcaption>
 </figure>
 
-In 1999, online sales accounted for less than one percent of total U.S. retail spending. Payment felt risky. Shipping was expensive and slow. Most consumers had direct experience with problems: orders that arrived wrong, items that looked different from the photo, return processes that required more effort than the purchase was worth. For most categories of goods, going to the store was still strictly better.
+In 1999, online sales accounted for less than one percent of total U.S. retail spending. Payment felt risky. Shipping was expensive and slow. Most consumers had direct experience with problems: orders that arrived wrong, items that looked different from the photo, return processes that required more effort and cost than the purchase was worth. For most categories of goods, going to the store was still strictly better.
 
 Books were the exception, which is why Amazon started there. A book does not need fitting. You do not need to see it in person to know if it is the right one. The long tail of titles in print far exceeded what any physical bookstore could stock. Amazon could offer a reader something their local bookstore did not carry, deliver it in a week, and charge less. That worked even before the payment trust problem was fully solved, because the downside of a wrong order was minor and the upside was real: access to a catalogue no physical store could match.
 
