@@ -18,6 +18,14 @@ tags:
 categories:
   - Leadership
   - Technology
+image:
+  src: /assets/images/wireless-access-leapfrog-hero-1536x1024.png
+  alt: >-
+    A dusty sub-Saharan street at golden hour with an unbranded cell tower
+    rising above low buildings and a person in the foreground holding an
+    early-2000s candy-bar mobile phone, its small screen lit — suggesting
+    a network that arrived without the landline infrastructure that
+    preceded it in the West.
 ---
 In the mid-2000s I spent enough time in Tanzania to stop noticing the thing a visitor notices first: almost everyone had a cell phone. Not a landline at home. Not a shared village phone. A handset, usually someone else's cast-off, often a Nokia, sometimes a Razr if you were doing well enough to show it. The network was spotty, the electricity was spottier, and the towers kept working anyway because the business of getting a voice from one person to another had already won the argument there. There was no copper to retrofit. There was no dial-up, no DSL, no ISDN, no cable. The sequence the US and Europe had lived through was not a sequence there. It was a thing that had never happened.
 
@@ -40,6 +48,10 @@ Whether that upgrade actually arrives and works is a different question, and mos
 
 ## The Satellite and the Rent
 
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/satellite-dish-regulated-access-1536x1024.png" alt="A VSAT satellite dish mounted on a concrete rooftop in a tropical setting, cabling running down through a painted wall to a small office, with a chain-link fence and padlocked gate in the foreground — suggesting a regulated, gatekept access point rather than an open connection." loading="lazy" />
+</figure>
+
 The connectivity we had in that period was satellite. Not an exotic satellite — the same physical infrastructure that served European markets. IP-over-MPEG2 was the dominant rig. A 256 kbps link in Europe cost one thing; the equivalent link in country cost two to three times as much, because the regulation required the service be delivered through approved domestic contractors. The satellite companies could not sell directly. They had to sell through a local licence holder, and the local licence holder set the price.
 
 The multiplier was the visible part. The less visible part was quality. A budget that bought you 256 kbps of real throughput in Europe bought you a 256 kbps-labelled product that delivered 128, or in bad weather 64. You were not just paying more for the same service. You were paying more for a worse version of it, because the contractor could not expand capacity without stepping outside their licence, and often did not want to. The rent extraction was structural, not incidental.
@@ -51,6 +63,10 @@ I met President Kikwete in 2007. He struck me as someone with the right ideas ab
 The AI parallel here is sharper than most commentators notice, and it is not limited to low- or middle-income countries. Regulated AI — in healthcare, legal advice, financial services, education — is going to route through licensed-intermediary structures in almost every jurisdiction, rich and poor alike. The model weights are the satellite. The certified local operator is the domestic contractor. The rent extraction will look similar wherever political permission is the scarce input and technical capability is abundant, whether that is a regional licensing regime in East Africa, a state medical board in the US, or a financial-services regulator in the EU. This is not a complaint. It is a prediction. In markets where AI is most needed but most regulated, expect a multiplier to appear between what the technology could deliver and what end users actually pay for a weaker version of it.
 
 ## Equipment That Would Not Translate
+
+<figure class="post-image post-image-inline post-image-left">
+  <img src="/assets/images/ngo-equipment-context-gap-1536x1024.png" alt="A mid-2000s laptop sitting on a simple wooden table in a spare, sunlit room with painted concrete walls, a dusty English-language manual beside it and no surrounding IT infrastructure visible — illustrating equipment dropped into a context without the support culture its specifications assumed." loading="lazy" />
+</figure>
 
 I was working with an NGO during that period, which is to say I was working on a shoestring. Equipment came in from the US, either shipped or specified and bought locally where possible, and arrived at the edge of an operational environment the specifications had not anticipated.
 
@@ -71,6 +87,10 @@ I think this is the part of the leapfrog argument that travels best. It is not t
 It also compounds in a direction you cannot fully predict. The outcome is not a clone of the richer country's current state. It is a different shape, because the intermediate steps that shaped rich-world habits did not happen. Mobile money in Kenya did not look like a digitised US chequing account, because it was not evolving out of one. The AI equivalent is likely to look similarly unfamiliar in places where it establishes itself first — less like an office worker's chatbot, more like something embedded in agricultural advisory, or community health, or informal-sector commerce, shaped by constraints that rich-world product managers are not currently designing around.
 
 ## Coverage Is Not the Same as Use
+
+<figure class="post-image post-image-inline post-image-right">
+  <img src="/assets/images/sms-market-coordination-1536x1024.png" alt="Close-up of weathered hands holding an unbranded early-2000s feature phone, a thumb mid-press on the numeric keypad, a blurred open-air market with baskets of produce behind — illustrating SMS-based coordination and direct trade without any internet interface." loading="lazy" />
+</figure>
 
 The most disciplined part of the current research is the distinction between coverage and meaningful use. The GSMA's 2025 update put the coverage gap at roughly 4 per cent of the global population, with a 38 per cent usage gap on top of it. The ITU's parallel figure says about 2.2 billion people remained offline in 2025 despite being within a signal. The bottleneck has migrated. It used to be that there was no tower. Now, in most places, there is a tower. The problem is that a tower is not enough.
 
