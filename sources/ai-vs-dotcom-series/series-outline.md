@@ -305,6 +305,19 @@ Show how mobile and wireless access created real opportunity in developing count
    The dot-com bubble was largely a wealthy-world, English-language event. Mobile was more democratic than that but still uneven. AI could be more democratic still — or could amplify existing inequalities if access, quality, and affordability are not addressed.
 7. Close: the most important beneficiaries of this wave may not be the knowledge workers in San Francisco or London who are currently most anxious about it. They may be in places that never had access to the kind of expertise AI can approximate — and for whom an imperfect AI doctor or lawyer is not a downgrade from the real thing, but an upgrade from nothing.
 
+### Pre-Draft Interview Required
+
+**Do not draft Post 5 without first interviewing John.** He has direct operator experience from Africa in the early 2000s that the published research memos cannot reproduce and that this post will be weak without. Specific threads to draw out in the interview:
+
+- Tanzania and the absence of copper infrastructure. Home phones were cellular from the start because there was nothing to retrofit — what did that look like on the ground, how did it shape expectations, and what broke when the assumption of landline-first did not apply?
+- Satellite connectivity in the same period. Same physical satellites that were available in Europe, but local regulation forced the use of approved domestic contractors and service providers at dramatic markups. What was the multiplier, how did that rent structure shape who could actually get online, and what parallels does John see to current AI regulatory and access friction in comparable markets?
+- Specific operators, businesses, or customers John worked with whose trajectories illustrate the leapfrog and its limits.
+- What the "mobile-first" framing gets right, and what it misses, from someone who was actually there rather than reading about it afterwards.
+- How this period shaped John's view of the difference between coverage and meaningful use — the conceptual spine of the post.
+- Any parallels John sees between the 2000s satellite-contractor rent-seeking and current AI access patterns in regulated sectors or lower-income markets.
+
+The interview should happen before research is synthesised into prose. John's vantage is the argument's load-bearing column, and the research exists to sharpen and discipline that vantage, not to substitute for it.
+
 ## Cross-Series Notes
 
 - Keep post 1 as the thesis essay and avoid spending all examples too early.
