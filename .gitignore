@@ -16,3 +16,7 @@ core.*
 playwright-report/
 test-results/
 output/
+
+# OneDrive symlink to ~/Library/CloudStorage/OneDrive-JMacLabs/.../talks
+# Holds per-talk deck files; machine-local, not portable.
+/talks

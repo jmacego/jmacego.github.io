@@ -1,0 +1,268 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getExcerpt,
+  getScriptStats,
+  getTalkAssets,
+  getTalkStatus,
+  isPublishedOrDraftInDev,
+  normalizeThumbnailPath,
+  sortByDateDesc,
+  stripDatePrefix,
+  formatDate,
+} from "../../utils/content";
+import { getCollection } from "astro:content";
+
+const talks = (await getCollection("talks", isPublishedOrDraftInDev)).sort(sortByDateDesc);
+
+// Compute dashboard stats per talk once at build time.
+const rows = talks.map((talk) => {
+  const slug = stripDatePrefix(talk.slug);
+  const stats = getScriptStats(talk.body);
+  const assets = getTalkAssets(slug, talk.data, stats.words);
+  const status = getTalkStatus(talk.data, assets);
+  return { talk, slug, stats, assets, status };
+});
+
+// Aggregate counters across the visible set, for the header strip.
+const summary = {
+  total: rows.length,
+  shipped: rows.filter((r) => r.status === "shipped").length,
+  recorded: rows.filter((r) => r.status === "recorded").length,
+  draft: rows.filter((r) => r.status === "draft").length,
+  scriptWords: rows.reduce((acc, r) => acc + r.stats.words, 0),
+};
+
+const formatMinutes = (m: number) => {
+  if (!m) return "—";
+  return `${m.toFixed(1)} min`;
+};
+---
+
+<BaseLayout
+  title="Talks"
+  description="Unlisted talks, decks, and recorded sessions by John MacDonald."
+  robots="noindex, nofollow"
+>
+  <div class="content-rail talks-dashboard">
+    <header class="talks-dashboard-header">
+      <h1>Talks</h1>
+      <p class="lead">
+        Unlisted working area for talks, decks, and recorded sessions. Not linked from the main site
+        and excluded from search engines. URLs are stable; share them directly when you want to.
+      </p>
+
+      {summary.total > 0 && (
+        <dl class="talks-summary">
+          <div><dt>Total</dt><dd>{summary.total}</dd></div>
+          <div><dt>Shipped</dt><dd>{summary.shipped}</dd></div>
+          <div><dt>Recorded</dt><dd>{summary.recorded}</dd></div>
+          <div><dt>Draft</dt><dd>{summary.draft}</dd></div>
+          <div>
+            <dt>Total script</dt>
+            <dd>
+              {summary.scriptWords.toLocaleString()} words
+              <span class="muted">
+                ({formatMinutes(summary.scriptWords / 150)})
+              </span>
+            </dd>
+          </div>
+        </dl>
+      )}
+    </header>
+
+    {rows.length === 0 ? (
+      <p><em>No talks yet.</em></p>
+    ) : (
+      <div class="talks-list">
+        {rows.map(({ talk, slug, stats, assets, status }) => {
+          const excerpt = getExcerpt(talk.body);
+          const imagePath = normalizeThumbnailPath(talk.data.image?.src);
+          return (
+            <article class={`talk-card talk-status-${status}`}>
+              <div class="talk-card-head">
+                <div class="talk-card-titleblock">
+                  <span class={`talk-status-pill talk-status-pill-${status}`}>
+                    {status === "shipped" ? "Shipped"
+                      : status === "recorded" ? "Recorded"
+                      : "Draft"}
+                  </span>
+                  <h2 class="talk-card-title">
+                    <a href={`/talks/${slug}/`}>{talk.data.title}</a>
+                  </h2>
+                  <p class="talk-card-meta">
+                    {formatDate(talk.data.date)}
+                    {talk.data.venue ? ` · ${talk.data.venue}` : ""}
+                  </p>
+                </div>
+
+                <dl class="talk-card-stats">
+                  <div>
+                    <dt>Script</dt>
+                    <dd>
+                      {stats.words ? (
+                        <>
+                          {stats.words.toLocaleString()} words
+                          <span class="muted"> · {formatMinutes(stats.minutes)}</span>
+                        </>
+                      ) : <span class="muted">—</span>}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Assets</dt>
+                    <dd class="talk-asset-row">
+                      <span class={`asset-chip ${assets.script ? "on" : "off"}`}>Script</span>
+                      <span class={`asset-chip ${assets.deck ? "on" : "off"}`}>
+                        Deck{assets.deckOnDiskOnly ? " (draft)" : ""}
+                      </span>
+                      <span class={`asset-chip ${assets.video ? "on" : "off"}`}>Video</span>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="talk-card-body">
+                <div class="talk-card-copy">
+                  <div class="talk-card-excerpt" set:html={excerpt} />
+                  <p>
+                    <a class="card-link" href={`/talks/${slug}/`}>Open</a>
+                  </p>
+                </div>
+                {imagePath && (
+                  <a class="talk-card-thumb" href={`/talks/${slug}/`}>
+                    <img
+                      src={imagePath}
+                      alt={talk.data.image?.alt ?? talk.data.title}
+                    />
+                  </a>
+                )}
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .talks-dashboard-header h1 { margin-bottom: 0.25rem; }
+
+  .talks-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.25rem;
+    margin: 1.25rem 0 2rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid rgba(167, 139, 250, 0.18);
+    border-radius: 12px;
+    background: rgba(28, 31, 36, 0.35);
+  }
+  .talks-summary > div { display: flex; flex-direction: column; gap: 2px; }
+  .talks-summary dt {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted-on-dark, #98A2B3);
+    margin: 0;
+  }
+  .talks-summary dd {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .talks-summary .muted { color: var(--text-muted-on-dark, #98A2B3); font-weight: 400; font-size: 0.95rem; }
+
+  .talks-list {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .talk-card {
+    border: 1px solid rgba(242, 244, 247, 0.08);
+    border-radius: 14px;
+    padding: 1.25rem 1.4rem;
+    background: rgba(28, 31, 36, 0.35);
+  }
+  .talk-card.talk-status-shipped { border-left: 3px solid #9AF23C; }
+  .talk-card.talk-status-recorded { border-left: 3px solid #A78BFA; }
+  .talk-card.talk-status-draft { border-left: 3px solid rgba(242, 244, 247, 0.15); }
+
+  .talk-card-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0.85rem;
+  }
+
+  .talk-card-titleblock { flex: 1 1 60%; }
+  .talk-card-title { margin: 0.35rem 0 0.25rem; font-size: 1.4rem; line-height: 1.2; }
+  .talk-card-title a { text-decoration: none; }
+  .talk-card-meta {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted-on-dark, #98A2B3);
+  }
+
+  .talk-status-pill {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+  }
+  .talk-status-pill-shipped { color: #9AF23C; background: rgba(154, 242, 60, 0.10); }
+  .talk-status-pill-recorded { color: #A78BFA; background: rgba(167, 139, 250, 0.10); }
+  .talk-status-pill-draft { color: var(--text-muted-on-dark, #98A2B3); background: rgba(98, 102, 110, 0.10); }
+
+  .talk-card-stats {
+    display: flex;
+    gap: 1.4rem;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+  .talk-card-stats > div { display: flex; flex-direction: column; gap: 4px; }
+  .talk-card-stats dt {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted-on-dark, #98A2B3);
+    margin: 0;
+  }
+  .talk-card-stats dd { margin: 0; font-size: 0.9rem; }
+  .talk-card-stats .muted { color: var(--text-muted-on-dark, #98A2B3); }
+
+  .talk-asset-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .asset-chip {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+  .asset-chip.on { color: #9AF23C; border-color: rgba(154, 242, 60, 0.45); background: rgba(154, 242, 60, 0.08); }
+  .asset-chip.off { color: rgba(152, 162, 179, 0.7); border-color: rgba(152, 162, 179, 0.25); background: transparent; text-decoration: line-through; }
+
+  .talk-card-body { display: flex; gap: 1.25rem; }
+  .talk-card-copy { flex: 1 1 auto; }
+  .talk-card-excerpt p:first-child { margin-top: 0; }
+  .talk-card-thumb { flex: 0 0 200px; }
+  .talk-card-thumb img { width: 100%; height: auto; border-radius: 8px; display: block; }
+
+  @media (max-width: 720px) {
+    .talk-card-head { flex-direction: column; gap: 1rem; }
+    .talk-card-stats { gap: 1rem; }
+    .talk-card-body { flex-direction: column; }
+    .talk-card-thumb { flex: 0 0 auto; max-width: 100%; }
+  }
+</style>

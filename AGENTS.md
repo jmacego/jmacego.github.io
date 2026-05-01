@@ -42,6 +42,18 @@ Single source of truth for agent and Copilot instructions in this repo.
 - Before CMS upload, the only manual file operation allowed is renaming the source file to the intended canonical stem.
 - After CMS upload, reference the CMS-generated asset path via `/assets/images/...` in `image.src`.
 
+## Talks (Unlisted Section)
+- Lives at `/talks/`. Intentionally **unlisted**: not linked from the site nav, every page sets `robots="noindex, nofollow"`, the path is excluded from `sitemap-index.xml` via `privatePathPrefixes` in `astro.config.mjs`, and `public/robots.txt` disallows it.
+- Content lives in `src/content/talks/` as `YYYY-MM-DD-title.md`. Schema is defined in `src/content/config.ts` (collection `talks`).
+- Frontmatter shape: `title`, `date`, `description`, optional `venue`, `relatedPosts` (array of post slugs), `seriesLabel`, `deck` ({ embedUrl, shareUrl, downloadUrl, filename }), `video` ({ youtubeId | vimeoId | url, durationMinutes }), `image`, `published`.
+- Decks are hosted in OneDrive (account: M365). One folder per talk under `OneDrive/JMacLabs/Talks/<slug>/`. Three URLs to capture from OneDrive web UI:
+  - **Embed iframe `src`** (⋯ menu → Embed) → `deck.embedUrl` for inline rendering.
+  - **Anyone-with-link share URL** (Share → Anyone with the link) → `deck.shareUrl` for "Open in OneDrive" button.
+  - **Force-download URL** (share URL with `?download=1` or `&download=1`) → `deck.downloadUrl`.
+- "Anyone with link" share URLs are unauthenticated; treat any deck content as effectively public once an embed URL exists.
+- `relatedPosts` is an array of post slugs (filename without date prefix). 0 entries = standalone, 1 = "Based on:" with link, 2+ = series list using `seriesLabel` as heading.
+- Drafts (`published: false`) render in `pnpm dev` but are excluded from production builds via `isPublishedOrDraftInDev`.
+
 ## Local Build & Validation (Astro)
 Run these from the repo root:
 - Install dependencies: `pnpm install`

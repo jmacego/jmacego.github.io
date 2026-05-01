@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /talks/
+Disallow: /slide-palette/
+
+Sitemap: https://jmaclabs.com/sitemap-index.xml

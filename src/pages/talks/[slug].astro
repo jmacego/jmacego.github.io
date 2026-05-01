@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getExcerptText,
+  isPublishedOrDraftInDev,
+  normalizeImagePath,
+  stripDatePrefix,
+  formatDate,
+} from "../../utils/content";
+import { getCollection, getEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const talks = await getCollection("talks", isPublishedOrDraftInDev);
+  return talks.map((talk) => ({
+    params: { slug: stripDatePrefix(talk.slug) },
+    props: { talk },
+  }));
+}
+
+const { talk } = Astro.props;
+const { Content } = await talk.render();
+const description = talk.data.description ?? talk.data.summary ?? getExcerptText(talk.body);
+const imagePath = normalizeImagePath(talk.data.image?.src);
+
+// Resolve related posts to title + URL
+const relatedSlugs = talk.data.relatedPosts ?? [];
+const relatedEntries = (
+  await Promise.all(
+    relatedSlugs.map(async (slug) => {
+      // Posts are stored with date-prefixed slugs in the collection; allow either form.
+      const allPosts = await getCollection("posts");
+      const match = allPosts.find(
+        (p) => p.slug === slug || stripDatePrefix(p.slug) === slug,
+      );
+      return match
+        ? { title: match.data.title, url: `/blog/${stripDatePrefix(match.slug)}/` }
+        : { title: slug, url: `/blog/${slug}/` };
+    }),
+  )
+);
+
+const video = talk.data.video ?? {};
+const youtubeEmbed = video.youtubeId
+  ? `https://www.youtube-nocookie.com/embed/${video.youtubeId}`
+  : null;
+const vimeoEmbed = video.vimeoId
+  ? `https://player.vimeo.com/video/${video.vimeoId}`
+  : null;
+const videoEmbed = youtubeEmbed ?? vimeoEmbed;
+
+const deck = talk.data.deck ?? {};
+const hasDeckLinks = !!(deck.embedUrl || deck.downloadUrl || deck.shareUrl);
+---
+
+<BaseLayout
+  title={talk.data.title}
+  description={description}
+  robots="noindex, nofollow"
+  socialImage={imagePath}
+  socialImageAlt={talk.data.image?.alt ?? talk.data.title}
+>
+  <article class="talk">
+    <header>
+      <h1>{talk.data.title}</h1>
+      <p class="blog-post-meta">
+        {formatDate(talk.data.date)}
+        {talk.data.venue ? ` — ${talk.data.venue}` : ""}
+        {talk.data.published === false ? " — Draft (visible only in dev)" : ""}
+      </p>
+      {relatedEntries.length > 0 && (
+        <p class="blog-post-meta">
+          {relatedEntries.length === 1
+            ? <>Based on: <a href={relatedEntries[0].url}>{relatedEntries[0].title}</a></>
+            : <>
+                {talk.data.seriesLabel
+                  ? <>Based on the <em>{talk.data.seriesLabel}</em> series:</>
+                  : <>Based on these posts:</>}
+                <ul>
+                  {relatedEntries.map((rel) => (
+                    <li><a href={rel.url}>{rel.title}</a></li>
+                  ))}
+                </ul>
+              </>}
+        </p>
+      )}
+    </header>
+
+    {videoEmbed && (
+      <div class="talk-video" style="aspect-ratio: 16/9; margin: 1.5rem 0;">
+        <iframe
+          src={videoEmbed}
+          title={`${talk.data.title} — video`}
+          style="width: 100%; height: 100%; border: 0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
+    )}
+
+    {deck.embedUrl && (
+      <div class="talk-deck" style="aspect-ratio: 16/9; margin: 1.5rem 0;">
+        <iframe
+          src={deck.embedUrl}
+          title={`${talk.data.title} — deck`}
+          style="width: 100%; height: 100%; border: 0;"
+          allowfullscreen
+        />
+      </div>
+    )}
+
+    {hasDeckLinks && (deck.downloadUrl || deck.shareUrl) && (
+      <p class="talk-deck-links">
+        {deck.downloadUrl && (
+          <a class="btn btn-primary btn-sm" href={deck.downloadUrl}>
+            Download deck{deck.filename ? ` (${deck.filename})` : ""}
+          </a>
+        )}
+        {deck.shareUrl && (
+          <>
+            {" "}
+            <a class="btn btn-outline-primary btn-sm" href={deck.shareUrl} target="_blank" rel="noopener">
+              Open in OneDrive
+            </a>
+          </>
+        )}
+      </p>
+    )}
+
+    <div class="talk-body">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
