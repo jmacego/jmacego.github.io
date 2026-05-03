@@ -12,6 +12,7 @@ import {
   sortByDateDesc,
   stripDatePrefix,
 } from "../utils/content";
+import { withBase } from "../utils/url";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("posts", isPublishedOrDraftInDev)).sort(sortByDateDesc);
@@ -50,7 +51,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
         <div class="home-hero-header">
           <p class="section-kicker section-kicker--signal">Latest post</p>
           <h1 class="display-4 home-hero-title">
-            <a class="text-white" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
+            <a class="text-white" href={withBase(`/blog/${stripDatePrefix(heroPost.slug)}/`)}>
               {heroPost.data.title}
             </a>
           </h1>
@@ -62,7 +63,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             <div class="home-hero-excerpt lead my-3" set:html={heroExcerpt} />
             <p class="lead mb-0">
               <a
-                href={`/blog/${stripDatePrefix(heroPost.slug)}/`}
+                href={withBase(`/blog/${stripDatePrefix(heroPost.slug)}/`)}
                 title={heroPost.data.title}
                 class="hero-link"
               >
@@ -73,9 +74,9 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
 
           {heroImage && (
             <div class="home-hero-media">
-              <a class="feature-thumb feature-thumb--hero d-block" href={`/blog/${stripDatePrefix(heroPost.slug)}/`}>
+              <a class="feature-thumb feature-thumb--hero d-block" href={withBase(`/blog/${stripDatePrefix(heroPost.slug)}/`)}>
                 <img
-                  src={heroImage}
+                  src={withBase(heroImage)}
                   alt={heroPost.data.image?.alt ?? heroPost.data.title}
                 />
               </a>
@@ -93,7 +94,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             <div class="feature-card-header p-4">
               <p class="section-kicker">Posts</p>
               <h2 class="feature-card-title mb-0">
-                <a href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}>
+                <a href={withBase(`/blog/${stripDatePrefix(secondaryPost.slug)}/`)}>
                   {secondaryPost.data.title}
                 </a>
               </h2>
@@ -104,7 +105,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                 <div class="feature-card-media">
                   <div class="feature-thumb feature-thumb--card feature-thumb--post">
                     <img
-                      src={secondaryImage}
+                      src={withBase(secondaryImage)}
                       alt={secondaryPost.data.image?.alt ?? secondaryPost.data.title}
                     />
                   </div>
@@ -116,7 +117,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                 <div class="mb-auto" set:html={secondaryExcerpt} />
                 <a
                   class="card-link stretched-link"
-                  href={`/blog/${stripDatePrefix(secondaryPost.slug)}/`}
+                  href={withBase(`/blog/${stripDatePrefix(secondaryPost.slug)}/`)}
                   title={secondaryPost.data.title}
                 >
                   Continue reading
@@ -132,7 +133,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
             <div class="feature-card-header p-4">
               <p class="section-kicker">Projects</p>
               <h2 class="feature-card-title mb-0">
-                <a href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}>
+                <a href={withBase(`/projects/${stripDatePrefix(featuredProject.slug)}/`)}>
                   {featuredProject.data.title}
                 </a>
               </h2>
@@ -143,7 +144,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                 <div class="feature-card-media">
                   <div class="feature-thumb feature-thumb--card feature-thumb--project">
                     <img
-                      src={projectImage}
+                      src={withBase(projectImage)}
                       alt={featuredProject.data.image?.alt ?? featuredProject.data.title}
                     />
                   </div>
@@ -155,7 +156,7 @@ const projectDate = featuredProject ? getEntryDate(featuredProject) : undefined;
                 <div class="mb-auto" set:html={projectExcerpt} />
                 <a
                   class="card-link stretched-link"
-                  href={`/projects/${stripDatePrefix(featuredProject.slug)}/`}
+                  href={withBase(`/projects/${stripDatePrefix(featuredProject.slug)}/`)}
                   title={featuredProject.data.title}
                 >
                   Continue reading

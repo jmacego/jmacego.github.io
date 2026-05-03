@@ -7,6 +7,7 @@ import {
   sortByDateDesc,
   stripDatePrefix,
 } from "../../utils/content";
+import { withBase } from "../../utils/url";
 import { getCollection } from "astro:content";
 
 const projects = (await getCollection("projects", isPublished)).sort(sortByDateDesc);
@@ -23,7 +24,7 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
           <div class="row">
             <div class:list={["col", imagePath ? "col-md-8" : "col-12"]}>
               <h2 class="blog-post-title">
-                <a href={`/projects/${slug}/`}>{project.data.title}</a>
+                <a href={withBase(`/projects/${slug}/`)}>{project.data.title}</a>
               </h2>
               {project.data.categories?.length ? (
                 <p class="blog-post-meta">
@@ -32,15 +33,15 @@ const projects = (await getCollection("projects", isPublished)).sort(sortByDateD
               ) : null}
               <div set:html={excerpt} />
               <p>
-                <a class="card-link" href={`/projects/${slug}/`}>Continue reading</a>
+                <a class="card-link" href={withBase(`/projects/${slug}/`)}>Continue reading</a>
               </p>
             </div>
             {imagePath && (
               <div class="col-md-4">
-                <a href={`/projects/${slug}/`}>
+                <a href={withBase(`/projects/${slug}/`)}>
                   <img
                     class="img-fluid rounded"
-                    src={imagePath}
+                    src={withBase(imagePath)}
                     alt={project.data.image?.alt ?? project.data.title}
                   />
                 </a>

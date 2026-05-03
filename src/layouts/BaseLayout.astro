@@ -1,6 +1,7 @@
 ---
 import { site } from "../siteData";
 import { buildSeo } from "../utils/seo";
+import { withBase } from "../utils/url";
 import "../assets/styles.css";
 
 const {
@@ -33,9 +34,18 @@ const seo = buildSeo({
   ogType,
 });
 
-const isActive = (href) => {
-  if (href === "/") return pathname === "/";
-  return pathname.startsWith(href);
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/blog/", label: "Posts" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/resume/", label: "Resumé" },
+  { href: "/about/", label: "About Me" },
+];
+
+const homeHref = withBase("/");
+const isActive = (target) => {
+  if (target === homeHref) return pathname === homeHref;
+  return pathname.startsWith(target);
 };
 ---
 <!doctype html>
@@ -69,7 +79,7 @@ const isActive = (href) => {
     <meta name="twitter:description" content={pageDescription} />
     {seo.socialImageUrl && <meta name="twitter:image" content={seo.socialImageUrl} />}
     {seo.socialImageAlt && <meta name="twitter:image:alt" content={seo.socialImageAlt} />}
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" href={withBase("/rss.xml")} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,11 +93,11 @@ const isActive = (href) => {
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/images/site.webmanifest" />
-    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" sizes="180x180" href={withBase("/assets/images/apple-touch-icon.png")} />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBase("/assets/images/favicon-32x32.png")} />
+    <link rel="icon" type="image/png" sizes="16x16" href={withBase("/assets/images/favicon-16x16.png")} />
+    <link rel="manifest" href={withBase("/assets/images/site.webmanifest")} />
+    <link rel="mask-icon" href={withBase("/assets/images/safari-pinned-tab.svg")} color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcfcfd" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e0f10" />
@@ -106,16 +116,16 @@ const isActive = (href) => {
         <div class="blog-header-inner">
           <a
             class="blog-header-logo"
-            href="/"
+            href={withBase("/")}
             aria-label={`${site.title} home`}
           >
             <picture>
               <source
-                srcset="/assets/images/branding/logo-white-text.png"
+                srcset={withBase("/assets/images/branding/logo-white-text.png")}
                 media="(prefers-color-scheme: dark)"
               />
               <img
-                src="/assets/images/branding/logo-black-text.png"
+                src={withBase("/assets/images/branding/logo-black-text.png")}
                 alt={site.title}
               />
             </picture>
@@ -125,11 +135,18 @@ const isActive = (href) => {
 
       <div class="nav-scroller py-1 mb-2">
         <nav class="site-nav" aria-label="Primary">
-          <a class:list={["site-nav-link", isActive("/") && "is-current"]} aria-current={isActive("/") ? "page" : undefined} href="/">Home</a>
-          <a class:list={["site-nav-link", isActive("/blog/") && "is-current"]} aria-current={isActive("/blog/") ? "page" : undefined} href="/blog/">Posts</a>
-          <a class:list={["site-nav-link", isActive("/projects/") && "is-current"]} aria-current={isActive("/projects/") ? "page" : undefined} href="/projects/">Projects</a>
-          <a class:list={["site-nav-link", isActive("/resume/") && "is-current"]} aria-current={isActive("/resume/") ? "page" : undefined} href="/resume/">Resumé</a>
-          <a class:list={["site-nav-link", isActive("/about/") && "is-current"]} aria-current={isActive("/about/") ? "page" : undefined} href="/about/">About Me</a>
+          {navLinks.map(({ href, label }) => {
+            const target = withBase(href);
+            return (
+              <a
+                class:list={["site-nav-link", isActive(target) && "is-current"]}
+                aria-current={isActive(target) ? "page" : undefined}
+                href={target}
+              >
+                {label}
+              </a>
+            );
+          })}
         </nav>
       </div>
 
@@ -143,7 +160,7 @@ const isActive = (href) => {
         <div class="content-rail">
           <div class="about-author">
             <img
-              src="/assets/images/jmac-profile.jpg"
+              src={withBase("/assets/images/jmac-profile.jpg")}
               alt="John MacDonald"
               class="about-author-image"
             />
@@ -152,7 +169,7 @@ const isActive = (href) => {
               <p>
                 John MacDonald is a Fractional CTO and advisor focused on AI strategy, architecture,
                 and technical leadership. He's also a licensed pilot, recovering entrepreneur, and
-                occasional tinkerer. For the full story, visit the <a href="/about/">About Me</a> page.
+                occasional tinkerer. For the full story, visit the <a href={withBase("/about/")}>About Me</a> page.
               </p>
             </div>
           </div>

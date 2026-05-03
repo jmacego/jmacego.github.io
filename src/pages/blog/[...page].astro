@@ -8,6 +8,7 @@ import {
   stripDatePrefix,
   PAGE_SIZE,
 } from "../../utils/content";
+import { withBase } from "../../utils/url";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
@@ -29,7 +30,7 @@ const { page } = Astro.props;
           <div class="row">
             <div class:list={["col", imagePath ? "col-md-8" : "col-12"]}>
               <h2 class="blog-post-title">
-                <a href={`/blog/${slug}/`}>{post.data.title}</a>
+                <a href={withBase(`/blog/${slug}/`)}>{post.data.title}</a>
               </h2>
               {post.data.categories?.length ? (
                 <p class="blog-post-meta">
@@ -38,15 +39,15 @@ const { page } = Astro.props;
               ) : null}
               <div set:html={excerpt} />
               <p>
-                <a class="card-link" href={`/blog/${slug}/`}>Continue reading</a>
+                <a class="card-link" href={withBase(`/blog/${slug}/`)}>Continue reading</a>
               </p>
             </div>
             {imagePath && (
               <div class="col-md-4">
-                <a href={`/blog/${slug}/`}>
+                <a href={withBase(`/blog/${slug}/`)}>
                   <img
                     class="img-fluid rounded"
-                    src={imagePath}
+                    src={withBase(imagePath)}
                     alt={post.data.image?.alt ?? post.data.title}
                   />
                 </a>

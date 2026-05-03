@@ -11,6 +11,7 @@ import {
   stripDatePrefix,
   formatDate,
 } from "../../utils/content";
+import { withBase } from "../../utils/url";
 import { getCollection } from "astro:content";
 
 const talks = (await getCollection("talks", isPublishedOrDraftInDev)).sort(sortByDateDesc);
@@ -88,7 +89,7 @@ const formatMinutes = (m: number) => {
                       : "Draft"}
                   </span>
                   <h2 class="talk-card-title">
-                    <a href={`/talks/${slug}/`}>{talk.data.title}</a>
+                    <a href={withBase(`/talks/${slug}/`)}>{talk.data.title}</a>
                   </h2>
                   <p class="talk-card-meta">
                     {formatDate(talk.data.date)}
@@ -125,13 +126,13 @@ const formatMinutes = (m: number) => {
                 <div class="talk-card-copy">
                   <div class="talk-card-excerpt" set:html={excerpt} />
                   <p>
-                    <a class="card-link" href={`/talks/${slug}/`}>Open</a>
+                    <a class="card-link" href={withBase(`/talks/${slug}/`)}>Open</a>
                   </p>
                 </div>
                 {imagePath && (
-                  <a class="talk-card-thumb" href={`/talks/${slug}/`}>
+                  <a class="talk-card-thumb" href={withBase(`/talks/${slug}/`)}>
                     <img
-                      src={imagePath}
+                      src={withBase(imagePath)}
                       alt={talk.data.image?.alt ?? talk.data.title}
                     />
                   </a>
