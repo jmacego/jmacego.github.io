@@ -12,6 +12,7 @@ const isPrivateRoute = (pathname) =>
 
 export default defineConfig({
   site: "https://jmaclabs.com",
+  base: process.env.ASTRO_PREVIEW_BASE || "/",
   trailingSlash: "ignore",
   cacheDir: process.env.ASTRO_CACHE_DIR ?? ".astro",
   markdown: {
