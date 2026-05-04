@@ -7,6 +7,7 @@ import {
   stripDatePrefix,
   formatDate,
 } from "../../utils/content";
+import { withBase } from "../../utils/url";
 import { getCollection, getEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -33,8 +34,8 @@ const relatedEntries = (
         (p) => p.slug === slug || stripDatePrefix(p.slug) === slug,
       );
       return match
-        ? { title: match.data.title, url: `/blog/${stripDatePrefix(match.slug)}/` }
-        : { title: slug, url: `/blog/${slug}/` };
+        ? { title: match.data.title, url: withBase(`/blog/${stripDatePrefix(match.slug)}/`) }
+        : { title: slug, url: withBase(`/blog/${slug}/`) };
     }),
   )
 );

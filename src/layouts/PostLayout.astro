@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
 import { normalizeImagePath } from "../utils/content";
+import { withBase } from "../utils/url";
 
 const { title, description, image, socialImage, socialImageAlt, ogImage, ogImageAlt, ogType, publishedTime, author } = Astro.props;
 const imagePath = normalizeImagePath(image?.src);
@@ -21,7 +22,7 @@ const imagePath = normalizeImagePath(image?.src);
       {imagePath && (
         <img
           class="post-hero-image"
-          src={imagePath}
+          src={withBase(imagePath)}
           alt={image?.alt ?? title}
         />
       )}
