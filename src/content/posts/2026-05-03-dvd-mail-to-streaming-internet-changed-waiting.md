@@ -27,6 +27,7 @@ image:
 Netflix launched its rental service in April 1998. I was running PowerSurge at the time, deploying dedicated servers and trying to make DNS manageable for people who should not have to love raw BIND configs. We were on the same internet, building entirely different things. They were betting the network was good enough to manage the logistics of physical media. I was betting the network was good enough to run a hosting business. We were both right, and both bets worked for a while.
 
 Neither of us was betting the network was good enough to deliver video. Because in April 1998, it was not.
+<!--more-->
 
 *Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: Amazon, E-Commerce, and the Rewiring of Retail](/blog/amazon-ecommerce-rewiring-of-retail/) · Next: Smartphones Made the Internet Ambient (coming soon)*
 
