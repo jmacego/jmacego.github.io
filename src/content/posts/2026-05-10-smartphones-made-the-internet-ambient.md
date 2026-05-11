@@ -34,7 +34,7 @@ image:
 In 1999 I was running a web hosting business out of real server racks, selling dedicated machines to customers who mostly reached them from Windows desktops sitting on furniture. The endpoints were known. They lived in offices and bedrooms. They plugged into the wall. If you wanted to manage your server, you sat down at a desk and did it.
 
 If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. Java powered how many devices? None of them were on a trajectory to dissolve the distinction between being online and being awake.
-
+<!--more-->
 *Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/)*
 
 That is exactly what happened anyway.
