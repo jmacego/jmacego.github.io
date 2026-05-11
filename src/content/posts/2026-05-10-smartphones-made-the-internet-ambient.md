@@ -1,12 +1,17 @@
 ---
-title: 'Smartphones Made the Internet Ambient'
+title: Smartphones Made the Internet Ambient
 date: '2026-05-10T00:00:00.000Z'
 published: false
+summary: >-
+  The smartphone did not just make the internet portable. It dissolved the
+  boundary between being online and being awake. AI is on the same path, and the
+  question for operators is how to position before the transition completes, not
+  after.
 description: >-
   The smartphone did not just make the internet portable. It dissolved the
-  boundary between being online and being awake. AI is on the same path, and
-  the question for operators is how to position before the transition
-  completes, not after.
+  boundary between being online and being awake. AI is on the same path, and the
+  question for operators is how to position before the transition completes, not
+  after.
 tags:
   - smartphones
   - mobile
@@ -22,20 +27,19 @@ image:
   src: /assets/images/smartphones-ambient-internet-1536x864.png
   alt: >-
     A person walking a city street at dusk, face lit by the glow of a
-    smartphone, with faint map lines and notification glyphs drifting in the
-    air around them, suggesting the internet as an ambient layer of daily
-    life rather than a destination.
+    smartphone, with faint map lines and notification glyphs drifting in the air
+    around them, suggesting the internet as an ambient layer of daily life
+    rather than a destination.
 ---
 In 1999 I was running a web hosting business out of real server racks, selling dedicated machines to customers who mostly reached them from Windows desktops sitting on furniture. The endpoints were known. They lived in offices and bedrooms. They plugged into the wall. If you wanted to manage your server, you sat down at a desk and did it.
 
-If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. None of them were on a trajectory to dissolve the distinction between being online and being awake.
-<!--more-->
+If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. Java powered how many devices? None of them were on a trajectory to dissolve the distinction between being online and being awake.
 
 *Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/)*
 
 That is exactly what happened anyway.
 
-If streaming was the application the ambient internet would eventually carry, the smartphone was what made the internet ambient in the first place. One layer further down, and one stage earlier in the sequence.
+If streaming was the application this new internet would eventually carry, the smartphone was what made it ambient in the first place. One layer further down, and one stage earlier in the sequence.
 
 I have spent the last decade in network operations, watching the consequences of that dissolution from the infrastructure side. The internet is no longer a place people go. It is a layer the world now runs on. That shift, which happened roughly between 2007 and 2015 and consolidated through the decade after it, is the most consequential durable residue the DotCom era left behind. It is also the single best template available for thinking about what AI becomes, if it becomes anything that lasts.
 
@@ -51,7 +55,7 @@ Those are not numbers that describe a gradual rollout. They describe an S-curve 
 
 The direction was visible. The pace and the shape were not.
 
-That distinction matters because it is the single thing that most AI coverage in 2026 is getting wrong. The direction of ambient, workflow-integrated AI is visible to almost anyone paying attention. The pace and the specific shape it will take are not. The 2024 NBER paper from Bick, Blandin, and Deming found that roughly 40 percent of U.S. adults aged 18 to 64 were already using generative AI by late 2024, while the Census Bureau's firm-level surveys showed business adoption still in single digits. That gap between individual usage and firm-level transformation is the exact gap that existed between smartphone ownership and smartphone-native business operations in 2012. It is the gap during which positioning matters most.
+That is the point that most most AI coverage in 2026 is getting wrong. The direction of ambient, workflow-integrated AI is visible to almost anyone paying attention. The pace and the specific shape it will take are not. The 2024 NBER paper from Bick, Blandin, and Deming found that roughly 40 percent of U.S. adults aged 18 to 64 were already using generative AI by late 2024, while the Census Bureau's firm-level surveys showed business adoption still in single digits. That gap between individual usage and firm-level transformation is the exact gap that existed between smartphone ownership and smartphone-native business operations in 2012. It is the gap during which positioning matters most.
 
 ## The Storefront Was Not the Business
 
@@ -77,7 +81,7 @@ In 2005, using the internet required intentional engagement. You sat down. You o
 
 By 2015, offline had become a state you actively had to produce. Your pocket was online by default. Your wrist might also be online. Your car increasingly was. Notifications arrived whether you solicited them or not. Location was continuously legible. Payments were a gesture. Asking a question, summoning a car, paying a bill, or calling a stranger had collapsed into sub-ten-second interactions that happened while you were walking to your next actual activity.
 
-The internet had not gotten bigger. It had gotten ambient. It was no longer something you used. It was something you inhabited. That is the substrate shift, and most of the people who built the best businesses of the 2010s understood it implicitly even when they did not articulate it.
+The internet had not simply grown. It had become ambient; it is always with us, everywhere we go. It was no longer something you used. It was something you inhabited. That is the substrate shift, and most of the people who built the best businesses of the 2010s understood it implicitly even when they did not articulate it.
 
 Current AI, in 2026, is mostly still a place you go. You open a tab. You switch out of the tool you were working in. You paste context back and forth across the boundary. That is the 2008 version of the transition. It is real, it is useful, and it is not the final form. The final form, the thing that will actually change behaviour and markets, is AI as a capability present in the environment where work already happens, available without the ceremony of switching, context-aware without being told, and invisible enough that people stop noticing it is there.
 
@@ -109,7 +113,7 @@ That is the rocky part the series keeps returning to. It is coming again. It is 
 
 Any honest assessment of the ambient internet has to include what it cost, because the AI transition will involve similar tradeoffs and the rhetorical habit of pretending those tradeoffs do not exist is itself part of the problem.
 
-The dedicated camera industry collapsed. PetaPixel's coverage of the camera market records a 94 percent drop in camera shipments between 2010 and 2023, attributed almost entirely to smartphones. Paper maps, standalone GPS units, portable music players, pocket calculators, and many low-end gaming handhelds followed similar curves. That is category destruction, and for the people who worked in those industries it was not abstract.
+The dedicated camera industry collapsed. PetaPixel's coverage of the camera market records a 94 percent drop in camera shipments between 2010 and 2023, a collapse attributed almost entirely to smartphones. Paper maps, standalone GPS units, portable music players, pocket calculators, and many low-end gaming handhelds followed similar curves. That is category destruction, and for the people who worked in those industries it was not abstract.
 
 Work-life boundary erosion is better documented than the advocates usually admit. A 2024 meta-analysis in PLOS Digital Health found that roughly 80 percent of empirical studies linked off-hours smartphone use for work to worse work-life conflict. Attention research has repeatedly shown that notification-driven environments raise stress markers, degrade sustained concentration, and produce measurable productivity costs even when users believe themselves to be more efficient.
 
