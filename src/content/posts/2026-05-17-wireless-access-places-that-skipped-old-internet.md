@@ -1,12 +1,12 @@
 ---
-title: 'Wireless Access and the Places That Skipped the Old Internet'
+title: Wireless Access and the Places That Skipped the Old Internet
 date: '2026-05-17T00:00:00.000Z'
 published: false
 description: >-
   Mobile and wireless access gave parts of the developing world the chance to
   skip a generation of infrastructure. AI may do something similar for expert
-  access, but only if we are honest about what leapfrog actually means and
-  where it consistently breaks.
+  access, but only if we are honest about what leapfrog actually means and where
+  it consistently breaks.
 tags:
   - wireless
   - mobile
@@ -23,16 +23,16 @@ image:
   alt: >-
     A dusty sub-Saharan street at golden hour with an unbranded cell tower
     rising above low buildings and a person in the foreground holding an
-    early-2000s candy-bar mobile phone, its small screen lit, suggesting
-    a network that arrived without the landline infrastructure that
-    preceded it in the West.
+    early-2000s candy-bar mobile phone, its small screen lit, suggesting a
+    network that arrived without the landline infrastructure that preceded it in
+    the West.
 ---
 In the mid-2000s I spent enough time in Tanzania to stop noticing the thing a visitor notices first: almost everyone had a cell phone. Not a landline at home. Not a shared village phone. A handset, usually someone else's cast-off, often a Nokia, sometimes a Razr if you were doing well enough to show it. The network was spotty, the electricity was spottier, and the towers kept working anyway because the business of getting a voice from one person to another had already won the argument there. There was no copper to retrofit. There was no dial-up, no DSL, no ISDN, no cable. The sequence the US and Europe had lived through was not a sequence there. It was a thing that had never happened.
-
-Americans came through constantly (NGOs, contractors, researchers, church groups), and almost none of their phones worked. Bands did not line up. Carriers had no roaming agreement. A SIM card might or might not help, depending on the handset. When we could produce a working Wi-Fi connection for a visitor, the response was closer to gratitude than convenience. Being connected at all was the win. Being connected at broadband speed was a different sort of luxury, and one most of the people who lived there could not afford at any speed.
 <!--more-->
 
-*Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: Smartphones Made the Internet Ambient](/blog/smartphones-made-the-internet-ambient/)*
+Americans came through constantly (NGOs, contractors, researchers, church groups), and almost none of their phones worked. Bands did not line up. Carriers had no roaming agreement. A SIM card might or might not help, depending on the handset. When we could produce a working Wi-Fi connection for a visitor, the response was closer to gratitude than convenience. Being connected at all was the win. Being connected at broadband speed was a different sort of luxury, and one most of the people who lived there could not afford at any speed.
+
+*Part of a series on what the DotCom era can teach us about AI. [← Previous: Smartphones Made the Internet Ambient](/blog/smartphones-made-the-internet-ambient/)*
 
 I am writing this installment from Southeast Asia, which lived through a version of the same compressed sequence on a different timeline and with different outcomes.
 
