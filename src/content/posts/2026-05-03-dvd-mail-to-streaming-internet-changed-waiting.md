@@ -29,7 +29,7 @@ Netflix launched its rental service in April 1998. I was running PowerSurge at t
 
 Neither of us was betting the network was good enough to deliver video. Because in April 1998, it was not.
 
-*Part of a series on what the DotCom era can teach us about AI. [← First: Bubbles Can Build Foundations](/blog/ai-vs-dot-com-bubbles-can-build-foundations/) · [← Previous: Amazon, E-Commerce, and the Rewiring of Retail](/blog/amazon-ecommerce-rewiring-of-retail/) · Next: Smartphones Made the Internet Ambient (coming soon)*
+*Part of a series on what the DotCom era can teach us about AI. [← Previous: Amazon, E-Commerce, and the Rewiring of Retail](/blog/amazon-ecommerce-rewiring-of-retail/) · [Next: Smartphones Made the Internet Ambient →](/blog/smartphones-made-the-internet-ambient/)*
 
 The series so far has argued two things that matter for this post. One, that the DotCom bubble destroyed enormous investor capital whilst financing infrastructure. Transport, hosting, payments, search. Everything built afterwards depended on that foundation. Two, that the rewiring of retail took two decades and required search, logistics, trust, and generational habit change to align before Amazon's shape was obvious. Streaming is the next case in that pattern, and the cleanest historical parallel to what current AI is trying to become. It was a substrate transition that ran on top of bubble-era infrastructure, and it took a full decade longer than anyone at the time expected.
 
