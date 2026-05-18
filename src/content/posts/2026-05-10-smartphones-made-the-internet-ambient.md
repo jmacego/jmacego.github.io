@@ -36,7 +36,7 @@ In 1999 I was running a web hosting business out of real server racks, selling d
 
 If you had told me that within fifteen years the majority of internet traffic would originate from handheld glass rectangles, in cafes and on trains and in beds at three in the morning, from people who would never see the inside of a data centre, I would have believed the direction and dismissed the pace. Handhelds existed in 1999. Palm Pilots. Early WAP phones. Java powered how many devices? None of them were on a trajectory to dissolve the distinction between being online and being awake.
 
-*Part of a series on what the DotCom era can teach us about AI. [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/) · Next: Wireless Access (coming soon)*
+*Part of a series on what the DotCom era can teach us about AI. [← Previous: From DVD Mail to Streaming](/blog/dvd-mail-to-streaming-internet-changed-waiting/) · [Next: Wireless Access and the Places That Skipped the Old Internet →](/blog/wireless-access-places-that-skipped-old-internet/)*
 
 That is exactly what happened anyway.
 
