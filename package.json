@@ -27,8 +27,9 @@
   },
   "pnpm": {
     "overrides": {
-      "fast-xml-parser": "5.6.0",
-      "devalue": ">=5.6.3",
+      "fast-xml-parser": "5.7.0",
+      "fast-xml-builder": "1.2.0",
+      "devalue": "5.8.1",
       "h3": "1.15.11",
       "smol-toml": "1.6.1",
       "picomatch": "4.0.4",
