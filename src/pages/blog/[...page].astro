@@ -22,7 +22,7 @@ const { page } = Astro.props;
 <BaseLayout title="John MacDonald's Posts" description="John MacDonald's Posts">
   <div class="listing-stack">
     {page.data.map((post) => {
-      const slug = stripDatePrefix(post.slug);
+      const slug = stripDatePrefix(post.id);
       const excerpt = getExcerpt(post.body);
       const imagePath = normalizeThumbnailPath(post.data.image?.src);
       return (

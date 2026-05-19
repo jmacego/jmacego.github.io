@@ -8,18 +8,18 @@ import {
   formatDate,
 } from "../../utils/content";
 import { withBase } from "../../utils/url";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 
 export async function getStaticPaths() {
   const talks = await getCollection("talks", isPublishedOrDraftInDev);
   return talks.map((talk) => ({
-    params: { slug: stripDatePrefix(talk.slug) },
+    params: { slug: stripDatePrefix(talk.id) },
     props: { talk },
   }));
 }
 
 const { talk } = Astro.props;
-const { Content } = await talk.render();
+const { Content } = await render(talk);
 const description = talk.data.description ?? talk.data.summary ?? getExcerptText(talk.body);
 const imagePath = normalizeImagePath(talk.data.image?.src);
 
@@ -31,10 +31,10 @@ const relatedEntries = (
       // Posts are stored with date-prefixed slugs in the collection; allow either form.
       const allPosts = await getCollection("posts");
       const match = allPosts.find(
-        (p) => p.slug === slug || stripDatePrefix(p.slug) === slug,
+        (p) => p.id === slug || stripDatePrefix(p.id) === slug,
       );
       return match
-        ? { title: match.data.title, url: withBase(`/blog/${stripDatePrefix(match.slug)}/`) }
+        ? { title: match.data.title, url: withBase(`/blog/${stripDatePrefix(match.id)}/`) }
         : { title: slug, url: withBase(`/blog/${slug}/`) };
     }),
   )

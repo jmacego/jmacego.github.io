@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
 
 const modernImageSchema = z.object({
   src: z.string(),
@@ -31,7 +32,7 @@ const imageSchema = z
   .optional();
 
 const posts = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
   schema: z.object({
     layout: z.string().optional(),
     title: z.string(),
@@ -48,7 +49,7 @@ const posts = defineCollection({
 });
 
 const projects = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/projects" }),
   schema: z.object({
     layout: z.string().optional(),
     title: z.string(),
@@ -82,7 +83,7 @@ const videoSchema = z
   .optional();
 
 const talks = defineCollection({
-  type: "content",
+  loader: glob({ pattern: "**/*.md", base: "./src/content/talks" }),
   schema: z.object({
     layout: z.string().optional(),
     title: z.string(),

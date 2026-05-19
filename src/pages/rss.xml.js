@@ -14,7 +14,7 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.description ?? post.data.summary ?? getExcerptText(post.body),
-      link: `/blog/${stripDatePrefix(post.slug)}/`,
+      link: `/blog/${stripDatePrefix(post.id)}/`,
     })),
   });
 }

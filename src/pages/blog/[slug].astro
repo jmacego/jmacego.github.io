@@ -6,18 +6,18 @@ import {
   normalizeImagePath,
   stripDatePrefix,
 } from "../../utils/content";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts", isPublishedOrDraftInDev);
   return posts.map((post) => ({
-    params: { slug: stripDatePrefix(post.slug) },
+    params: { slug: stripDatePrefix(post.id) },
     props: { post },
   }));
 }
 
 const { post } = Astro.props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 const description = post.data.description ?? post.data.summary ?? getExcerptText(post.body);
 const imagePath = normalizeImagePath(post.data.image?.src);
 ---

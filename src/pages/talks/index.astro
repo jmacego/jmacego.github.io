@@ -18,7 +18,7 @@ const talks = (await getCollection("talks", isPublishedOrDraftInDev)).sort(sortB
 
 // Compute dashboard stats per talk once at build time.
 const rows = talks.map((talk) => {
-  const slug = stripDatePrefix(talk.slug);
+  const slug = stripDatePrefix(talk.id);
   const stats = getScriptStats(talk.body);
   const assets = getTalkAssets(slug, talk.data, stats.words);
   const status = getTalkStatus(talk.data, assets);

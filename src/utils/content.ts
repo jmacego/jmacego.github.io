@@ -94,8 +94,8 @@ export function getEntryDate<T extends { data: { date?: Date }, slug?: string }>
   if (entry.data.date) {
     return new Date(entry.data.date);
   }
-  if (entry.slug) {
-    const match = entry.slug.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (entry.id) {
+    const match = entry.id.match(/^(\d{4})-(\d{2})-(\d{2})/);
     if (match) {
       const [_, year, month, day] = match;
       return new Date(Number(year), Number(month) - 1, Number(day));
