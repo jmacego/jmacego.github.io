@@ -22,7 +22,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "3.7.2",
-    "astro": "^6.3.5",
+    "astro": "^6.4.6",
     "marked": "^17.0.4"
   },
   "pnpm": {
@@ -34,7 +34,10 @@
       "smol-toml": "1.6.1",
       "picomatch": "4.0.4",
       "postcss": "8.5.10",
-      "defu": "6.1.7"
+      "defu": "6.1.7",
+      "vite": "7.3.5",
+      "esbuild": "0.28.1",
+      "js-yaml": "4.2.0"
     }
   },
   "devDependencies": {
