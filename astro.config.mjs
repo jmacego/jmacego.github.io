@@ -3,6 +3,7 @@ import sitemap from "@astrojs/sitemap";
 import rehypeExternalLinks from "./src/plugins/rehype-external-links.mjs";
 import remarkIgnoreMissingLocalImages from "./src/plugins/remark-ignore-missing-local-images.mjs";
 import rehypePrefixBase from "./src/plugins/rehype-prefix-base.mjs";
+import excludeImageOriginals from "./src/plugins/exclude-image-originals.mjs";
 
 const privateRoutes = new Set(["/slide-palette/"]);
 const privatePathPrefixes = ["/talks/"];
@@ -26,5 +27,6 @@ export default defineConfig({
     sitemap({
       filter: (page) => !isPrivateRoute(new URL(page).pathname),
     }),
+    excludeImageOriginals(),
   ],
 });
