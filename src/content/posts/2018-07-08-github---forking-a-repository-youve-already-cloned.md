@@ -42,17 +42,17 @@ git push --set-upstream origin <branch name>
 ```
 
 Now go to the respository on your and you should see something like this:
-![JMac At Jefferson Airport](/assets/images/github-compare-and-pull-request.png "Compare & Pull Request")
+![JMac At Jefferson Airport](/assets/images/github-compare-and-pull-request-1536x236.png "Compare & Pull Request")
 
 Go ahead and `compare & pull request` - if you've followed good Git procedures on your commit message, this next page is all filled out and you can just check for typos and review the diff. If not... you really should have, do so next time, and right now fill out the title and comments.
 
-![JMac At Jefferson Airport](/assets/images/github-open-a-pull-request.png "Open a pull request")
+![JMac At Jefferson Airport](/assets/images/github-open-a-pull-request-1536x1357.png "Open a pull request")
 
 When you're done, click the `create pull request` buttom - and it'll go to the original owner to see if she or he wants to merge it in.
 
 If you've done a good pull it should have no conflicts
 
-![JMac At Jefferson Airport](/assets/images/github-no-conflicts.png "No Conflicts!")
+![JMac At Jefferson Airport](/assets/images/github-no-conflicts-1536x254.png "No Conflicts!")
 
 And is more likely to get merged in, because the easier you can make it, the more likely people are to do it.
 

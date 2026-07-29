@@ -2,7 +2,7 @@
 title: Issues Presented by Geographical DNS
 date: 2019-07-06
 image:
-  src: /assets/images/posts/learning_series/map-standing-on-map-2048x1367.jpg
+  src: /assets/images/posts/learning_series/map-standing-on-map-1536x1025.jpg
   alt: CDN Graphic
   credit: Slon Pics
   creditUrl: "https://www.slon.pics/"
@@ -19,7 +19,7 @@ First off, this is not a discussion on what we should or should not do with any 
 
 ## What GeoDNS is
 
-<img src="/assets/images/posts/learning_series/cdn-regional-dns-working.png" alt="CDN Illustration, Servers at either side and DNS queries leading toward them" title="CDN DNS Illustration" width="75%" style="align:center;width:75%;height:auto;display:block">
+<img src="/assets/images/posts/learning_series/cdn-regional-dns-working-1536x760.png" alt="CDN Illustration, Servers at either side and DNS queries leading toward them" title="CDN DNS Illustration" width="75%" style="align:center;width:75%;height:auto;display:block">
 When you attempt to reach a website, your computer initially sends a query to map the human-readable domain name to the machine-readable IP address. When using a regular internet service this goes to a DNS server that is nearby to you ([see my article on Anycast for how this works](/blog/how-anycast-works)), either to your ISP or to a public provider like Google (8.8.8.8/8.8.4.4), Cloudflare (1.1.1.1), or CenturyLink(4.2.2.2). This server will then make a recursive query, reaching the authoritative server that is configured to reply for the domain name, and it will return that IP address to your computer.
 
 Even at the speed of light, it takes an appreciable fraction of a second to reach a server on the other side of the world, so today most websites are served by Content Delivery Networks, CDNs. CDNs have copies of the website cached around the world so they can serve it from a location that is closer to the user. GeoDNS is one of these solutions.
@@ -28,7 +28,7 @@ For a CDN, the authoritative DNS server is also Anycast, in the same datacenter 
 
 ## How GeoDNS breaks
 
-<img src="/assets/images/posts/learning_series/cdn-regional-dns-broken.png" alt="CDN Illustration, Servers at either side and DNS queries leading toward them, with a link between the users for an alternate global DNS path." title="CDN DNS Illustration" width="75%" style="align:center;width:75%;height:auto;display:block">
+<img src="/assets/images/posts/learning_series/cdn-regional-dns-broken-1536x911.png" alt="CDN Illustration, Servers at either side and DNS queries leading toward them, with a link between the users for an alternate global DNS path." title="CDN DNS Illustration" width="75%" style="align:center;width:75%;height:auto;display:block">
 Lots of things can break GeoDNS, this increases the load on long-distance links, slows down website loading for users, etc. These aren't the end of the world. There is, though, one particular way that it breaks _and_ then causes websites to entirely fail to load. (There's probably more, but this is the one that drives me batty so regularly).
 
 ### Corporate enterprise networks do two specific things that can interact badly with GeoDNS:
@@ -84,7 +84,7 @@ This is the most common technique for oppressive governments to implement site b
 
 ## Results of GeoDNS Breaking
 
-<img src="/assets/images/posts/learning_series/site-cannot-be-reached.png" alt="Sad Computer, Site Cannot be reached" title="Sad Computer is sad">
+<img src="/assets/images/posts/learning_series/site-cannot-be-reached-600x296.png" alt="Sad Computer, Site Cannot be reached" title="Sad Computer is sad">
 
 The results are pretty simple. The firewall implements the policy incorrectly.
 

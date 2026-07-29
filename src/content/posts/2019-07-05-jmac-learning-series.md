@@ -2,7 +2,7 @@
 title: JMac's Learning Series
 date: 2019-07-05
 image:
-  src: /assets/images/posts/learning_series/learn-scrabble.jpg
+  src: /assets/images/posts/learning_series/learn-scrabble-1536x1023.jpg
   alt: LEARN in Scrabble Letters
   credit: Pixabay
   creditUrl: "https://www.pexels.com/@pixabay"

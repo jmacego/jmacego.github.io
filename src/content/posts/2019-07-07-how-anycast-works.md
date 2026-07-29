@@ -2,7 +2,7 @@
 title: What is Anycast?
 date: 2019-07-07
 image:
-  src: /assets/images/posts/learning_series/cloudflare-cdn-network.png
+  src: /assets/images/posts/learning_series/cloudflare-cdn-network-1536x842.png
   alt: Cloudflare CDN Graphic
   credit: CloudFlare
   creditUrl: "https://www.cloudflare.com/"
@@ -18,7 +18,7 @@ Anycast is for you!
 I'm making an effort to not get too opinionated in these articles, but I just have to start by saying that Anycast is awesome and I love it.
 
 ## What Anycast is
-<img src="/assets/images/posts/learning_series/anycast.png" alt="Anycast Illustration - 4 routers with the same IP" title="Anycast Illustration" width="75%" style="width:75%;height:auto;display:block">
+<img src="/assets/images/posts/learning_series/anycast-1536x894.png" alt="Anycast Illustration - 4 routers with the same IP" title="Anycast Illustration" width="75%" style="width:75%;height:auto;display:block">
 
 Anycast is, at its heart, very simple. Every server offering the same function simply advertises the same IP address to the network. Regardless of how you attempt to reach it, routing protocols always ensure that the closest, lowest cost server is reached.
 

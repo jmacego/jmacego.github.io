@@ -2,7 +2,7 @@
 title: Help! I have a duplicate IP at a remote site!
 date: 2019-07-15
 image:
-  src: /assets/images/posts/learning_series/man-person-people-emotions-2048x1192.jpg
+  src: /assets/images/posts/learning_series/man-person-people-emotions-1536x894.jpg
   alt: Man with to faces
   credit: Gratisography
   creditUrl: "https://www.pexels.com/@gratisography"

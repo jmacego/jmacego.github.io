@@ -2,7 +2,7 @@
 title: GPG Symmetric Encryption of Disk Image
 date: 2018-06-29 19:20 -0700
 image:
-  src: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584.jpeg
+  src: assets/images/posts/censorship-limitations-freedom-of-expression-restricted-39584-1536x1024.jpeg
   alt: Laptop, Book, Phone in Chains
   credit: Pixabay
   creditUrl: "https://www.pexels.com/@pixabay"
@@ -23,7 +23,7 @@ First up: Create the disk image, I chose ExFAT as the filesystem as it is reason
 ## Creating the disk image
 
 Creating the disk image on Mac:
-![MacOSX ExFAT Image Creation](/assets/images/mac-osx-create-exfat-image.png "MacOSX ExFAT Image Creation")
+![MacOSX ExFAT Image Creation](/assets/images/mac-osx-create-exfat-image-1536x987.png "MacOSX ExFAT Image Creation")
 
 Creating the disk image on Linux:
 ```
@@ -44,7 +44,7 @@ On Mac you can double-click the file, or type `open <filename>` or open disk uti
 
 I use GPG Keychain on Mac, which allows me to simply right click the file and then use `Services -> OpenPGP: Encrypt File` and then uncheck any keys in the main section and check the `Encrypt with password` box in the lower left.
 
-![Services -> OpenPGP: Encrypt File](/assets/images/gpg-keychain-encrypt-file.png "Services -> OpenPGP: Encrypt File")
+![Services -> OpenPGP: Encrypt File](/assets/images/gpg-keychain-encrypt-file-1536x847.png "Services -> OpenPGP: Encrypt File")
 
 The commandline option will work under Mac or Linux with GPG installed. I'll do an article on getting GPG installed at some point in the future and try to remember to link it in here.
 

@@ -95,7 +95,7 @@ The lesson from knitting: finishing is part of the craft, not an afterthought. T
 ## The Unexpected Gift
 
 <figure class="post-image post-image-inline post-image-left">
-  <img src="/assets/images/posts/knitting-yarn-bombing.jpeg" alt="Yarn bombing — a tree or public object wrapped in colorful knitted and crocheted pieces as guerrilla street art." />
+  <img src="/assets/images/posts/knitting-yarn-bombing-1152x1536.jpeg" alt="Yarn bombing — a tree or public object wrapped in colorful knitted and crocheted pieces as guerrilla street art." />
   <figcaption>Yarn bombing: knitting escapes the living room and takes over the street.</figcaption>
 </figure>
 

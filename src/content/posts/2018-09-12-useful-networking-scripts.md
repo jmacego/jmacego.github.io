@@ -2,7 +2,7 @@
 title: Some useful network scripts
 date: 2018-09-12 22:30 -0700
 image:
-  src: assets/images/posts/git-name-interfaces-gist.png
+  src: assets/images/posts/git-name-interfaces-gist-1458x408.png
   alt: Screenshot of script
   credit: John MacDonald
   creditUrl: "https://www.jmaclabs.com"

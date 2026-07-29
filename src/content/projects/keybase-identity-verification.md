@@ -4,7 +4,7 @@ description: "Easy to use, relatively secure, open-source encryption"
 categories: [instant messaging, crypto, security, fileshare]
 date: 2018-06-27 19:13 -700
 image:
-  src: /assets/images/posts/1920px-Keybase_logo_official.svg.png
+  src: /assets/images/posts/1920px-Keybase_logo_official.svg-1536x1412.png
   alt: Keybase Logo
   credit: Keybase
   creditUrl: "https://github.com/keybase/client/blob/master/media/logos/keybase_logo_official.ai"
